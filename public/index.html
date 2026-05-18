@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madenler Araştırma Platformu — TKP</title>
+<!-- Statik modda gömülü veri (build-static.js tarafından eklenir) -->
+<script src="/js/data.js" onerror="void 0"></script>
 <style>
 :root {
   --bg: #0d1117; --bg2: #161b22; --bg3: #21262d;
@@ -266,19 +268,26 @@ let aramaTimer = null;
 // ─── VERİ YÜKLEME ─────────────────────────────────────────────────────────
 async function veriyukle() {
   try {
-    const [sirketRes, sehirRes] = await Promise.all([
-      fetch('/api/companies'),
-      fetch('/api/cities')
-    ]);
-    tumSirketler = await sirketRes.json();
-    tumSehirler = await sehirRes.json();
+    // Statik mod: gömülü veri varsa kullan, yoksa API'ye bak
+    if (window.MADENLER_DATA) {
+      tumSirketler = window.MADENLER_DATA.companies || [];
+      tumSehirler = window.MADENLER_DATA.cities || [];
+    } else {
+      const [sirketRes, sehirRes] = await Promise.all([
+        fetch('/api/companies'),
+        fetch('/api/cities')
+      ]);
+      tumSirketler = await sirketRes.json();
+      tumSehirler = await sehirRes.json();
+    }
 
     istatBarGuncelle();
     sirketleriGoster(tumSirketler);
     sehirleriGoster(tumSehirler);
     filtreChipleriOlustur();
   } catch(e) {
-    document.getElementById('sirket-grid').innerHTML = `<div class="empty">⚠ Sunucu bağlantısı kurulamadı. Statik dosyaları kontrol edin.<br><small>${e.message}</small></div>`;
+    document.getElementById('sirket-grid').innerHTML =
+      `<div class="empty">⚠ Veri yüklenemedi. <code>node server.js</code> çalışıyor mu?<br><small>${e.message}</small></div>`;
   }
 }
 

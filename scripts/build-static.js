@@ -41,7 +41,8 @@ fs.mkdirSync(DIST_DIR, { recursive: true });
 copyDirRecursive(PUBLIC_DIR, DIST_DIR);
 
 // Statik HTML raporları kopyala
-const htmlFiles = ['demir_export', 'yildizlar', 'metin_rapor.html', 'demir_export_rapor.html', 'yildizlar_sss_holding_rapor.html', 'index.html'];
+// index.html kasıtla dahil edilmiyor — public/index.html zaten kopyalandı
+const htmlFiles = ['demir_export', 'yildizlar', 'metin_rapor.html', 'demir_export_rapor.html', 'yildizlar_sss_holding_rapor.html'];
 for (const f of htmlFiles) {
   const src = path.join(ROOT, f);
   const dest = path.join(DIST_DIR, f);
