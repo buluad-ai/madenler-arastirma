@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSS YILDIZLAR HOLDİNG — Kapsamlı Araştırma Raporu</title>
+<style>
+  :root {
+    --koyu: #0d1117;
+    --lacivert: #161b22;
+    --mor: #6e40c9;
+    --kırmızı: #cf222e;
+    --sarı: #d29922;
+    --yesil: #2da44e;
+    --turuncu: #bc4c00;
+    --gri: #f0f0f0;
+    --metin: #24292e;
+    --kart: #ffffff;
+    --mavi: #0969da;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--gri);
+    color: var(--metin);
+    line-height: 1.7;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a0028 0%, #3d0066 60%, #6e40c9 100%);
+    color: white;
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--kırmızı), var(--sarı), var(--kırmızı));
+  }
+  .header h1 { font-size: 2.8em; font-weight: 900; letter-spacing: -1px; margin-bottom: 10px; }
+  .header .subtitle { font-size: 1.2em; opacity: 0.85; }
+  .header .badge {
+    display: inline-block;
+    background: var(--kırmızı);
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 700;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+  .header .meta { font-size: 0.85em; opacity: 0.7; margin-top: 12px; }
+
+  .uyari-bandi {
+    background: linear-gradient(90deg, #bc4c00, #cf222e);
+    color: white;
+    padding: 12px 40px;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .nav-sidebar {
+    position: sticky; top: 0; z-index: 100;
+    background: #1a0028;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  }
+  .nav-scroll { display: flex; overflow-x: auto; }
+  .nav-scroll::-webkit-scrollbar { height: 3px; }
+  .nav-scroll::-webkit-scrollbar-thumb { background: var(--mor); }
+  .nav-scroll a {
+    display: block;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 0.82em;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+  }
+  .nav-scroll a:hover { color: white; background: rgba(255,255,255,0.1); border-bottom-color: var(--mor); }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+
+  .ozet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 36px; }
+  .ozet-kart {
+    background: white;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--mor);
+    transition: transform 0.2s;
+  }
+  .ozet-kart:hover { transform: translateY(-4px); }
+  .ozet-kart .rakam { font-size: 2.2em; font-weight: 900; color: var(--mor); line-height: 1; }
+  .ozet-kart .etiket { font-size: 0.78em; color: #888; margin-top: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .ozet-kart.kirmizi { border-top-color: var(--kırmızı); }
+  .ozet-kart.kirmizi .rakam { color: var(--kırmızı); }
+  .ozet-kart.turuncu { border-top-color: var(--turuncu); }
+  .ozet-kart.turuncu .rakam { color: var(--turuncu); }
+  .ozet-kart.yesil { border-top-color: var(--yesil); }
+  .ozet-kart.yesil .rakam { color: var(--yesil); }
+  .ozet-kart.sarı { border-top-color: var(--sarı); }
+  .ozet-kart.sarı .rakam { color: var(--sarı); }
+
+  .bolum { background: white; border-radius: 14px; margin-bottom: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.07); overflow: hidden; }
+  .bolum-baslik {
+    background: linear-gradient(90deg, #3d0066, var(--mor));
+    color: white;
+    padding: 20px 28px;
+    font-size: 1.2em;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .bolum-baslik.kirmizi { background: linear-gradient(90deg, #8b0000, var(--kırmızı)); }
+  .bolum-baslik.turuncu { background: linear-gradient(90deg, #7a3100, var(--turuncu)); }
+  .bolum-baslik.koyu { background: linear-gradient(90deg, var(--koyu), #2c3e50); }
+  .bolum-baslik.yesil { background: linear-gradient(90deg, #155724, var(--yesil)); }
+  .bolum-baslik.mavi { background: linear-gradient(90deg, #033d8b, var(--mavi)); }
+  .bolum-ikon { font-size: 1.4em; }
+  .bolum-icerik { padding: 28px; }
+
+  .zaman-cetveli { position: relative; padding-left: 30px; }
+  .zaman-cetveli::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--mor); }
+  .zaman-madde { position: relative; margin-bottom: 24px; padding-left: 20px; }
+  .zaman-madde::before {
+    content: ''; position: absolute; left: -24px; top: 6px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--kırmızı); border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--kırmızı);
+  }
+  .zaman-yil { font-weight: 800; color: var(--mor); font-size: 1.05em; }
+  .zaman-metin { color: var(--metin); margin-top: 3px; }
+
+  .maden-tablo { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  .maden-tablo thead { background: linear-gradient(90deg, #3d0066, var(--mor)); color: white; }
+  .maden-tablo th { padding: 12px 14px; text-align: left; font-weight: 700; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px; }
+  .maden-tablo td { padding: 12px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
+  .maden-tablo tr:hover { background: #f8f0ff; }
+  .maden-tablo tr:nth-child(even) { background: #faf7ff; }
+  .durum-aktif { background: #d5f5e3; color: #1a8a45; padding: 3px 10px; border-radius: 12px; font-weight: 700; font-size: 0.82em; }
+  .durum-kapali { background: #e8e8e8; color: #555; padding: 3px 10px; border-radius: 12px; font-weight: 700; font-size: 0.82em; }
+  .durum-dava { background: #fde8e8; color: #c0392b; padding: 3px 10px; border-radius: 12px; font-weight: 700; font-size: 0.82em; }
+  .durum-kriz { background: #fff3cd; color: #856404; padding: 3px 10px; border-radius: 12px; font-weight: 700; font-size: 0.82em; }
+
+  .akordeon-madde { border: 1px solid #e0d0ef; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+  .akordeon-baslik {
+    width: 100%; background: #faf7ff; border: none; padding: 16px 20px;
+    text-align: left; cursor: pointer; font-size: 0.95em; font-weight: 700;
+    color: var(--metin); display: flex; justify-content: space-between;
+    align-items: center; transition: background 0.2s;
+  }
+  .akordeon-baslik:hover { background: #f0e6ff; }
+  .akordeon-baslik.aktif { background: linear-gradient(90deg, #3d0066, var(--mor)); color: white; }
+  .akordeon-ok { font-size: 1.2em; transition: transform 0.3s; }
+  .akordeon-baslik.aktif .akordeon-ok { transform: rotate(180deg); }
+  .akordeon-icerik { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 20px; background: white; }
+  .akordeon-icerik.acik { max-height: 3000px; padding: 20px; }
+
+  .alinti { border-left: 5px solid var(--mor); background: #f8f0ff; padding: 16px 20px; margin: 16px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #555; }
+  .alinti cite { display: block; margin-top: 8px; font-style: normal; font-weight: 700; color: var(--mor); font-size: 0.85em; }
+
+  .uyari-kutu { border-radius: 10px; padding: 16px 20px; margin: 16px 0; display: flex; gap: 12px; align-items: flex-start; }
+  .uyari-kutu.kirmizi { background: #fde8e8; border: 1px solid #f5c6c6; }
+  .uyari-kutu.sarı { background: #fef9e7; border: 1px solid #f9e4a0; }
+  .uyari-kutu.yesil { background: #d5f5e3; border: 1px solid #a9dfbf; }
+  .uyari-kutu.mavi { background: #eaf2ff; border: 1px solid #aed6f1; }
+  .uyari-kutu.mor { background: #f3e8ff; border: 1px solid #d0aaf5; }
+  .uyari-kutu .ikon { font-size: 1.4em; flex-shrink: 0; margin-top: 2px; }
+  .uyari-kutu .icerik strong { display: block; margin-bottom: 4px; }
+
+  .haber-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; margin-top: 16px; }
+  .haber-kart { border: 1px solid #e5e5e5; border-radius: 10px; padding: 16px; background: white; transition: box-shadow 0.2s; }
+  .haber-kart:hover { box-shadow: 0 4px 15px rgba(110,64,201,0.15); }
+  .haber-kart .kaynak { font-size: 0.75em; color: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 6px; }
+  .haber-kart .baslik { font-weight: 700; color: var(--metin); font-size: 0.92em; margin-bottom: 8px; }
+  .haber-kart .aciklama { font-size: 0.87em; color: #666; }
+  .haber-kart a { color: var(--mor); text-decoration: none; font-size: 0.82em; font-weight: 700; margin-top: 8px; display: inline-block; }
+
+  .grafik-container { padding: 16px 0; }
+  .grafik-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .grafik-etiket { min-width: 170px; font-size: 0.85em; font-weight: 600; color: var(--metin); text-align: right; }
+  .grafik-alan { flex: 1; background: #ecf0f1; border-radius: 6px; height: 26px; position: relative; overflow: hidden; }
+  .grafik-dolgu { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: 10px; color: white; font-size: 0.8em; font-weight: 700; }
+
+  /* Kişi kartı */
+  .kisi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; margin: 16px 0; }
+  .kisi-kart {
+    border: 1px solid #e0d0ef;
+    border-radius: 12px;
+    padding: 20px;
+    background: white;
+  }
+  .kisi-kart .isim { font-size: 1.05em; font-weight: 800; color: var(--mor); margin-bottom: 6px; }
+  .kisi-kart .pozisyon { font-size: 0.82em; color: #888; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+  .kisi-kart .detay { font-size: 0.88em; color: #555; line-height: 1.6; }
+
+  /* TKP bölümü */
+  .tkp-bolum {
+    background: linear-gradient(135deg, var(--koyu) 0%, #1a0028 100%);
+    color: white;
+    border-radius: 14px;
+    padding: 36px;
+    margin-bottom: 30px;
+  }
+  .tkp-baslik { font-size: 1.5em; font-weight: 900; color: #ff6b6b; margin-bottom: 16px; }
+  .tkp-madde-listesi { list-style: none; }
+  .tkp-madde-listesi li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; gap: 12px; font-size: 0.95em; color: rgba(255,255,255,0.9); }
+  .tkp-madde-listesi li:last-child { border-bottom: none; }
+  .tkp-madde-listesi .no { background: var(--kırmızı); color: white; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.82em; font-weight: 900; flex-shrink: 0; margin-top: 2px; }
+
+  .kaynak-listesi { list-style: none; }
+  .kaynak-listesi li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88em; }
+  .kaynak-listesi li:last-child { border-bottom: none; }
+  .kaynak-listesi a { color: var(--mor); text-decoration: none; }
+  .kaynak-listesi a:hover { text-decoration: underline; }
+  .kaynak-listesi .num { background: var(--mor); color: white; padding: 2px 7px; border-radius: 10px; font-size: 0.78em; font-weight: 700; margin-right: 8px; }
+
+  footer { background: #1a0028; color: rgba(255,255,255,0.7); padding: 30px 40px; text-align: center; font-size: 0.85em; margin-top: 40px; }
+  footer a { color: rgba(255,255,255,0.6); }
+
+  .skandal-satir { background: #fff0f0; border-left: 4px solid var(--kırmızı); padding: 12px 16px; margin-bottom: 10px; border-radius: 0 8px 8px 0; }
+  .skandal-satir .tarih { font-size: 0.82em; color: var(--kırmızı); font-weight: 700; }
+  .skandal-satir .baslik { font-weight: 700; color: var(--metin); }
+  .skandal-satir .icerik { font-size: 0.9em; color: #555; margin-top: 4px; }
+
+  @media (max-width: 768px) {
+    .header h1 { font-size: 1.9em; }
+    .container { padding: 20px 16px; }
+    .ozet-grid { grid-template-columns: repeat(2, 1fr); }
+    .grafik-etiket { min-width: 110px; font-size: 0.78em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>💎 SSS YILDIZLAR HOLDİNG</h1>
+  <div class="subtitle">Madencilik Faaliyetleri — Kapsamlı Araştırma ve Eleştiri Raporu</div>
+  <div class="badge">2364 MADEN RUHSATI · TÜRKİYE'NİN "RUHSAT ŞAMPİYONU"</div>
+  <div class="meta">Hazırlanma Tarihi: Mayıs 2026 · Doruk Madencilik İşçi Grevi ve TKP Kamulaştırma Kampanyası Bağlamında</div>
+</div>
+
+<div class="uyari-bandi">
+  🚨 Bu rapor yalnızca doğrulanabilir kamuya açık kaynaklara dayanmaktadır. Haberlerin kaynakları belgelenmiştir.
+</div>
+
+<nav class="nav-sidebar">
+  <div class="nav-scroll">
+    <a href="#giris">Giriş</a>
+    <a href="#ozet">Genel Bakış</a>
+    <a href="#tarih">Tarihçe</a>
+    <a href="#yonetim">Yönetim & Sahipler</a>
+    <a href="#siyaset">Siyasi Bağlantılar</a>
+    <a href="#madenler">Maden İşletmeleri</a>
+    <a href="#kirsehir">Kırşehir Bağlantısı</a>
+    <a href="#cevre">Çevre Felaketleri</a>
+    <a href="#isci">İşçi Hakları</a>
+    <a href="#mali">Mali Skandallar</a>
+    <a href="#davalar">Davalar & Cezalar</a>
+    <a href="#medya">Medyaya Yansımalar</a>
+    <a href="#tkp">TKP Perspektifi</a>
+    <a href="#kaynaklar">Kaynaklar</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- GİRİŞ -->
+  <div class="bolum" id="giris">
+    <div class="bolum-baslik koyu">
+      <span class="bolum-ikon">📋</span>
+      NEDEN SSS YILDIZLAR HOLDİNG?
+    </div>
+    <div class="bolum-icerik">
+      <p>SSS Yıldızlar Holding, Türkiye'de 2364 maden ruhsatıyla "ruhsat şampiyonu" ünvanına sahip olan, büyük bölümünü özelleştirmeler yoluyla devletten devraldığı varlıklarla büyüyen ve son yıllarda işçi hakları ihlalleri, çevre felaketleri ve siyasi bağlantıları nedeniyle kamuoyunun gündemine giren bir holdingdir.</p>
+      <br>
+      <p>Nisan 2026'da Doruk Madencilik işçilerinin Eskişehir'den Ankara'ya 190 km'lik yürüyüşü ve ardından açlık grevi, bu holdingi geniş kamuoyunun gündemine soktu. Ancak SSS Yıldızlar'ın sorunlu sicili bundan çok daha önceye dayanmaktadır.</p>
+      <br>
+      <div class="ozet-grid">
+        <div class="ozet-kart">
+          <div class="rakam">2.364</div>
+          <div class="etiket">Toplam Maden Ruhsatı</div>
+        </div>
+        <div class="ozet-kart kirmizi">
+          <div class="rakam">1.433</div>
+          <div class="etiket">Arama Ruhsatı</div>
+        </div>
+        <div class="ozet-kart turuncu">
+          <div class="rakam">354</div>
+          <div class="etiket">İşletme Ruhsatı</div>
+        </div>
+        <div class="ozet-kart sarı">
+          <div class="rakam">577</div>
+          <div class="etiket">İşletme Ruhsat Talebi</div>
+        </div>
+        <div class="ozet-kart yesil">
+          <div class="rakam">1.662</div>
+          <div class="etiket">Metalik Maden Ruhsatı</div>
+        </div>
+        <div class="ozet-kart kirmizi">
+          <div class="rakam">41,2M$</div>
+          <div class="etiket">Eti Gümüş Alış Fiyatı (2004)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TARİHÇE -->
+  <div class="bolum" id="tarih">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">📅</span>
+      TARİHÇE: ÖZELLEŞT İRMELERLE BÜYÜYEN BİR HOLDİNG (1972 - GÜNÜMÜZ)
+    </div>
+    <div class="bolum-icerik">
+      <div class="zaman-cetveli">
+        <div class="zaman-madde">
+          <div class="zaman-yil">1972</div>
+          <div class="zaman-metin">Sebahattin Yıldız, Trabzon'da ticari faaliyetlere başladı. İlk yıllarda inşaat ve müteahhitlik işleri yaptı. Karadeniz Teknik Üniversitesi'nde kontrat inşaat çalışmaları ile iş hayatına başladı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">1972 - 2000</div>
+          <div class="zaman-metin">İnşaat ve müteahhitlik sektöründe faaliyetler sürdürüldü. Sebahattin Yıldız bu dönemde bölgesel bir müteahhit olarak tanındı; büyük holding yapısına henüz geçilmemişti.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2000 - 2003</div>
+          <div class="zaman-metin">Söğütsen Seramik tesisleri satın alındı. Bu, Yıldız'ın üretim sektörüne ilk büyük adımı oldu. Seramik ticaretiyle ulusal ölçeğe taşındı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2004 — KIRIK NOKTA</div>
+          <div class="zaman-metin"><strong>Eti Gümüş A.Ş. özelleştirme ihalesiyle 41,2 milyon dolara satın alındı.</strong> Türkiye'nin yegane entegre gümüş üreticisi olan bu tesis, 1985'te kurulmuş, 1987'de Alman Krupp şirketiyle üretime geçmişti. Holding bu satın alımla Türkiye'nin gümüş üretimini tamamen kontrolüne geçirdi. TMMOB Maden Mühendisleri Odası'na göre tesisin gerçek değeri 450 milyon dolar; satış fiyatı değerin yalnızca yaklaşık %9'u.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2005</div>
+          <div class="zaman-metin">SSS Yıldızlar Holding A.Ş. resmi olarak kuruldu. Çok sektörlü yapı oluşturuldu: madencilik, seramik, enerji, lojistik, sigorta.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2006</div>
+          <div class="zaman-metin">Granito Girarto (granit fabrikası, dünyanın en büyük üretim tesislerinden biri) kuruldu. Aynı yıl 3S Lojistik ve 3S Sigorta Acentesi faaliyete geçti.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2008</div>
+          <div class="zaman-metin">NESKO Maden bünyeye katıldı. Giresun Şebinkarahisar'da kurşun, çinko ve bakır madeni işletmeciliği başladı. Bu saha daha sonra 2021'de büyük bir çevre felaketine sahne olacaktı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2010</div>
+          <div class="zaman-metin">Osmangazi Elektrik Dağıtım AŞ satın alındı. Sebahattin Yıldız'a TBMM tarafından "Üstün Hizmet Ödülü" verildi. Aynı yıl enerji yatırımları hız kazandı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2011</div>
+          <div class="zaman-metin">Türkiye Halk Bankası'ndan alınan 823 milyon TL kredi "batık kredi" olarak nitelendirildi (Devlet Denetleme raporuna göre). Toplam banka borcu 2,38 milyar liraya ulaşmıştı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2011</div>
+          <div class="zaman-metin">Anatolia Seramik tesisleri satın alındı. Seramik kapasitesi ikiye katlandı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2013</div>
+          <div class="zaman-metin">Osmangazi Elektrik, borçların ödenememesi üzerine TEDAŞ tarafından geri alındı. Bu gelişme holdingin finansal sıkıntılarının ilk büyük göstergesi oldu.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2014</div>
+          <div class="zaman-metin">Çankırı seramik fabrikasında işçiler 7 aylık maaş alamamaları nedeniyle karayolunu kapattı. Holding bünyesindeki işçi haklarının kronik biçimde çiğnendiğinin erken sinyalleri verildi.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2015</div>
+          <div class="zaman-metin">Bilecik'te 1.150 işçi greve çıktı. Düzensiz ödeme şikayetleri holding geneline yayıldı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2018 - 2019</div>
+          <div class="zaman-metin">Eti Gümüş işçileri eyleme çıktı. Maaş ödemeleri aksadı. 900 işçi işten çıkarıldı ve Kütahya'daki Türkiye'nin tek entegre gümüş tesisinde üretim tamamen durdu.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2020</div>
+          <div class="zaman-metin">Çanakkale Yenice'deki maden sahasında işçiler ocağı işgal etti. Sebahattin Yıldız, 2. Abdülhamid'in tarihi cep saatini 183.000 dolara müzayededen satın aldı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2021 — BÜYÜK FELAKET</div>
+          <div class="zaman-metin"><strong>18 Kasım 2021:</strong> NESKO Maden'in Giresun Şebinkarahisar'daki atık havuzu çöktü. 4.500 ton zehirli ağır metal içerikli atık tarım arazilerine, akarsulara ve Kılıçkaya Barajı'na yayıldı. Bakanlık maksimum idari para cezası olan 12 milyon TL uyguladı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2021</div>
+          <div class="zaman-metin">Gümüşhane Midi Madenciliği tesisinde siyanür içeren boru patladı, Midi Deresi kontamine oldu.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2022</div>
+          <div class="zaman-metin">TMSF'nin denetimindeki Yunus Emre Termik Santrali (3,1 milyar TL değerinde) Doruk Madencilik'e devredildi. Ödenen bedel: 65.000 dolar (kalan kısım Avrupa İmar ve Kalkınma Bankası kredisine sayıldı).</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2023 - 2025</div>
+          <div class="zaman-metin">Trabzon Yomra-Sürmene maden sahasında işçilere 3 aylık maaş ödenmedi. Kıdem tazminatları birikti. Doruk Madencilik'te maaşlar kesildi, "ücretsiz izin" dayatıldı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2026 — DORUK GREVİ</div>
+          <div class="zaman-metin"><strong>Nisan 2026:</strong> 150 Doruk Madencilik işçisi Eskişehir'den Ankara'ya yürüdü (190 km). 6 günlük yürüyüşün ardından Kurtuluş Parkı'nda açlık grevi başladı. 28 Nisan 2026'da İçişleri Bakanlığı arabuluculuğuyla uzlaşma sağlandı: işçiler haklarını alacak. Kamulaştırma talebi ise gündemde kaldı.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- YÖNETİM VE SAHİPLER -->
+  <div class="bolum" id="yonetim">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">👔</span>
+      YÖNETİM YAPISI VE KİLİT İSİMLER
+    </div>
+    <div class="bolum-icerik">
+      <div class="kisi-grid">
+        <div class="kisi-kart">
+          <div class="isim">Sebahattin Yıldız</div>
+          <div class="pozisyon">Kurucu & Yönetim Kurulu Başkanı</div>
+          <div class="detay">
+            1972'de Trabzon'da inşaat işiyle iş hayatına başladı. Holding büyümesini AKP dönemindeki özelleştirmeler yoluyla gerçekleştirdi. 2010'da TBMM Üstün Hizmet Ödülü aldı. 2020'de 183.000 dolara 2. Abdülhamid'in tarihi cep saatini aldı. Bir AKP milletvekiliyle aynı adı (Sabahattin Yıldız) paylaşmasının yarattığı karışıklıktan yararlandığı ileri sürüldü.
+          </div>
+        </div>
+        <div class="kisi-kart">
+          <div class="isim">Ali Vahit Atıcı</div>
+          <div class="pozisyon">CEO (Genel Müdür)</div>
+          <div class="detay">
+            TÜGVA (Türkiye Gençlik Vakfı) Bayburt İl Başkanı. 2023 seçimlerinde AKP'den Bayburt milletvekilliği için aday adayı oldu. Aynı zamanda Maliye Bakanlığı danışmanı ve Saray yakını olarak bilinmektedir. Doruk Madencilik krizi sırasında kamuoyunda tanındı.
+          </div>
+        </div>
+        <div class="kisi-kart">
+          <div class="isim">Eti Gümüş Yönetimi</div>
+          <div class="pozisyon">Kütahya / Elazığ Şubeleri</div>
+          <div class="detay">
+            2004 özelleştirmesiyle Yıldızlar Holding'e geçen Türkiye'nin tek metal gümüş üreticisi. Kütahya Gümüşköy tesisi ve Elazığ Ergani Bakır İşletmeleri şubesi.
+          </div>
+        </div>
+        <div class="kisi-kart">
+          <div class="isim">Doruk Madencilik Yönetimi</div>
+          <div class="pozisyon">Eskişehir / Mihalıççık</div>
+          <div class="detay">
+            Yunus Emre Termik Santrali'nden sorumlu alt şirket. 2022'de TMSF'den satın alınan bu şirket, Şubat 2026'da sermayesini 80 milyon TL'den 300 milyon TL'ye artırırken işçi ücretlerini ödemedi.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SİYASİ BAĞLANTILAR -->
+  <div class="bolum" id="siyaset">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">🏛️</span>
+      SİYASİ BAĞLANTILAR VE DEVLET İMTİYAZLARI
+    </div>
+    <div class="bolum-icerik">
+      <div class="uyari-kutu kirmizi">
+        <div class="ikon">🔴</div>
+        <div class="icerik">
+          <strong>Temel Tespit</strong>
+          SSS Yıldızlar Holding'in büyümesi, büyük ölçüde AKP iktidarı dönemindeki özelleştirme ihaleleri ve TMSF satışlarıyla örtüşmektedir. Holding, devlet kurumlarından defalarca avantajlı koşullarda varlık devralmıştır.
+        </div>
+      </div>
+
+      <br>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik aktif" onclick="akordeon(this)">
+          🤝 CEO Ali Vahit Atıcı: TÜGVA'dan Saray'a <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik acik">
+          <p>Doruk Madencilik krizi sırasında kamuoyunun dikkatini çeken CEO Ali Vahit Atıcı'nın geçmişi şöyle:</p>
+          <ul style="list-style: disc; padding-left: 20px; line-height: 2.1; margin-top: 8px;">
+            <li>TÜGVA (Türkiye Gençlik Vakfı) Bayburt İl Başkanı olarak görev yaptı</li>
+            <li>2023 seçimleri öncesinde AKP'den Bayburt milletvekilliği için aday adayı oldu</li>
+            <li>Maliye Bakanlığı ve diğer bakanlıklarda danışmanlık yaptı</li>
+            <li>Saray törenlerine katıldığı belgelendi</li>
+          </ul>
+          <div class="alinti">
+            "Madencinin maaşını ödemeyen holdingin CEO'sunun geçmişi kabarık: TÜGVA'dan Saray'a!"
+            <cite>— Haber Hürriyeti, 2026</cite>
+          </div>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🏦 Eti Gümüş: 450 Milyon Dolar Değerindeki Tesis 41 Milyon Dolara Satıldı <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p><strong>1985'te devlet yatırımıyla kurulan,</strong> Alman Krupp teknolojisiyle 1987'de işletmeye alınan Eti Gümüş A.Ş., 13 Ağustos 2004'te Yıldızlar SSS Holding'e devredildi.</p>
+          <br>
+          <table class="maden-tablo">
+            <thead><tr><th>Başlık</th><th>Değer</th></tr></thead>
+            <tbody>
+              <tr><td>Devlet Yatırımı (en az)</td><td><strong>70 milyon dolar</strong></td></tr>
+              <tr><td>Gümüş rezerv değeri (piyasa)</td><td><strong>~450 milyon dolar</strong> (TMMOB değerlendirmesi)</td></tr>
+              <tr><td>Satış fiyatı (peşin)</td><td><strong>20,6 milyon dolar</strong></td></tr>
+              <tr><td>Toplam satış bedeli</td><td><strong>41,2 milyon dolar</strong></td></tr>
+              <tr><td>Gerçek değere oranı</td><td><strong>~%9</strong> — büyük bir değer kayıpları yaşandı</td></tr>
+            </tbody>
+          </table>
+          <br>
+          <div class="uyari-kutu kirmizi">
+            <div class="ikon">⚠️</div>
+            <div class="icerik">
+              <strong>TMMOB Maden Mühendisleri Odası Değerlendirmesi:</strong> Eti Gümüş'ün satışı "büyük bir soygun" olarak nitelendirildi. Tesisin gümüş rezervleri, işletme değeri ve stratejik konumu göz önüne alındığında satış bedeli gerçek değerin çok altındaydı.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🏭 Doruk Madencilik: 3,1 Milyar TL'lik Tesis 65 Bin Dolara Alındı <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>Yunus Emre Termik Santrali'nin geçmişi şöyle:</p>
+          <ul style="list-style: disc; padding-left: 20px; line-height: 2.1; margin-top: 8px;">
+            <li>2010'da "Adularya Enerji" adıyla Naksan Holding bünyesinde kuruldu</li>
+            <li>15 Temmuz 2016 sonrası TMSF'ye alındı (yönetim darbe girişimi sonrası el konulan holdingin şirketiydi)</li>
+            <li>2022'de TMSF tarafından Doruk Madencilik'e devredildi</li>
+            <li>Ödenen bedel: yalnızca 65.000 dolar; kalan kısmı Avrupa İmar ve Kalkınma Bankası kredisine sayıldı</li>
+            <li>Tesisin tahmini değeri: 3,1 milyar TL</li>
+            <li>Şirket 2022, 2023 ve 2024 yıllarında Kurumlar Vergisi ödemedi</li>
+            <li>TEİAŞ'tan 131,2 milyon TL kapasite ödemesi aldı (vergi ödemezken)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🗺️ "Haritanın Her Yerinde Onlar Var" — 2.364 Ruhsat Nasıl Alındı? <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>Gazete Pencere ve Halk TV'nin haberlerine göre holding, Türkiye haritasında fiilen büyük bir coğrafi alanı kapatan ruhsat portföyüne sahip. Ruhsatlar şu kategorilerde dağılıyor:</p>
+          <div class="grafik-container">
+            <div class="grafik-bar">
+              <div class="grafik-etiket">Metalik Madenler</div>
+              <div class="grafik-alan"><div class="grafik-dolgu" style="width:70%; background: linear-gradient(90deg, #6e40c9, #9b59b6);">1.662 ruhsat</div></div>
+            </div>
+            <div class="grafik-bar">
+              <div class="grafik-etiket">Endüstriyel Hammadde</div>
+              <div class="grafik-alan"><div class="grafik-dolgu" style="width:21%; background: linear-gradient(90deg, #d29922, #f39c12);">497 ruhsat</div></div>
+            </div>
+            <div class="grafik-bar">
+              <div class="grafik-etiket">Enerji Madenleri</div>
+              <div class="grafik-alan"><div class="grafik-dolgu" style="width:9%; background: linear-gradient(90deg, #bc4c00, #e67e22);">205 ruhsat</div></div>
+            </div>
+          </div>
+          <p style="margin-top: 12px; font-size: 0.9em; color: #666;">Bu ruhsatların büyük çoğunluğu 2004 yılından sonra edinilmiştir. Muhalefet partilerinden bazı milletvekilleri "Memleketi Yıldızlar SSS Holding'e mi ruhsatladınız?" sorusunu kamuoyuna yöneltti.</p>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🃏 Sebahattin Yıldız'ın "İsim Benzerliği" Skandalı <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>Medyaya yansıyan iddialara göre Sebahattin Yıldız, AKP Batman Milletvekili Sabahattin Yıldız'la benzer isim taşımasından yararlanarak Kay Süt'ün sahibine kendini AKP milletvekili olarak tanıttı. Bu durum bir aile için büyük mağduriyet yarattı. İddiaları AKP'li bir eski vekil kamuoyuyla paylaştı. Yıldız bu iddiayı reddetti; ancak konu haberlerde geniş yer buldu.</p>
+          <div class="alinti">
+            "İsim benzerliğinden doğan büyük vurgun iddiası: Bir ailenin hayatı karardı."
+            <cite>— Haber Yazar, 2026</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MADEN İŞLETMELERİ -->
+  <div class="bolum" id="madenler">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">⛏</span>
+      MADEN VE ENERJİ İŞLETMELERİ — DETAYLI LİSTE
+    </div>
+    <div class="bolum-icerik">
+      <table class="maden-tablo">
+        <thead>
+          <tr>
+            <th>Şirket / İşletme</th>
+            <th>Konum</th>
+            <th>Faaliyet</th>
+            <th>Durum</th>
+            <th>Kritik Not</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Eti Gümüş A.Ş.</strong></td>
+            <td>Kütahya / Gümüşköy</td>
+            <td>Gümüş madenciliği + Tenör gümüş üretimi (%99.9)</td>
+            <td><span class="durum-kriz">KRİZLİ</span></td>
+            <td>2019'da 900 işçi çıkarıldı, üretim durdu. 2004'te 41,2M$ alındı; TMMOB'a göre değeri 450M$. Türkiye'nin tek entegre gümüş üreticisi.</td>
+          </tr>
+          <tr>
+            <td><strong>Eti Gümüş A.Ş. Elazığ Şubesi</strong></td>
+            <td>Elazığ (Eski Ergani Bakır)</td>
+            <td>Bakır işletmeciliği</td>
+            <td><span class="durum-aktif">AKTİF</span></td>
+            <td>Tarihsel Ergani Bakır İşletmeleri'nin devamı niteliğinde.</td>
+          </tr>
+          <tr>
+            <td><strong>NESKO Maden</strong></td>
+            <td>Giresun / Şebinkarahisar</td>
+            <td>Kurşun, Çinko, Bakır</td>
+            <td><span class="durum-dava">FELAKETTEN SONRA AÇILDI</span></td>
+            <td>18 Kasım 2021: Atık havuzu çöktü; 4.500 ton zehirli atık. 12 milyon TL ceza. Kapatıldı, kısa süre sonra açıldı.</td>
+          </tr>
+          <tr>
+            <td><strong>Doruk Madencilik</strong></td>
+            <td>Eskişehir / Mihalıççık</td>
+            <td>Kömür + Termik Enerji (Yunus Emre Santrali)</td>
+            <td><span class="durum-kriz">GREVDEn SONRA</span></td>
+            <td>2022'de TMSF'den 65.000$'a alındı. 2026 Nisan'da işçi grevi. 3 yılda vergi ödemedi. 131,2M TL devlet kapasitesi aldı.</td>
+          </tr>
+          <tr>
+            <td><strong>Yıldız Bakır Madencilik</strong></td>
+            <td>Çeşitli lokasyonlar</td>
+            <td>Bakır + Altın arama</td>
+            <td><span class="durum-kriz">ÖDEME SORUNLU</span></td>
+            <td>Düzensiz ücret ödemeleri gündeme geldi.</td>
+          </tr>
+          <tr>
+            <td><strong>Zamantı Madencilik</strong></td>
+            <td>Çeşitli</td>
+            <td>Metalik madenler</td>
+            <td><span class="durum-aktif">AKTİF</span></td>
+            <td>Detaylı bilgi sınırlı. Metalik maden grubu bünyesinde yer alıyor.</td>
+          </tr>
+          <tr>
+            <td><strong>Rasih ve İhsan Maden</strong></td>
+            <td>Çeşitli</td>
+            <td>Metalik madenler</td>
+            <td><span class="durum-aktif">AKTİF</span></td>
+            <td>Metalik maden grubu iştirak şirketi.</td>
+          </tr>
+          <tr>
+            <td><strong>Midi Madencilik (Gümüşhane)</strong></td>
+            <td>Gümüşhane</td>
+            <td>Altın içerikli konsantre</td>
+            <td><span class="durum-dava">SİYANÜR İNCİDENTİ</span></td>
+            <td>2021'de siyanür içeren boru patlaması; Midi Deresi kirlenme olayı yaşandı.</td>
+          </tr>
+          <tr>
+            <td><strong>Trabzon Yomra-Sürmene İşletmesi</strong></td>
+            <td>Trabzon</td>
+            <td>Madencilik</td>
+            <td><span class="durum-kriz">MAAŞ SORUNU</span></td>
+            <td>2025'te 3 aylık maaş ödenmedi. Kıdem tazminatları birikti. Sendika çağrısı yapıldı.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <div class="uyari-kutu mor">
+        <div class="ikon">📊</div>
+        <div class="icerik">
+          <strong>Toplam İşçi Sayısı Hakkında:</strong> Holdingin tüm işletmelerindeki işçi sayısına ilişkin resmi ve kamuya açık kapsamlı veri bulunmamaktadır. Açıklanan veriler eksik kalmaktadır. Doruk Madencilik'teki 150 işçi, Eti Gümüş'teki (zirvedeyken) 900 işçi, Trabzon operasyonundaki yüzlerce işçi gibi parçalı rakamlar birleştirildiğinde holdingin binlerce işçi istihdam ettiği anlaşılmaktadır.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KIRŞEHİR BAĞLANTISI -->
+  <div class="bolum" id="kirsehir">
+    <div class="bolum-baslik mavi">
+      <span class="bolum-ikon">🗺️</span>
+      KIRŞEHİR BAĞLANTISI: ETİ GÜMÜŞ VE GENEL DEĞERLENDİRME
+    </div>
+    <div class="bolum-icerik">
+      <div class="uyari-kutu sarı">
+        <div class="ikon">ℹ️</div>
+        <div class="icerik">
+          <strong>Önemli Not: Doğrulanabilir Bilgilerle Sınırlı Kalıyoruz</strong>
+          Kamuya açık kaynaklarda SSS Yıldızlar Holding'in Kırşehir'de spesifik olarak aktif bir altın veya gümüş maden işletmesi yürüttüğüne dair doğrulanmış bilgiye ulaşılamamıştır. Bu raporun hazırlanmasında kullanıcının belirttiği Kırşehir bağlantısı, holding'in yakın coğrafyada geniş ruhsat portföyü ve Eti Gümüş üzerinden gümüş sektörüne etkisi çerçevesinde ele alınmaktadır.
+        </div>
+      </div>
+
+      <br>
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik aktif" onclick="akordeon(this)">
+          💎 Eti Gümüş: Türkiye'nin Tek Gümüş Üreticisi ve Genel Bağlam <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik acik">
+          <p>SSS Yıldızlar'ın en kritik madencilik varlığı olan Eti Gümüş, Türkiye'nin tüvenan cevherden metal gümüş üretimi yapan tek entegre kuruluşudur. 1985-1987 yılları arasında devlet yatırımıyla Kütahya Gümüşköy'de inşa edildi. Alman Krupp teknolojisiyle kurulan bu tesisin özellikleri:</p>
+          <ul style="list-style: disc; padding-left: 20px; line-height: 2; margin-top: 10px;">
+            <li>%99.9 saflıkta metal gümüş üretimi yapılmaktadır</li>
+            <li>Türkiye'nin gümüş ihtiyacının tamamını karşılayabilecek kapasitede kurulmuştu</li>
+            <li>2004'te değerinin çok altında özelleştirildi (tartışmalı ihale)</li>
+            <li>2018-2019'da işçi eylemleri, 900 çıkarma ve üretim durdurma yaşandı</li>
+            <li>Özelleştirme sonrası tesisin kapasite ve verimliliğinin devlet dönemini yakalamadığı raporlara yansıdı</li>
+          </ul>
+          <br>
+          <p><strong>Kırşehir bağlantısı:</strong> Geniş maden ruhsat portföyü (2364 ruhsat) nedeniyle SSS Yıldızlar'ın Kırşehir bölgesinde de arama ruhsatlarına sahip olma olasılığı yüksektir; ancak bu konuda kesinleşmiş, kamuya açık belgeye ulaşılamamıştır. Kırşehir'deki altın ve gümüş madenciliği tartışmasında öne çıkan şirket, Koç Holding iştiraki Demir Export bünyesindeki DEFAŞ Madencilik'tir. <a href="demir_export_rapor.html">Demir Export raporuna bakınız →</a></p>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🗺️ 2.364 Ruhsat Haritası: Kırşehir Dahil mi? <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>Halk TV'nin yayımladığı ruhsat haritası incelemesine göre SSS Yıldızlar Holding, Türkiye'nin dört bir yanına dağılmış ruhsat ağıyla neredeyse her ilimizde iz bırakmaktadır. Muhalefet milletvekillerinin "Memleketi Yıldızlar SSS Holding'e mi ruhsatladınız?" sorusuyla dile getirdiği bu tablo, merkezi olmayan ve denetimden uzak maden ruhsatlandırmasının nereye varabileceğini gözler önüne sermektedir.</p>
+          <br>
+          <div class="uyari-kutu mavi">
+            <div class="ikon">🔍</div>
+            <div class="icerik">
+              Kırşehir bölgesinde SSS Yıldızlar'a ait ruhsatlar olup olmadığı, MAPEG ruhsat sorgulama sisteminden teyit edilebilir. Bu sorgulama için: <strong>mapeg.gov.tr/Sayfa/Madenistatistik</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÇEVRE FELAKETLERİ -->
+  <div class="bolum" id="cevre">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">☢️</span>
+      ÇEVRE FELAKETLERİ VE ÇEVRE SUÇLARI
+    </div>
+    <div class="bolum-icerik">
+
+      <!-- BÜYÜK FELAKET -->
+      <div class="skandal-satir">
+        <div class="tarih">18 KASIM 2021</div>
+        <div class="baslik">🔴 NESKO MADENCİLİK — GİRESUN ŞEBİNKARAHİSAR ATIK HAVUZU FELAKETİ</div>
+        <div class="icerik">
+          Kurşun-çinko-bakır madeninin 2 no'lu atık havuzunun zemini çöktü. Havuzdaki 4.500 ton ağır metal içerikli kimyasal atık, Darabul Deresi üzerinden Kılıçkaya Barajı'na (5 km mesafe) ulaştı. Tarım arazileri, otlaklar ve su yolları kirletildi. Çevre Bakanlığı şirkete maksimum idari para cezası olan 12 milyon TL uyguladı ve faaliyetleri süresiz olarak durdurdu. Ancak tesis kısa süre içinde yeniden açıldı. Yerel halk; boğaz sıkışması, öksürük ve baş ağrısı belirtileri bildirdi. Çiftçiler tarlalarını işleyemez hale geldi. Uzmanlar kirliliğin "onlarca hatta yüzlerce yıl süreceğini" öngördü. Dava süreci hakkında kamuya açık ayrıntılı bilgiye ulaşılamamıştır.
+        </div>
+      </div>
+
+      <div class="skandal-satir">
+        <div class="tarih">2021</div>
+        <div class="baslik">🔴 MİDİ MADENCİLİK — GÜMÜŞHANE SİYANÜR BORU PATLAMASI</div>
+        <div class="icerik">
+          Gümüşhane'deki Midi Madencilik tesisinde siyanür içerikli boru patladı. Midi Deresi siyanür kirliliğine maruz kaldı. Bu tesis, gümüş içerikli konsantre üretmektedir. Olayın boyutu ve hukuki sonuçları hakkında kamuya açık ayrıntılı bilgi sınırlıdır.
+        </div>
+      </div>
+
+      <div class="skandal-satir">
+        <div class="tarih">2019</div>
+        <div class="baslik">🟡 ETİ GÜMÜŞ — KÜTAHYA: ÜRETİM DURDU</div>
+        <div class="icerik">
+          Türkiye'nin tek metal gümüş üreticisi olan Eti Gümüş'te 900 işçi çıkarıldı ve üretim tamamen durdu. Kütahya'daki bu tesis, hem ekonomik hem de işçi hakları açısından felç oldu. Sebahattin Yıldız, bu dönemde tesisin enerji fiyatlarından kaynaklı zorluklarla karşılaştığını öne sürdü.
+        </div>
+      </div>
+
+      <br>
+      <div class="uyari-kutu kirmizi">
+        <div class="ikon">⚠️</div>
+        <div class="icerik">
+          <strong>Ceza Yetersizliği:</strong> NESKO felaketinde verilen 12 milyon TL idari para cezası, on yıllar sürebilecek çevresel tahribatın telafisi için son derece yetersiz kalmıştır. Dahası tesisin kısa sürede yeniden açılması, mevcut çevre cezalandırma sisteminin caydırıcılığı konusunda ciddi soru işaretleri doğurmaktadır.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- İŞÇİ HAKLARI -->
+  <div class="bolum" id="isci">
+    <div class="bolum-baslik turuncu">
+      <span class="bolum-ikon">👷</span>
+      İŞÇİ HAKLARI İHLALLERİ: KRONİK VE SİSTEMATİK
+    </div>
+    <div class="bolum-icerik">
+      <div class="uyari-kutu kirmizi">
+        <div class="ikon">🚨</div>
+        <div class="icerik">
+          <strong>Yapısal Sorun Tespiti:</strong> SSS Yıldızlar Holding bünyesindeki şirketlerde ücret gecikmeleri ve ödenmemezliği 2014'ten bu yana farklı lokasyonlarda tekrar tekrar yaşanmaktadır. Bu durum olağan nakit akışı sorunundan öte, sistematik bir işçi sömürüsüne işaret etmektedir.
+        </div>
+      </div>
+
+      <br>
+
+      <h3 style="color: var(--turuncu); margin-bottom: 16px;">Kronolojik İşçi Mücadeleleri</h3>
+
+      <div class="skandal-satir">
+        <div class="tarih">2014 — Çankırı Seramik Fabrikası</div>
+        <div class="baslik">7 Aylık Maaş Ödenmedi — Karayolu Kapatıldı</div>
+        <div class="icerik">Çankırı'daki seramik fabrikası işçileri 7 aydır ücret almadıklarını belirterek karayolunu kapattı. Bu, holding genelinde yaşanacak uzun krizler serisinin ilk halkasıydı.</div>
+      </div>
+
+      <div class="skandal-satir">
+        <div class="tarih">2015 — Bilecik</div>
+        <div class="baslik">1.150 İşçi Greve Çıktı</div>
+        <div class="icerik">Bilecik'teki holding işletmesinde düzensiz ücret ödemeleri gerekçesiyle 1.150 işçi iş bıraktı. Kısa süreli bir uzlaşma sağlandı ama sorunlar devam etti.</div>
+      </div>
+
+      <div class="skandal-satir">
+        <div class="tarih">2018 - 2019 — Kütahya Eti Gümüş</div>
+        <div class="baslik">900 İşçi Kapıda Bırakıldı</div>
+        <div class="icerik">Türkiye'nin tek entegre gümüş üretim tesisindeki 900 işçi çıkarıldı. Üretim durdu. İşçiler eylem yaptı. Tesis kritik bir döneme girdi.</div>
+      </div>
+
+      <div class="skandal-satir">
+        <div class="tarih">2020 — Çanakkale Yenice</div>
+        <div class="baslik">İşçiler Ocağı İşgal Etti</div>
+        <div class="icerik">Çanakkale Yenice'deki maden sahasında ücret ödemeleri aksaması üzerine işçiler maden ocağını işgal etti.</div>
+      </div>
+
+      <div class="skandal-satir">
+        <div class="tarih">2023 — Elazığ Maden İlçesi</div>
+        <div class="baslik">100 İşçi Düzenli Maaş Alamıyor</div>
+        <div class="icerik">Elazığ'ın Maden ilçesindeki operasyonda 100 işçi düzenli ücret alamamaktan şikayetçi oldu. Sendika müdahalesi gerekti.</div>
+      </div>
+
+      <div class="skandal-satir">
+        <div class="tarih">Ağustos 2023 — Eskişehir Yunus Emre</div>
+        <div class="baslik">190 Madenci Yeraltında Grev Başlattı</div>
+        <div class="icerik">Yunus Emre Termik Santrali'nde 190 işçi yeraltına inerek iş bıraktı. Ücret gecikmeleri gerekçe gösterildi.</div>
+      </div>
+
+      <div class="skandal-satir">
+        <div class="tarih">2025 — Trabzon Yomra-Sürmene</div>
+        <div class="baslik">3 Aylık Maaş Ödenmedi</div>
+        <div class="icerik">Trabzon'daki maden operasyonunda işçiler 3 aydır ücret alamıyordu. Kıdem tazminatları da birikti.</div>
+      </div>
+
+      <div class="skandal-satir" style="border-left-color: #6e40c9;">
+        <div class="tarih" style="color: #6e40c9;">NİSAN 2026 — DORUK MADENCİLİK (EN BÜYÜK EYLEM)</div>
+        <div class="baslik">150 İşçi Eskişehir'den Ankara'ya Yürüdü — 9 Gün Açlık Grevi</div>
+        <div class="icerik">
+          <strong>13 Nisan 2026:</strong> Mihalıççık'tan yürüyüş başladı.<br>
+          <strong>20 Nisan 2026:</strong> 190 km yürüyüşün ardından Ankara'ya ulaşıldı.<br>
+          <strong>Açlık Grevi:</strong> Kurtuluş Parkı'nda 9 gün sürdü. Polis biber gazı kullandı. TİP Genel Başkanı Erkan Baş da açlık grevine katıldı ve polis müdahalesiyle karşılaştı.<br>
+          <strong>28 Nisan 2026:</strong> İçişleri Bakanlığı arabuluculuğuyla uzlaşma. İşçilerin maaşları ödendi, 15 gün içinde kıdem/ihbar tazminatları verilmesi taahhüt edildi.<br>
+          <strong>Talepler (kabul görmeyen):</strong> Madenin kamulaştırılması ve iş güvencesi talebi siyasi gündemde kaldı.
+          <div class="alinti" style="margin-top: 10px;">
+            "Yer altında ölüm, yer üstünde ekmek korkusu yaşatıyorlar bize."
+            <cite>— Bağımsız Maden-İş Genel Başkanı Gökay Çakır, Nisan 2026</cite>
+          </div>
+          <div class="alinti">
+            "Biz 150 işçiyiz ama 86 milyonun yanımızda olduğunu gördük."
+            <cite>— Gökay Çakır, grev sonrası açıklama</cite>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <div class="uyari-kutu sarı">
+        <div class="ikon">💡</div>
+        <div class="icerik">
+          <strong>Şaşırtıcı Çelişki:</strong> Doruk Madencilik, işçilere aylarca maaş ödemediği dönemin hemen öncesinde (Şubat 2026) sermayesini 80 milyon TL'den 300 milyon TL'ye yükseltmişti. Yönetim "elektrik fiyatlarındaki gelişmeler mali güçlük yarattı" gerekçesini öne sürerken bu sermaye artırımı kamuoyuna yansıdı.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MALİ SKANDALLAR -->
+  <div class="bolum" id="mali">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">💰</span>
+      MALİ SKANDALLAR VE DÜZENSİZLİKLER
+    </div>
+    <div class="bolum-icerik">
+      <table class="maden-tablo">
+        <thead>
+          <tr><th>Konu</th><th>Tarih</th><th>Detay</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Halk Bankası Batık Kredi</strong></td>
+            <td>2011</td>
+            <td>Devlet Denetleme Kurulu raporu: Halk Bankası'ndan alınan 823 milyon TL "batık kredi" olarak işaretlendi. Toplam banka borcu 2,38 milyar TL'ye ulaştı.</td>
+          </tr>
+          <tr>
+            <td><strong>Osmangazi Elektrik İadesi</strong></td>
+            <td>2013</td>
+            <td>2010'da devralınan Osmangazi Elektrik Dağıtım AŞ, borçlar ödenemediği için 2013'te TEDAŞ'a geri verildi.</td>
+          </tr>
+          <tr>
+            <td><strong>Doruk Madencilik Vergi Kaçakçılığı İddiası</strong></td>
+            <td>2022-2024</td>
+            <td>Şirketin 3 ardışık yıl (2022, 2023, 2024) Kurumlar Vergisi ödemediği iddia edildi. Aynı dönemde TEİAŞ'tan 131,2 milyon TL kapasite ödemesi alındı.</td>
+          </tr>
+          <tr>
+            <td><strong>Tesis Değer Farkı (Doruk)</strong></td>
+            <td>2022</td>
+            <td>3,1 milyar TL değerindeki Yunus Emre Termik Santrali 65.000 dolara devralındı. Kalan kısım EBRD kredisine sayıldı. Bu tablo, büyük oranda devlet sübvansiyonuna dayalı bir büyüme örüntüsüdür.</td>
+          </tr>
+          <tr>
+            <td><strong>Tarihi Cep Saati</strong></td>
+            <td>2020</td>
+            <td>Sebahattin Yıldız, 2. Abdülhamid'in tarihi cep saatini 183.000 dolara müzayededen satın aldı. İşçilerin maaş ödemelerinin aksadığı dönemle örtüşmesi dikkat çekti.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <div class="alinti">
+        "Devletten alır, işçiden alır ama kimseye vermez."
+        <cite>— Holdingi konu alan gözlemci yazısından; Sözcü Gazetesi</cite>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAVALAR VE CEZALAR -->
+  <div class="bolum" id="davalar">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">⚖️</span>
+      DAVALAR, CEZALAR VE HUKUKİ SÜREÇLER
+    </div>
+    <div class="bolum-icerik">
+      <table class="maden-tablo">
+        <thead>
+          <tr><th>Dava / Olay</th><th>Tarih</th><th>Sonuç</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>NESKO Maden — Çevre İdari Para Cezası</strong></td>
+            <td>Kasım 2021</td>
+            <td><span class="durum-dava">12 Milyon TL Ceza + Süresiz Faaliyet Durdurma → Kısa sürede faaliyete döndü</span></td>
+          </tr>
+          <tr>
+            <td><strong>Midi Madencilik — Siyanür Kirlilik İddiası</strong></td>
+            <td>2021</td>
+            <td><span class="durum-kriz">Kamuya açık dava/ceza bilgisine ulaşılamadı. Araştırma devam etmeli.</span></td>
+          </tr>
+          <tr>
+            <td><strong>Eti Gümüş İşçi Eylemleri</strong></td>
+            <td>2018-2019</td>
+            <td><span class="durum-kriz">İş bırakma ve protestolar yaşandı; kısmî uzlaşmalar sağlandı</span></td>
+          </tr>
+          <tr>
+            <td><strong>Doruk Madencilik Grevi Uzlaşması</strong></td>
+            <td>Nisan 2026</td>
+            <td><span class="durum-aktif">Bakanlık garantörlüğünde uzlaşma — işçiler haklarını aldı / alacak</span></td>
+          </tr>
+          <tr>
+            <td><strong>Elazığ İşçi Şikayetleri</strong></td>
+            <td>2023</td>
+            <td><span class="durum-kriz">Sendika müdahalesi; bireysel şikayetler — toplu dava bilgisine ulaşılamadı</span></td>
+          </tr>
+          <tr>
+            <td><strong>Batık Kredi Soruşturması</strong></td>
+            <td>2011+</td>
+            <td><span class="durum-kriz">Devlet Denetleme Kurulu raporu mevcut; hukuki sonuç kamuya açık belgede görülmedi</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <div class="uyari-kutu sarı">
+        <div class="ikon">⚠️</div>
+        <div class="icerik">
+          <strong>Eksik Bilgi Notu:</strong> SSS Yıldızlar Holding ve iştiraklerine açılan davalar hakkında kamuya açık kaynaklar yeterli ayrıntıyı içermemektedir. Özellikle çevre davalarının (NESKO, Midi) detaylı yargı süreçleri ve sonuçlarına ulaşmak için Çevre Bakanlığı kayıtları, mahkeme kararları ve TMMOB raporlarının ayrıca incelenmesi gerekmektedir.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEDYA YANSIMLARI -->
+  <div class="bolum" id="medya">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">📰</span>
+      MEDYAYA YANSIYANLAR
+    </div>
+    <div class="bolum-icerik">
+      <div class="haber-grid">
+        <div class="haber-kart">
+          <div class="kaynak">Medyascope</div>
+          <div class="baslik">Doruk Madencilik firmasının sahibi Yıldızlar SSS Holding hakkında bilinenler</div>
+          <div class="aciklama">28 Nisan 2026 tarihli kapsamlı holding profili — grev sürecinde kamuoyunda gündeme geldi</div>
+          <a href="https://medyascope.tv/2026/04/28/doruk-madencilik-hakkinda-bilinenler-yildizlar-holding-kimin/" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Bianet</div>
+          <div class="baslik">Yıldızlar SSS Holding gücünü nereden alıyor?</div>
+          <div class="aciklama">Holdingin siyasi bağlantıları, özelleştirmelerle büyüme süreci</div>
+          <a href="https://bianet.org/yazi/yildizlar-sss-holding-gucunu-nereden-aliyor-319115" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Artı Gerçek</div>
+          <div class="baslik">Maden ruhsatı şampiyonu holding: İşçi hakkı ödememek şirket politikası mı?</div>
+          <div class="aciklama">2364 ruhsat ve kronik ücret ödenmezliğinin ilişkisi</div>
+          <a href="https://artigercek.com/emek/maden-ruhsati-sampiyonu-holding-isci-hakki-odememek-sirket-politikasi-mi-264252h" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Cumhuriyet / Murat Ağırel</div>
+          <div class="baslik">Doruk Madencilik işçileri ve Latin Amerika benzerliği</div>
+          <div class="aciklama">Murat Ağırel'in Doruk grevini Latin Amerika'daki maden direnişleriyle kıyaslayan köşe yazısı</div>
+          <a href="https://www.cumhuriyet.com.tr/yazarlar/murat-agirel/doruk-madencilik-iscileri-ve-latin-amerika-benzerligi-2499071" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">BoldMedya</div>
+          <div class="baslik">AKP yandaşı Yıldızlar Holding krizde: 900 işçi işten çıkarıldı, Eti Gümüş'te üretim durdu</div>
+          <div class="aciklama">2019 Eti Gümüş krizi ve holding-iktidar ilişkilerinin analizi</div>
+          <a href="https://boldmedya.com/2019/02/12/akp-yandasi-yildizlar-holding-krizde-900-isci-isten-cikarildi-eti-gumustte-uretim-durdu/" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Haber Hürriyeti</div>
+          <div class="baslik">Madencinin maaşını ödemeyen holdingin CEO'sunun geçmişi kabarık: TÜGVA'dan Saray'a!</div>
+          <div class="aciklama">CEO Ali Vahit Atıcı'nın TÜGVA ve AKP bağlantıları</div>
+          <a href="https://www.haberhurriyeti.com/haber/27892776/madencinin-maasini-odemeyen-holdingin-ceosunun-gecmisi-kabarik-tugvadan-saraya" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Gazete Pencere</div>
+          <div class="baslik">Ülkeyi madencilerin maaşını vermeyen Yıldızlar SSS Holding'e bağlamışlar: Haritanın her yerinde onlar var!</div>
+          <div class="aciklama">Ruhsat haritası analizi ve yoğunlaşma sorunu</div>
+          <a href="https://www.gazetepencere.com/gundem/ulkeyi-madencilerin-maasini-vermeyen-yildizlar-sss-holdinge-baglamislar-698404h" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">soL Haber</div>
+          <div class="baslik">Seramik bayiliğinden özelleştirme "şampiyonluğu"na</div>
+          <div class="aciklama">Sebahattin Yıldız'ın özelleştirmelerle nasıl büyüdüğünü anlatan soruşturma yazısı</div>
+          <a href="https://haber.sol.org.tr/ekonomi/seramik-bayiliginden-ozellestirme-sampiyonlugu-na-haberi-42479" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Sözcü</div>
+          <div class="baslik">Özelleştirmeyle büyüdü, işçinin kabusu oldu</div>
+          <div class="aciklama">Holdingin devlet sübvansiyonu ve işçi hakları konusundaki çelişkili tablosu</div>
+          <a href="https://www.sozcu.com.tr/ozellestirmeyle-buyudu-iscinin-kabusu-oldu-p313940" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">T24 (Video)</div>
+          <div class="baslik">Doruk Madencilik işçileri, Yıldızlar SSS Holding önünde eylemde</div>
+          <div class="aciklama">Nisan 2026 Holding önü eylemi video kaydı</div>
+          <a href="https://t24.com.tr/video/doruk-madencilik-iscileri-yildizlar-sss-holding-onunde-eylemde-hakkini-arayan-isciye-kanun-yok-mu-hakkimizi-istiyoruz,69614" target="_blank">→ Habere git</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TKP PERSPEKTİFİ -->
+  <div class="tkp-bolum" id="tkp">
+    <div class="tkp-baslik">🔴 TKP PERSPEKTİFİNDEN: SSS YILDIZLAR HOLDİNG KAMULAŞTIRMA ARGÜMANINI NEDEN DESTEKLER?</div>
+    <p style="color: rgba(255,255,255,0.85); margin-bottom: 20px; font-size: 0.95em;">
+      Türkiye Komünist Partisi'nin "Madenler Devletleştirilmeli" kampanyası, Doruk Madencilik işçilerinin zaferinden sonra da "kamulaştırma" talebini sürdürdü. TKP'nin argümanı neden SSS Yıldızlar Holding özelinde güçlü bir dayanak bulmaktadır:
+    </p>
+    <ul class="tkp-madde-listesi">
+      <li>
+        <span class="no">1</span>
+        <span><strong>Kamu varlıkları özel ellerde çürüdü:</strong> Eti Gümüş, devlet döneminde Türkiye'nin gümüş ihtiyacını karşılayacak kapasitedeydi. Özelleştirme sonrası üretim durdu, 900 işçi kapıda bırakıldı. Kamu yönetimi bu tesisi daha iyi işletirdi tezi somutlaşmaktadır.</span>
+      </li>
+      <li>
+        <span class="no">2</span>
+        <span><strong>İşçi hakları güvencesiz kaldı:</strong> 2014'ten 2026'ya, 12 yılda 9 ayrı lokasyonda maaş krizi. Kamu işçisinin iş güvencesi bu kadar kolay ortadan kaldırılamazdı. Sendika denetimli kamu işletmeciliği bu kronik sorunu yapısal olarak önler.</span>
+      </li>
+      <li>
+        <span class="no">3</span>
+        <span><strong>Çevre suçu cezasız kaldı:</strong> NESKO felaketinde 12 milyon TL ceza verildi, tesis kısa sürede açıldı. Onlarca yıl sürecek bir kirlilik için ceza tamamen yetersiz. Kamusal sorumluluk sistemi bu tür felaketleri daha güçlü önleyici tedbirlerle engellerdi.</span>
+      </li>
+      <li>
+        <span class="no">4</span>
+        <span><strong>Siyasi rant sistemi:</strong> 2364 ruhsat, 65.000 dolara 3 milyar TL değerinde tesis, 41 milyon dolara 450 milyon dolarlık gümüş fabrikası. Bu transferler, özel girişimciliğin değil siyasi bağlantıların ürünüdür. Demokratik planlama bu kaynakları kamuya çevirirdi.</span>
+      </li>
+      <li>
+        <span class="no">5</span>
+        <span><strong>Vergi kaçakçılığı ve kamu sübvansiyonu çelişkisi:</strong> Doruk Madencilik 3 yıl vergi ödemezken aynı dönemde 131 milyon TL devlet kapasitesi aldı. Kamu işletmesinde bu çelişki mümkün olmazdı; kaynaklar kamuya dönerdi.</span>
+      </li>
+      <li>
+        <span class="no">6</span>
+        <span><strong>Stratejik varlık teslim edildi:</strong> Türkiye'nin tek gümüş üreticisi özel kişinin eline geçti. Gümüş hem savunma hem elektrik sanayii için stratejik bir metaldir. Bu kaynağın kâr güdüsüyle yönetilmesi, ulusal çıkarlarla çelişmektedir.</span>
+      </li>
+      <li>
+        <span class="no">7</span>
+        <span><strong>Doruk direnişi: işçiler kamulaştırma istedi:</strong> Grev taleplerinin içinde "madenin kamulaştırılması ve iş güvencesi" de yer aldı. Bu talep uzlaşma metnine girmedi ama işçilerin iradesi açıkça ortaya çıktı. Sermaye değil işçi yanındaki çözüm, kamulaştırmadır.</span>
+      </li>
+    </ul>
+    <br>
+    <div style="background: rgba(207,34,46,0.15); border: 1px solid rgba(207,34,46,0.4); border-radius: 10px; padding: 18px; margin-top: 10px;">
+      <p style="color: rgba(255,255,255,0.9); font-size: 0.95em;">
+        <strong style="color: #ff6b6b;">TKP Bildirisi:</strong> "Madenler derhal ve tazminatsız millileştirilsin! Çokuluslu şirketlere ve özel sermayeye verilen tüm maden arama ve işletme ruhsatları iptal edilsin! Madencilik faaliyetleri devlet eliyle merkezi planlama çerçevesinde yürütülsün."
+      </p>
+    </div>
+  </div>
+
+  <!-- KAYNAKLAR -->
+  <div class="bolum" id="kaynaklar">
+    <div class="bolum-baslik koyu">
+      <span class="bolum-ikon">📚</span>
+      KAYNAKLAR VE REFERANSLAR
+    </div>
+    <div class="bolum-icerik">
+      <ul class="kaynak-listesi">
+        <li><span class="num">1</span> <a href="https://medyascope.tv/2026/04/28/doruk-madencilik-hakkinda-bilinenler-yildizlar-holding-kimin/" target="_blank">Medyascope — Doruk Madencilik: Yıldızlar Holding Hakkında Bilinenler (28 Nisan 2026)</a></li>
+        <li><span class="num">2</span> <a href="https://bianet.org/yazi/yildizlar-sss-holding-gucunu-nereden-aliyor-319115" target="_blank">Bianet — Yıldızlar SSS Holding Gücünü Nereden Alıyor?</a></li>
+        <li><span class="num">3</span> <a href="https://artigercek.com/emek/maden-ruhsati-sampiyonu-holding-isci-hakki-odememek-sirket-politikasi-mi-264252h" target="_blank">Artı Gerçek — Maden Ruhsatı Şampiyonu Holding</a></li>
+        <li><span class="num">4</span> <a href="https://yildizlarsssholding.com.tr/" target="_blank">SSS Yıldızlar Holding — Resmi Web Sitesi</a></li>
+        <li><span class="num">5</span> <a href="https://yildizlarsssholding.com.tr/eti-gumus" target="_blank">SSS Yıldızlar Holding — Eti Gümüş Sayfası</a></li>
+        <li><span class="num">6</span> <a href="https://yildizlarsssholding.com.tr/metalik-madenler" target="_blank">SSS Yıldızlar Holding — Metalik Madenler Grubu</a></li>
+        <li><span class="num">7</span> <a href="https://tr.wikipedia.org/wiki/Nesko_%C5%9Eebinkarahisar_Maden_%C4%B0%C5%9Fletmesi_Felaketi" target="_blank">Vikipedi — Nesko Şebinkarahisar Maden İşletmesi Felaketi</a></li>
+        <li><span class="num">8</span> <a href="https://t24.com.tr/haber/giresun-daki-maden-atik-havuzu-patladi-bakanlik-sirkete-ceza-verdi-vatandaslardan-oluk-oluk-zehir-akiyor-tepkisi,999115" target="_blank">T24 — Giresun Maden Atık Havuzu Patladı, Bakanlık Ceza Verdi</a></li>
+        <li><span class="num">9</span> <a href="https://tr.wikipedia.org/wiki/Doruk_Madencilik_grevi" target="_blank">Vikipedi — Doruk Madencilik Grevi</a></li>
+        <li><span class="num">10</span> <a href="https://tr.euronews.com/2026/04/28/icisleri-bakanligi-madencilerin-aclik-grevinin-bittigini-duyurdu-isci-isverenle-anlasti" target="_blank">Euronews Türkçe — Doruk Madencilik Açlık Grevi Bitti, Uzlaşma Sağlandı</a></li>
+        <li><span class="num">11</span> <a href="https://www.cumhuriyet.com.tr/yazarlar/murat-agirel/doruk-madencilik-iscileri-ve-latin-amerika-benzerligi-2499071" target="_blank">Cumhuriyet / Murat Ağırel — Doruk Madencilik ve Latin Amerika</a></li>
+        <li><span class="num">12</span> <a href="https://www.birgun.net/haber/aclik-grevindeki-doruk-madencilik-iscileri-yildizlar-sss-holding-onunde-hakkini-arayana-kanun-yok-mu-707777" target="_blank">Birgün — Açlık Grevindeki Doruk İşçileri Holding Önünde</a></li>
+        <li><span class="num">13</span> <a href="https://ideo.org.tr/doruk-madencilikin-sahibi-sebahattin-yildizin-sicili/" target="_blank">IDEO — Sebahattin Yıldız'ın Sicili</a></li>
+        <li><span class="num">14</span> <a href="https://boldmedya.com/2019/02/12/akp-yandasi-yildizlar-holding-krizde-900-isci-isten-cikarildi-eti-gumustte-uretim-durdu/" target="_blank">Bold Medya — Yıldızlar Holding Krizde: 900 İşçi Çıkarıldı</a></li>
+        <li><span class="num">15</span> <a href="https://www.sozcu.com.tr/ozellestirmeyle-buyudu-iscinin-kabusu-oldu-p313940" target="_blank">Sözcü — Özelleştirmeyle Büyüdü, İşçinin Kabusu Oldu</a></li>
+        <li><span class="num">16</span> <a href="https://www.haberhurriyeti.com/haber/27892776/madencinin-maasini-odemeyen-holdingin-ceosunun-gecmisi-kabarik-tugvadan-saraya" target="_blank">Haber Hürriyeti — CEO'nun Kabarık Geçmişi: TÜGVA'dan Saray'a</a></li>
+        <li><span class="num">17</span> <a href="https://halktv.com.tr/makale/bu-nasil-bir-harita-memleketi-eski-akpli-vekile-mi-ruhsatladiniz-1024878" target="_blank">Halk TV — Memleketi Yıldızlar SSS Holding'e mi Ruhsatladınız?</a></li>
+        <li><span class="num">18</span> <a href="https://haber.sol.org.tr/haber/tkp-doruk-madencilik-iscilerinin-zaferini-selamladi-madenler-devletlestirilmeli" target="_blank">soL Haber — TKP Doruk İşçilerinin Zaferini Selamlıyor</a></li>
+        <li><span class="num">19</span> <a href="https://www.tkp.org.tr/devletlestirme/madenler-devletlestirilmeli/" target="_blank">TKP — Madenler Devletleştirilmeli Kampanya Sayfası</a></li>
+        <li><span class="num">20</span> <a href="https://www.gazetepencere.com/gundem/ulkeyi-madencilerin-maasini-vermeyen-yildizlar-sss-holdinge-baglamislar-698404h" target="_blank">Gazete Pencere — Haritanın Her Yerinde Onlar Var</a></li>
+        <li><span class="num">21</span> <a href="https://ankahaber.net/haber/detay/doruk_madencilik_iscileri_anlasmaya_vardi_aclik_grevi_sona_erdi_bagimsiz_madenis_genel_baskani_cakir_biz_150_isciyiz_ama_86_milyonun_yanimizda_oldugunu_gorduk_308017" target="_blank">Anka Haber — Doruk Madencilik Anlaşmaya Vardı, Grev Bitti</a></li>
+        <li><span class="num">22</span> <a href="https://haber.sol.org.tr/haber/madencilerin-hakkini-gasp-eden-holdingin-ceosu-sasirtmadi-tugva-yoneticisi-akpli-bakanlik" target="_blank">soL Haber — Madencilerin Hakkını Gasp Eden Holdingin CEO'su</a></li>
+        <li><span class="num">23</span> <a href="http://www.dedeliyatirim.com.tr/tarihce.php" target="_blank">Eti Gümüş Tarihçe — Devlet Dönemi</a></li>
+        <li><span class="num">24</span> <a href="https://www.odatv.com/guncel/son-donemin-yildizi-yildizlar-holdingin-sahibi-sebahattin-yildizin-akpli-oyunu-120146502" target="_blank">Odatv — Sebahattin Yıldız'ın AKP'li Oyunu</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Bu rapor kamuoyunu bilgilendirme amacıyla hazırlanmıştır. Tüm bilgiler kamuya açık kaynaklardan derlenmiş olup her iddia kaynak gösterilerek belgelenmiştir.</p>
+  <p style="margin-top:8px; opacity:0.5;">Rapor Tarihi: Mayıs 2026 · <a href="demir_export_rapor.html">← Demir Export Raporuna Git</a></p>
+</footer>
+
+<script>
+  function akordeon(btn) {
+    const icerik = btn.nextElementSibling;
+    const aktifMi = btn.classList.contains('aktif');
+    document.querySelectorAll('.akordeon-baslik').forEach(b => {
+      b.classList.remove('aktif');
+      b.nextElementSibling.classList.remove('acik');
+    });
+    if (!aktifMi) {
+      btn.classList.add('aktif');
+      icerik.classList.add('acik');
+    }
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const ilk = document.querySelector('.akordeon-baslik.aktif');
+    if (ilk) ilk.nextElementSibling.classList.add('acik');
+  });
+</script>
+</body>
+</html>

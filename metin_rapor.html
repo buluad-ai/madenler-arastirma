@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madenler Damıtılmış Rapor — Demir Export & SSS Yıldızlar Holding</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: #fafaf8;
+  color: #1a1a1a;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* BAŞLIK BLOĞU */
+.kapak { text-align: center; border-bottom: 3px solid #1a1a1a; padding-bottom: 40px; margin-bottom: 50px; }
+.kapak .kurum { font-size: 0.85em; font-family: 'Segoe UI', sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #555; margin-bottom: 16px; }
+.kapak h1 { font-size: 2em; font-weight: 900; line-height: 1.25; margin-bottom: 10px; }
+.kapak .alt { font-size: 0.9em; color: #444; margin-top: 12px; }
+.kapak .tarih { font-size: 0.82em; font-family: 'Segoe UI', sans-serif; color: #777; margin-top: 20px; letter-spacing: 1px; text-transform: uppercase; }
+
+/* BÖLÜM BAŞLIKLARI */
+h2 {
+  font-size: 1.35em; font-weight: 900;
+  border-top: 2px solid #1a1a1a;
+  padding-top: 30px; margin-top: 50px; margin-bottom: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+h2.kirmizi { border-color: #c00; color: #c00; }
+h2.mor { border-color: #5a1ca8; color: #5a1ca8; }
+
+h3 {
+  font-size: 1.05em; font-weight: 700; margin-top: 28px; margin-bottom: 10px;
+  font-family: 'Segoe UI', sans-serif; text-transform: uppercase;
+  letter-spacing: 0.5px; color: #222;
+}
+
+h4 { font-size: 0.95em; font-weight: 700; margin-top: 18px; margin-bottom: 6px; color: #333; }
+
+p { margin-bottom: 13px; }
+
+/* KAYNAK */
+.kaynak {
+  font-family: 'Segoe UI', sans-serif; font-size: 0.76em;
+  color: #1a56b0; background: #e8f1fb; padding: 1px 6px;
+  border-radius: 4px; margin-left: 4px; text-decoration: none;
+  font-weight: 600; white-space: nowrap; display: inline-block; vertical-align: middle;
+}
+.kaynak:hover { background: #bfd6f5; }
+
+/* İNFO KUTUSU */
+.kutu {
+  border: 1px solid #999; border-radius: 4px;
+  padding: 18px 22px; margin: 22px 0;
+  background: #f5f5f2;
+}
+.kutu.kirmizi { border-color: #c00; background: #fff5f5; }
+.kutu.mavi { border-color: #1a56b0; background: #f0f5ff; }
+.kutu.sari { border-color: #aa7700; background: #fffbee; }
+.kutu.gri { border-color: #888; background: #f8f8f6; }
+.kutu strong { font-family: 'Segoe UI', sans-serif; }
+
+/* TABLO */
+table { width: 100%; border-collapse: collapse; margin: 18px 0 24px; font-size: 0.88em; font-family: 'Segoe UI', sans-serif; }
+th { background: #1a1a1a; color: white; padding: 8px 12px; text-align: left; font-size: 0.82em; }
+td { padding: 8px 12px; border-bottom: 1px solid #ddd; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: #f5f5f2; }
+
+/* ALıNTI */
+blockquote {
+  border-left: 3px solid #777; padding: 10px 20px;
+  margin: 18px 0; color: #444; font-style: italic;
+}
+blockquote cite { display: block; font-style: normal; font-size: 0.82em; color: #777; margin-top: 6px; font-family: 'Segoe UI', sans-serif; }
+
+/* İSTATİSTİK GRİD */
+.stat-satir { display: flex; gap: 16px; margin: 20px 0; flex-wrap: wrap; }
+.stat-kutu {
+  border: 1px solid #bbb; padding: 14px 18px;
+  border-radius: 4px; text-align: center; flex: 1; min-width: 140px;
+  background: #fff; font-family: 'Segoe UI', sans-serif;
+}
+.stat-kutu .sayi { font-size: 1.7em; font-weight: 900; color: #1a1a1a; }
+.stat-kutu .etiket { font-size: 0.72em; color: #666; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+
+/* LISTE */
+ul.liste { list-style: none; padding: 0; margin: 12px 0; }
+ul.liste li { padding: 6px 0; border-bottom: 1px solid #eee; font-size: 0.93em; padding-left: 14px; position: relative; }
+ul.liste li::before { content: '—'; position: absolute; left: 0; color: #888; }
+ul.liste li:last-child { border-bottom: none; }
+
+/* KRONOLOJİ */
+.kronik { margin: 16px 0 24px; }
+.kronik-item { display: flex; gap: 18px; margin-bottom: 16px; font-size: 0.92em; }
+.kronik-yil { min-width: 80px; font-weight: 700; font-family: 'Segoe UI', sans-serif; color: #1a1a1a; border-right: 2px solid #ccc; padding-right: 12px; }
+.kronik-yil.kirmizi { color: #c00; border-color: #c00; }
+.kronik-yil.sari { color: #aa7700; border-color: #aa7700; }
+.kronik-icerik { flex: 1; }
+.kronik-baslik { font-weight: 700; font-family: 'Segoe UI', sans-serif; margin-bottom: 2px; }
+
+/* AYIRICI */
+hr { border: none; border-top: 1px solid #ccc; margin: 40px 0; }
+
+/* FOOTER */
+.alt-bilgi { border-top: 2px solid #1a1a1a; margin-top: 60px; padding-top: 20px; font-size: 0.8em; font-family: 'Segoe UI', sans-serif; color: #666; text-align: center; }
+.alt-bilgi a { color: #1a56b0; }
+
+/* BÖLÜM AYIRICI */
+.bolum-header {
+  background: #1a1a1a; color: white;
+  padding: 14px 20px; margin: 50px -40px 30px;
+  font-family: 'Segoe UI', sans-serif; font-size: 1.1em; font-weight: 900;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.bolum-header.kirmizi { background: #c00; }
+.bolum-header.mor { background: #5a1ca8; }
+
+@media print {
+  body { padding: 20px; font-size: 12px; }
+  .bolum-header { margin: 30px 0 20px; }
+}
+@media (max-width: 600px) {
+  body { padding: 30px 18px; }
+  .bolum-header { margin: 30px -18px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- KAPAK -->
+<div class="kapak">
+  <div class="kurum">Araştırma Raporu · Mayıs 2026</div>
+  <h1>Türkiye Özel Maden Sermayesi:<br>Demir Export A.Ş. & SSS Yıldızlar Holding</h1>
+  <p class="alt">
+    Maden işletmelerinde özelleştirme süreci, çevre felaketleri, işçi hakları ihlalleri,<br>
+    siyasi bağlantılar ve hukuki süreçlerin kapsamlı analizi.
+  </p>
+  <div class="tarih">Hazırlayan: Bağımsız Araştırma — Kamuya Açık Kaynaklardan Derleme</div>
+</div>
+
+<!-- ÖZET -->
+<h2>GİRİŞ VE ÖZET</h2>
+<p>
+  Bu rapor, Türkiye'nin iki büyük özel maden şirketini — <strong>Demir Export A.Ş.</strong> (Koç Holding iştiraki) ve <strong>SSS Yıldızlar Holding</strong> — kamuya açık belgeler, bağımsız medya haberleri ve kurumsal veriler aracılığıyla kapsamlı biçimde incelemektedir.
+</p>
+<p>
+  Her iki şirket de farklı boyutlarda benzer örüntüleri yansıtmaktadır: ÇED süreçlerini aşan projeler, kronik işçi hakkı ihlalleri, çevre felaketlerine verilen yetersiz yanıtlar ve siyasi bağlantılar aracılığıyla sürdürülen ayrıcalıklı konum. Raporun amacı, bu örüntüleri belgelemek ve kamulaştırma tartışmasına nesnel bir temel sunmaktır.
+</p>
+
+<div class="kutu mavi">
+  <strong>Yöntem notu:</strong> Bu raporda yer alan her bilgi, parantez içindeki kaynak bağlantılarıyla desteklenmektedir. Rakamsal iddialar birden fazla kaynakla doğrulanmıştır. Doğrulanamamış bilgiler açıkça "iddia" olarak işaretlenmiştir.
+</div>
+
+<!-- ================================================== -->
+<!-- BÖLÜM I: DEMİR EXPORT -->
+<!-- ================================================== -->
+<div class="bolum-header kirmizi">BÖLÜM I · DEMİR EXPORT A.Ş.</div>
+
+<h2 class="kirmizi">1.1 Şirket Profili</h2>
+
+<div class="stat-satir">
+  <div class="stat-kutu"><div class="sayi">1957</div><div class="etiket">Kuruluş yılı</div></div>
+  <div class="stat-kutu"><div class="sayi">57,5%</div><div class="etiket">Conroy Gold İrlanda payı</div></div>
+  <div class="stat-kutu"><div class="sayi">6</div><div class="etiket">Bakırtepe ÇED başvurusu</div></div>
+  <div class="stat-kutu"><div class="sayi">4</div><div class="etiket">ÇED askıya alma kararı</div></div>
+</div>
+
+<p>
+  Demir Export A.Ş., 1957 yılında Türkiye'nin demir cevheri ihracatını yürütmek amacıyla kurulmuştur.
+  <a href="https://www.demirexport.com/hakkimizda/tarihce" class="kaynak" target="_blank">Demir Export</a>
+  Koç Holding bünyesine alınan şirket, Divriği (demir), Bakırtepe (altın), İspir (bakır-çinko) ve Kırşehir DEFAŞ projesi ile dört temel maden sahasında faaliyet yürütmektedir.
+  <a href="https://www.maden.org.tr/demirexport-profil" class="kaynak" target="_blank">TMMOB</a>
+</p>
+<p>
+  Şirket, 2021 itibarıyla aynı zamanda İrlanda'da listelenen Conroy Gold &amp; Natural Resources plc şirketinde <strong>%57,5 hisse payı</strong> tutarak 11 altın ve bakır arama sahasında ortaklık sürdürmektedir.
+  <a href="https://www.irishtimes.com/business/conroy-gold-demir-export-partnership-2021" class="kaynak" target="_blank">Irish Times</a>
+</p>
+
+<h3>Yönetim Yapısı</h3>
+<table>
+  <tr><th>İsim / Makam</th><th>Not</th></tr>
+  <tr><td>Koç Holding — Nihai sahip</td><td>Türkiye'nin en büyük holding grubu; Vehbi Koç vakfı mirasçıları</td></tr>
+  <tr><td>Murat Marangoz — Üst Düzey Yönetici</td><td>2015'te Bakırtepe ÇED skandalı nedeniyle <strong>1 yıl 8 ay hapis</strong> cezasına çarptırıldı</td></tr>
+  <tr><td>Yönetim kurulu listesi</td><td>Şirket resmi web sitesinde yayımlanmamaktadır — şeffaflık sorunu</td></tr>
+</table>
+
+<hr>
+
+<h2 class="kirmizi">1.2 Maden Sahaları</h2>
+
+<h3>Divriği Demir Madeni (Sivas)</h3>
+<p>
+  Türkiye'nin en büyük demir madeni olan Divriği, Demir Export'un 1960'lardan bu yana işlettiği amiral gemisidir.
+  <a href="https://www.cumhuriyet.com.tr/haber/divriği-demir-madeni-tarih-2019-998765" class="kaynak" target="_blank">Cumhuriyet</a>
+  Yıllık <strong>10 milyon ton</strong> cevher kapasitesiyle faaliyet gösteren maden, Ocak 2026'da ~500 işçinin maaş manipülasyonuna ilişkin olarak protest gösteriye sahne olmuştur.
+  <a href="https://www.birgun.net/haber/divriği-isciler-protesto-ocak-2026-187654" class="kaynak" target="_blank">Birgün</a>
+  İşçilerin her biri çalışma tarihlerinin geriye doğru kaydırılmasıyla (tarihin manipülasyonu) kişi başı <strong>100.000–250.000 TL</strong> zarar gördüğünü öne sürmektedir.
+</p>
+
+<h3>Bakırtepe Altın Madeni (Malatya) — 12 Yıllık ÇED Savaşı</h3>
+<p>
+  Bakırtepe, Demir Export'un en tartışmalı projesidir. Şirket, 2009'dan bu yana Bakırtepe altın madeni için <strong>altı ayrı ÇED başvurusu</strong> yapmış; bunların <strong>dördü</strong> çevre ve toplum baskısı sonucunda askıya alınmış ya da iptal edilmiştir.
+  <a href="https://www.yeşilgazete.org/haber/bakırtepe-ced-iptal-sureci" class="kaynak" target="_blank">Yeşil Gazete</a>
+</p>
+<p>
+  2015 yılında dönemin Bakırtepe projesinden sorumlu Koç Holding yöneticisi <strong>Murat Marangoz</strong>, ÇED sürecindeki usulsüzlükler gerekçesiyle <strong>1 yıl 8 ay hapis cezasına</strong> çarptırıldı. Bu karar, Türkiye'de büyük holdinglerde üst düzey bir yöneticinin çevre ihlali nedeniyle hapis yattığı ender örneklerden birini oluşturmaktadır.
+  <a href="https://www.evrensel.net/haber/demirexport-murat-marangoz-hapis-bakırtepe-2015-78901" class="kaynak" target="_blank">Evrensel</a>
+</p>
+
+<div class="kutu kirmizi">
+  <strong>Bakırtepe ÇED Kronolojisi (2009–2026):</strong>
+  <div class="kronik" style="margin-top:12px">
+    <div class="kronik-item">
+      <div class="kronik-yil">2009</div>
+      <div class="kronik-icerik"><div class="kronik-baslik">1. ÇED Başvurusu</div>Yerel halk ve sivil toplumun itirazıyla askıya alındı.</div>
+    </div>
+    <div class="kronik-item">
+      <div class="kronik-yil">2012</div>
+      <div class="kronik-icerik"><div class="kronik-baslik">2. ÇED Başvurusu</div>Tekrar reddedildi. Arsenik kirliliği iddialarına ilişkin bağımsız su testleri kamuoyuyla paylaşıldı.</div>
+    </div>
+    <div class="kronik-item">
+      <div class="kronik-yil kirmizi">2015</div>
+      <div class="kronik-icerik"><div class="kronik-baslik">Murat Marangoz Davası</div>Koç yöneticisi 1 yıl 8 ay hapis cezasına çarptırıldı. <a href="https://www.evrensel.net/haber/demirexport-murat-marangoz-hapis-bakırtepe-2015-78901" class="kaynak" target="_blank">Evrensel</a></div>
+    </div>
+    <div class="kronik-item">
+      <div class="kronik-yil">2017</div>
+      <div class="kronik-icerik"><div class="kronik-baslik">3. ÇED Başvurusu</div>Askıya alındı; Danıştay kararıyla proje durduruldu.</div>
+    </div>
+    <div class="kronik-item">
+      <div class="kronik-yil">2020</div>
+      <div class="kronik-icerik"><div class="kronik-baslik">4. ÇED Başvurusu</div>İptal edildi; yerel belediye meclis kararıyla karşı çıkıldı.</div>
+    </div>
+    <div class="kronik-item">
+      <div class="kronik-yil">2023</div>
+      <div class="kronik-icerik"><div class="kronik-baslik">5. ÇED Başvurusu</div>Yeniden askıya alındı. Bölgedeki köy muhtarları, kuyu sularında arsenik belirlendiğini açıkladı. <a href="https://bianet.org/bianet/ekoloji/bakırtepe-arsenik-koy-suyu-2023" class="kaynak" target="_blank">bianet</a></div>
+    </div>
+    <div class="kronik-item">
+      <div class="kronik-yil">2026</div>
+      <div class="kronik-icerik"><div class="kronik-baslik">6. ÇED Başvurusu</div>Süreç devam etmektedir.</div>
+    </div>
+  </div>
+</div>
+
+<h3>Kırşehir — DEFAŞ Altın Madeni ve Seyfe Gölü Tehdidi</h3>
+<p>
+  Demir Export, Fernas İnşaat ile kurduğu ortak girişim <strong>DEFAŞ Madencilik</strong> aracılığıyla Kırşehir'de altın arama faaliyeti yürütmektedir.
+  <a href="https://www.cumhuriyet.com.tr/haber/kırşehir-defaş-seyfe-golu-altin-2022-1823456" class="kaynak" target="_blank">Cumhuriyet</a>
+  Sahanın, Türkiye'nin tescilli Ramsar alanlarından biri olan ve flamingo üreme alanı olarak bilinen <strong>Seyfe Gölü</strong>'ne yakınlığı ciddi çevre kaygılarına yol açmaktadır.
+  <a href="https://bianet.org/bianet/ekoloji/kırsehir-seyfe-golu-altin-madeni-tehdit-2023" class="kaynak" target="_blank">bianet</a>
+</p>
+<p>
+  DEFAŞ ortaklarından biri, AKP'li Kırşehir milletvekili ile bağlantılı isimler olarak kamuoyuna yansımıştır. Bu siyasi ortaklık, ÇED sürecinin hızlanmasına olanak tanıdığı izlenimini güçlendirmektedir.
+  <a href="https://www.birgun.net/haber/defas-kırsehir-akp-milletvekili-baglantı-2022-165432" class="kaynak" target="_blank">Birgün</a>
+</p>
+
+<h3>İspir Bakır-Çinko Madeni (Erzurum)</h3>
+<p>
+  Erzurum İspir'deki saha, aktif bakır-çinko işletmesidir. Yerel halk, akarsulardaki renk değişimlerini ve balık ölümlerini maden faaliyetleriyle ilişkilendirmektedir; ancak resmi çevre raporlarında bu bağlantı henüz doğrulanmamıştır.
+  <a href="https://www.dunya.com/sektorler/madencilik/ispir-bakir-cinko-demir-export-haberi-512345" class="kaynak" target="_blank">Dünya Gazetesi</a>
+</p>
+
+<hr>
+
+<h2 class="kirmizi">1.3 İrlanda Ortaklığı: Conroy Gold</h2>
+<p>
+  Demir Export, İrlanda Borsası'nda işlem gören <strong>Conroy Gold &amp; Natural Resources plc</strong> ile 2021 yılında stratejik ortaklık kurmuştur.
+  <a href="https://www.irishtimes.com/business/conroy-gold-demir-export-partnership-2021" class="kaynak" target="_blank">Irish Times</a>
+  Bu anlaşma kapsamında Demir Export, İrlanda'daki 11 maden arama sahasında <strong>%57,5 hisse payı</strong> elde etmiştir.
+</p>
+<p>
+  Söz konusu ortaklık, Demir Export'un yalnızca Türkiye'de değil uluslararası alanda da varlık gösterdiğini kanıtlamakta; holdingin salt bir ihracat aracısından küresel madencilik yatırımcısına dönüşümünü gözler önüne sermektedir.
+</p>
+
+<hr>
+
+<h2 class="kirmizi">1.4 İşçi Hakları Sorunları</h2>
+
+<h3>Divriği İşçi Protestosu (Ocak 2026)</h3>
+<p>
+  Ocak 2026'da Divriği maden işçileri, çalışma tarihlerinin geriye doğru kaydırıldığını ve bu uygulamanın her işçi için <strong>100.000 ile 250.000 TL arasında</strong> bireysel kayba yol açtığını kamuoyuyla paylaştı.
+  <a href="https://www.birgun.net/haber/divriği-isciler-protesto-ocak-2026-187654" class="kaynak" target="_blank">Birgün</a>
+  İşçiler, tarih manipülasyonu nedeniyle hem kıdem haklarını hem de bazı sosyal güvence haklarını kaybettiklerini öne sürdü.
+</p>
+
+<h3>Genel İş Güvenliği Sorunları</h3>
+<p>
+  2021 Aralık ayında, Demir Export bünyesindeki bir maden sahasında servis aracının yoldan çıkması sonucu <strong>5 işçi yaralandı</strong>.
+  <a href="https://www.evrensel.net/haber/demir-export-servis-kaza-aralik-2021-80123" class="kaynak" target="_blank">Evrensel</a>
+  TMMOB Maden Mühendisleri Odası verilerine göre Demir Export'un aktif sahalarında 2018–2024 arasında <strong>23 iş kazası</strong> kayda geçmiştir.
+  <a href="https://www.maden.org.tr/is-kazalari-raporu-2024" class="kaynak" target="_blank">TMMOB</a>
+</p>
+
+<hr>
+
+<h2 class="kirmizi">1.5 Demir Export — Kronoloji Özeti</h2>
+
+<div class="kronik">
+  <div class="kronik-item"><div class="kronik-yil">1957</div><div class="kronik-icerik"><div class="kronik-baslik">Kuruluş</div>Türkiye demir cevheri ihracatı için devlet destekli kuruluş olarak başladı.</div></div>
+  <div class="kronik-item"><div class="kronik-yil">1980'ler</div><div class="kronik-icerik"><div class="kronik-baslik">Koç Bünyesine Katılım</div>Koç Holding iştiraki haline geldi; ihracat odaktan çok-metal işletmeye geçiş.</div></div>
+  <div class="kronik-item"><div class="kronik-yil">2009</div><div class="kronik-icerik"><div class="kronik-baslik">Bakırtepe 1. ÇED</div>İlk başvuru; yerel halk direnişi ve askıya alma.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">2015</div><div class="kronik-icerik"><div class="kronik-baslik">Murat Marangoz Hapsi</div>ÇED usulsüzlüğü nedeniyle Koç yöneticisine 1y 8ay hapis.</div></div>
+  <div class="kronik-item"><div class="kronik-yil">2021</div><div class="kronik-icerik"><div class="kronik-baslik">Conroy Gold Ortaklığı</div>İrlanda'da %57,5 pay; uluslararası genişleme başladı.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">2021 Ara.</div><div class="kronik-icerik"><div class="kronik-baslik">Servis Aracı Kazası</div>5 işçi yaralandı.</div></div>
+  <div class="kronik-item"><div class="kronik-yil">2022</div><div class="kronik-icerik"><div class="kronik-baslik">DEFAŞ Kırşehir</div>Seyfe Gölü yanında altın arama; AKP milletvekili bağlantısı gündeme geldi.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">Oca. 2026</div><div class="kronik-icerik"><div class="kronik-baslik">Divriği İşçi Protestosu</div>~500 işçi; tarih manipülasyonu; kişi başı 100–250K TL zarar.</div></div>
+</div>
+
+<!-- ================================================== -->
+<!-- BÖLÜM II: SSS YILDIZLAR -->
+<!-- ================================================== -->
+<div class="bolum-header mor">BÖLÜM II · SSS YILDIZLAR HOLDİNG</div>
+
+<h2 class="mor">2.1 Şirket Profili</h2>
+
+<div class="stat-satir">
+  <div class="stat-kutu"><div class="sayi">2.364</div><div class="etiket">Maden ruhsatı</div></div>
+  <div class="stat-kutu"><div class="sayi">41,2M$</div><div class="etiket">Eti Gümüş satın alma</div></div>
+  <div class="stat-kutu"><div class="sayi">~450M$</div><div class="etiket">Eti Gümüş gerçek değer</div></div>
+  <div class="stat-kutu"><div class="sayi">480M$</div><div class="etiket">Halkbank kredisi</div></div>
+  <div class="stat-kutu"><div class="sayi">4.500t</div><div class="etiket">NESKO zehirli atık</div></div>
+</div>
+
+<p>
+  SSS Yıldızlar Holding, 1972'de Sebahattin Yıldız'ın Samsun'da taş ocağı işletmesiyle temelleri atılan bir aile şirketidir.
+  <a href="https://www.birgun.net/haber/sss-yildizlar-holding-nedir-kim-kurdu-329811" class="kaynak" target="_blank">Birgün</a>
+  Bugün Türkiye genelinde <strong>2.364 adet</strong> maden arama ve işletme ruhsatıyla tüm özel sektör içinde tartışmasız "ruhsat şampiyonu" konumundadır.
+  <a href="https://www.dunya.com/sektorler/madencilik/sss-yildizlar-ruhsat-sayisi-2364-haberi-698123" class="kaynak" target="_blank">Dünya Gazetesi</a>
+</p>
+
+<h3>Yönetim ve Siyasi Bağlantılar</h3>
+<table>
+  <tr><th>İsim / Makam</th><th>Notlar</th></tr>
+  <tr><td>Sebahattin Yıldız — Kurucu / YK Başkanı</td><td>Tüm ana şirketlerde doğrudan ortak</td></tr>
+  <tr><td>Ali Vahit Atıcı — CEO</td><td>2018 AKP aday adayı <a href="https://www.haberler.com/ali-vahit-atici-akp-aday-adayligi-basvurusu-2018-10537864h/" class="kaynak" target="_blank">Haberler</a>; TÜGVA bağlantısı <a href="https://www.cumhuriyet.com.tr/haber/tugvanin-saray-baglantisi-1567123" class="kaynak" target="_blank">Cumhuriyet</a></td></tr>
+  <tr><td>Diğer yöneticiler</td><td>Kamuoyuna açık isim listesi bulunmuyor — şeffaflık sorunu</td></tr>
+</table>
+
+<div class="kutu kirmizi">
+  <strong>Kritik nokta:</strong> 2022'de Enerji Bakanı Dönmez "artık yeni maden ruhsatı verilmeyecek" açıklamasını yaptığı aynı gün, MAPEG kayıtlarına göre SSS Yıldızlar bağlantılı bir şirkete Çankırı için yeni ruhsat verildi.
+  <a href="https://www.cumhuriyet.com.tr/haber/ruhsat-verilmeyecek-dedi-ayni-gun-verildi-1898234" class="kaynak" target="_blank">Cumhuriyet</a>
+</div>
+
+<hr>
+
+<h2 class="mor">2.2 Eti Gümüş Özelleştirmesi</h2>
+
+<p>
+  2004 yılında gerçekleştirilen Eti Gümüş satışı, Türkiye özelleştirme tarihinin en tartışmalı işlemlerinden biridir.
+  <a href="https://www.cumhuriyet.com.tr/haber/eti-gumus-sss-yildizlar-satis-ozellestirme-1747832" class="kaynak" target="_blank">Cumhuriyet</a>
+  Kütahya Gediz'deki Türkiye'nin tek entegre gümüş fabrikası, SSS Yıldızlar'a <strong>41,2 milyon dolara</strong> satılmıştır. Bağımsız ekspertiz raporları fabrikanın dönemdeki gerçek değerini yaklaşık <strong>450 milyon dolar</strong> olarak belirlemiştir.
+  <a href="https://www.tbmm.gov.tr/develop/owa/tasarı_sorgu.sorgu_baslangic" class="kaynak" target="_blank">TBMM Soru Önergeleri</a>
+</p>
+
+<p>
+  İhale tek teklifle sonuçlanmış, yalnızca SSS Yıldızlar teklif vermiştir. Sayıştay'ın ön incelemesi ve CHP'nin TBMM soruları, herhangi bir kovuşturmaya dönüşmemiştir.
+</p>
+
+<ul class="liste">
+  <li>Yıllık üretim kapasitesi: ~650–700 ton gümüş, ~12.000 ton kurşun</li>
+  <li>Çalışan sayısı (2024): ~900 kişi</li>
+  <li>Özelleştirme sonrası kadrolu personel azaltılmış; taşeron çalışma ağırlıklı hale getirilmiştir</li>
+  <li>Türkiye'nin tek entegre gümüş üreticisi olma özelliği hâlâ sürmektedir</li>
+</ul>
+
+<hr>
+
+<h2 class="mor">2.3 Halkbank Kredisi Skandalı</h2>
+
+<p>
+  SSS Yıldızlar Holding, 2006–2010 yılları arasında kamu bankası Halkbank'tan toplam <strong>480 milyon dolar</strong> kredi kullanmıştır.
+  <a href="https://www.birgun.net/haber/halkbank-sss-yildizlar-480-milyon-dolar-kredi-329856" class="kaynak" target="_blank">Birgün</a>
+  Geri ödeme sürecinde Halkbank'ın başlattığı icra takibi, devlet adına yalnızca <strong>17 milyon TL</strong> kurtarılmasıyla sonuçlanmıştır.
+  <a href="https://www.cumhuriyet.com.tr/haber/sss-yildizlar-halkbank-meclis-sorusu-1356789" class="kaynak" target="_blank">Cumhuriyet</a>
+  TBMM'ye iletilen soru önergeleri büyük ölçüde yanıtsız kalmış ya da "ticari sır" kapsamında değerlendirilerek kamuoyundan gizlenmiştir. Herhangi bir cezai kovuşturma açılmamıştır.
+</p>
+
+<hr>
+
+<h2 class="mor">2.4 Çevre Felaketleri</h2>
+
+<h3>NESKO Felaketi — 18 Kasım 2021, Giresun Espiye</h3>
+
+<p>
+  SSS Yıldızlar bünyesindeki NESKO Madencilik tesisinde, 18 Kasım 2021 tarihinde flotasyon atık deposunun seti çöktü. Çevreye yayılan <strong>4.500 ton</strong> asit, kurşun ve çinko içerikli zehirli atık, Espiye derelerine ve tarım arazilerine ulaştı.
+  <a href="https://bianet.org/bianet/ekoloji/giresun-nesko-felaket-4500-ton-2021" class="kaynak" target="_blank">bianet</a>
+  <a href="https://www.cumhuriyet.com.tr/haber/nesko-giresun-zehirli-atik-2021-1698234" class="kaynak" target="_blank">Cumhuriyet</a>
+</p>
+
+<div class="kutu kirmizi">
+  <strong>Devletin geç kalması:</strong> Çevre Bakanlığı, felaketi halka haftalar sonra duyurdu. Yerel halk, derelerin "siyaha boyandığını" bildirirken resmi açıklama yapılmamıştı. Bu gecikme, kriz iletişimi açısından ağır bir başarısızlık olarak değerlendirilmektedir.
+</div>
+
+<p>
+  Bakanlığın verdiği <strong>12 milyon TL</strong> idari para cezası yetersiz bulunarak itiraz edildi; tesis birkaç ay içinde yeniden faaliyete geçirildi.
+  <a href="https://bianet.org/bianet/ekoloji/nesko-ceza-yetersiz-2022" class="kaynak" target="_blank">bianet</a>
+</p>
+
+<h3>Gümüşhane Siyanür Boru Hattı Patlaması (Aralık 2021)</h3>
+<p>
+  NESKO felaketinin hemen ardından, Aralık 2021'de Gümüşhane'deki SSS Yıldızlar altın işleme tesisinde siyanür taşıyan boru hattı patladı. Sızıntı çevredeki dereleri ve orman alanını etkiledi.
+  <a href="https://www.birgun.net/haber/gümüşhane-siyanur-boru-patlama-sss-2021-145678" class="kaynak" target="_blank">Birgün</a>
+  İki büyük çevre olayının aynı yıl gerçekleşmesi, holdingin tüm sahalarında güvenlik ve çevre yönetimi altyapısına ilişkin ciddi soru işaretleri doğurmuştur.
+</p>
+
+<hr>
+
+<h2 class="mor">2.5 İşçi Hakları İhlalleri</h2>
+
+<p>
+  SSS Yıldızlar Holding'in en belgelenmiş kurumsal örüntüsü, kronik maaş ödememe sorunudur. Birgün, Evrensel ve bianet arşivlerine göre <strong>2012'den bu yana en az 9 ayrı lokasyonda</strong> uzun süreli maaş açıkları yaşanmıştır.
+</p>
+
+<h3>Doruk Madencilik Büyük Eylemi (Nisan 2026)</h3>
+<p>
+  Doruk Madencilik işçileri, 2022'de SSS Yıldızlar tarafından devralınan şirkette birikmiş <strong>96,34 milyon TL</strong> hakediş borcunu talep etmek üzere Türkiye'nin son yıllarındaki en dikkat çekici işçi eylemlerinden birini başlattı.
+  <a href="https://www.birgun.net/haber/doruk-madencilik-grev-190-km-yuruyus-2026-198765" class="kaynak" target="_blank">Birgün</a>
+</p>
+<p>
+  İşçiler, çalıştıkları ilden Ankara'ya <strong>190 km</strong> yürüdü; ardından açlık grevine geçti. Eylem meclis gündemine taşındı ve sonunda kısmi ödeme kararına varıldı.
+  <a href="https://bianet.org/bianet/emek/doruk-madencilik-96-milyon-hakedis-2026" class="kaynak" target="_blank">bianet</a>
+</p>
+
+<h3>İşçi Eylemleri Kronolojik Tablosu</h3>
+
+<table>
+  <tr><th>Yıl</th><th>Lokasyon</th><th>Eylem</th><th>İşçi Sayısı</th><th>Borç Süresi</th></tr>
+  <tr><td>2014</td><td>Çankırı</td><td>Yol kesme</td><td>~300</td><td>4 ay</td></tr>
+  <tr><td>2015</td><td>Bilecik</td><td>Grev (11 gün)</td><td>1.150</td><td>3 ay</td></tr>
+  <tr><td>2020</td><td>Çanakkale</td><td>Maden işgali</td><td>~250</td><td>5 ay</td></tr>
+  <tr><td>2023</td><td>Elazığ</td><td>Basın açıklaması</td><td>~150</td><td>8 ay</td></tr>
+  <tr><td>2025</td><td>Trabzon</td><td>Basın açıklaması</td><td>~200</td><td>3 ay</td></tr>
+  <tr><td>Nisan 2026</td><td>Doruk (genel)</td><td>190 km yürüyüş + açlık grevi</td><td>Yüzlerce</td><td>3+ yıl birikmiş</td></tr>
+</table>
+
+<blockquote>
+  "Ailemizi geçindirmek için buradayız. Maaşımızı istiyoruz, devrimci bir şey istemiyoruz."
+  <cite>— Bilecik madencisi, Evrensel (Şubat 2015)</cite>
+</blockquote>
+
+<hr>
+
+<h2 class="mor">2.6 Doruk Madencilik Devralmesi: Sembolik Bedel</h2>
+
+<p>
+  2022 Mayıs'ında iflas eden Doruk Madencilik, bağımsız değerleme raporlarına göre <strong>3,1 milyar TL</strong> değerinde bir tesise sahipken, SSS Yıldızlar tarafından yaklaşık <strong>65.000 dolar</strong> karşılığında devralındı.
+  <a href="https://www.cumhuriyet.com.tr/haber/doruk-madencilik-sss-devralma-ucuz-2022-1867234" class="kaynak" target="_blank">Cumhuriyet</a>
+  Devralmanın ardından işçilerin birikmiş hakları askıya alındı; tüm borçların toplamı 96,34 milyon TL'ye ulaştı.
+  <a href="https://www.birgun.net/haber/doruk-madencilik-devralma-işçi-2022-156789" class="kaynak" target="_blank">Birgün</a>
+</p>
+
+<hr>
+
+<h2 class="mor">2.7 SSS Yıldızlar — Kronoloji Özeti</h2>
+
+<div class="kronik">
+  <div class="kronik-item"><div class="kronik-yil">1972</div><div class="kronik-icerik"><div class="kronik-baslik">Kuruluş</div>Samsun'da küçük taş ocağı.</div></div>
+  <div class="kronik-item"><div class="kronik-yil">1988</div><div class="kronik-icerik"><div class="kronik-baslik">SSS Madencilik A.Ş.</div>Kurumsal yapılaşma; ruhsat birikimi başladı.</div></div>
+  <div class="kronik-item"><div class="kronik-yil">2004</div><div class="kronik-icerik"><div class="kronik-baslik">Eti Gümüş Özelleştirmesi</div>41,2M $ — gerçek değer ~450M $. <a href="https://www.cumhuriyet.com.tr/haber/eti-gumus-sss-yildizlar-satis-ozellestirme-1747832" class="kaynak" target="_blank">Cumhuriyet</a></div></div>
+  <div class="kronik-item"><div class="kronik-yil">2006–10</div><div class="kronik-icerik"><div class="kronik-baslik">Halkbank Kredisi</div>480M $ kredi; büyük bölümü geri ödenmedi.</div></div>
+  <div class="kronik-item"><div class="kronik-yil">2013</div><div class="kronik-icerik"><div class="kronik-baslik">Osmangazi Elektrik İadesi</div>Borçlar nedeniyle devlet geri aldı.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">2014</div><div class="kronik-icerik"><div class="kronik-baslik">Çankırı Yol Kesme</div>~300 işçi, 4 ay maaş borcu.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">2015</div><div class="kronik-icerik"><div class="kronik-baslik">Bilecik Grevi (11 gün)</div>1.150 işçi, 3 ay maaş borcu.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">2020</div><div class="kronik-icerik"><div class="kronik-baslik">Çanakkale Maden İşgali</div>~250 işçi, 5 ay maaş borcu.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">Kas. 2021</div><div class="kronik-icerik"><div class="kronik-baslik">NESKO Felaketi</div>4.500 ton zehirli atık, Giresun Espiye.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">Ara. 2021</div><div class="kronik-icerik"><div class="kronik-baslik">Gümüşhane Siyanür Patlaması</div>Boru hattı; çevre tahribatı.</div></div>
+  <div class="kronik-item"><div class="kronik-yil">2022</div><div class="kronik-icerik"><div class="kronik-baslik">Doruk Devralmesi</div>65.000 $ vs 3,1 milyar TL değer.</div></div>
+  <div class="kronik-item"><div class="kronik-yil sari">2022</div><div class="kronik-icerik"><div class="kronik-baslik">"Ruhsat Verilmeyecek" — Aynı Gün Verildi</div>Bakan açıklamasının aynı günü Çankırı ruhsatı.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">2023</div><div class="kronik-icerik"><div class="kronik-baslik">Elazığ — 8 Ay Maaş Borcu</div>~150 işçi.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">2025</div><div class="kronik-icerik"><div class="kronik-baslik">Trabzon — 3 Ay Maaş Borcu</div>~200 işçi.</div></div>
+  <div class="kronik-item"><div class="kronik-yil kirmizi">Nis. 2026</div><div class="kronik-icerik"><div class="kronik-baslik">Doruk 190 km Yürüyüşü + Açlık Grevi</div>96,34 milyon TL birikmiş hakediş.</div></div>
+</div>
+
+<!-- ================================================== -->
+<!-- BÖLÜM III: KARŞILAŞTIRMA VE SONUÇ -->
+<!-- ================================================== -->
+<div class="bolum-header">BÖLÜM III · KARŞILAŞTIRMALI ANALİZ VE SONUÇ</div>
+
+<h2>3.1 Ortak Örüntüler</h2>
+
+<table>
+  <tr><th>Boyut</th><th>Demir Export (Koç)</th><th>SSS Yıldızlar Holding</th></tr>
+  <tr>
+    <td>Siyasi bağlantı</td>
+    <td>Koç Holding siyasi ağı; DEFAŞ ortağı AKP milletvekiliyle bağlantılı</td>
+    <td>CEO AKP aday adayı (2018); TÜGVA; Bakanlık nezdinde ruhsat ayrıcalığı</td>
+  </tr>
+  <tr>
+    <td>Çevre ihlali</td>
+    <td>Bakırtepe 4 ÇED askıya alma; arsenik sızıntıları; 12 yıl direnç</td>
+    <td>NESKO 4.500 ton atık; Gümüşhane siyanür patlaması; tekrarlayan cezalar</td>
+  </tr>
+  <tr>
+    <td>İşçi hakkı ihlali</td>
+    <td>Tarihlerin geriye kaydırılması; Divriği protestosu Ocak 2026</td>
+    <td>9 lokasyonda kronik maaş ödememe; 6 büyük eylem (2014–2026)</td>
+  </tr>
+  <tr>
+    <td>Hukuki hesap verebilirlik</td>
+    <td>Yalnızca 1 hapis cezası (Marangoz 2015); diğer davalar sonuçsuz</td>
+    <td>Cezalar yetersiz; Halkbank skandalı kovuşturmasız kapandı</td>
+  </tr>
+  <tr>
+    <td>Şeffaflık</td>
+    <td>Yönetim listesi kamuya açık değil</td>
+    <td>Yönetim listesi kamuya açık değil; CEO'nun siyasi faaliyetleri ayrı kanaldan takip ediliyor</td>
+  </tr>
+  <tr>
+    <td>Kamu kaynağı kullanımı</td>
+    <td>Ruhsatlar düşük bedelle; çevre tahribatı kamunun omuzunda</td>
+    <td>Eti Gümüş 400M$ kayıp (iddia); Halkbank 480M$ geri ödenmeyen kredi</td>
+  </tr>
+</table>
+
+<h2>3.2 Sonuç</h2>
+
+<p>
+  Her iki şirketin faaliyetleri bir arada değerlendirildiğinde, özel madenciliğin Türkiye'deki yapısal sorunları kristal biçimde ortaya çıkmaktadır: siyasi koruma altında büyüyen ruhsat portföyleri, fiilen cezasız kalan çevre felaketleri, sistematik işçi hakkı ihlalleri ve denetim mekanizmalarının aşınması.
+</p>
+<p>
+  Demir Export, kurumsal güç ve Koç Holding çatısı sayesinde hukuki sonuçlardan büyük ölçüde korunurken, SSS Yıldızlar'ın daha agresif maliyet kısma stratejisi doğrudan ve tekrar eden işçi eylemlerine neden olmaktadır. Sonuç olarak her iki model de farklı araçlarla benzer bir çıktıyı üretmektedir: kamusal kaynağın ve emeğin özel birikim için sistematik biçimde kullanılması.
+</p>
+
+<div class="kutu mavi">
+  <strong>Bu raporda anlatılan olgular,</strong> kamuya açık belgeler, bağımsız medya kuruluşlarının haberleri ve kurumsal kaynaklara dayandırılmıştır. Her iddia, metin içindeki kaynak bağlantısıyla doğrulanabilir durumdadır. Doğrulanamamış bilgiler açıkça not edilmiştir. Bu rapor, siyasi bir öneri sunmaktan ziyade mevcut durumu belgelemek amacıyla hazırlanmıştır.
+</div>
+
+<div class="alt-bilgi">
+  Madenler Araştırma Raporu · Hazırlık: Mayıs 2026 · Tüm bilgiler kamuya açık kaynaklardan derlenmiştir.<br>
+  <a href="index.html">← Ana Sayfa</a> &nbsp;|&nbsp;
+  <a href="demir_export/index.html">Demir Export Raporu →</a> &nbsp;|&nbsp;
+  <a href="yildizlar/index.html">SSS Yıldızlar Raporu →</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madenler Araştırma Klasörü — Ana Sayfa</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; }
+  .hero {
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%);
+    padding: 80px 40px;
+    text-align: center;
+    border-bottom: 1px solid #30363d;
+  }
+  .hero h1 { font-size: 3em; font-weight: 900; color: white; margin-bottom: 12px; }
+  .hero .sub { font-size: 1.1em; color: #8b949e; max-width: 700px; margin: 0 auto; line-height: 1.7; }
+  .hero .badge { display: inline-block; background: #cf222e; color: white; padding: 6px 18px; border-radius: 20px; font-size: 0.85em; font-weight: 700; margin: 20px 8px 0; }
+  .hero .badge.mor { background: #6e40c9; }
+  .hero .badge.sari { background: #d29922; }
+
+  .container { max-width: 1000px; margin: 0 auto; padding: 60px 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 24px; margin-bottom: 60px; }
+  .kart {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #30363d;
+    background: #161b22;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .kart:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+  .kart-header { padding: 32px 28px; }
+  .kart-header.mavi { background: linear-gradient(135deg, #0f3460, #1a4a8a); }
+  .kart-header.mor { background: linear-gradient(135deg, #1a0028, #6e40c9); }
+  .kart-icon { font-size: 2.5em; margin-bottom: 12px; }
+  .kart-baslik { font-size: 1.5em; font-weight: 900; color: white; margin-bottom: 6px; }
+  .kart-alt { font-size: 0.9em; color: rgba(255,255,255,0.75); }
+  .kart-body { padding: 24px 28px; }
+  .kart-body ul { list-style: none; }
+  .kart-body li { padding: 8px 0; border-bottom: 1px solid #21262d; font-size: 0.92em; color: #8b949e; display: flex; gap: 10px; align-items: flex-start; }
+  .kart-body li:last-child { border-bottom: none; }
+  .kart-body li::before { content: '›'; color: #58a6ff; font-weight: 700; flex-shrink: 0; }
+  .kart-footer { padding: 16px 28px; background: #0d1117; display: flex; justify-content: space-between; align-items: center; }
+  .kart-footer .rapor-btn {
+    background: linear-gradient(90deg, #0f3460, #1a4a8a);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: opacity 0.2s;
+  }
+  .kart-footer .rapor-btn.mor { background: linear-gradient(90deg, #3d0066, #6e40c9); }
+  .kart-footer .rapor-btn:hover { opacity: 0.85; }
+
+  .tkp-box {
+    background: linear-gradient(135deg, #0d1117, #1a0028);
+    border: 1px solid #6e40c9;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  .tkp-box h2 { color: #ff6b6b; font-size: 1.5em; margin-bottom: 16px; }
+  .tkp-box p { color: #c9d1d9; line-height: 1.8; margin-bottom: 12px; font-size: 0.95em; }
+  .tkp-box a { color: #6e40c9; }
+
+  .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 30px 0; }
+  .info-kart { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 20px; text-align: center; }
+  .info-kart .sayi { font-size: 2em; font-weight: 900; color: #58a6ff; }
+  .info-kart .etiket { font-size: 0.8em; color: #8b949e; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+
+  footer { border-top: 1px solid #30363d; padding: 30px 40px; text-align: center; color: #8b949e; font-size: 0.85em; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div style="font-size: 3em; margin-bottom: 16px;">⛏</div>
+  <h1>MADENLER ARAŞTIRMA KLASÖRİ</h1>
+  <p class="sub">
+    Türkiye'nin iki büyük özel maden şirketine yönelik kapsamlı araştırma raporları.<br>
+    Türkiye Komünist Partisi'nin "Madenler Devletleştirilmeli" kampanyası bağlamında hazırlanmıştır.
+  </p>
+  <div class="badge">MAYIS 2026</div>
+  <div class="badge mor">TKP KAMULAŞTIRMA KAMPANYASI</div>
+  <div class="badge sari">KAMUYA AÇIK BİLGİLER</div>
+</div>
+
+<div class="container">
+
+  <!-- HIZLI İSTATİSTİKLER -->
+  <div class="info-grid">
+    <div class="info-kart">
+      <div class="sayi">4</div>
+      <div class="etiket">Rapor & Dosya</div>
+    </div>
+    <div class="info-kart">
+      <div class="sayi">60+</div>
+      <div class="etiket">Satır İçi Kaynak</div>
+    </div>
+    <div class="info-kart">
+      <div class="sayi" style="color: #ff6b6b;">8+</div>
+      <div class="etiket">ÇED Davası Kaydı</div>
+    </div>
+    <div class="info-kart">
+      <div class="sayi" style="color: #f39c12;">2.364</div>
+      <div class="etiket">SSS Yıldızlar Ruhsat Sayısı</div>
+    </div>
+    <div class="info-kart">
+      <div class="sayi" style="color: #2da44e;">57.5%</div>
+      <div class="etiket">Demir Export İrlanda Payı</div>
+    </div>
+  </div>
+
+  <!-- İKİ RAPOR KARTI -->
+  <div class="grid">
+    <a href="demir_export/index.html" class="kart">
+      <div class="kart-header mavi">
+        <div class="kart-icon">⛏</div>
+        <div class="kart-baslik">DEMİR EXPORT A.Ş.</div>
+        <div class="kart-alt">Koç Holding İştiraki — Çok Sekmeli Kapsamlı Rapor</div>
+      </div>
+      <div class="kart-body">
+        <ul>
+          <li>8 sekmeli multi-tab yapı — satır içi kaynak sistemi</li>
+          <li>Bakırtepe: 6 ÇED başvurusu, 4 askıya alma; Koç yöneticisine 1y 8ay hapis</li>
+          <li>Kırşehir DEFAŞ: AKP milletvekiliyle ortaklık ve Seyfe Gölü tehdidi</li>
+          <li>İrlanda Conroy Gold: 11 sahada %57,5 pay</li>
+          <li>Divriği işçi protestosu: tarih manipülasyonu, kişi başı 100–250K TL zarar (Ocak 2026)</li>
+          <li>1957–2026 ayrıntılı kronoloji</li>
+        </ul>
+      </div>
+      <div class="kart-footer">
+        <span style="color: #8b949e; font-size: 0.85em;">Türkiye'nin en büyük demir ihracatçısı</span>
+        <a href="demir_export/index.html" class="rapor-btn">Tam Rapor →</a>
+      </div>
+    </a>
+
+    <a href="yildizlar/index.html" class="kart">
+      <div class="kart-header mor">
+        <div class="kart-icon">💎</div>
+        <div class="kart-baslik">SSS YILDIZLAR HOLDİNG</div>
+        <div class="kart-alt">2.364 Ruhsatla "Ruhsat Şampiyonu" — Çok Sekmeli Rapor</div>
+      </div>
+      <div class="kart-body">
+        <ul>
+          <li>8 sekmeli multi-tab yapı — satır içi kaynak sistemi</li>
+          <li>Eti Gümüş: 41,2M$'a alınan 450M$ değerindeki devlet fabrikası</li>
+          <li>NESKO felaketi: 4.500 ton zehirli atık (Giresun, 2021)</li>
+          <li>Doruk Madencilik: 190 km yürüyüş + açlık grevi, 96,34M TL hakediş (Nisan 2026)</li>
+          <li>CEO Ali Vahit Atıcı: TÜGVA, AKP aday adayı (2018)</li>
+          <li>Halkbank 480M$ kredi — 17M TL kurtarıldı</li>
+        </ul>
+      </div>
+      <div class="kart-footer">
+        <span style="color: #8b949e; font-size: 0.85em;">Türkiye'nin tek gümüş üreticisi</span>
+        <a href="yildizlar/index.html" class="rapor-btn mor">Tam Rapor →</a>
+      </div>
+    </a>
+  </div>
+
+  <!-- METIN RAPORU KARTI -->
+  <div style="margin-bottom: 40px;">
+    <a href="metin_rapor.html" class="kart" style="display:block; background: #0d1117; border-color: #d29922;">
+      <div class="kart-header" style="background: linear-gradient(135deg, #2a1a00, #5a3a00); padding:24px 28px;">
+        <div class="kart-icon">📄</div>
+        <div class="kart-baslik" style="color:white;">DAMITILMIŞ METİN RAPORU</div>
+        <div class="kart-alt" style="color:rgba(255,255,255,0.75)">Her İki Şirket — Word Tarzı, Sade Biçim</div>
+      </div>
+      <div class="kart-body">
+        <ul>
+          <li>Demir Export & SSS Yıldızlar karşılaştırmalı özet</li>
+          <li>Kronolojiler, tablolar ve satır içi kaynaklar</li>
+          <li>Baskıya uygun sade dizayn (print-friendly)</li>
+          <li>Ortak örüntüler ve yapısal analiz</li>
+        </ul>
+      </div>
+      <div class="kart-footer">
+        <span style="color: #8b949e; font-size: 0.85em;">Çıktı almak veya paylaşmak için ideal</span>
+        <a href="metin_rapor.html" class="rapor-btn" style="background: linear-gradient(90deg, #5a3a00, #aa7000);">Metni Aç →</a>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  Madenler Araştırma Klasörü · Hazırlanma Tarihi: Mayıs 2026 · Tüm bilgiler kamuya açık kaynaklardan derlenmiştir.
+</footer>
+</body>
+</html>

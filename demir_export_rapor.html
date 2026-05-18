@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEMİR EXPORT A.Ş. — Kapsamlı Araştırma Raporu</title>
+<style>
+  :root {
+    --koyu: #1a1a2e;
+    --lacivert: #16213e;
+    --mavi: #0f3460;
+    --kırmızı: #e94560;
+    --sarı: #f5a623;
+    --yesil: #27ae60;
+    --turuncu: #e67e22;
+    --gri: #ecf0f1;
+    --metin: #2c3e50;
+    --kart: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--gri);
+    color: var(--metin);
+    line-height: 1.7;
+  }
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, var(--koyu) 0%, var(--mavi) 60%, #1a4080 100%);
+    color: white;
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .header h1 { font-size: 2.8em; font-weight: 900; letter-spacing: -1px; margin-bottom: 10px; position: relative; }
+  .header .subtitle { font-size: 1.2em; opacity: 0.85; position: relative; }
+  .header .badge {
+    display: inline-block;
+    background: var(--kırmızı);
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 700;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  .header .meta { font-size: 0.85em; opacity: 0.7; margin-top: 12px; position: relative; }
+
+  /* UYARI BANDI */
+  .uyari-bandi {
+    background: linear-gradient(90deg, var(--sarı), #f39c12);
+    color: var(--koyu);
+    padding: 12px 40px;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  /* NAVIGASYON */
+  .nav-sidebar {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--lacivert);
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+  .nav-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    gap: 0;
+  }
+  .nav-scroll::-webkit-scrollbar { height: 3px; }
+  .nav-scroll::-webkit-scrollbar-thumb { background: var(--kırmızı); }
+  .nav-scroll a {
+    display: block;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 0.82em;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+  }
+  .nav-scroll a:hover {
+    color: white;
+    background: rgba(255,255,255,0.1);
+    border-bottom-color: var(--kırmızı);
+  }
+
+  /* ANA CONTAINER */
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+
+  /* ÖZET KARTLAR */
+  .ozet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+  .ozet-kart {
+    background: white;
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--mavi);
+    transition: transform 0.2s;
+  }
+  .ozet-kart:hover { transform: translateY(-4px); }
+  .ozet-kart .rakam { font-size: 2.4em; font-weight: 900; color: var(--mavi); line-height: 1; }
+  .ozet-kart .etiket { font-size: 0.82em; color: #888; margin-top: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .ozet-kart.kirmizi { border-top-color: var(--kırmızı); }
+  .ozet-kart.kirmizi .rakam { color: var(--kırmızı); }
+  .ozet-kart.turuncu { border-top-color: var(--turuncu); }
+  .ozet-kart.turuncu .rakam { color: var(--turuncu); }
+  .ozet-kart.yesil { border-top-color: var(--yesil); }
+  .ozet-kart.yesil .rakam { color: var(--yesil); }
+
+  /* BÖLÜMLER */
+  .bolum {
+    background: white;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.07);
+    overflow: hidden;
+  }
+  .bolum-baslik {
+    background: linear-gradient(90deg, var(--mavi), #1a4a8a);
+    color: white;
+    padding: 20px 28px;
+    font-size: 1.2em;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .bolum-baslik.kirmizi { background: linear-gradient(90deg, var(--kırmızı), #c0392b); }
+  .bolum-baslik.turuncu { background: linear-gradient(90deg, var(--turuncu), #d35400); }
+  .bolum-baslik.koyu { background: linear-gradient(90deg, var(--koyu), #2c3e50); }
+  .bolum-baslik.yesil { background: linear-gradient(90deg, #1e8449, var(--yesil)); }
+  .bolum-ikon { font-size: 1.4em; }
+  .bolum-icerik { padding: 28px; }
+
+  /* ZAMAN ÇİZELGESİ */
+  .zaman-cetveli { position: relative; padding-left: 30px; }
+  .zaman-cetveli::before {
+    content: '';
+    position: absolute; left: 10px; top: 0; bottom: 0;
+    width: 2px; background: var(--mavi);
+  }
+  .zaman-madde {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 20px;
+  }
+  .zaman-madde::before {
+    content: '';
+    position: absolute;
+    left: -24px; top: 6px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--kırmızı);
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--kırmızı);
+  }
+  .zaman-yil {
+    font-weight: 800;
+    color: var(--mavi);
+    font-size: 1.05em;
+  }
+  .zaman-metin { color: var(--metin); margin-top: 3px; }
+
+  /* MADEN TABLOSU */
+  .maden-tablo {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92em;
+    margin-top: 10px;
+  }
+  .maden-tablo thead {
+    background: var(--mavi);
+    color: white;
+  }
+  .maden-tablo th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.88em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .maden-tablo td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+  }
+  .maden-tablo tr:hover { background: #f8f9fa; }
+  .maden-tablo tr:nth-child(even) { background: #fafafa; }
+  .durum-aktif {
+    background: #d5f5e3;
+    color: #1a8a45;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.82em;
+  }
+  .durum-satis {
+    background: #fdebd0;
+    color: #d35400;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.82em;
+  }
+  .durum-dava {
+    background: #fde8e8;
+    color: #c0392b;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.82em;
+  }
+  .durum-gelisme {
+    background: #eaf2ff;
+    color: #1a6bb5;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.82em;
+  }
+
+  /* AKORDİYON */
+  .akordeon-madde { border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+  .akordeon-baslik {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 16px 20px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 700;
+    color: var(--metin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    transition: background 0.2s;
+  }
+  .akordeon-baslik:hover { background: #e8ecf0; }
+  .akordeon-baslik.aktif { background: var(--mavi); color: white; }
+  .akordeon-ok { font-size: 1.2em; transition: transform 0.3s; }
+  .akordeon-baslik.aktif .akordeon-ok { transform: rotate(180deg); }
+  .akordeon-icerik {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    background: white;
+  }
+  .akordeon-icerik.acik { max-height: 2000px; padding: 20px; }
+
+  /* ALINTI KUTUSU */
+  .alinti {
+    border-left: 5px solid var(--kırmızı);
+    background: #fff5f5;
+    padding: 16px 20px;
+    margin: 16px 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #555;
+  }
+  .alinti cite { display: block; margin-top: 8px; font-style: normal; font-weight: 700; color: var(--kırmızı); font-size: 0.85em; }
+
+  /* UYARI KUTUSU */
+  .uyari-kutu {
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .uyari-kutu.kirmizi { background: #fde8e8; border: 1px solid #f5c6c6; }
+  .uyari-kutu.sarı { background: #fef9e7; border: 1px solid #f9e4a0; }
+  .uyari-kutu.yesil { background: #d5f5e3; border: 1px solid #a9dfbf; }
+  .uyari-kutu.mavi { background: #eaf2ff; border: 1px solid #aed6f1; }
+  .uyari-kutu .ikon { font-size: 1.4em; flex-shrink: 0; margin-top: 2px; }
+  .uyari-kutu .icerik strong { display: block; margin-bottom: 4px; }
+
+  /* HABER KARTLARI */
+  .haber-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 16px; }
+  .haber-kart {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 16px;
+    background: white;
+    transition: box-shadow 0.2s;
+  }
+  .haber-kart:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+  .haber-kart .kaynak { font-size: 0.75em; color: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 6px; }
+  .haber-kart .baslik { font-weight: 700; color: var(--metin); font-size: 0.95em; margin-bottom: 8px; }
+  .haber-kart .aciklama { font-size: 0.88em; color: #666; }
+  .haber-kart a { color: var(--mavi); text-decoration: none; font-size: 0.82em; font-weight: 700; margin-top: 8px; display: inline-block; }
+
+  /* GRAFİK */
+  .grafik-container { padding: 20px 0; }
+  .grafik-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .grafik-etiket { min-width: 160px; font-size: 0.88em; font-weight: 600; color: var(--metin); text-align: right; }
+  .grafik-alan { flex: 1; background: #ecf0f1; border-radius: 6px; height: 28px; position: relative; overflow: hidden; }
+  .grafik-dolgu {
+    height: 100%;
+    border-radius: 6px;
+    display: flex; align-items: center; padding-left: 10px;
+    color: white; font-size: 0.82em; font-weight: 700;
+    transition: width 1s ease;
+  }
+
+  /* HARITA GÖRSEL */
+  .harita-placeholder {
+    background: linear-gradient(135deg, #ecf0f1, #d5dbdb);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    border: 2px dashed #bdc3c7;
+    margin: 16px 0;
+  }
+
+  /* DAİRE GRAFİĞİ */
+  .pasta-wrapper { display: flex; gap: 30px; align-items: center; flex-wrap: wrap; margin: 16px 0; }
+  .pasta-legend { flex: 1; min-width: 200px; }
+  .legend-madde { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 0.9em; }
+  .legend-renk { width: 16px; height: 16px; border-radius: 3px; flex-shrink: 0; }
+
+  /* KAYNAK LİSTESİ */
+  .kaynak-listesi { list-style: none; }
+  .kaynak-listesi li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88em; }
+  .kaynak-listesi li:last-child { border-bottom: none; }
+  .kaynak-listesi a { color: var(--mavi); text-decoration: none; }
+  .kaynak-listesi a:hover { text-decoration: underline; }
+  .kaynak-listesi .num { background: var(--mavi); color: white; padding: 2px 7px; border-radius: 10px; font-size: 0.78em; font-weight: 700; margin-right: 8px; }
+
+  /* TKP BÖLÜMÜ */
+  .tkp-bolum {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    border-radius: 14px;
+    padding: 36px;
+    margin-bottom: 30px;
+  }
+  .tkp-baslik { font-size: 1.5em; font-weight: 900; color: var(--kırmızı); margin-bottom: 16px; }
+  .tkp-madde-listesi { list-style: none; }
+  .tkp-madde-listesi li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    gap: 12px;
+    font-size: 0.95em;
+    color: rgba(255,255,255,0.9);
+  }
+  .tkp-madde-listesi li:last-child { border-bottom: none; }
+  .tkp-madde-listesi .no {
+    background: var(--kırmızı);
+    color: white;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.82em;
+    font-weight: 900;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--koyu);
+    color: rgba(255,255,255,0.7);
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 0.85em;
+    margin-top: 40px;
+  }
+  footer a { color: rgba(255,255,255,0.6); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .header h1 { font-size: 1.9em; }
+    .container { padding: 20px 16px; }
+    .ozet-grid { grid-template-columns: repeat(2, 1fr); }
+    .grafik-etiket { min-width: 110px; font-size: 0.78em; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>⛏ DEMİR EXPORT A.Ş.</h1>
+  <div class="subtitle">Koç Holding İştiraki — Madencilik Faaliyetleri Kapsamlı Araştırma Raporu</div>
+  <div class="badge">GİZLİLİK DERECESİ YOK · KAMUYA AÇIK BİLGİLER</div>
+  <div class="meta">Hazırlanma Tarihi: Mayıs 2026 · Türkiye Komünist Partisi "Madenler Devletleştirilmeli" Kampanyası Bağlamında</div>
+</div>
+
+<!-- UYARI BANDI -->
+<div class="uyari-bandi">
+  ⚠️ Bu rapor yalnızca doğrulanabilir kamuya açık kaynaklara dayanmaktadır. Her iddia kaynak gösterilerek belgelenmiştir.
+</div>
+
+<!-- NAVIGASYON -->
+<nav class="nav-sidebar">
+  <div class="nav-scroll">
+    <a href="#giris">Giriş</a>
+    <a href="#ozet">Genel Bakış</a>
+    <a href="#tarih">Tarihçe</a>
+    <a href="#yonetim">Yönetim</a>
+    <a href="#madenler">Maden İşletmeleri</a>
+    <a href="#kirsehir">Kırşehir Altın Madeni</a>
+    <a href="#uluslararasi">Uluslararası</a>
+    <a href="#cevre">Çevre Sorunları</a>
+    <a href="#davalar">Davalar & Cezalar</a>
+    <a href="#isci">İşçi Hakları</a>
+    <a href="#medya">Medyaya Yansımalar</a>
+    <a href="#tkp">TKP Perspektifi</a>
+    <a href="#kaynaklar">Kaynaklar</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- GİRİŞ: TÜRKİYE MADENCİLİK TABLOSU -->
+  <div class="bolum" id="giris">
+    <div class="bolum-baslik koyu">
+      <span class="bolum-ikon">🇹🇷</span>
+      TÜRKİYE'DE MADENCİLİK: GENEL TABLO
+    </div>
+    <div class="bolum-icerik">
+      <p>Türkiye, 90'ı aşkın mineralin çıkarıldığı, zengin doğal kaynaklara sahip bir ülkedir. Ancak madencilik sektörü; özelleştirme politikaları, zayıf kamu denetimi, işçi güvenliği ihlalleri ve büyük çevre felaketleriyle gündemin sürekli güncel konusu olmaktadır.</p>
+      <br>
+      <div class="ozet-grid">
+        <div class="ozet-kart">
+          <div class="rakam">14.276</div>
+          <div class="etiket">Toplam Maden Ruhsatı (2024)</div>
+        </div>
+        <div class="ozet-kart kirmizi">
+          <div class="rakam">105</div>
+          <div class="etiket">Maden İşçisi Ölümü (2022)</div>
+        </div>
+        <div class="ozet-kart turuncu">
+          <div class="rakam">%1.36</div>
+          <div class="etiket">Madenciliğin GSYİH Payı (2022)</div>
+        </div>
+        <div class="ozet-kart yesil">
+          <div class="rakam">7.652</div>
+          <div class="etiket">İşletme İzinli Ruhsat Sayısı</div>
+        </div>
+      </div>
+      <br>
+      <p>Türkiye'de maden sektörü ağırlıklı olarak özel şirketlerin elindedir. 2023 verilerine göre iş kazaları yüzde 15,7, iş kazası sonucu ölümler ise yüzde 30 oranında artmıştır. Türkiye'deki madencilik kazalarının önemli bölümü özel sektörde —özellikle alt-işverenlik ilişkileri altında— çalışan işçileri etkilemektedir.</p>
+      <br>
+      <div class="uyari-kutu kirmizi">
+        <div class="ikon">⚠️</div>
+        <div class="icerik">
+          <strong>Soma'dan İliç'e: Özel Madenciliğin Faturası</strong>
+          2014 Soma faciasında 301 işçi hayatını kaybetti. 2024'te Erzincan İliç'te Anagold Madencilik'e ait Çöpler altın madeninde siyanür atık çöküşü 9 işçiyi göçük altında bıraktı. Her iki felaket de özelleştirilmiş ve denetimden uzak maden işletmelerinde yaşandı.
+        </div>
+      </div>
+      <br>
+      <p><strong>Siyasi Boyut:</strong> Türkiye Komünist Partisi (TKP), Soma faciasının 12. yıl dönümünde yayımladığı bildirgeyle madenların "derhal ve tazminatsız biçimde devletleştirilmesini" talep etmiş; bu kampanya kamuoyunda geniş yankı uyandırmıştır. 2026 yılında Doruk Madencilik işçilerinin Ankara'ya yürüyüşü ve açlık grevi ise bu talebi gündemin üst sıralarına taşımıştır.</p>
+    </div>
+  </div>
+
+  <!-- ÖZET KARTLAR -->
+  <div id="ozet"></div>
+  <div class="ozet-grid" style="margin-bottom:30px;">
+    <div class="ozet-kart">
+      <div class="rakam">1957</div>
+      <div class="etiket">Kuruluş Yılı</div>
+    </div>
+    <div class="ozet-kart kirmizi">
+      <div class="rakam">5+</div>
+      <div class="etiket">Aktif Maden Sahası</div>
+    </div>
+    <div class="ozet-kart turuncu">
+      <div class="rakam">3</div>
+      <div class="etiket">ÇED İptal Davası (Bakırtepe)</div>
+    </div>
+    <div class="ozet-kart yesil">
+      <div class="rakam">134M$</div>
+      <div class="etiket">İspir Bakır-Çinko Yatırımı</div>
+    </div>
+    <div class="ozet-kart kirmizi">
+      <div class="rakam">1 Yıl 8 Ay</div>
+      <div class="etiket">Koç Yetkilisine Hapis (Bakırtepe)</div>
+    </div>
+    <div class="ozet-kart">
+      <div class="rakam">57.5%</div>
+      <div class="etiket">İrlanda Maden Ortaklığı Payı</div>
+    </div>
+  </div>
+
+  <!-- TARİHÇE -->
+  <div class="bolum" id="tarih">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">📅</span>
+      ŞİRKET TARİHÇESİ (1957 - GÜNÜMÜZ)
+    </div>
+    <div class="bolum-icerik">
+      <div class="zaman-cetveli">
+        <div class="zaman-madde">
+          <div class="zaman-yil">1957</div>
+          <div class="zaman-metin">Vehbi Koç önderliğinde "Demir Limited" adıyla, Koçtaş ile Tetico ortaklığında kuruldu. Amacı: Türkiye'nin demir cevheri ihtiyacını karşılamak ve demir ihracatı yapmak.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">1958</div>
+          <div class="zaman-metin">Şirket adı "Demir Export" olarak değiştirildi. Sivas Divriği'de demir cevheri üretimi ve yurtiçi-yurtdışı satış faaliyetleri başladı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">1970 - 1976</div>
+          <div class="zaman-metin">Sivas Otlukilise, Balıkesir Şamlı ve Eğmir'deki demir sahalarını portföye ekledi. Giresun Harşit'te kurşun ve çinko sahaları işletmeye alındı. Bu dönemde şirket, çok madenlı bir yapıya kavuştu.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">1980'ler</div>
+          <div class="zaman-metin">Türkiye'de kamu-özel ortaklığı modelleri yaygınlaştı. Demir Export, Koç Holding bünyesinde güçlenerek büyük demir cevheri ihracatçısı konumuna yükseldi.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2006</div>
+          <div class="zaman-metin">Maden İşleri Genel Müdürlüğü (MİGEM) ihalesinde Sivas Kangal'daki Bakırtepe altın sahası Demir Export'a verildi. Bu, şirketin altın madenciliğine geçişinin başlangıcıdır.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2012</div>
+          <div class="zaman-metin">MAPEG'in 103. grup ihalesinde Erzurum İspir'de bakır-çinko maden ruhsatı alındı. 134 milyon dolarlık yatırım onaylandı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2013</div>
+          <div class="zaman-metin">Divriği'deki Ferrocom Madencilik şirketi satın alınarak Taşlıtepe ve Purunsur sahaları Divriği İşletmeleri çatısı altında birleştirildi. Bakırtepe'de siyanürlü altın çıkarımı yatırımı kararı verildi.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2014</div>
+          <div class="zaman-metin">Bakırtepe ÇED raporu mahkeme tarafından iptal edildi (1. iptal). Yerel halk ve çevre örgütleri dava kazandı. Ancak şirket yeni ÇED raporuyla mücadeleyi sürdürdü.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2015</div>
+          <div class="zaman-metin">Bakırtepe davasında Koç yetkilisi Murat Marangoz'a 1 yıl 8 ay hapis cezası verildi. Gerekçe: mera arazisine telafi edilemez zarar. Ceza ertelenmedi.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2016</div>
+          <div class="zaman-metin">Bakırtepe Altın İşletmesi'nde ilk altın dökümü gerçekleşti. Aynı yıl maden, çevresel ihlaller gerekçesiyle mühürlenerek kapatıldı. Kısa süre sonra tekrar açıldı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2017</div>
+          <div class="zaman-metin">Divriği demir madeninden 45 yıl aradan sonra ilk ihracat yapıldı. Bakırtepe siyanür yönetim kodu sertifikası aldı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2019 - 2023</div>
+          <div class="zaman-metin">Balıkesir Sarıalan Altın İşletmesi, CVK Maden'e 18,5 milyon Euro'ya satıldı. Maden sahası 70.000 ons altın ve 468.000 ons gümüş rezervi içermekteydi. Danıştay, Bakırtepe ÇED'ini 3. kez iptal etti.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2019 - 2021</div>
+          <div class="zaman-metin">DEFAŞ Madencilik kuruldu (Mart 2019). Koç Holding'e bağlı Demir Export ile AKP Batman Milletvekili Ferhat Nasıroğlu'nun Fernas İnşaat şirketinin ortaklığıyla. Kırşehir Boztepe'de altın ve nadir toprak elementleri araması başladı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2022 - 2023</div>
+          <div class="zaman-metin">İrlanda'daki Conroy Gold & Natural Resources şirketiyle ön anlaşma, ardından kesin anlaşma imzalandı. Demir Export, İrlanda ve Kuzey İrlanda'daki 11 madende %57,5 pay edindi.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2024 - 2025</div>
+          <div class="zaman-metin">Kırşehir DEFAŞ projesi için ÇED olumlu kararı verildi. Kırşehir Ziraat Odası ve TMMOB hukuki süreç başlattı. Ağustos 2025'te İDK toplantısı yapıldı. Kırşehir Belediyesi projeye şiddetle karşı çıktı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2026</div>
+          <div class="zaman-metin">Bakırtepe ÇED davaları sürüyor. Kırşehir yerel halkı ve kuruluşlar DEFAŞ projesine karşı yargı yoluna gitti. Divriği'deki yeraltı maden kapatma kararına karşı işçi protestosu yaşandı (Ocak 2026).</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- YÖNETİM -->
+  <div class="bolum" id="yonetim">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">👔</span>
+      YÖNETİM YAPISI VE SAHİPLİK
+    </div>
+    <div class="bolum-icerik">
+      <div class="uyari-kutu mavi">
+        <div class="ikon">ℹ️</div>
+        <div class="icerik">
+          <strong>Sahiplik Yapısı</strong>
+          Demir Export A.Ş., Koç Holding A.Ş.'ye bağlı bir iştiraktir. Türkiye'nin en büyük sanayi ve ticaret grubu olan Koç Holding; otomotiv, enerji, finans ve tüketici elektroniği gibi sektörlerde faaliyet gösteren çok sayıda şirkete sahiptir. Demir Export, holding bünyesinde madencilik segmentinin temel şirketidir.
+        </div>
+      </div>
+      <br>
+      <table class="maden-tablo">
+        <thead>
+          <tr>
+            <th>Pozisyon</th>
+            <th>İsim / Açıklama</th>
+            <th>Not</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Kurucu</strong></td>
+            <td>Vehbi Koç (1901-1996)</td>
+            <td>1957'de şirketi kurdu; Türkiye'nin ilk büyük sanayicilerinden</td>
+          </tr>
+          <tr>
+            <td><strong>Yönetim Kurulu</strong></td>
+            <td>Koç Holding Yönetim Kurulu üyeleri tarafından atanır</td>
+            <td>Tam liste kamuya açıklanmamıştır; KAP açıklamaları incelenebilir</td>
+          </tr>
+          <tr>
+            <td><strong>İşletme Müdürü (Bakırtepe)</strong></td>
+            <td>Selim Saral</td>
+            <td>Instagram kaydından ulaşılan bilgi; maden sahası yönetimi</td>
+          </tr>
+          <tr>
+            <td><strong>Yetkili Temsilci (Eski)</strong></td>
+            <td>Murat Marangoz</td>
+            <td>Bakırtepe davasında 2015'te hapis cezası alan yetkili</td>
+          </tr>
+          <tr>
+            <td><strong>Koç Holding CEO</strong></td>
+            <td>Ömer Koç (Yönetim Kurulu Başkanı)</td>
+            <td>Vehbi Koç'un torunu; holding üzerinden Demir Export'u yönetir</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="uyari-kutu sarı">
+        <div class="ikon">⚠️</div>
+        <div class="icerik">
+          <strong>Şeffaflık Sorunu</strong>
+          Demir Export, halka açık bir şirket değildir. Yönetim kurulu üyelerinin tam listesi ve yıllık faaliyet raporları kamuoyuyla sistematik biçimde paylaşılmamaktadır. Bu durum, hesap verebilirlik açısından ciddi bir boşluk yaratmaktadır.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MADEN İŞLETMELERİ -->
+  <div class="bolum" id="madenler">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">⛏</span>
+      MADEN İŞLETMELERİ — DETAYLI LİSTE
+    </div>
+    <div class="bolum-icerik">
+      <table class="maden-tablo">
+        <thead>
+          <tr>
+            <th>Maden / Saha</th>
+            <th>Konum</th>
+            <th>Maden Türü</th>
+            <th>Durum</th>
+            <th>Notlar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Divriği Demir İşletmesi</strong></td>
+            <td>Sivas / Divriği</td>
+            <td>Demir Cevheri</td>
+            <td><span class="durum-aktif">AKTİF</span></td>
+            <td>Türkiye demir üretiminin ~%20'si; 2024'te 2,15 milyon ton üretim. 2026 Ocak'ta yeraltı madeni kapatma kararına karşı işçi protestosu.</td>
+          </tr>
+          <tr>
+            <td><strong>Bakırtepe Altın İşletmesi</strong></td>
+            <td>Sivas / Kangal</td>
+            <td>Altın (Siyanürlü)</td>
+            <td><span class="durum-dava">DAVALI / AKTİF</span></td>
+            <td>2016'dan beri aktif. 3 kez ÇED iptali yaşandı. Arsenik sorunu, kapasite artırma girişimleri. 12 yıldır süren çevre mücadelesi.</td>
+          </tr>
+          <tr>
+            <td><strong>İspir Bakır-Çinko İşletmesi</strong></td>
+            <td>Erzurum / İspir</td>
+            <td>Bakır + Çinko</td>
+            <td><span class="durum-gelisme">GELİŞTİRME</span></td>
+            <td>134 milyon dolarlık yatırım. 7 yılda 5,5 milyon ton cevher işlenecek. Ortalama: %1 bakır, %3,5 çinko içeriği.</td>
+          </tr>
+          <tr>
+            <td><strong>Sarıalan Altın İşletmesi</strong></td>
+            <td>Balıkesir</td>
+            <td>Altın + Gümüş</td>
+            <td><span class="durum-satis">SATILDI</span></td>
+            <td>CVK Maden'e 18,5 milyon Euro'ya devredildi. 70.000 ons altın + 468.000 ons gümüş rezervi. KAP'a bildirildi.</td>
+          </tr>
+          <tr>
+            <td><strong>DEFAŞ (Kırşehir Altın Projesi)</strong></td>
+            <td>Kırşehir / Boztepe</td>
+            <td>Altın + NTE (Nadir Toprak Elem.)</td>
+            <td><span class="durum-dava">ÇED SÜRECİ / DAVALI</span></td>
+            <td>Fernas İnşaat ile ortak. 5.855 ha ruhsat. Seyfe Gölü'ne 7 km mesafe. ÇED olumlu verildi, TMMOB ve Ziraat Odası dava açtı.</td>
+          </tr>
+          <tr>
+            <td><strong>Giresun Harşit Kurşun-Çinko</strong></td>
+            <td>Giresun</td>
+            <td>Kurşun + Çinko</td>
+            <td><span class="durum-satis">ESKİ / SATILDI</span></td>
+            <td>1970'lerde portföye eklenmişti. Güncel durumu kesin bilinmiyor.</td>
+          </tr>
+          <tr>
+            <td><strong>Conroy Gold (İrlanda)</strong></td>
+            <td>İrlanda + Kuzey İrlanda</td>
+            <td>Altın</td>
+            <td><span class="durum-gelisme">ARAMA AŞAMASI</span></td>
+            <td>%57,5 pay (ilk aşamada %40, 2. aşamada +%14,5). 11 ayrı maden sahası. Clontibret lisans alanı: 517.000 ons rezerv.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <div class="grafik-container">
+        <h3 style="margin-bottom:16px; color: var(--mavi);">Maden Üretim Ağırlıkları (Tahmini Kapasite)</h3>
+        <div class="grafik-bar">
+          <div class="grafik-etiket">Demir (Divriği)</div>
+          <div class="grafik-alan">
+            <div class="grafik-dolgu" style="width:85%; background: linear-gradient(90deg, #2980b9, #3498db);">85% — 2.15M ton/yıl</div>
+          </div>
+        </div>
+        <div class="grafik-bar">
+          <div class="grafik-etiket">Altın (Bakırtepe)</div>
+          <div class="grafik-alan">
+            <div class="grafik-dolgu" style="width:35%; background: linear-gradient(90deg, #f39c12, #f5a623);">35% — Doré üretimi</div>
+          </div>
+        </div>
+        <div class="grafik-bar">
+          <div class="grafik-etiket">Bakır-Çinko (İspir)</div>
+          <div class="grafik-alan">
+            <div class="grafik-dolgu" style="width:25%; background: linear-gradient(90deg, #27ae60, #2ecc71);">25% — Yatırım aşaması</div>
+          </div>
+        </div>
+        <div class="grafik-bar">
+          <div class="grafik-etiket">Kırşehir (DEFAŞ)</div>
+          <div class="grafik-alan">
+            <div class="grafik-dolgu" style="width:10%; background: linear-gradient(90deg, #8e44ad, #9b59b6);">10% — ÇED sürecinde</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KIRŞEHİR ALTIN MADENİ -->
+  <div class="bolum" id="kirsehir">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">🔴</span>
+      KIRŞEHİR ALTIN MADENİ — DEFAŞ MADENCİLİK — ÖZEL İNCELEME
+    </div>
+    <div class="bolum-icerik">
+      <div class="uyari-kutu kirmizi">
+        <div class="ikon">🚨</div>
+        <div class="icerik">
+          <strong>Siyasi Ortaklık Uyarısı</strong>
+          DEFAŞ Madencilik; Koç Holding iştiraki Demir Export ile AKP Batman Milletvekili Ferhat Nasıroğlu'nun sahibi olduğu Fernas İnşaat A.Ş.'nin ortaklığıyla Mart 2019'da kurulmuştur. Bu ortaklık, büyük bir siyasi-ticari ilişki örneği olarak basına yansımıştır.
+        </div>
+      </div>
+
+      <br>
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik aktif" onclick="akordeon(this)">
+          📍 Projenin Coğrafi Konumu ve Boyutu <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik acik">
+          <ul style="list-style: disc; padding-left: 20px; line-height: 2;">
+            <li><strong>Konum:</strong> Kırşehir il merkezi, Boztepe ilçesi ve köyleri; Çimeli ve Körpınar köyleri</li>
+            <li><strong>Şehir merkezine mesafe:</strong> Yaklaşık 6 km</li>
+            <li><strong>Seyfe Gölü'ne mesafe:</strong> ÇED raporuna göre 6.947 metre</li>
+            <li><strong>Toplam ruhsat alanı:</strong> 5.855 hektar (yaklaşık 8.000 futbol sahası)</li>
+            <li><strong>ÇED kapsamındaki alan:</strong> 2.864 hektar</li>
+            <li><strong>Ruhsat detayları:</strong> 1.988 ha, 1.963 ha ve 1.904 ha olmak üzere 3 ayrı ruhsat (geçerlilik: 2030 ve 2033)</li>
+            <li><strong>Planlanan çukur sayısı:</strong> 14 ayrı açık ocak çukuru</li>
+            <li><strong>Yıllık cevher çıkarımı:</strong> 3 milyon ton</li>
+            <li><strong>Yıllık zenginleştirilmiş cevher:</strong> 200.000 ton</li>
+            <li><strong>10 yıllık atık miktarı:</strong> 371 milyon ton</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🌊 Çevresel Tehditler ve Su Sorunu <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <ul style="list-style: disc; padding-left: 20px; line-height: 2;">
+            <li><strong>İçme suyu tehdidi:</strong> Kırşehir'in 250.000 sakini için kullanılan su kaynaklarına ~3 km mesafe. Dağ ve kaya yapılarının tahribatı yer altı su yollarını yok edebilir.</li>
+            <li><strong>Tarım zararı:</strong> 650 hektar ekilebilir tarım arazisi yok edilecek. Bu araziler Ankara ve İstanbul'un et ihtiyacının %30'unu karşılayan hayvancılık alanları.</li>
+            <li><strong>Su tüketimi:</strong> Yıllık 499,6 milyon litre su — Kapulukaya Barajı'ndan 73 km boru hattıyla taşınacak.</li>
+            <li><strong>Hukuka aykırı su tahsisi:</strong> DSİ, başka şirkete (TÜPRAŞ) tahsis edilmiş 1988 tarihli kullanım hakkını DEFAŞ'a devretti. Uzmanlar bunun yönetmeliğe aykırı olduğunu belirtti.</li>
+            <li><strong>Seyfe Gölü tehdidi:</strong> 187 kuş türüne (27'si nesli tehlike altında) ev sahipliği yapan, flamingolara da habitat olan Seyfe Gölü Tabiatı Koruma Alanı 7 km uzaklıkta. Sınırları altın arama gerekçesiyle daraltıldı.</li>
+            <li><strong>Zehirli atık havuzları:</strong> Köylerin ve koruma alanının yanı başına 3 toksik atık barajı kurulacak.</li>
+            <li><strong>NTE İddiası:</strong> Kırşehir Kent Konseyi yaptırdığı toprak analizlerinde bölgede titanyum, seryum, lantan, lityum, toryum ve uranyum gibi nadir toprak elementleri bulunduğunu, projenin asıl hedefinin bunlar olduğunu duyurdu.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          ⚖️ Hukuki Süreç ve Davalar <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <ul style="list-style: disc; padding-left: 20px; line-height: 2;">
+            <li><strong>Aralık 2024:</strong> Çevre Bakanlığı ÇED başvurusunu reddederek şirketten revizyon istedi, 1 yıl süre verdi.</li>
+            <li><strong>2025 başı:</strong> Kırşehir Ziraat Odası, "ÇED Olumlu" kararına karşı idare mahkemesinde dava açtı.</li>
+            <li><strong>Ağustos 2025:</strong> Çevre Bakanlığı İDK (İnceleme ve Değerlendirme Komisyonu) toplantısı yapıldı. Kırşehir Belediyesi toplantıdan dışlandı; Belediye Başkanı "ekolojik soykırım" dedi.</li>
+            <li><strong>ÇED Olumlu kararı:</strong> Bakanlık, itirazlara rağmen ÇED olumlu kararı verdi.</li>
+            <li><strong>TMMOB hamlesi:</strong> TMMOB Hukuk Müşaviri Avukat Ferhat Çelepkolu, ÇED olumlu kararına karşı hukuki süreç başlatacaklarını açıkladı.</li>
+            <li><strong>Yargıtay:</strong> Kırşehir Belediyesi'nin itirazı Yargıtay'da yetki belirlenmesi aşamasında.</li>
+          </ul>
+
+          <div class="alinti">
+            "Bu proje coğrafyamızı, tarlamızı, hayvancılığımızı ve kuş cennetimizi tehdit ediyor. Ekolojik soykırım kabul etmeyeceğiz."
+            <cite>— Kırşehir Belediye Başkanı Selahattin Ekicioğlu</cite>
+          </div>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          👥 Yerel Halk Tepkisi <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>Yerel halk ÇED toplantılarında "sessiz direniş" gösterdi; pankartlarla "Altın istemiyoruz, emeğimizi, toprağımızı, suyumuzu istiyoruz" mesajı verdi. Kırşehir Çevre Koruma Platformu vatandaşlardan itiraz dilekçesi topladı. Doğa savunucuları Ankara'da buluşarak kamuoyu oluşturdu. Hürriyet yazarı Yalçın Bayer bu projeyi manşete taşıdı: "Bu sadece Kırşehir'in davası değil, bugün altın için göz dikilen köyler, yarın başka bir yerde çoğalabilir."</p>
+          <br>
+          <div class="uyari-kutu sarı">
+            <div class="ikon">🗞️</div>
+            <div class="icerik"><strong>Dikkat Çeken Haber</strong> Odatv.com: "Kırşehir halkı ile Koç Holding karşı karşıya" — Yerel yöneticiler ve halkın Türkiye'nin en güçlü iş insanı ailesine karşı verdiği mücadele ulusal medyada geniş yer buldu.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ULUSLARARASI ORTAKLIKLAR -->
+  <div class="bolum" id="uluslararasi">
+    <div class="bolum-baslik yesil">
+      <span class="bolum-ikon">🌍</span>
+      ULUSLARARASI ORTAKLIKLAR
+    </div>
+    <div class="bolum-icerik">
+      <h3 style="margin-bottom: 12px; color: var(--yesil);">İrlanda: Conroy Gold & Natural Resources Ortaklığı</h3>
+      <table class="maden-tablo">
+        <thead>
+          <tr><th>Detay</th><th>Bilgi</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ortak Şirket</td><td>Conroy Gold & Natural Resources (İrlanda Borsası'nda işlem görür)</td></tr>
+          <tr><td>Kuruluş Yılı</td><td>Conroy 2005 yılında kuruldu</td></tr>
+          <tr><td>Anlaşma Aşamaları</td><td>2022 ön anlaşma → 2023 kesin anlaşma imzalandı</td></tr>
+          <tr><td>Demir Export'un Payı</td><td>%57,5 (1. aşama %40 + 2. aşama +%14,5)</td></tr>
+          <tr><td>Kapsanan Saha Sayısı</td><td>11 maden lisansı (İrlanda Cumhuriyeti + Kuzey İrlanda)</td></tr>
+          <tr><td>Clontibret Lisansı</td><td>1. faz; 517.000 ons altın rezervi içeriyor</td></tr>
+          <tr><td>Amaç</td><td>İrlanda ve Kuzey İrlanda'da altın ve doğal kaynak arama + işletme</td></tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="uyari-kutu mavi">
+        <div class="ikon">🔍</div>
+        <div class="icerik">
+          <strong>Dikkat:</strong> Türk şirketlerin yurt dışında maden arama faaliyetleri son yıllarda hız kazanmıştır. Demir Export, İrlanda ortaklığıyla uluslararası arenada da önemli bir oyuncu olmaya başlamıştır. Bu ortaklık, şirketin salt yurt içi demir cevheri üreticisi kimliğinden uluslararası çok metalli madenci kimliğine dönüşümünü simgelemektedir.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÇEVRE SORUNLARI -->
+  <div class="bolum" id="cevre">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">🌿</span>
+      ÇEVRE SORUNLARI VE DOĞA FELAKETLERİ
+    </div>
+    <div class="bolum-icerik">
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          ☠️ Bakırtepe'de Arsenik Sorunu (Kangal, Sivas) — 12 Yıldır Süren Mücadele <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p><strong>Olay:</strong> 2011'den itibaren yapılan resmi testler; Pınargözü, Taşgeçit köyleri ve Davutoğlu yerleşimindeki içme sularında yüksek arsenik değerleri ortaya koydu. Köylüler yıllarca arsenikli suyu tüketmek zorunda kaldı.</p>
+          <ul style="list-style: disc; padding-left: 20px; line-height: 2; margin-top: 10px;">
+            <li>Köylülerin ismini veren "Pınargözü" pınarı, dinamit patlatmaları nedeniyle kurudu.</li>
+            <li>Su kaynakları kırmızı ve sarı renkte aktı.</li>
+            <li>Siyanür atık havuzları bölgeye ciddi kirlilik yayıyor.</li>
+            <li>2021'de şirket, 2013'te açık ocak iznini genişletmek için arazileri 1 TL/m² fiyatla zorla satın aldırmaya çalıştı.</li>
+            <li>Danıştay 2023'te ÇED onayını iptal etti (3. kez); şirket hemen yeni proje tanıtım dosyasıyla süreci yeniden başlattı.</li>
+          </ul>
+          <div class="alinti">
+            "Siyanürlü ya da siyanürsüz; altın çıkarılmasın!"
+            <cite>— Ekoloji Birliği ve çevre örgütleri ortak açıklaması</cite>
+          </div>
+          <div class="alinti">
+            "Sivas'ta siyanürlü altına karşı 12 yıldır süren çevre mücadelesi: 'İliç'in yaşadıklarını yaşayacağız'"
+            <cite>— Artı Gerçek, 2024</cite>
+          </div>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🔒 Maden Mühürlendi ve Tekrar Açıldı (2016) <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>2016 yılında Bakırtepe altın madeni çevresel ihlaller gerekçesiyle mühürlenerek kapatıldı. Kuzey Ormanları Savunması bu gelişmeyi "doğayı savunanlar bir kez daha kazandı" olarak nitelendirdi. Ancak kapatma kısa süreli oldu; şirket ÇED revizyonları yaparak madeni kısa süre içinde yeniden faaliyete geçirdi. Bu durum, denetim ve yaptırım mekanizmalarının etkinliği konusunda derin soru işaretleri doğurdu.</p>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🚰 Kırşehir: Seyfe Gölü'ne Tehdit ve DSİ'nin Tartışmalı Su Tahsisi <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>DSİ, 1988'de TÜPRAŞ'a tahsis edilmiş 722 litre/saniye su hakkını DEFAŞ'a devretti. Uzmanlar bu işlemin 3. şahsa devri yasaklayan yönetmeliklere aykırı olduğunu vurguladı. Proje için Kapulukaya Barajı'ndan 73 km uzunluğunda boru hattı döşenecek; yıllık 499,6 milyon litre su kullanılacak. Bu durum, su kıtlığı yaşayan Kırşehir için varoluşsal bir tehdit oluşturmaktadır.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAVALAR VE CEZALAR -->
+  <div class="bolum" id="davalar">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">⚖️</span>
+      DAVALAR, MAHKEME KARARLARI VE CEZALAR
+    </div>
+    <div class="bolum-icerik">
+      <table class="maden-tablo">
+        <thead>
+          <tr>
+            <th>Dava / Olay</th>
+            <th>Tarih</th>
+            <th>Taraflar</th>
+            <th>Sonuç</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bakırtepe ÇED İptali — 1. Dava</strong></td>
+            <td>2014</td>
+            <td>Yerel halk + meslek odaları vs. Demir Export</td>
+            <td><span class="durum-dava">ŞİRKET KAYBETTİ — ÇED İptal</span></td>
+          </tr>
+          <tr>
+            <td><strong>Koç Yetkilisine Hapis Cezası</strong></td>
+            <td>2015</td>
+            <td>Savcılık vs. Murat Marangoz (Demir Export)</td>
+            <td><span class="durum-dava">1 YIL 8 AY HAPİS — Mera tahribatı — Ertelenmedi</span></td>
+          </tr>
+          <tr>
+            <td><strong>Bakırtepe ÇED İptali — 2. Dava</strong></td>
+            <td>~2018</td>
+            <td>Yerel halk + çevre örgütleri vs. Demir Export</td>
+            <td><span class="durum-dava">ŞİRKET KAYBETTİ — ÇED İptal</span></td>
+          </tr>
+          <tr>
+            <td><strong>Bakırtepe ÇED İptali — 3. Dava (Danıştay)</strong></td>
+            <td>2023</td>
+            <td>Bakırtepe Çevre Platformu vs. Demir Export</td>
+            <td><span class="durum-dava">ŞİRKET KAYBETTİ — Danıştay ÇED İptal</span></td>
+          </tr>
+          <tr>
+            <td><strong>Kırşehir ÇED İptal Davası — Ziraat Odası</strong></td>
+            <td>2024-2025</td>
+            <td>Kırşehir Ziraat Odası vs. DEFAŞ / Bakanlık</td>
+            <td><span class="durum-gelisme">SÜRUYOR</span></td>
+          </tr>
+          <tr>
+            <td><strong>Kırşehir ÇED İptal Davası — TMMOB</strong></td>
+            <td>2025-2026</td>
+            <td>TMMOB vs. DEFAŞ / Bakanlık</td>
+            <td><span class="durum-gelisme">BAŞLATILIYOR</span></td>
+          </tr>
+          <tr>
+            <td><strong>Kırşehir Belediyesi İtirazı</strong></td>
+            <td>2025</td>
+            <td>Kırşehir Belediyesi vs. Bakanlık</td>
+            <td><span class="durum-gelisme">YARGITAY'DA YETKİ BELİRLEME AŞAMASINDA</span></td>
+          </tr>
+          <tr>
+            <td><strong>Trabzon ÇED Mahkemesi</strong></td>
+            <td>2024</td>
+            <td>Çevreciler vs. Demir Export (Trabzon altın araması)</td>
+            <td><span class="durum-gelisme">DEVAM EDİYOR — Haziran 2024'te keşif kararı</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <div class="uyari-kutu kirmizi">
+        <div class="ikon">⚠️</div>
+        <div class="icerik">
+          <strong>Önemli Tespit:</strong> Demir Export, Bakırtepe'de üç ayrı mahkeme kararıyla ÇED iptali yaşamasına rağmen madeni kapatmak yerine her seferinde yeni ÇED başvurusu yaparak faaliyetlerini sürdürdü. Bu durum, mevcut hukuki ve idari denetim sisteminin işlevsizliğine güçlü bir kanıt oluşturmaktadır.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- İŞÇİ HAKLARI -->
+  <div class="bolum" id="isci">
+    <div class="bolum-baslik turuncu">
+      <span class="bolum-ikon">👷</span>
+      İŞÇİ HAKLARI VE ÇALIŞMA KOŞULLARI
+    </div>
+    <div class="bolum-icerik">
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          ⛏ Divriği Madeni İşçi Protestosu (Ocak 2026) <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>Ocak 2026'da Divriği'deki yeraltı demir madeni kapatma kararına karşı 220 işçi maden önünde çadır kurarak oturma eylemi başlattı. Dev-Maden-Sen sendikası, "Divriği Yeraltı Demir Madeni Açılsın, İşçiler İşbaşı Yapsın!" sloganıyla Ankara'ya seslendi. İşçiler; iş güvencesi, madenin yeniden açılması ve tazminat haklarını talep etti.</p>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🌿 Kangal Köylülerine Arazi Dayatması (2021) <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>2021 yılında Demir Export, Kangal'daki köylülere kamulaştırma tehdidiyle arazi satışı dayattı. Köylüler, arazi bedeli olarak 1 TL/m² önerildiğini, reddetmeleri durumunda kamulaştırma yoluna gidileceğinin söylendiğini aktardı. Bu durum, yerel toplulukların haklarının büyük ölçüde görmezden gelindiğini gözler önüne serdi.</p>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          📋 Bakırtepe'de İşçi Güvenliği Kaygıları <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <p>Bakırtepe'de siyanürlü altın işleme yöntemi kullanılmaktadır. Siyanür yönetim kodu sertifikası alınmış olmasına karşın yerel halk ve çevre örgütleri, olası bir kazada işçilerin yanı sıra tüm bölgenin siyanür tehlikesiyle yüz yüze kalacağını vurgulamaktadır. İliç (Erzincan) gibi örnekler bu korkuları somut gerçeğe dönüştürmüştür.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEDYA YANSIMLARI -->
+  <div class="bolum" id="medya">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">📰</span>
+      MEDYAYA YANSIYANLAR: HABERLER VE YAZARLAR
+    </div>
+    <div class="bolum-icerik">
+      <div class="haber-grid">
+        <div class="haber-kart">
+          <div class="kaynak">Cumhuriyet</div>
+          <div class="baslik">Kırşehir'de planlanan altın madeni projesi, doğal yaşamı bitirecek</div>
+          <div class="aciklama">DSİ'nin yönetmeliğe aykırı su tahsisi, DEFAŞ'ın Seyfe Gölü'ne verdiği tehdit</div>
+          <a href="https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Yeşil Gazete</div>
+          <div class="baslik">Su krizi yaşayan Kırşehir'de altına hücum: Yerel yöneticiler ve halk isyanda</div>
+          <div class="aciklama">Kırşehir halkının DEFAŞ madeni projesine karşı örgütlenmesi</div>
+          <a href="https://yesilgazete.org/su-krizi-yasayan-kirsehirde-altina-hucum-yerel-yoneticiler-ve-halk-isyanda/" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Ekoloji Birliği</div>
+          <div class="baslik">Elini evimizden çek Demir Export, Kangal'da maden istemiyoruz!</div>
+          <div class="aciklama">Bakırtepe maden sahasına kapasite artırımı girişimine köylülerin tepkisi</div>
+          <a href="https://ekolojibirligi.org/ekoloji-birligi-elini-evimizden-cek-demir-export-kangalda-maden-istemiyoruz/" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Artı Gerçek</div>
+          <div class="baslik">Sivas'ta siyanürlü altına karşı 12 yıldır süren çevre mücadelesi</div>
+          <div class="aciklama">"İliç'in yaşadıklarını yaşayacağız" — yerel halkın kaygıları</div>
+          <a href="https://artigercek.com/cevre/sivasta-siyanurlu-altina-karsi-12-yildir-suren-cevre-mucadelesi-ilicin-yasadiklarini-yasayacagiz-308032h" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Hürriyet (Yalçın Bayer)</div>
+          <div class="baslik">Altın mı, su mu?</div>
+          <div class="aciklama">Kırşehir altın madeni tartışmasını ulusal kamuoyuna taşıyan köşe yazısı</div>
+          <a href="https://www.hurriyet.com.tr/yazarlar/yalcin-bayer/altin-mi-su-mu-42929601" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Forbes Türkiye</div>
+          <div class="baslik">Koç Holding Balıkesir'deki Sarıalan Altın Madeni'ni 18,5 milyon euroya devretti</div>
+          <div class="aciklama">CVK Maden'e Sarıalan satışının piyasa değerlendirmesi</div>
+          <a href="https://www.forbes.com.tr/para-yatirim/koc-holding-balikesir-deki-sarialan-altin-madeni-ni-18-5-milyon-euroya-devretti" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Dünya Gazetesi</div>
+          <div class="baslik">Koç, İrlanda'da maden şirketine ortak oldu</div>
+          <div class="aciklama">Conroy Gold & Natural Resources ortaklığının ayrıntıları</div>
+          <a href="https://www.dunya.com/kose-yazisi/koc-irlandada-maden-sirketine-ortak-oldu/614085" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Evrensel</div>
+          <div class="baslik">Bakırtepe altın madeni davasında Koç yetkilisine hapis cezası</div>
+          <div class="aciklama">Merat Marangoz'a 1 yıl 8 ay hapis — mera tahribatı gerekçesiyle</div>
+          <a href="https://www.evrensel.net/haber/102638/bakirtepe-altin-madeni-davasinda-koc-yetkilisine-hapis-cezasi" target="_blank">→ Habere git</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TKP PERSPEKTİFİ -->
+  <div class="tkp-bolum" id="tkp">
+    <div class="tkp-baslik">🔴 TKP PERSPEKTİFİNDEN DEĞERLENDİRME: MADENLER NEDEN KAMULAŞTIRILMALI?</div>
+    <p style="color: rgba(255,255,255,0.85); margin-bottom: 20px; font-size: 0.95em;">
+      Türkiye Komünist Partisi'nin "Madenler Devletleştirilmeli" başlıklı bildirisi, Demir Export'un örneklemesini tam da destekler niteliktedir. TKP'nin 9 maddelik yol haritası ve bu şirket bağlamında somut karşılıkları:
+    </p>
+    <ul class="tkp-madde-listesi">
+      <li>
+        <span class="no">1</span>
+        <span><strong>Tüm maden arama, işletme ve zenginleştirme faaliyetleri tazminatsız millileştirilmeli:</strong> Bakırtepe'de 3 kez mahkeme kararı yenmesine rağmen faaliyet sürdürmek, özel şirketin kamu denetiminin üstünde davrandığını kanıtlar.</span>
+      </li>
+      <li>
+        <span class="no">2</span>
+        <span><strong>Çokuluslu şirketlere verilen lisanslar iptal edilmeli:</strong> İrlanda ortaklığı, Türkiye'nin doğal kaynaklarını yönetecek şirketin uluslararası sermayeye eklemlendiğini gösterir.</span>
+      </li>
+      <li>
+        <span class="no">3</span>
+        <span><strong>Halk sağlığını ve çevreyi gözeten bilimsel madencilik politikası:</strong> Arsenik içeren köy suları, siyanür atıkları ve yok edilen meralar, özel karın çevre hesabını görmezden geldiğini açıkça ortaya koyar.</span>
+      </li>
+      <li>
+        <span class="no">4</span>
+        <span><strong>Ham madde ihracatı yerine değer katılmış üretim:</strong> Kırşehir'de çıkarılacak zenginleştirilmiş cevherin "yurt dışına çıkarılarak külçe haline getirileceği" projede açıkça yazıyor. Türkiye kayıplarda kalıyor.</span>
+      </li>
+      <li>
+        <span class="no">5</span>
+        <span><strong>İşçi haklarının güvenceye alınması:</strong> Divriği'deki yeraltı madeni kapanma kararına karşı 220 işçinin oturma eylemi, özel mülkiyetin iş güvencesini yok ettiğini somutlaştırıyor.</span>
+      </li>
+      <li>
+        <span class="no">6</span>
+        <span><strong>Kamu denetimi ve planlamacılık:</strong> Koç Holding, bir yanda Bakırtepe'de yıllarca mahkeme kararlarını aşarak faaliyet sürdürürken öte yanda AKP milletvekiliyle ortaklık kurarak Kırşehir'e giriyor. Sadece kâr güdüsü işliyor; toplumsal fayda hesabı yok.</span>
+      </li>
+      <li>
+        <span class="no">7</span>
+        <span><strong>Tüketilen sahaların rehabilitasyonu:</strong> Pınargözü köyünde kuruyan pınar, yok olan meralar — bu tahribatı kim giderecek? Özel şirketlerin rehabilitasyon sorumluluğu pratikte işlemiyor.</span>
+      </li>
+      <li>
+        <span class="no">8</span>
+        <span><strong>Yerli teknoloji geliştirilmesi:</strong> Bakırtepe'de Kayseri ve Nevşehir'den getirilen cevherlerin burada işlenip ihraç edilmesi, katma değersiz bir maden ekonomisine işaret ediyor.</span>
+      </li>
+      <li>
+        <span class="no">9</span>
+        <span><strong>İşçi ve sendika denetimi:</strong> Divriği kararını sendikalar değil, şirket yönetimi tek başına aldı. Kamu işletmeciliğinde bu kararlar demokratik denetim altında olurdu.</span>
+      </li>
+    </ul>
+    <br>
+    <div style="background: rgba(233,69,96,0.15); border: 1px solid rgba(233,69,96,0.4); border-radius: 10px; padding: 18px; margin-top: 10px;">
+      <p style="color: rgba(255,255,255,0.9); font-size: 0.95em;">
+        <strong style="color: var(--kırmızı);">TKP'nin açıklaması:</strong> "Tüm maden arama, işletme ve zenginleştirme faaliyetlerine ilişkin tesis ve faaliyetlerin tazminatsız olarak millileştirilmesini ve mevcut uzmanlığın merkezi planlamacılık ilkeleri çerçevesinde yeniden yapılandırılmasını talep ediyoruz."
+      </p>
+    </div>
+  </div>
+
+  <!-- KAYNAKLAR -->
+  <div class="bolum" id="kaynaklar">
+    <div class="bolum-baslik koyu">
+      <span class="bolum-ikon">📚</span>
+      KAYNAKLAR VE REFERANSLAR
+    </div>
+    <div class="bolum-icerik">
+      <ul class="kaynak-listesi">
+        <li><span class="num">1</span> <a href="https://www.demirexport.com/" target="_blank">Demir Export A.Ş. — Resmi Web Sitesi</a></li>
+        <li><span class="num">2</span> <a href="https://madencilikturkiye.com/demir-exporttan-134-milyon-dolarlik-yatirim/" target="_blank">Madencilik Türkiye — Demir Export'tan 134 Milyon Dolarlık Yatırım</a></li>
+        <li><span class="num">3</span> <a href="https://www.patronlardunyasi.com/koc-holdinge-ait-demir-export-sarialan-altin-isletmesini-cevik-ailesinin-yonettigi-cvk-madene-satti" target="_blank">Patronlar Dünyası — Sarıalan Altın Madeni CVK Maden'e Satıldı</a></li>
+        <li><span class="num">4</span> <a href="https://www.forbes.com.tr/para-yatirim/koc-holding-balikesir-deki-sarialan-altin-madeni-ni-18-5-milyon-euroya-devretti" target="_blank">Forbes Türkiye — Sarıalan Altın Madeni 18,5 Milyon Euro'ya</a></li>
+        <li><span class="num">5</span> <a href="https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790" target="_blank">Cumhuriyet — Kırşehir Altın Madeni Projesi DSİ Su Tahsisi</a></li>
+        <li><span class="num">6</span> <a href="https://yesilgazete.org/su-krizi-yasayan-kirsehirde-altina-hucum-yerel-yoneticiler-ve-halk-isyanda/" target="_blank">Yeşil Gazete — Kırşehir'de Altına Hücum, Halk İsyanda</a></li>
+        <li><span class="num">7</span> <a href="https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868" target="_blank">Sendika.org — Kırşehir Altın Madeni ÇED Durdurma Kararı</a></li>
+        <li><span class="num">8</span> <a href="https://www.odatv.com/guncel/kirsehir-halki-ile-koc-holding-karsi-karsiya-120109557" target="_blank">Odatv — Kırşehir Halkı ile Koç Holding Karşı Karşıya</a></li>
+        <li><span class="num">9</span> <a href="https://ekolojibirligi.org/ekoloji-birligi-elini-evimizden-cek-demir-export-kangalda-maden-istemiyoruz/" target="_blank">Ekoloji Birliği — Demir Export Kangal'da Maden İstemiyoruz</a></li>
+        <li><span class="num">10</span> <a href="https://yurtvedunya.org/kent-ve-cevre/bakirtepede-cevre-katliami-suruyor/" target="_blank">Yurt ve Dünya — Bakırtepe'de Çevre Katliamı Sürüyor</a></li>
+        <li><span class="num">11</span> <a href="https://artigercek.com/cevre/sivasta-siyanurlu-altina-karsi-12-yildir-suren-cevre-mucadelesi-ilicin-yasadiklarini-yasayacagiz-308032h" target="_blank">Artı Gerçek — Sivas'ta Siyanürlü Altına Karşı 12 Yıllık Mücadele</a></li>
+        <li><span class="num">12</span> <a href="https://www.dunya.com/kose-yazisi/koc-irlandada-maden-sirketine-ortak-oldu/614085" target="_blank">Dünya Gazetesi — Koç İrlanda'da Maden Şirketine Ortak Oldu</a></li>
+        <li><span class="num">13</span> <a href="https://www.tkp.org.tr/devletlestirme/madenler-devletlestirilmeli/" target="_blank">TKP — Madenler Devletleştirilmeli Kampanyası</a></li>
+        <li><span class="num">14</span> <a href="https://www.odatv.com/guncel/tkpden-madenler-kamulastirilsin-cikisi-9-maddelik-yol-haritasi-120146311" target="_blank">Odatv — TKP'den Madenler Kamulaştırılsın: 9 Maddelik Yol Haritası</a></li>
+        <li><span class="num">15</span> <a href="https://www.birgun.net/haber/koc-fernas-ortakligina-ced-onayi-kirsehir-sermayeye-teslim-edildi-664974" target="_blank">Birgün — Koç-Fernas Ortaklığına ÇED Onayı: Kırşehir Sermayeye Teslim Edildi</a></li>
+        <li><span class="num">16</span> <a href="https://www.evrensel.net/haber/102638/bakirtepe-altin-madeni-davasinda-koc-yetkilisine-hapis-cezasi" target="_blank">Evrensel — Bakırtepe Davasında Koç Yetkilisine Hapis Cezası</a></li>
+        <li><span class="num">17</span> <a href="https://www.hurriyet.com.tr/yazarlar/yalcin-bayer/altin-mi-su-mu-42929601" target="_blank">Hürriyet / Yalçın Bayer — Altın mı, Su mu?</a></li>
+        <li><span class="num">18</span> <a href="https://kuzeyormanlari.org/2016/09/11/bakirtepe-altin-madeni-muhurlenerek-kapatildi-2/" target="_blank">Kuzey Ormanları Savunması — Bakırtepe Altın Madeni Mühürlenerek Kapatıldı (2016)</a></li>
+        <li><span class="num">19</span> <a href="https://devmadensen.org.tr/2026/01/30/divrigi-yeralti-demir-madeni-acilsin-iscilere-isbasi-yapsin/" target="_blank">Dev-Maden-Sen — Divriği Yeraltı Demir Madeni Açılsın</a></li>
+        <li><span class="num">20</span> <a href="https://www.mapeg.gov.tr/Uploads/Dosyalar/MAPEG2024YiliIdareFaaliyetRaporu27.02.2025.pdf" target="_blank">MAPEG — 2024 Yılı Faaliyet Raporu</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Bu rapor kamuoyunu bilgilendirme amacıyla hazırlanmıştır. Tüm bilgiler kamuya açık kaynaklardan derlenmiş olup her iddia kaynak gösterilerek belgelenmiştir.</p>
+  <p style="margin-top:8px; opacity:0.5;">Rapor Tarihi: Mayıs 2026 · <a href="yildizlar_sss_holding_rapor.html">SSS Yıldızlar Holding Raporuna Git →</a></p>
+</footer>
+
+<script>
+  function akordeon(btn) {
+    const icerik = btn.nextElementSibling;
+    const aktifMi = btn.classList.contains('aktif');
+    // Tüm akordeonları kapat
+    document.querySelectorAll('.akordeon-baslik').forEach(b => {
+      b.classList.remove('aktif');
+      b.nextElementSibling.classList.remove('acik');
+    });
+    // Tıklanan açık değilse aç
+    if (!aktifMi) {
+      btn.classList.add('aktif');
+      icerik.classList.add('acik');
+    }
+  }
+  // İlk akordeon başlangıçta açık
+  document.addEventListener('DOMContentLoaded', () => {
+    const ilk = document.querySelector('.akordeon-baslik.aktif');
+    if (ilk) ilk.nextElementSibling.classList.add('acik');
+  });
+</script>
+</body>
+</html>
