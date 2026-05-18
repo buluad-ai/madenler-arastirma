@@ -1,0 +1,124 @@
+{
+  "slug": "soma-imbat",
+  "ad": "İMBAT Madencilik A.Ş.",
+  "kisaAd": "İMBAT",
+  "holding": "İMBAT / Soma Grubu",
+  "sektor": "Kömür (Linyit)",
+  "tip": "Özel",
+  "bolge": "Manisa / Soma",
+  "sehir": "Manisa",
+  "ilce": "Soma",
+  "koordinatlar": { "lat": 39.185, "lon": 27.608 },
+  "kurulusYili": 2002,
+  "ruhsatSayisi": "En az 1 ana işletme ruhsatı (IR.1918 numaralı TKİ devir sahası)",
+  "isletmeSayisi": "1 (Eynez-Karanlıkdere Yeraltı Kömür Ocağı, Soma/Manisa)",
+  "iscSayisi": "~4.200 - 6.247 (farklı dönemlere göre değişen veriler; Capital 500 listesi 6.247 işçi; Cumhuriyet 4.200 işçi)",
+  "maliVeriler": {
+    "ciro": "809.983.203 TL (Capital 500, son yayımlanan dönem)",
+    "vergioncesiKar": "146.241.678 TL",
+    "kapital500Sirasi": 286,
+    "finansalDurum": "2025 yılında yaklaşık 3 milyar TL zarar açıklandı; şirket banka borçları ve ipotek sorunlarıyla karşı karşıya. Soma B Termik Santrali operatörüyle kömür alım sözleşmesi çökmesi temel kriz nedeni (operatörün borcu 20 milyar TL'yi aştı).",
+    "notlar": "İthal kömür rekabeti ve artan operasyonel maliyetler nedeniyle finansal baskı artıyor. İşçi ücretlerinde gecikmeler yaşandığı raporlanıyor."
+  },
+  "ozellestirilenSahalar": [
+    {
+      "ad": "Eynez-Karanlıkdere Kömür Sahası (TKİ Devri)",
+      "aciklama": "TKİ, IR.1918 ruhsat nolu boş alanı 23.09.2004 tarih 39/435 sayılı kararıyla İMBAT'a devretti. 4.10.2004 tarihli devir ve işletme sözleşmesiyle 19 milyon ton rezervli alan 2015'e kadar İMBAT'a verildi. Başbakanlık Yüksek Denetleme Kurulu (YDK) bu işlemin maliyetini 433 milyon dolar olarak hesapladı. İMBAT, daha önce borç sarmalındaki Hüstaş şirketinin yerine kurulmuş, Hüstaş'ın kömür pazarlama ağını devralmış özel bir şirkettir. İhale yapılmaksızın gerçekleştirilen bu devir YDK tarafından kamu zararı olarak nitelendirildi.",
+      "yil": 2004,
+      "kaynak": "Hürriyet, 2007; Başbakanlık YDK Raporu"
+    }
+  ],
+  "iscOlumleri": [
+    {
+      "tarih": "2015-03",
+      "adet": 1,
+      "aciklama": "Dev Maden Sen raporuna göre Mart 2015'te bir işçi hayatını kaybetti.",
+      "kaynak": "Dev Maden Sen"
+    },
+    {
+      "tarih": "2017-01",
+      "adet": 1,
+      "aciklama": "Gece vardiyasında bir işçi ekskavatör tarafından ezilerek hayatını kaybetti. Ölümün ardından işçiler madene girmeyi reddetti.",
+      "kaynak": "Dev Maden Sen"
+    },
+    {
+      "tarih": "2020-04",
+      "adet": 3,
+      "aciklama": "COVID-19 pandemisi sürecinde yaşanan iş kazasında 3 işçi hayatını kaybetti. Sendika raporlarına göre İMBAT üretim durdurdu ancak bazı bölümlerin faaliyetini sürdürdüğü işçilerce bildirildi.",
+      "kaynak": "Evrensel, Dev Maden Sen"
+    }
+  ],
+  "isgOlaylari": [
+    {
+      "tarih": "2015-12",
+      "aciklama": "32 maden işçisi haksız gerekçeyle işten çıkarıldı; işçiler şirket girişinde çadır kurarak direniş başlattı. İşçiler sonunda görevlerine iade edildi.",
+      "kaynak": "Dev Maden Sen"
+    },
+    {
+      "tarih": "2025",
+      "aciklama": "İşçi ücret gecikmelerine karşı bölgede dönemsel eylemler yapıldı.",
+      "kaynak": "Cumhuriyet, 2025"
+    }
+  ],
+  "cevreIhlalleri": [],
+  "siyasiBaglantilar": [
+    {
+      "kisi": "TKİ (Türkiye Kömür İşletmeleri)",
+      "baglantiTuru": "İhalesiz Saha Devri",
+      "aciklama": "2004'te TKİ, IR.1918 ruhsatlı 19 milyon tonluk rezervi kamu ihale kanununu devre dışı bırakarak ihalesiz şekilde İMBAT'a devretti. Bu işlem YDK tarafından 433 milyon dolar kamu zararı olarak belgelendi. Prime Ministerial Inspection Board da YDK'nın bulgularını destekledi.",
+      "kaynak": "Hürriyet 2007, YDK Raporu"
+    },
+    {
+      "kisi": "Soma Kömür İşletmeleri (SKİ)",
+      "baglantiTuru": "Havza Ortaklığı / Baskı",
+      "aciklama": "Maden-İş sendikasının yönetiminin hem Soma A.Ş. hem İMBAT tarafından etkilendiği öne sürülmüştür. İşçilerin sendikadan beklentisi yoktur ifadesi 2014 faciası sonrası araştırmalarda belgelenmiştir.",
+      "kaynak": "TMMOB Soma Raporu, 2014"
+    }
+  ],
+  "vergiBorclari": [],
+  "davalar": [
+    {
+      "ad": "TKİ-İMBAT Devir Soruşturması",
+      "aciklama": "YDK raporunun tespitlerinin ardından Başbakan Erdoğan tarafından Ankara Cumhuriyet Başsavcılığı'na suç duyurusunda bulunuldu. Enerji Bakanlığı Teftiş Kurulu ise farklı sonuçlara vardı. Davanın sonucu kamuoyuna açıklanmadı.",
+      "tarih": "2007",
+      "sonuc": "Sonuç kamuoyuna açıklanmadı"
+    }
+  ],
+  "sendikaDurumu": {
+    "varMi": "Evet (nominal)",
+    "sendikalar": ["Türkiye Maden İşçileri Sendikası (Maden-İş)"],
+    "orgutlulukOrani": null,
+    "notlar": "İMBAT ve Soma A.Ş. işçilerinin tamamı Maden-İş üyesiydi. Ancak 2014 sonrası araştırmalar, işçilerin sendikanın yönetimi üzerinde şirket etkisi bulunduğuna inandığını ortaya koydu; işçilerin sendikadan beklentisi ve umudu yoktur ifadesi belgelendi. Dev Maden Sen 2015-2017 döneminde şirketi izlemiştir."
+  },
+  "ozet": "İMBAT Madencilik A.Ş., 2002 yılında kurulmuş olup 2004'ten itibaren TKİ'den ihalesiz devraldığı Eynez-Karanlıkdere sahasında Soma linyit havzasında yeraltı kömür üretimi yapmaktadır. Bu devir işlemi Başbakanlık YDK tarafından 433 milyon dolar kamu zararı olarak belgelenmiştir. Şirket Capital 500 listesinde yer almakta ve yaklaşık 4.200-6.247 işçi çalıştırmaktadır. 2014 Soma faciası doğrudan İMBAT sahasında yaşanmamış olsa da şirket aynı havzada faaliyet göstermekte, benzer güvensiz koşullar 2015 ve 2017'deki işçi ölümleriyle belgelenmiş, işçiler haksız işten çıkarmalar ve sendikasızlaştırma baskısıyla karşı karşıya kalmıştır. 2025 yılı itibarıyla ciddi finansal kriz ve işçi ücret gecikmeleri yaşanmaktadır.",
+  "renkTema": "#4a2c0a",
+  "ikon": "coal",
+  "renkGradyan": "linear-gradient(135deg, #2d1a06, #4a2c0a)",
+  "guncellenmeTarihi": "2026-05-18",
+  "kaynaklar": [
+    {
+      "ad": "Cumhuriyet — Soma'da 4.200 çalışanı olan İmbat finansal kriz ve ipotek açmazında",
+      "url": "https://www.cumhuriyet.com.tr/turkiye/soma-da-4-bin-200-calisani-olan-imbat-finansal-kriz-ve-ipotek-acmazinda-2503647"
+    },
+    {
+      "ad": "Capital 500 — İmbat Madencilik Şirket Profili",
+      "url": "https://www.capital.com.tr/listeler/capital-500/imbat-madencilik"
+    },
+    {
+      "ad": "Hürriyet — Kömür vurgununa Başbakanlık darbesi (YDK Raporu, 433 milyon dolar kamu zararı)",
+      "url": "https://www.hurriyet.com.tr/gundem/komur-vurgununa-basbakanlik-darbesi-5938441"
+    },
+    {
+      "ad": "Dev Maden Sen — İmbat Madencilik İşçi Haberleri",
+      "url": "https://devmadensen.org.tr/e/imbat-madencilik/"
+    },
+    {
+      "ad": "TMMOB — Soma Maden Faciası Raporu",
+      "url": "http://www.tmmob.org.tr/yayin/soma-maden-faciasi-raporu"
+    },
+    {
+      "ad": "Odatv — TKİ bünyesindeki madenlerde tasfiye operasyonu",
+      "url": "https://www.odatv.com/gundem/turkiye-komur-isletmeleri-bunyesindeki-madenlerde-tasfiye-operasyonu-odatv-komisyon-raporuna-ulasti-soma-katliami-detayi-120146641"
+    }
+  ]
+}

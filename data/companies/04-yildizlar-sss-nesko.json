@@ -1,0 +1,71 @@
+{
+  "slug": "yildizlar-sss-nesko",
+  "ad": "SSS Yıldızlar Holding — NESKO Maden",
+  "kisaAd": "SSS Yıldızlar / NESKO",
+  "holding": "SSS Yıldızlar Holding",
+  "sektor": "Altın-Gümüş, Endüstriyel Mineraller",
+  "tip": "Özel",
+  "bolge": "Çanakkale / Çan, Giresun (NESKO)",
+  "sehir": "Çanakkale",
+  "ilce": "Çan",
+  "koordinatlar": { "lat": 40.01, "lon": 27.06 },
+  "kurulusYili": null,
+  "ruhsatSayisi": 2364,
+  "isletmeSayisi": "50+",
+  "iscSayisi": "Araştırılıyor",
+  "maliVeriler": {
+    "etiGumrusSatisFiyati": "41.2 milyon USD",
+    "etiGumusGercekDeger": "~450 milyon USD",
+    "halkbankKredisi": "480 milyon TL",
+    "kurtarilanHakkedis": "17 milyon TL",
+    "neskoAtikhacmi": "4.500 ton (zehirli atık)",
+    "notlar": "Türkiye'nin tek gümüş üreticisi (Eti Gümüş)"
+  },
+  "ozellestirilenSahalar": [
+    {
+      "ad": "Eti Gümüş A.Ş.",
+      "aciklama": "Devlet gümüş tesisi 41,2 milyon USD'a satın alındı (gerçek değeri ~450 milyon USD)",
+      "yil": "2005 civarı"
+    }
+  ],
+  "iscOlumleri": [],
+  "isgOlaylari": [
+    {
+      "tarih": "Nisan 2026",
+      "aciklama": "Doruk Madencilik işçileri 190 km yürüyüş + açlık grevi — 96,34 milyon TL hakediş talebi",
+      "kaynak": "Medya haberleri, Nisan 2026"
+    }
+  ],
+  "cevreIhlalleri": [
+    {
+      "yer": "Giresun (NESKO)",
+      "tarih": "2021",
+      "aciklama": "4.500 ton zehirli atık felaketi — NESKO Madencilik",
+      "kaynak": "Çevre ve Şehircilik Bakanlığı raporları"
+    }
+  ],
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Ali Vahit Atıcı (CEO)",
+      "baglantiTuru": "Siyasi Bağlantı",
+      "aciklama": "TÜGVA bağlantısı, AKP aday adayı (2018)"
+    }
+  ],
+  "vergiBorclari": [],
+  "davalar": [],
+  "sendikaDurumu": {
+    "varMi": "Araştırılıyor",
+    "sendikalar": [],
+    "orgutlulukOrani": null,
+    "notlar": ""
+  },
+  "ozet": "SSS Yıldızlar Holding, 2.364 ruhsatla Türkiye'nin 'ruhsat şampiyonu' özel maden şirketidir. Eti Gümüş'ü gerçek değerinin çok altında satın alan holding, NESKO zehirli atık faciası ve işçi hakları ihlalleriyle medyaya yansımıştır.",
+  "renkTema": "#5a1ca8",
+  "ikon": "💎",
+  "renkGradyan": "linear-gradient(135deg, #1a0028, #6e40c9)",
+  "guncellenmeTarihi": "2026-05-18",
+  "raporDosyasi": "yildizlar/index.html",
+  "kaynaklar": [
+    { "ad": "SSS Yıldızlar Araştırma Raporu", "url": "yildizlar/index.html" }
+  ]
+}

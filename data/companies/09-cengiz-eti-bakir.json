@@ -1,0 +1,241 @@
+{
+  "slug": "cengiz-eti-bakir",
+  "ad": "ETİ Bakır A.Ş.",
+  "kisaAd": "ETİ Bakır",
+  "holding": "Cengiz Holding",
+  "holdingAdamı": "Mehmet Cengiz",
+  "sektor": "Bakır Madenciliği ve İşleme",
+  "tip": "Özel (Özelleştirilmiş Kamu Kuruluşu)",
+  "bolge": "Giresun / Artvin / Samsun / Kastamonu / Siirt",
+  "sehir": "Samsun (Merkez Tesis)",
+  "koordinatlar": { "lat": 41.285, "lon": 36.333 },
+  "kurulusYili": "1937 (Etibank bünyesinde) — 2004 özelleştirme",
+  "ozellestirmeYili": 2004,
+  "ozellestirmeFiyati": "33 milyon USD",
+  "ozellestirmeSırasındaGercekDeger": "299 milyon USD (nakit + stok + arazi + rezervler)",
+  "ruhsatSayisi": "9 tesis",
+  "isletmeSayisi": 9,
+  "iscSayisi": {
+    "dogrudan": 2500,
+    "dolayli": 10000,
+    "toplam": 7000,
+    "eskiDevletIsletmesiIsciSayisi": 4000,
+    "notlar": "Murgul'da özelleştirme öncesi ~4.000 işçi varken özel sektörde bu sayı 700'e düştü. ETİ Bakır toplam ~7.000 kişi istihdam etmektedir."
+  },
+
+  "tesisler": [
+    {
+      "ad": "Samsun İzabe ve Elektroliz Tesisi",
+      "tur": "İşleme / İzabe",
+      "bolge": "Samsun",
+      "koordinatlar": { "lat": 41.285, "lon": 36.333 },
+      "kapasite": "70.000 ton/yıl katot bakır; 600.000 ton/yıl sülfürik asit; 600.000 ton/yıl gübre",
+      "aciklama": "Türkiye'nin tek bakır izabe ve elektroliz tesisi. Yılda 400.000 ton bakır konsantresi işler. Avrupa standartlarında baca gazı arıtma sistemi kuruldu.",
+      "ozelEndüstriBolgesi": true,
+      "oebTarihi": "2023-2024"
+    },
+    {
+      "ad": "Lahanos Bakır İşletmesi",
+      "tur": "Yeraltı/Yerüstü Madeni",
+      "bolge": "Giresun / Espiye",
+      "koordinatlar": { "lat": 40.86, "lon": 38.57 },
+      "kapasite": "ETİ Bakır'ın toplam yıllık 90.000 ton katot bakır üretimine katkı sağlar",
+      "aciklama": "Espiye ilçesinde yeraltı ve açık ocak bakır madeni. Toplam 9 tesis içinde Lahanos'a özgü kapasite rakamı kamuoyuna açıklanmamıştır."
+    },
+    {
+      "ad": "Murgul Bakır İşletmesi",
+      "tur": "Açık Ocak ve Konsantratör",
+      "bolge": "Artvin / Murgul",
+      "koordinatlar": { "lat": 41.24, "lon": 41.53 },
+      "kapasite": "3.500.000 ton/yıl ham cevher; 130.000 ton/yıl bakır konsantrat",
+      "aciklama": "1951'de Etibank bünyesinde üretime başladı. 1980'lerde 4.000 işçi çalışırken özelleştirme sonrası 700'e düştü. Damar Atık Barajı ciddi su kirliliği sorunlarına yol açmaktadır.",
+      "tarihce": "MTA 1935'te keşfetti, 1937'de Etibank'a devredildi, 1951'de üretim başladı, 1971'de Karadeniz Bakır İşletmeleri AŞ'ye verildi, 2006 özelleştirme"
+    },
+    {
+      "ad": "Cerattepe Bakır İşletmesi",
+      "tur": "Yeraltı Madeni (Tartışmalı / Mahkeme Kararıyla Durdurulmuş)",
+      "bolge": "Artvin / Merkez",
+      "koordinatlar": { "lat": 41.175, "lon": 41.819 },
+      "kapasite": "246 çalışan (faal dönemde)",
+      "aciklama": "20+ yıldır halkın direnişiyle karşılaşan proje. Kafkasör yaylasına ve kent merkezine yakınlığı nedeniyle yoğun çevre baskısı altında. Mayıs 2024'te Anayasa Mahkemesi ÇED olumlu kararını iptal etti."
+    },
+    {
+      "ad": "Küre Bakır İşletmesi",
+      "tur": "Yeraltı Madeni",
+      "bolge": "Kastamonu / Küre",
+      "koordinatlar": { "lat": 41.8, "lon": 33.71 }
+    },
+    {
+      "ad": "Siirt / Şirvan İşletmesi",
+      "tur": "Yeraltı Madeni",
+      "bolge": "Siirt / Şirvan",
+      "koordinatlar": { "lat": 38.1, "lon": 42.06 }
+    },
+    {
+      "ad": "Halilağa Bakır-Altın Madeni (Truva Bakır)",
+      "tur": "Proje Aşaması / Mahkeme Sürecinde",
+      "bolge": "Çanakkale / Bayramiç (Kazdağları)",
+      "koordinatlar": { "lat": 39.65, "lon": 26.68 },
+      "aciklama": "Cengiz Holding'e bağlı Truva Bakır Madencilik A.Ş. tarafından yürütülüyor. 1 milyon ağaç kesimi planı ve mahkeme kararına rağmen ağaç katliamıyla gündemde. 2024'te yürütme durdurma kararı çıktı ancak şirket mahkeme kararını tanımadığı gerekçesiyle eleştirildi."
+    },
+    {
+      "ad": "Mardin Mazıdağı Fosfat İşletmesi",
+      "tur": "Fosfat Madeni",
+      "bolge": "Mardin / Mazıdağı",
+      "koordinatlar": { "lat": 37.47, "lon": 40.49 },
+      "ozelEndüstriBolgesi": true
+    },
+    {
+      "ad": "Adıyaman İşletmesi",
+      "tur": "Maden",
+      "bolge": "Adıyaman"
+    }
+  ],
+
+  "uretimVerileri": {
+    "yillikKatotBakir": "90.000 ton (%99,99 saflık)",
+    "yillikSulfurikAsit": "600.000 ton",
+    "yillikGubre": "600.000 ton",
+    "yillikMurgulKonsantrat": "130.000 ton",
+    "ithalatIkamesiKatki": "yılda 750 milyon USD cari açık azaltımı (şirket açıklaması)"
+  },
+
+  "maliVeriler": {
+    "ozellestirmeFiyati": "33 milyon USD (2004)",
+    "ozellestirmeSırasındaGercekDeger": "~299 milyon USD",
+    "fark": "266 milyon USD devlet zararı",
+    "aciklama": "Özelleştirme sırasında şirketin kasasında 10 milyon USD nakit, stoklarda 7 milyon USD konsantre bakır, 9 milyon USD arazi ve 240 milyon USD bakır rezervi bulunuyordu.",
+    "yatirimlar": "ETİ Bakır'a 2023'e kadar 450 milyon USD yeni yatırım planlandı. 20 yılda toplam 3 milyar USD yatırım yapıldığı açıklandı.",
+    "yillikGelirTahmini": "Şirket mali verileri kamuoyuyla paylaşılmıyor",
+    "notlar": "Cengiz Holding toplam yıllık geliri ~5 milyar USD. ETİ Bakır büyük pay taşıyor."
+  },
+
+  "iscOlumleri": [
+    {
+      "tarih": "~2012",
+      "adet": 5,
+      "yer": "Samsun ETİ Bakır",
+      "aciklama": "Samsun'daki gübre fabrikasında 350 tonluk amonyak tankı kapağı çöktü; 5 işçi hayatını kaybetti, 14 işçi yaralandı. Taşeron zinciri üzerinden 25 Kasım'a yetiştirme baskısıyla güvencesiz çalışma koşulları belgelendi.",
+      "isimler": ["Fatih Açıkel", "Hüsamettin Toysümer", "Hüseyin Bayrak", "Sadık Kuruçay", "Güven Demirel"],
+      "kaynak": "soL Haber, Demokrat Haber"
+    },
+    {
+      "tarih": "2023-11",
+      "adet": 3,
+      "yer": "Siirt / Şirvan Maden Sahası",
+      "aciklama": "270 metre derinlikte tahkimat çalışması sırasında emniyet betonunun akması sonucu 3 kişi hayatını kaybetti. Bilirkişi raporunda ölen mühendisler 'asli kusurlu' ilan edildi; yöneticiler aklandı.",
+      "isimler": ["Zekai Can Çalık (Maden Mühendisi)", "Emre Gökduman (Maden Mühendisi)", "Orhan Gültekin (İşçi)"],
+      "kaynak": "İşçi Sağlığı ve İş Güvenliği Meclisi, 2023"
+    },
+    {
+      "tarih": "2024-08-18",
+      "adet": 1,
+      "yer": "Mardin / Mazıdağı ETİ Bakır Lojmanı",
+      "aciklama": "İSG çalışanı lojmanda yatağında ölü bulundu.",
+      "kaynak": "Medya haberleri, Ağustos 2024"
+    }
+  ],
+
+  "cevreIhlalleri": [
+    {
+      "yer": "Artvin / Murgul — Damar Atık Barajı",
+      "aciklama": "Damar köyü içme suyunda sülfat ve ağır metal kirliliği kabul edilebilir sınırların çok üzerinde. Boya deneyi atık barajından sızıntı olduğunu kanıtladı. Şirket yetkilisi sızmazlık garantisi için 'böyle bir şey yok' dedi. Tatlı su ekosistemi ciddi zarar görüyor.",
+      "kaynak": "Cumhuriyet, Ekoloji Birliği, Çukurova Üniversitesi akademik çalışması"
+    },
+    {
+      "yer": "Artvin / Cerattepe",
+      "aciklama": "Kafkasör yaylasına 500 metre mesafede açık ocak madeni planı. Kent merkezine yakınlığı nedeniyle hava ve su kirliliği riski. Anayasa Mahkemesi 'özel hayata saygı hakkı ihlali' gerekçesiyle ÇED kararını iptal etti.",
+      "kaynak": "AYM Kararı (Resmi Gazete, 20 Mayıs 2024), Medyascope"
+    },
+    {
+      "yer": "Çanakkale / Kazdağları — Halilağa",
+      "aciklama": "Mahkeme yürütme durdurma kararına rağmen şirket ağaç kesmeye devam etti. 1 milyon ağaç kesimi planlandığı iddia ediliyor. Türk Toraks Derneği ciddi uyarılar yaptı.",
+      "kaynak": "Cumhuriyet, Evrensel, İklim Haber, 2024"
+    }
+  ],
+
+  "mahkemeSurecleri": [
+    {
+      "yer": "Cerattepe",
+      "mahkeme": "Rize İdare Mahkemesi + Anayasa Mahkemesi",
+      "karar": "AYM 21 Mayıs 2024: ÇED Olumlu kararı iptal edildi. Rize İdare Mahkemesi AYM kararına uyarak ÇED'i iptal etti. Artvin Valiliği faaliyetleri 24 Ağustos 2024'te durdurdu.",
+      "sonrasi": "Cengiz Holding AYM kararına rağmen Ekim 2024'te yeni ÇED başvurusu yaptı. 8 Ocak 2025'te İnceleme Değerlendirme Komisyonu (İDK) toplantısı yapıldı.",
+      "kaynak": "Sendika.org, Gazete Duvar, Bianet 2024"
+    },
+    {
+      "yer": "Kazdağları / Halilağa",
+      "mahkeme": "Çanakkale 2. İdare Mahkemesi / Danıştay",
+      "karar": "Kasım 2024: Yürütme durdurma kararı. Ancak Danıştay daha sonra ÇED iptali taleplerini reddetti.",
+      "kaynak": "Medyascope, T24, İklim Haber, 2024"
+    }
+  ],
+
+  "sendikaDurumu": {
+    "varMi": "Evet (tartışmalı)",
+    "sendikalar": [
+      {
+        "ad": "Türk Metal Sendikası",
+        "konfederasyon": "Türk-İş",
+        "durum": "Murgul ve Samsun işçileri Türk Metal üyeliği nedeniyle baskıyla karşılaştı. Mehmet Cengiz'in işçilerle anlaşmazlığı belgelendi.",
+        "kaynak": "soL Haber"
+      }
+    ],
+    "notlar": "İşçilerin sendikaya üye olması nedeniyle işten çıkarma baskısı iddiaları mevcut. Taşeron işçiler sendikal güvenceden yoksun."
+  },
+
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Mehmet Cengiz",
+      "baglantiTuru": "AKP Hükümeti Yakınlığı",
+      "aciklama": "Cengiz Holding, AKP iktidarı döneminde inşaattan enerjiye, madenden ulaştırmaya kadar pek çok kamu ihalesini aldı. 'İhale kralı' olarak anılmaktadır. 3. Havalimanı, Yeşil Yol Projesi, Ankara-Sivas YHT dahil büyük kamu projeleri.",
+      "kaynak": "Politeknik, Cumhuriyet"
+    },
+    {
+      "kisi": "Mehmet Cengiz",
+      "baglantiTuru": "17-25 Aralık Yolsuzluk Soruşturması",
+      "aciklama": "2013 Aralık sonunda tüm mal varlıklarına tedbir konuldu; karar 13 Ocak 2014'te kaldırıldı.",
+      "kaynak": "Wikipedia, medya arşivleri"
+    }
+  ],
+
+  "vergiBorclariVeAyricaliklar": [
+    {
+      "yil": 2010,
+      "aciklama": "Mehmet Cengiz'e ait 420 milyon TL'lik vergi borcu silindi. 5 şirket grubu için toplam 31,5 milyon TL borç silme kararının parçası.",
+      "kaynak": "Politeknik, Sözcü"
+    },
+    {
+      "yil": "2013-2023",
+      "aciklama": "Vergi Uzlaşma Komisyonu kanalıyla Cengiz İnşaat'ın 2 milyar 587 milyon TL vergi borcu + 4 milyar 919 milyon TL ceza silindi. Cengiz İnşaat 30 kez vergi-resim-harç istisnasından yararlandı.",
+      "kaynak": "Yıldırım Kaya Twitter/X, TamgaTürk"
+    },
+    {
+      "yil": "2023-2024",
+      "aciklama": "ETİ Bakır'ın Samsun ve Mardin tesisleri Cumhurbaşkanlığı kararıyla Özel Endüstri Bölgesi (ÖEB) ilan edildi. Vergi muafiyeti, harç muafiyeti ve hızlı izin süreci avantajları sağlandı.",
+      "kaynak": "Cumhuriyet, Sözcü, Birgun 2024"
+    }
+  ],
+
+  "ozet": "ETİ Bakır A.Ş., Türkiye'nin tek bakır izabe-elektroliz tesisini işleten ve 9 madeni bulunan stratejik bir şirkettir. 1937'de Etibank bünyesinde kurulan, onlarca yıl devlet tarafından işletilen şirket, 2004'te gerçek değerinin 1/9'i olan 33 milyon USD'a Cengiz Holding'e satılmıştır. Özelleştirme sonrası Murgul'da 4.000 işçi 700'e düşürülmüştür. Cerattepe'de 20+ yıl süren halk direnişi neticesinde Anayasa Mahkemesi ÇED kararını 2024'te iptal etmiş; ancak şirket aynı yıl yeni başvuruyla süreci devam ettirmiştir. Murgul'da atık barajı kaynaklı ciddi su kirliliği belgelenmiştir. Kazdağları'nda (Halilağa) 1 milyon ağaç kesimine yol açabilecek proje hukuki mücadelelerle sürmektedir. Şirket, Cengiz Holding bünyesinde AKP hükümeti ile yakın ilişkileri ve defalarca silinen vergi borçlarıyla 'beşli çete' olarak nitelendirilen şirket grubu içinde yer almaktadır.",
+
+  "renkTema": "#b5451b",
+  "ikon": "⚙",
+  "renkGradyan": "linear-gradient(135deg, #5c1a08, #b5451b)",
+  "guncellenmeTarihi": "2026-05-18",
+
+  "kaynaklar": [
+    { "ad": "Cengiz Holding — ETİ Bakır sayfası", "url": "https://www.cengizholding.com.tr/sectors/maden/eti-bakir-a-s/" },
+    { "ad": "ETİ Bakır resmi sitesi", "url": "https://www.etibakir.com.tr" },
+    { "ad": "ETİ Bakır Cengiz Holding'e nasıl verildi? — Giresun Net Haber", "url": "https://giresunnethaber.com/eti-bakir-cengizholding-e-nasil-verildi/" },
+    { "ad": "AYM Cerattepe ÇED iptal kararı — Bianet", "url": "https://bianet.org/haber/aymden-cerattepe-icin-verilen-ced-kararina-iptal-295609" },
+    { "ad": "Cengiz AYM kararına rağmen Cerattepe için yeniden başvurdu — Sendika.org", "url": "https://sendika.org/2024/09/cengiz-aym-kararina-ragmen-cerattepe-icin-yeniden-basvurdu-o-bolgede-madencilige-asla-izin-vermeyecegiz-710993" },
+    { "ad": "Murgul Maden — Çevre Atlası", "url": "https://cevreatlasi.org/place/murgul-bakir-maden/" },
+    { "ad": "AKP'nin ihale kralı Cengiz kimdir? — Politeknik", "url": "https://politeknik.org.tr/akpnin-ihale-krali-cengiz-kimdir/" },
+    { "ad": "Cengiz Holding vergi cezası silindi — TamgaTürk", "url": "https://www.tamgaturk.com/akp-li-hazine-ve-maliye-bakanligi-5-li-cetenin-elebaslarindan-cengiz-holding-in-4-9-milyar-tl-lik-vergi-cezasini-sildi/77231/" },
+    { "ad": "ETİ Bakır iş cinayeti bilirkişi raporu — İSİG Meclisi", "url": "https://www.isigmeclisi.org/20958-eti-bakir-daki-is-cinayetinin-bilirkisi-raporunda-olen-maden-muhendisleri" },
+    { "ad": "Cengiz Holding Kazdağları mahkeme — İklim Haber", "url": "https://www.iklimhaber.org/cengiz-holdingin-kazdaglarindaki-maden-projesine-mahkeme-dur-dedi/" },
+    { "ad": "Murgul su kirliliği — Cumhuriyet", "url": "https://www.cumhuriyet.com.tr/cevre/eti-bakir-in-murgul-maden-projesi-sizdirmazlik-garantisi-yok-sozlerine-yore-halkindan-tepki-2453013" },
+    { "ad": "Cerattepe Wikipedia", "url": "https://tr.wikipedia.org/wiki/Cerattepe_protestolar%C4%B1" },
+    { "ad": "Mehmet Cengiz Wikipedia", "url": "https://tr.wikipedia.org/wiki/Mehmet_Cengiz" }
+  ]
+}

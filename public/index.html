@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madenler Araştırma Platformu — TKP</title>
+<style>
+:root {
+  --bg: #0d1117; --bg2: #161b22; --bg3: #21262d;
+  --border: #30363d; --text: #c9d1d9; --muted: #8b949e;
+  --accent: #58a6ff; --red: #f85149; --green: #3fb950;
+  --yellow: #d29922; --purple: #8b5cf6;
+}
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+/* HEADER */
+.header { background: linear-gradient(135deg, #0d1117, #161b22); border-bottom: 1px solid var(--border); padding: 28px 40px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.header-logo { font-size: 2.8em; }
+.header-text h1 { font-size: 1.6em; font-weight: 900; color: white; }
+.header-text p { font-size: 0.85em; color: var(--muted); margin-top: 4px; }
+.header-badges { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+.badge { padding: 5px 14px; border-radius: 20px; font-size: 0.78em; font-weight: 700; }
+.badge-red { background: rgba(248,81,73,.15); color: var(--red); border: 1px solid var(--red); }
+.badge-purple { background: rgba(139,92,246,.15); color: var(--purple); border: 1px solid var(--purple); }
+.badge-yellow { background: rgba(210,153,34,.15); color: var(--yellow); border: 1px solid var(--yellow); }
+
+/* STAT BAR */
+.statbar { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 14px 40px; display: flex; gap: 32px; flex-wrap: wrap; }
+.stat { text-align: center; }
+.stat .sayi { font-size: 1.5em; font-weight: 900; color: var(--accent); }
+.stat.danger .sayi { color: var(--red); }
+.stat .label { font-size: 0.7em; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+
+/* MAIN LAYOUT */
+.main { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 120px); }
+
+/* SIDEBAR */
+.sidebar { background: var(--bg2); border-right: 1px solid var(--border); padding: 24px 20px; overflow-y: auto; }
+.sidebar h3 { font-size: 0.75em; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 10px; margin-top: 20px; }
+.sidebar h3:first-child { margin-top: 0; }
+.search-box { width: 100%; background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; color: var(--text); font-size: 0.9em; margin-bottom: 16px; }
+.search-box:focus { outline: none; border-color: var(--accent); }
+.filter-chip { display: inline-block; background: var(--bg3); border: 1px solid var(--border); border-radius: 16px; padding: 4px 12px; font-size: 0.78em; color: var(--muted); cursor: pointer; margin: 3px; transition: all .15s; }
+.filter-chip:hover, .filter-chip.aktif { background: var(--accent); border-color: var(--accent); color: var(--bg); font-weight: 700; }
+.filter-chip.danger.aktif { background: var(--red); border-color: var(--red); }
+.filter-chip.danger { border-color: rgba(248,81,73,.4); color: var(--red); }
+.nav-link { display: block; padding: 8px 12px; border-radius: 6px; color: var(--muted); text-decoration: none; font-size: 0.88em; cursor: pointer; transition: all .15s; margin-bottom: 2px; }
+.nav-link:hover, .nav-link.aktif { background: var(--bg3); color: var(--text); }
+
+/* CONTENT */
+.content { padding: 28px; overflow-y: auto; }
+.view { display: none; }
+.view.aktif { display: block; }
+
+/* ŞIRKET KARTLARI */
+.sirket-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 18px; }
+.sirket-kart { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; transition: transform .2s, box-shadow .2s; cursor: pointer; }
+.sirket-kart:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.4); border-color: var(--accent); }
+.kart-top { padding: 20px 20px 14px; }
+.kart-top-inner { display: flex; align-items: flex-start; gap: 14px; }
+.kart-ikon { font-size: 2em; width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.kart-baslik { font-size: 0.95em; font-weight: 900; color: white; margin-bottom: 3px; }
+.kart-holding { font-size: 0.78em; color: var(--muted); margin-bottom: 4px; }
+.kart-bolge { font-size: 0.75em; color: var(--muted); }
+.kart-badges { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+.kart-badge { padding: 2px 9px; border-radius: 10px; font-size: 0.72em; font-weight: 700; }
+.kart-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border-top: 1px solid var(--border); }
+.kart-stat { background: var(--bg3); padding: 10px 8px; text-align: center; }
+.kart-stat .n { font-size: 1.1em; font-weight: 900; color: var(--accent); }
+.kart-stat .n.danger { color: var(--red); }
+.kart-stat .l { font-size: 0.67em; color: var(--muted); text-transform: uppercase; margin-top: 2px; }
+.kart-footer { padding: 10px 16px; background: var(--bg); display: flex; gap: 8px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.btn { padding: 6px 14px; border-radius: 6px; font-size: 0.78em; font-weight: 700; cursor: pointer; border: 1px solid transparent; text-decoration: none; transition: opacity .15s; display: inline-flex; align-items: center; gap: 5px; }
+.btn-blue { background: rgba(88,166,255,.15); color: var(--accent); border-color: rgba(88,166,255,.3); }
+.btn-red { background: rgba(248,81,73,.15); color: var(--red); border-color: rgba(248,81,73,.3); }
+.btn-green { background: rgba(63,185,80,.15); color: var(--green); border-color: rgba(63,185,80,.3); }
+.btn:hover { opacity: .8; }
+
+/* DETAY MODALi */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 1000; display: none; align-items: flex-start; justify-content: center; padding: 40px 20px; overflow-y: auto; }
+.modal-overlay.acik { display: flex; }
+.modal { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; max-width: 860px; width: 100%; padding: 32px; position: relative; max-height: 90vh; overflow-y: auto; }
+.modal-close { position: absolute; top: 16px; right: 16px; background: var(--bg3); border: none; color: var(--muted); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 1.2em; display: flex; align-items: center; justify-content: center; }
+.modal-close:hover { color: white; }
+.modal h2 { font-size: 1.5em; font-weight: 900; color: white; margin-bottom: 8px; }
+.modal-sub { font-size: 0.85em; color: var(--muted); margin-bottom: 20px; }
+.tab-bar { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 20px; overflow-x: auto; }
+.tab-btn { padding: 10px 18px; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.82em; font-weight: 700; border-bottom: 2px solid transparent; white-space: nowrap; transition: all .15s; }
+.tab-btn:hover { color: var(--text); }
+.tab-btn.aktif { color: var(--accent); border-bottom-color: var(--accent); }
+.tab-panel { display: none; }
+.tab-panel.aktif { display: block; }
+.section-title { font-size: 0.75em; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; margin: 20px 0 10px; font-weight: 700; }
+.olay-kart { background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; }
+.olay-kart.danger { border-color: rgba(248,81,73,.4); background: rgba(248,81,73,.05); }
+.olay-kart.warn { border-color: rgba(210,153,34,.4); background: rgba(210,153,34,.05); }
+.olay-kart .tarih { font-size: 0.75em; color: var(--muted); margin-bottom: 4px; }
+.olay-kart .icerik { font-size: 0.9em; }
+.olay-kart .kaynak { font-size: 0.73em; color: var(--accent); margin-top: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.85em; margin: 10px 0 16px; }
+th { background: var(--bg3); color: var(--muted); padding: 8px 12px; text-align: left; font-size: 0.75em; text-transform: uppercase; letter-spacing: .5px; }
+td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+
+/* ŞEHİR GÖRÜNÜMÜ */
+.sehir-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+.sehir-kart { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 22px; cursor: pointer; transition: all .2s; }
+.sehir-kart:hover { border-color: var(--accent); transform: translateY(-3px); }
+.sehir-kart h3 { font-size: 1.1em; font-weight: 900; color: white; margin-bottom: 6px; }
+.sehir-kart .il { font-size: 0.8em; color: var(--muted); margin-bottom: 10px; }
+.sehir-kart .ozellik { font-size: 0.82em; color: var(--text); }
+
+/* ARAMA */
+.arama-box { position: relative; margin-bottom: 24px; }
+.arama-input { width: 100%; background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; color: var(--text); font-size: 1em; }
+.arama-input:focus { outline: none; border-color: var(--accent); }
+.arama-sonuc { margin-top: 16px; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .sirket-grid { grid-template-columns: 1fr; }
+  .header { padding: 20px; }
+  .content { padding: 16px; }
+}
+
+/* VİZUALİZASYON */
+.chart-bar { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+.chart-bar .label { font-size: 0.82em; color: var(--muted); width: 160px; flex-shrink: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chart-bar .bar { height: 18px; border-radius: 3px; min-width: 2px; transition: width .4s ease; }
+.chart-bar .val { font-size: 0.78em; color: var(--text); margin-left: 6px; white-space: nowrap; }
+
+/* YÜKLENİYOR */
+.yukleniyor { text-align: center; padding: 60px; color: var(--muted); font-size: 1.1em; }
+.empty { text-align: center; padding: 40px; color: var(--muted); font-size: 0.95em; }
+
+/* FOOTER */
+footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 20px 40px; text-align: center; color: var(--muted); font-size: 0.82em; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-logo">⛏</div>
+  <div class="header-text">
+    <h1>Madenler Araştırma Platformu</h1>
+    <p>Türkiye'nin özel maden şirketleri — TKP Kamulaştırma Kampanyası · Mayıs 2026</p>
+  </div>
+  <div class="header-badges">
+    <span class="badge badge-red">10+ Şirket</span>
+    <span class="badge badge-purple">TKP KAMPANYASI</span>
+    <span class="badge badge-yellow">KAMUYA AÇIK BİLGİLER</span>
+  </div>
+</div>
+
+<!-- İSTATİSTİK BARI -->
+<div class="statbar" id="statbar">
+  <div class="stat"><div class="sayi" id="stat-sirket">—</div><div class="label">Şirket</div></div>
+  <div class="stat danger"><div class="sayi" id="stat-olum">—</div><div class="label">İşçi Ölümü</div></div>
+  <div class="stat"><div class="sayi" id="stat-ruhsat">—</div><div class="label">Toplam Ruhsat</div></div>
+  <div class="stat"><div class="sayi" id="stat-cevre">—</div><div class="label">Çevre İhlali</div></div>
+  <div class="stat"><div class="sayi" id="stat-sehir">—</div><div class="label">Kent</div></div>
+</div>
+
+<!-- ANA LAYOUT -->
+<div class="main">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <input class="search-box" id="sidebar-search" placeholder="🔍 Şirket, bölge, holding ara..." oninput="filtrele()">
+
+    <h3>Görünüm</h3>
+    <a class="nav-link aktif" onclick="gorunum('sirketler')">⛏ Tüm Şirketler</a>
+    <a class="nav-link" onclick="gorunum('sehirler')">📍 Kentler</a>
+    <a class="nav-link" onclick="gorunum('arama')">🔎 Tam Metin Arama</a>
+    <a class="nav-link" onclick="gorunum('istatistikler')">📊 İstatistikler</a>
+
+    <h3>Sektör</h3>
+    <div id="sektor-filtreler">
+      <span class="filter-chip aktif" onclick="sektorFiltre('')">Tümü</span>
+    </div>
+
+    <h3>Holding</h3>
+    <div id="holding-filtreler">
+      <span class="filter-chip aktif" onclick="holdingFiltre('')">Tümü</span>
+    </div>
+
+    <h3>Kritik Filtreler</h3>
+    <span class="filter-chip danger" onclick="kritikFiltre('olum')">💀 İşçi Ölümü Var</span>
+    <span class="filter-chip danger" onclick="kritikFiltre('cevre')">☠ Çevre İhlali</span>
+    <span class="filter-chip danger" onclick="kritikFiltre('ozellestirme')">🏛 Özelleştirilmiş</span>
+    <span class="filter-chip danger" onclick="kritikFiltre('sendikasiz')">🚫 Sendikasız</span>
+
+    <h3>Statik Raporlar</h3>
+    <a class="nav-link" href="/demir_export/index.html" target="_blank">⛏ Demir Export Detay</a>
+    <a class="nav-link" href="/yildizlar/index.html" target="_blank">💎 Yıldızlar Holding Detay</a>
+    <a class="nav-link" href="/metin_rapor.html" target="_blank">📄 Metin Raporu</a>
+  </div>
+
+  <!-- İÇERİK -->
+  <div class="content">
+    <!-- ŞİRKETLER -->
+    <div class="view aktif" id="view-sirketler">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
+        <h2 style="color:white; font-size:1.2em;">Tüm Şirketler <span id="sirket-sayac" style="color:var(--muted); font-weight:400; font-size:0.85em;"></span></h2>
+        <div style="display:flex; gap:8px;">
+          <button class="btn btn-blue" onclick="tumunuRaporla()">📄 Tüm Raporu İndir</button>
+        </div>
+      </div>
+      <div class="sirket-grid" id="sirket-grid">
+        <div class="yukleniyor">Veriler yükleniyor...</div>
+      </div>
+    </div>
+
+    <!-- ŞEHİRLER -->
+    <div class="view" id="view-sehirler">
+      <h2 style="color:white; font-size:1.2em; margin-bottom:20px;">Kent Bazlı Raporlar</h2>
+      <div class="sehir-grid" id="sehir-grid">
+        <div class="yukleniyor">Yükleniyor...</div>
+      </div>
+    </div>
+
+    <!-- ARAMA -->
+    <div class="view" id="view-arama">
+      <h2 style="color:white; font-size:1.2em; margin-bottom:20px;">Tam Metin Arama</h2>
+      <div class="arama-box">
+        <input class="arama-input" id="arama-input" placeholder="İşçi ölümleri, çevre ihlali, şirket adı, holding, dava konusu..." oninput="aramaYap()">
+      </div>
+      <div class="arama-sonuc" id="arama-sonuc">
+        <div class="empty">Bir şeyler yazarak aramaya başlayın...</div>
+      </div>
+    </div>
+
+    <!-- İSTATİSTİKLER -->
+    <div class="view" id="view-istatistikler">
+      <h2 style="color:white; font-size:1.2em; margin-bottom:20px;">İstatistikler ve Görselleştirme</h2>
+      <div id="istatistik-icerik"></div>
+    </div>
+  </div>
+</div>
+
+<!-- DETAY MODALİ -->
+<div class="modal-overlay" id="modal-overlay" onclick="modalKapat(event)">
+  <div class="modal" id="modal-icerik">
+    <button class="modal-close" onclick="modalKapat()">✕</button>
+    <div id="modal-govde"></div>
+  </div>
+</div>
+
+<footer>
+  Madenler Araştırma Platformu · TKP Kamulaştırma Kampanyası · Mayıs 2026 · Tüm bilgiler kamuya açık kaynaklardan derlenmiştir.
+  <br><span style="font-size:0.85em;">API: <a href="/api/health" style="color:var(--accent)">/api/health</a> · <a href="/api/companies" style="color:var(--accent)">/api/companies</a></span>
+</footer>
+
+<script>
+let tumSirketler = [];
+let tumSehirler = [];
+let aktifSektor = '';
+let aktifHolding = '';
+let aktifKritik = '';
+let aramaMetni = '';
+let aramaTimer = null;
+
+// ─── VERİ YÜKLEME ─────────────────────────────────────────────────────────
+async function veriyukle() {
+  try {
+    const [sirketRes, sehirRes] = await Promise.all([
+      fetch('/api/companies'),
+      fetch('/api/cities')
+    ]);
+    tumSirketler = await sirketRes.json();
+    tumSehirler = await sehirRes.json();
+
+    istatBarGuncelle();
+    sirketleriGoster(tumSirketler);
+    sehirleriGoster(tumSehirler);
+    filtreChipleriOlustur();
+  } catch(e) {
+    document.getElementById('sirket-grid').innerHTML = `<div class="empty">⚠ Sunucu bağlantısı kurulamadı. Statik dosyaları kontrol edin.<br><small>${e.message}</small></div>`;
+  }
+}
+
+// ─── İSTATİSTİK BAR ───────────────────────────────────────────────────────
+function istatBarGuncelle() {
+  const olum = tumSirketler.reduce((s, c) => s + (c.iscOlumleri || []).reduce((ss, o) => ss + (o.adet || 1), 0), 0);
+  const ruhsat = tumSirketler.reduce((s, c) => {
+    const r = parseInt(c.ruhsatSayisi);
+    return s + (isNaN(r) ? 0 : r);
+  }, 0);
+  const cevre = tumSirketler.reduce((s, c) => s + (c.cevreIhlalleri || []).length, 0);
+
+  document.getElementById('stat-sirket').textContent = tumSirketler.length;
+  document.getElementById('stat-olum').textContent = olum || '?';
+  document.getElementById('stat-ruhsat').textContent = ruhsat > 0 ? ruhsat + '+' : '?';
+  document.getElementById('stat-cevre').textContent = cevre;
+  document.getElementById('stat-sehir').textContent = tumSehirler.length;
+}
+
+// ─── FİLTRE CHİPLERİ ─────────────────────────────────────────────────────
+function filtreChipleriOlustur() {
+  const sektorler = [...new Set(tumSirketler.map(c => c.sektor).filter(Boolean))];
+  const holdinglar = [...new Set(tumSirketler.map(c => c.holding).filter(Boolean))];
+
+  const sDiv = document.getElementById('sektor-filtreler');
+  sDiv.innerHTML = `<span class="filter-chip aktif" onclick="sektorFiltre('')">Tümü</span>
+  ${sektorler.map(s => `<span class="filter-chip" onclick="sektorFiltre('${s}')">${s}</span>`).join('')}`;
+
+  const hDiv = document.getElementById('holding-filtreler');
+  hDiv.innerHTML = `<span class="filter-chip aktif" onclick="holdingFiltre('')">Tümü</span>
+  ${holdinglar.slice(0,8).map(h => `<span class="filter-chip" onclick="holdingFiltre('${h.replace(/'/g,"\\'")}')"> ${h.split(' ')[0]}</span>`).join('')}`;
+}
+
+// ─── FİLTRELEME ──────────────────────────────────────────────────────────
+function filtrele() {
+  aramaMetni = document.getElementById('sidebar-search').value.toLowerCase();
+  let liste = tumSirketler;
+
+  if (aktifSektor) liste = liste.filter(c => c.sektor === aktifSektor);
+  if (aktifHolding) liste = liste.filter(c => c.holding === aktifHolding);
+  if (aramaMetni) liste = liste.filter(c =>
+    JSON.stringify(c).toLowerCase().includes(aramaMetni)
+  );
+
+  if (aktifKritik === 'olum') liste = liste.filter(c => (c.iscOlumleri || []).length > 0);
+  if (aktifKritik === 'cevre') liste = liste.filter(c => (c.cevreIhlalleri || []).length > 0);
+  if (aktifKritik === 'ozellestirme') liste = liste.filter(c => (c.ozellestirilenSahalar || []).length > 0);
+  if (aktifKritik === 'sendikasiz') liste = liste.filter(c => c.sendikaDurumu?.varMi === 'Hayır' || c.sendikaDurumu?.varMi === 'Hayır / Çok sınırlı');
+
+  sirketleriGoster(liste);
+}
+
+function sektorFiltre(s) {
+  aktifSektor = s;
+  document.querySelectorAll('#sektor-filtreler .filter-chip').forEach(el => el.classList.remove('aktif'));
+  event.target.classList.add('aktif');
+  filtrele();
+}
+function holdingFiltre(h) {
+  aktifHolding = h;
+  document.querySelectorAll('#holding-filtreler .filter-chip').forEach(el => el.classList.remove('aktif'));
+  event.target.classList.add('aktif');
+  filtrele();
+}
+function kritikFiltre(k) {
+  aktifKritik = aktifKritik === k ? '' : k;
+  document.querySelectorAll('.sidebar .filter-chip.danger').forEach(el => el.classList.remove('aktif'));
+  if (aktifKritik) event.target.classList.add('aktif');
+  filtrele();
+}
+
+// ─── ŞİRKET KARTLARI ─────────────────────────────────────────────────────
+function sirketleriGoster(liste) {
+  const grid = document.getElementById('sirket-grid');
+  document.getElementById('sirket-sayac').textContent = `(${liste.length} sonuç)`;
+
+  if (!liste.length) {
+    grid.innerHTML = '<div class="empty">Filtrele uyan şirket bulunamadı.</div>';
+    return;
+  }
+
+  grid.innerHTML = liste.map(c => {
+    const olum = (c.iscOlumleri || []).reduce((s, o) => s + (o.adet || 1), 0);
+    const cevre = (c.cevreIhlalleri || []).length;
+    const dava = (c.davalar || []).length;
+    const renk = c.renkTema || '#1a4a8a';
+    const ikon = c.ikon && c.ikon !== 'coal' ? c.ikon : '⛏';
+
+    return `<div class="sirket-kart" onclick="sirketDetay('${c.slug}')">
+      <div class="kart-top" style="background: ${c.renkGradyan || renk + '22'}">
+        <div class="kart-top-inner">
+          <div class="kart-ikon" style="background:${renk}22; color:${renk}">${ikon}</div>
+          <div>
+            <div class="kart-baslik">${c.ad}</div>
+            <div class="kart-holding">${c.holding || '—'}</div>
+            <div class="kart-bolge">📍 ${c.bolge || c.sehir || '—'}</div>
+          </div>
+        </div>
+        <div class="kart-badges">
+          <span class="kart-badge" style="background:${renk}22; color:${renk}; border:1px solid ${renk}44">${c.sektor || '—'}</span>
+          ${c.tip ? `<span class="kart-badge" style="background:rgba(139,92,246,.15); color:var(--purple); border:1px solid rgba(139,92,246,.3)">${c.tip}</span>` : ''}
+          ${olum > 0 ? `<span class="kart-badge" style="background:rgba(248,81,73,.15); color:var(--red); border:1px solid rgba(248,81,73,.3)">💀 ${olum} ölüm</span>` : ''}
+        </div>
+      </div>
+      <div class="kart-stats">
+        <div class="kart-stat"><div class="n">${c.ruhsatSayisi || '?'}</div><div class="l">Ruhsat</div></div>
+        <div class="kart-stat"><div class="n danger">${olum || '?'}</div><div class="l">Ölüm</div></div>
+        <div class="kart-stat"><div class="n">${cevre || '?'}</div><div class="l">Çevre</div></div>
+      </div>
+      <div class="kart-footer">
+        <span class="btn btn-blue" onclick="sirketDetay('${c.slug}'); event.stopPropagation()">📋 Detay</span>
+        <a class="btn btn-red" href="/api/report/company/${c.slug}" target="_blank" onclick="event.stopPropagation()">🖨 Rapor</a>
+        ${c.raporDosyasi ? `<a class="btn btn-green" href="/${c.raporDosyasi}" target="_blank" onclick="event.stopPropagation()">📑 Tam Rapor</a>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── ŞEHİRLER ─────────────────────────────────────────────────────────────
+function sehirleriGoster(liste) {
+  const grid = document.getElementById('sehir-grid');
+  if (!liste.length) { grid.innerHTML = '<div class="empty">Şehir bulunamadı.</div>'; return; }
+  grid.innerHTML = liste.map(s => {
+    const sirketSayisi = (s.sirketler || []).length;
+    const olum = (s.facialAr || []).reduce((ss, f) => ss + (f.olumSayisi || 0), 0);
+    return `<div class="sehir-kart" onclick="sehirDetay('${s.slug}')">
+      <h3>📍 ${s.ad}</h3>
+      <div class="il">${s.il}</div>
+      <div class="ozellik">${s.ozellik || ''}</div>
+      <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
+        <span class="kart-badge" style="background:rgba(88,166,255,.15); color:var(--accent); border:1px solid rgba(88,166,255,.3)">${sirketSayisi} şirket</span>
+        ${olum > 0 ? `<span class="kart-badge" style="background:rgba(248,81,73,.15); color:var(--red); border:1px solid rgba(248,81,73,.3)">💀 ${olum} ölüm</span>` : ''}
+      </div>
+      <div style="margin-top:12px; display:flex; gap:8px;">
+        <a class="btn btn-blue" href="/api/report/city/${s.slug}" target="_blank" onclick="event.stopPropagation()">🖨 Kent Raporu</a>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── GÖRÜNÜM DEĞİŞTİR ─────────────────────────────────────────────────────
+function gorunum(isim) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('aktif'));
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('aktif'));
+  document.getElementById('view-' + isim).classList.add('aktif');
+  event.target.classList.add('aktif');
+  if (isim === 'istatistikler') istatistikleriGoster();
+}
+
+// ─── ŞİRKET DETAY MODALİ ─────────────────────────────────────────────────
+async function sirketDetay(slug) {
+  const overlay = document.getElementById('modal-overlay');
+  const govde = document.getElementById('modal-govde');
+  govde.innerHTML = '<div class="yukleniyor">Yükleniyor...</div>';
+  overlay.classList.add('acik');
+
+  try {
+    const res = await fetch(`/api/companies/${slug}`);
+    const c = await res.json();
+    const olum = (c.iscOlumleri || []).reduce((s, o) => s + (o.adet || 1), 0);
+    const renk = c.renkTema || '#1a4a8a';
+
+    govde.innerHTML = `
+    <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:20px;">
+      <div style="font-size:2.5em;">${c.ikon !== 'coal' ? c.ikon : '⛏'}</div>
+      <div>
+        <h2>${c.ad}</h2>
+        <div class="modal-sub">${c.holding || ''} · ${c.sektor || ''} · ${c.bolge || c.sehir || ''}</div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn-red" href="/api/report/company/${c.slug}" target="_blank">🖨 Raporu Yazdır/İndir</a>
+          ${c.raporDosyasi ? `<a class="btn btn-green" href="/${c.raporDosyasi}" target="_blank">📑 Detaylı Rapor</a>` : ''}
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:10px; margin-bottom:20px;">
+      <div style="background:var(--bg3); border-radius:8px; padding:14px; text-align:center;">
+        <div style="font-size:1.6em; font-weight:900; color:var(--accent)">${c.ruhsatSayisi || '?'}</div>
+        <div style="font-size:0.7em; color:var(--muted); text-transform:uppercase">Ruhsat</div>
+      </div>
+      <div style="background:var(--bg3); border-radius:8px; padding:14px; text-align:center;">
+        <div style="font-size:1.6em; font-weight:900; color:var(--accent)">${c.isletmeSayisi || '?'}</div>
+        <div style="font-size:0.7em; color:var(--muted); text-transform:uppercase">İşletme</div>
+      </div>
+      <div style="background:rgba(248,81,73,.08); border-radius:8px; padding:14px; text-align:center;">
+        <div style="font-size:1.6em; font-weight:900; color:var(--red)">${olum || '?'}</div>
+        <div style="font-size:0.7em; color:var(--muted); text-transform:uppercase">İşçi Ölümü</div>
+      </div>
+      <div style="background:var(--bg3); border-radius:8px; padding:14px; text-align:center;">
+        <div style="font-size:1.6em; font-weight:900; color:var(--accent)">${c.iscSayisi || '?'}</div>
+        <div style="font-size:0.7em; color:var(--muted); text-transform:uppercase">İşçi</div>
+      </div>
+    </div>
+
+    <div class="tab-bar">
+      <button class="tab-btn aktif" onclick="sekmeAc(this,'ozet')">Özet</button>
+      <button class="tab-btn" onclick="sekmeAc(this,'iscler')">İşçiler ve İSG</button>
+      <button class="tab-btn" onclick="sekmeAc(this,'cevre')">Çevre</button>
+      <button class="tab-btn" onclick="sekmeAc(this,'siyasi')">Siyasi Bağlantı</button>
+      <button class="tab-btn" onclick="sekmeAc(this,'mali')">Mali</button>
+      <button class="tab-btn" onclick="sekmeAc(this,'hukuk')">Hukuk</button>
+    </div>
+
+    <div class="tab-panel aktif" id="tab-ozet">
+      <p style="font-size:0.92em; line-height:1.8;">${c.ozet || '—'}</p>
+      ${c.sendikaDurumu ? `
+      <div class="section-title">SENDİKA DURUMU</div>
+      <div class="olay-kart ${c.sendikaDurumu.varMi === 'Hayır' ? 'danger' : 'warn'}">
+        <strong>Sendika var mı:</strong> ${c.sendikaDurumu.varMi || '?'}
+        ${c.sendikaDurumu.sendikalar?.length ? `<br><strong>Sendikalar:</strong> ${c.sendikaDurumu.sendikalar.join(', ')}` : ''}
+        ${c.sendikaDurumu.notlar ? `<div class="kaynak">${c.sendikaDurumu.notlar}</div>` : ''}
+      </div>` : ''}
+    </div>
+
+    <div class="tab-panel" id="tab-iscler">
+      ${c.iscOlumleri?.length ? `
+      <div class="section-title">İŞÇİ ÖLÜMLERİ</div>
+      ${c.iscOlumleri.map(o => `<div class="olay-kart danger">
+        <div class="tarih">${o.tarih || ''}</div>
+        <div class="icerik"><strong>${o.adet ? o.adet + ' ölü — ' : ''}${o.aciklama || ''}</strong></div>
+        ${o.detay ? `<div style="margin-top:6px; font-size:0.85em;">${o.detay}</div>` : ''}
+        ${o.kaynak ? `<div class="kaynak">📎 ${o.kaynak}</div>` : ''}
+      </div>`).join('')}` : '<div class="empty">Kayıtlı işçi ölümü yok.</div>'}
+
+      ${c.isgOlaylari?.length ? `
+      <div class="section-title">DİĞER İSG OLAYLARI</div>
+      ${c.isgOlaylari.map(o => `<div class="olay-kart warn">
+        <div class="tarih">${o.tarih || o.yer || ''}</div>
+        <div class="icerik">${o.aciklama || ''}</div>
+        ${o.kaynak ? `<div class="kaynak">📎 ${o.kaynak}</div>` : ''}
+      </div>`).join('')}` : ''}
+    </div>
+
+    <div class="tab-panel" id="tab-cevre">
+      ${c.cevreIhlalleri?.length ? c.cevreIhlalleri.map(i => `<div class="olay-kart warn">
+        <div class="tarih">${i.yer || ''} · ${i.tarih || ''}</div>
+        <div class="icerik">${i.aciklama || ''}</div>
+        ${i.kaynak ? `<div class="kaynak">📎 ${i.kaynak}</div>` : ''}
+      </div>`).join('') : '<div class="empty">Kayıtlı çevre ihlali yok.</div>'}
+    </div>
+
+    <div class="tab-panel" id="tab-siyasi">
+      ${c.siyasiBaglantilar?.length ? `
+      <table>
+        <tr><th>Kişi / Kurum</th><th>Bağlantı Türü</th><th>Açıklama</th></tr>
+        ${c.siyasiBaglantilar.map(b => `<tr>
+          <td><strong>${b.kisi || ''}</strong></td>
+          <td style="color:var(--yellow)">${b.baglantiTuru || ''}</td>
+          <td style="font-size:0.85em">${b.aciklama || ''}</td>
+        </tr>`).join('')}
+      </table>
+      ${c.ozellestirilenSahalar?.length ? `
+      <div class="section-title">ÖZELLEŞTİRİLEN SAHALAR</div>
+      ${c.ozellestirilenSahalar.map(s => `<div class="olay-kart warn">
+        <strong>${s.ad}</strong> (${s.yil || '?'})
+        <div style="margin-top:4px; font-size:0.85em">${s.aciklama || ''}</div>
+        ${s.kaynak ? `<div class="kaynak">📎 ${s.kaynak}</div>` : ''}
+      </div>`).join('')}` : ''}` : '<div class="empty">Kayıtlı siyasi bağlantı yok.</div>'}
+    </div>
+
+    <div class="tab-panel" id="tab-mali">
+      ${c.maliVeriler ? `<div class="olay-kart">
+        ${Object.entries(c.maliVeriler).map(([k, v]) => k !== 'notlar' ? `<div style="padding:6px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:0.88em"><span style="color:var(--muted)">${k}</span><strong>${v}</strong></div>` : '').join('')}
+        ${c.maliVeriler.notlar ? `<p style="margin-top:10px; font-size:0.85em; color:var(--muted)">${c.maliVeriler.notlar}</p>` : ''}
+      </div>` : '<div class="empty">Mali veri yok.</div>'}
+    </div>
+
+    <div class="tab-panel" id="tab-hukuk">
+      ${c.davalar?.length ? c.davalar.map(d => `<div class="olay-kart">
+        <strong>${d.ad}</strong>
+        <div style="margin-top:4px; font-size:0.85em">${d.aciklama || ''}</div>
+        ${d.sonuc ? `<div style="margin-top:6px; color:var(--yellow); font-size:0.82em">Sonuç: ${d.sonuc}</div>` : ''}
+      </div>`).join('') : '<div class="empty">Kayıtlı dava yok.</div>'}
+
+      ${c.kaynaklar?.length ? `
+      <div class="section-title">KAYNAKLAR</div>
+      ${c.kaynaklar.map(k => `<div style="padding:6px 0; border-bottom:1px solid var(--border)">
+        ${k.url ? `<a href="${k.url}" target="_blank" style="color:var(--accent); font-size:0.85em">${k.ad}</a>` : `<span style="font-size:0.85em">${k.ad}</span>`}
+      </div>`).join('')}` : ''}
+    </div>`;
+  } catch(e) {
+    govde.innerHTML = `<div class="empty">Hata: ${e.message}</div>`;
+  }
+}
+
+// ─── ŞEHİR DETAY ──────────────────────────────────────────────────────────
+function sehirDetay(slug) {
+  window.open(`/api/report/city/${slug}`, '_blank');
+}
+
+// ─── SEKME ────────────────────────────────────────────────────────────────
+function sekmeAc(btn, id) {
+  btn.closest('.modal').querySelectorAll('.tab-btn').forEach(b => b.classList.remove('aktif'));
+  btn.closest('.modal').querySelectorAll('.tab-panel').forEach(p => p.classList.remove('aktif'));
+  btn.classList.add('aktif');
+  document.getElementById('tab-' + id).classList.add('aktif');
+}
+
+// ─── MODAL KAPAT ──────────────────────────────────────────────────────────
+function modalKapat(e) {
+  if (!e || e.target === document.getElementById('modal-overlay') || e.type === 'click') {
+    document.getElementById('modal-overlay').classList.remove('acik');
+  }
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') modalKapat(); });
+
+// ─── TAM METİN ARAMA ─────────────────────────────────────────────────────
+function aramaYap() {
+  clearTimeout(aramaTimer);
+  aramaTimer = setTimeout(async () => {
+    const q = document.getElementById('arama-input').value.trim();
+    const sonucDiv = document.getElementById('arama-sonuc');
+    if (!q) { sonucDiv.innerHTML = '<div class="empty">Bir şeyler yazarak aramaya başlayın...</div>'; return; }
+    sonucDiv.innerHTML = '<div class="yukleniyor">Aranıyor...</div>';
+
+    try {
+      const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
+      const sonuclar = await res.json();
+      if (!sonuclar.length) { sonucDiv.innerHTML = '<div class="empty">Sonuç bulunamadı.</div>'; return; }
+      sonucDiv.innerHTML = sonuclar.map(s => `
+      <div class="olay-kart" style="margin-bottom:10px; cursor:pointer" onclick="${s._type==='company' ? `sirketDetay('${s.slug}')` : `window.open('/api/report/city/${s.slug}','_blank')`}">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <strong>${s.ad}</strong>
+          <span class="kart-badge" style="background:rgba(88,166,255,.15); color:var(--accent); border:1px solid rgba(88,166,255,.3)">${s._type === 'company' ? '⛏ Şirket' : '📍 Kent'}</span>
+        </div>
+        <div class="tarih">${s.holding || s.il || ''} · ${s.bolge || s.ozellik || ''}</div>
+        <div style="font-size:0.85em; margin-top:4px; color:var(--muted)">${(s.ozet || s.tarihselBaglam || '').slice(0,150)}...</div>
+      </div>`).join('');
+    } catch(e) {
+      sonucDiv.innerHTML = `<div class="empty">Arama hatası: ${e.message}</div>`;
+    }
+  }, 400);
+}
+
+// ─── İSTATİSTİKLER ────────────────────────────────────────────────────────
+function istatistikleriGoster() {
+  const div = document.getElementById('istatistik-icerik');
+  const sirketlerOlumlu = tumSirketler
+    .map(c => ({ ad: c.kisaAd || c.ad, olum: (c.iscOlumleri || []).reduce((s, o) => s + (o.adet || 1), 0) }))
+    .filter(c => c.olum > 0)
+    .sort((a, b) => b.olum - a.olum);
+
+  const maxOlum = Math.max(...sirketlerOlumlu.map(c => c.olum));
+
+  const sirketlerCevre = tumSirketler
+    .map(c => ({ ad: c.kisaAd || c.ad, cevre: (c.cevreIhlalleri || []).length }))
+    .filter(c => c.cevre > 0)
+    .sort((a, b) => b.cevre - a.cevre);
+
+  div.innerHTML = `
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+    <div>
+      <div class="section-title">İŞÇİ ÖLÜMLERİ (ŞIRKETE GÖRE)</div>
+      ${sirketlerOlumlu.length ? sirketlerOlumlu.map(c => `
+      <div class="chart-bar">
+        <div class="label">${c.ad}</div>
+        <div class="bar" style="width:${(c.olum/maxOlum*200).toFixed(0)}px; background:var(--red)"></div>
+        <div class="val">${c.olum} kişi</div>
+      </div>`).join('') : '<div class="empty">Veri yok.</div>'}
+    </div>
+    <div>
+      <div class="section-title">ÇEVRE İHLALLERİ (ŞIRKETE GÖRE)</div>
+      ${sirketlerCevre.length ? sirketlerCevre.map(c => `
+      <div class="chart-bar">
+        <div class="label">${c.ad}</div>
+        <div class="bar" style="width:${(c.cevre/4*200).toFixed(0)}px; background:var(--yellow)"></div>
+        <div class="val">${c.cevre} olay</div>
+      </div>`).join('') : '<div class="empty">Veri yok.</div>'}
+    </div>
+  </div>
+
+  <div style="margin-top:28px;">
+    <div class="section-title">SEKTÖR DAĞILIMI</div>
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:8px;">
+    ${Object.entries(tumSirketler.reduce((acc, c) => {
+      const s = c.sektor || 'Bilinmiyor';
+      acc[s] = (acc[s] || 0) + 1; return acc;
+    }, {})).map(([s, n]) => `<div style="background:var(--bg3); border:1px solid var(--border); border-radius:10px; padding:10px 18px; text-align:center">
+      <div style="font-size:1.4em; font-weight:900; color:var(--accent)">${n}</div>
+      <div style="font-size:0.72em; color:var(--muted); margin-top:3px">${s}</div>
+    </div>`).join('')}
+    </div>
+  </div>
+
+  <div style="margin-top:28px;">
+    <div class="section-title">HOLDING BAZLI ŞİRKET SAYISI</div>
+    ${Object.entries(tumSirketler.reduce((acc, c) => {
+      const h = c.holding || 'Bağımsız';
+      acc[h] = (acc[h] || 0) + 1; return acc;
+    }, {})).sort((a,b) => b[1]-a[1]).map(([h, n]) => `
+    <div class="chart-bar">
+      <div class="label">${h.split(' ')[0]}</div>
+      <div class="bar" style="width:${n * 60}px; background:var(--purple)"></div>
+      <div class="val">${n} şirket</div>
+    </div>`).join('')}
+  </div>`;
+}
+
+// ─── TÜM RAPOR ────────────────────────────────────────────────────────────
+function tumunuRaporla() {
+  const sirketler = document.querySelectorAll('.sirket-kart');
+  // Tüm görünür şirketlerin raporlarını yeni sekmede aç
+  let win = window.open('', '_blank');
+  win.document.write('<h1>Madenler — Toplu Rapor</h1><p>Her şirketin raporunu ayrı ayrı açın:</p><ul>');
+  tumSirketler.forEach(c => {
+    win.document.write(`<li><a href="/api/report/company/${c.slug}" target="_blank">${c.ad}</a></li>`);
+  });
+  win.document.write('</ul>');
+  win.document.close();
+}
+
+// ─── BAŞLAT ────────────────────────────────────────────────────────────────
+veriyukle();
+</script>
+</body>
+</html>

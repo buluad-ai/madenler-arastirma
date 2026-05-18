@@ -1,0 +1,22 @@
+{
+  "slug": "soma",
+  "ad": "Soma",
+  "il": "Manisa",
+  "koordinatlar": { "lat": 39.185, "lon": 27.608 },
+  "nufus": "~120.000",
+  "ozellik": "Kömür madenciliği merkezi",
+  "sirketler": ["soma-imbat", "demir-export"],
+  "tarihselBaglam": "Soma, Türkiye'nin en önemli linyit kömür havzalarından birinde yer almaktadır. 13 Mayıs 2014'te yaşanan Soma maden faciasında 301 işçi hayatını kaybetmiştir.",
+  "aktivMadenler": "Araştırılıyor",
+  "toplammRuhsat": "Araştırılıyor",
+  "sendikaDurumu": "Araştırılıyor",
+  "facialAr": [
+    {
+      "tarih": "2014-05-13",
+      "sirket": "Soma Kömür İşletmeleri A.Ş.",
+      "olumSayisi": 301,
+      "aciklama": "Eynez yeraltı kömür ocağında elektrik panosu yangınından kaynaklanan CO zehirlenmesi"
+    }
+  ],
+  "guncellenmeTarihi": "2026-05-18"
+}

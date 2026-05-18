@@ -1,0 +1,141 @@
+{
+  "slug": "hattat-amasra",
+  "ad": "HATTAT Holding — Amasra Kömür Madeni (HEMA Enerji ve Maden)",
+  "kisaAd": "HATTAT Amasra",
+  "holding": "HATTAT Holding",
+  "sektor": "Kömür (Taş Kömürü)",
+  "tip": "Özel (TTK rödevansı)",
+  "bolge": "Bartın / Amasra",
+  "sehir": "Bartın",
+  "ilce": "Amasra",
+  "koordinatlar": { "lat": 41.75, "lon": 32.37 },
+  "kurulusYili": 2005,
+  "ruhsatSayisi": "1 ana rödevans sahası (Amasra-B, TTK'ya ait; 20 yıllık işletme hakkı)",
+  "isletmeSayisi": "1 (Amasra-B Sahası — 2005-2025 süreli, 2040'a uzatıldı iddiası)",
+  "iscSayisi": "Amasra-B sahası 17 yıl boyunca üretim başlatmadı; planlanan 11.000 kişilik istihdam hayata geçmedi. TTK Amasra Müessesesi'nde patlama anında yaklaşık 110 işçi yeraltındaydı (TTK personeli).",
+  "maliVeriler": {
+    "hemaHedefCiro": "500 milyon Euro yıllık gelir hedefi (2023 beyanı)",
+    "yatirimTutari": "725 milyon dolar (Amasra taşkömürü yatırım planı, 2025 dönemi)",
+    "uretimHedefi": "Yılda 5 milyon ton kömür (birinci fazda); 10 milyon ton (uzun vadeli)",
+    "kömürRezervi": "Amasra-B sahasının bölge rezervlerinin %97'sini barındırdığı Sayıştay raporlarında belgelendi",
+    "royaltiOdemesi": "17 yıl boyunca TTK'ya royalti ödemedi (Sayıştay tespiti)",
+    "notlar": "Hattat Enerji ve Maden A.Ş. (HEMA), 20 yıllık sözleşme süresince Amasra-B'den tek ton kömür üretmedi. Sayıştay 2017 raporu bu durumun şirkete 'haksız çıkar' sağladığını açıkça belgeledi."
+  },
+  "ozellestirilenSahalar": [
+    {
+      "ad": "Amasra-B Taşkömürü Sahası (TTK Rödevansı)",
+      "aciklama": "TTK'ya ait Amasra-B sahası 14 Şubat 2005'teki ihale sonucunda HEMA Enerji ve Maden Ticaret A.Ş.'ye (Hattat Holding iştiraki) 20 yıllık rödevans sözleşmesiyle devredildi. Saha teslimi 10 Mayıs 2006'da gerçekleşti. Şirket, 17 yıl boyunca (2006-2023) tek ton kömür üretmediği halde sözleşme 2040 yılına kadar uzatıldı. Sayıştay 2017 raporu, yapılan uzatmaların 'olağanüstü bir durum bulunmamasına karşın' hukuka aykırı biçimde gerçekleştirildiğini tespit etti.",
+      "yil": 2005,
+      "kaynak": "Sayıştay 2017 ve 2019 Raporları; Diken; ISG Haber; CHP Meclis Soruları"
+    }
+  ],
+  "iscOlumleri": [
+    {
+      "tarih": "2022-10-14",
+      "adet": 43,
+      "aciklama": "Amasra Maden Faciası — TTK işletimindeki Amasra-1 (Amasra-A) taşkömürü ocağında grizu (metan gazı) patlaması. 14 Ekim 2022 günü yeraltında yaklaşık 110 işçi bulunmaktaydı; 58 işçi kendi kendine kaçtı, 11 işçi kurtarıldı. 41 işçi patlama anında, 1 işçi 4 Kasım'da, 1 işçi 5 Nisan 2023'te hastanede hayatını kaybetti. Toplam ölü sayısı: 43. 9 işçi yaralandı.",
+      "detay": "Kaza Türkiye'nin 2014 Soma felaketinden sonraki en büyük maden faciasıdır. DİSK başta olmak üzere işçi sendikaları ve sivil toplum kuruluşları olayı 'kaza' değil 'katliam' olarak nitelendirdi. TTK'nın denetim açıkları, yetersiz personel ve güvensiz operasyon sürekliliği başlıca eleştiri konuları oldu. Faciadan önce yapılan Sayıştay denetimleri ciddi eksiklikleri belgelemişti: 2013-2018 arasında 893 yaralanma, kritik personel eksikliği (gerekli 1.145 yerine 622 kişi), patlayıcı uzmanı (gerekli 42 yerine 1 kişi).",
+      "kaynak": "Wikipedia — Amasra Maden Kazası; Medyascope; AA; Diken"
+    }
+  ],
+  "isgOlaylari": [
+    {
+      "tarih": "2013-2018",
+      "aciklama": "Sayıştay 2019 raporu: TTK Amasra Müessesesi'nde altı yılda 893 işçi yaralandı. Yıllar itibarıyla: 2013: 225, 2014: 136, 2015: 151, 2016: 137, 2017: 133, 2018: 112. 2013'te 1 işçi yeraltı kazasında hayatını kaybetti.",
+      "kaynak": "Sayıştay 2019 Raporu; Diken"
+    },
+    {
+      "tarih": "2019",
+      "aciklama": "Sayıştay raporu kritik personel eksikliğini belgeledi: Gerekli 1.145 işçiye karşın 622 kişi çalışıyordu. Hazırlık işçisi: gereken 110 yerine 35; patlayıcı uzmanı: gereken 42 yerine 1; ulaşım işçisi: gereken 126 yerine 39.",
+      "kaynak": "Sayıştay 2019 Denetim Raporu"
+    }
+  ],
+  "cevreIhlalleri": [
+    {
+      "yer": "Amasra, Bartın",
+      "aciklama": "Bartın Platformu, HEMA'nın Amasra-B sahasında kömür üretiminden vazgeçmeden kömür işleme tesisi kurmak istediğini açıklayarak hukuki süreç başlattı.",
+      "kaynak": "Yeşil Gazete"
+    }
+  ],
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Mehmet Hattat (HATTAT Holding Yönetim Kurulu Başkanı)",
+      "baglantiTuru": "Cumhurbaşkanı ile Doğrudan İlişki",
+      "aciklama": "Mehmet Hattat, Cumhurbaşkanı Erdoğan'ın telefonla 'uçak üretmesini istediği' iş insanı olarak kamuoyunda tanınmaktadır. Hema Metal Döküm Fabrikası'nın açılışında Erdoğan telefon bağlantısıyla 'Tank değil, uçak istiyorum Sn. Hattat' dedi. Hattat Traktör, 2013 Hannover Fuarı'nda Erdoğan ile Almanya Başbakanı Merkel tarafından tanıtıldı.",
+      "kaynak": "Haberturk, Diken"
+    },
+    {
+      "kisi": "TTK (Türkiye Taşkömürü Kurumu)",
+      "baglantiTuru": "Rödevans Sözleşmesi — Sayıştay'ın Haksız Çıkar Tespiti",
+      "aciklama": "Sayıştay 2017 raporu, Amasra-B sahasının devir koşullarının şirkete haksız çıkar sağladığını açıkça tespit etti. HEMA 17 yıl üretim yapmadığı halde sözleşme 2040'a uzatıldı. CHP'li Meclis üyesi Aysu Bankoğlu, maden sahalarının Hattat'tan geri alınmasını TBMM'ye taşıdı.",
+      "kaynak": "Sayıştay Raporu 2017; Medyascope, 2022"
+    },
+    {
+      "kisi": "AKP — Bartın Milletvekili Yılmaz Tunç",
+      "baglantiTuru": "Siyasi Destek",
+      "aciklama": "AKP'li Bartın Milletvekili Yılmaz Tunç, HEMA'nın Amasra-B sahasında kömür üretimi için Çinli ortak bulduğuna ilişkin haberi yaydı. Faciadan kısa süre sonra TTK ihaleye çıktığında bile AKP'li isimler şirketi sahiplendi.",
+      "kaynak": "Haberanaliz; ISG Haber"
+    }
+  ],
+  "vergiBorclari": [
+    {
+      "aciklama": "HEMA Enerji ve Maden A.Ş., Amasra-B sahası için 600 bin lira teminat yatırmışken TTK'ya 1,5 milyar lira borcu olduğu ortaya çıktı.",
+      "kaynak": "Tempo Gazetesi"
+    }
+  ],
+  "davalar": [
+    {
+      "ad": "Amasra Maden Faciası Ceza Davası",
+      "aciklama": "Amasra Cumhuriyet Başsavcılığı soruşturmasında 24 şüpheli gözaltına alındı. TTK Amasra Müessese Müdürü Cihat Özdemir başta olmak üzere üst yöneticiler ve mühendisler tutuklandı. Suçlama: 'bilinçli taksirle birden fazla kişinin ölümüne ve yaralanmasına neden olma'. Verilen cezalar: Cihat Özdemir 17 yıl, Selçuk Ekmekçi 16 yıl 6 ay, Mehmet Tural 16 yıl 6 ay, Volkan Soylu 15 yıl hapis. 3 sanık beraat etti (Salih Atmaca, Tayfun Uça, Onur Öztürk). Toplam 20 sanık hapis cezası aldı.",
+      "tarih": "2022-2025",
+      "sonuc": "Mahkumiyet — 24 Mart 2025'te karar açıklandı",
+      "kaynak": "Medyascope, 24.03.2025; AA"
+    }
+  ],
+  "sendikaDurumu": {
+    "varMi": "Evet (TTK bünyesinde)",
+    "sendikalar": ["Genel Maden İşçileri Sendikası (GMİS)"],
+    "orgutlulukOrani": null,
+    "notlar": "TTK devlet kurumu olduğundan işçilerin toplu sözleşme hakları mevcut. Ancak GMİS Genel Sekreteri patlama sonrasında HEMA'nın Amasra-B sahasına el atarak TTK işçilerini daracık alanlara sıkıştırdığını, personel yetersizliğini körüklediğini belirtti. Facia sonrası idari izin verilmedi; işçiler yıllık izin kullanmak zorunda bırakıldı."
+  },
+  "ozet": "Bartın Amasra'da 14 Ekim 2022'de TTK'ya ait Amasra-1 ocağında meydana gelen grizu patlamasında 43 işçi hayatını kaybetti. Bu, 2014 Soma'dan bu yana Türkiye'nin yaşadığı en büyük maden faciasıdır. Aynı havzada Hattat Holding iştiraki HEMA Enerji ve Maden, 2005'te TTK'dan rödevansla devraldığı Amasra-B sahasından 17 yıl boyunca tek ton kömür üretmemiş, Sayıştay'ın 'haksız çıkar' uyarılarına karşın sözleşmesi 2040'a uzatılmıştır. HEMA'nın varlığı TTK'nın üretim alanlarını daraltmış, personel açığını derinleştirmiştir. 2025'te sonuçlanan ceza davasında TTK yöneticileri 15-17 yıl arasında hapis cezası almıştır. Holding sahibi Mehmet Hattat, Erdoğan'la doğrudan kişisel ilişkisi ile tanınan bir iş insanıdır.",
+  "renkTema": "#1a1a2e",
+  "ikon": "explosion",
+  "renkGradyan": "linear-gradient(135deg, #0a0a1a, #1a1a2e)",
+  "renkAksan": "#ff4444",
+  "guncellenmeTarihi": "2026-05-18",
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia — Amasra Maden Kazası",
+      "url": "https://tr.wikipedia.org/wiki/Amasra_maden_kazas%C4%B1"
+    },
+    {
+      "ad": "Medyascope — Amasra Maden Faciası Davasında Karar (Mart 2025)",
+      "url": "https://medyascope.tv/2025/03/24/amasra-maden-faciasi-davasinda-karar-aciklandi/"
+    },
+    {
+      "ad": "Diken — Sayıştay Raporları: Maden Sahasının Devrinde Haksız Çıkar",
+      "url": "https://www.diken.com.tr/sayistay-raporlari-bartindaki-madende-alti-yilda-893-isci-yaralandi/"
+    },
+    {
+      "ad": "Diken — Hattat Holding'in Amasra Madenine Niçin Kıyak Geçiliyor?",
+      "url": "https://www.diken.com.tr/hattat-holdingin-amasra-madenine-nicin-kiyak-geciliyor/"
+    },
+    {
+      "ad": "Medyascope — Amasra Komisyonu'nda Hattat Holding Tartışması",
+      "url": "https://medyascope.tv/2022/11/24/amasra-komisyonunda-hattat-holding-tartismasi-chpli-bankoglu-hattat-holdinge-verilen-maden-sahalarinin-geri-alinmasini-istiyoruz/"
+    },
+    {
+      "ad": "ISG Haber — Hattat Enerji 17 yıllık süreçte kömür üretimini başlatmadı",
+      "url": "https://isghaber.com.tr/haber/11653442/hattat-enerji-17-yillik-surecte-komur-uretimini-baslatmadi"
+    },
+    {
+      "ad": "Tempo Gazetesi — Amasra HATTAT Holding'e böyle peşkeş çekildi",
+      "url": "https://www.tempogazetesi.com/amasra-hattat-holdinge-boyle-peskes-cekildi-600-bin-lira-teminati-15-milyar-lira-borcu-var"
+    },
+    {
+      "ad": "Teyit — Amasra'da Patlama Yaşanan Madenin Mehmet Hattat'a Ait Olduğu İddiası",
+      "url": "https://teyit.org/analiz/amasrada-patlama-yasanan-madenin-mehmet-hattata-ait-oldugu-iddiasi"
+    }
+  ]
+}

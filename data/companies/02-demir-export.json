@@ -1,0 +1,86 @@
+{
+  "slug": "demir-export",
+  "ad": "Demir Export A.Ş.",
+  "kisaAd": "Demir Export",
+  "holding": "Koç Holding",
+  "sektor": "Demir Cevheri",
+  "tip": "Özel (Holding İştiraki)",
+  "bolge": "Sivas / Divriği, Kırşehir, Kahramanmaraş",
+  "sehir": "Ankara (Merkez)",
+  "ilce": null,
+  "koordinatlar": null,
+  "kurulusYili": 1957,
+  "ruhsatSayisi": "Çok sayıda (ayrıntılı raporda)",
+  "isletmeSayisi": "5+",
+  "iscSayisi": "Birkaç bin (Divriği dahil)",
+  "maliVeriler": {
+    "notlar": "Türkiye'nin en büyük demir cevheri ihracatçısı",
+    "ihracatPayi": "Türkiye demir cevheri ihracatında önemli pay",
+    "ilandaCirosu": null,
+    "conroyGoldPayi": "İrlanda Conroy Gold'da 11 sahada %57.5 pay"
+  },
+  "ozellestirilenSahalar": [
+    {
+      "ad": "Divriği Demir-Çelik İşletmeleri",
+      "aciklama": "Eski devlet işletmesinin demir cevheri sahaları özel sektöre açıldı",
+      "yil": null
+    }
+  ],
+  "iscOlumleri": [],
+  "isgOlaylari": [
+    {
+      "tarih": "Ocak 2026",
+      "aciklama": "Divriği işçileri 100.000-250.000 TL hakkediş ödemesi talep etti, işçi protestosu gerçekleşti",
+      "kaynak": "Yerel haberler, Ocak 2026"
+    }
+  ],
+  "cevreIhlalleri": [
+    {
+      "yer": "Kahramanmaraş Bakırtepe",
+      "aciklama": "6 ÇED başvurusu, 4 askıya alma; Koç yöneticisine 1 yıl 8 ay hapis cezası",
+      "kaynak": "Bakırtepe ÇED dosyaları"
+    }
+  ],
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Koç ailesi / Koç Holding",
+      "baglantiTuru": "Holdingin sahibi",
+      "aciklama": "Türkiye'nin en büyük özel sektör holdinginin iştiraki"
+    },
+    {
+      "kisi": "Kırşehir DEFAŞ ortak",
+      "baglantiTuru": "Siyasi ortak",
+      "aciklama": "AKP milletvekiliyle ortaklık ve Seyfe Gölü tehdidi"
+    }
+  ],
+  "vergiBorclari": [],
+  "davalar": [
+    {
+      "ad": "Bakırtepe ÇED Davası",
+      "aciklama": "Çevre örgütleri ve yerel halk tarafından ÇED kararlarına itiraz",
+      "sonuc": "4 askıya alma kararı"
+    }
+  ],
+  "sendikaDurumu": {
+    "varMi": "Araştırılıyor",
+    "sendikalar": ["Maden-İş"],
+    "orgutlulukOrani": null,
+    "notlar": ""
+  },
+  "uluslararasiBaglantilar": [
+    {
+      "sirket": "Conroy Gold and Natural Resources plc",
+      "ulke": "İrlanda",
+      "detay": "11 sahada %57.5 pay — İrlanda altın arama projeleri"
+    }
+  ],
+  "ozet": "Koç Holding iştiraki olan Demir Export A.Ş., Türkiye'nin en büyük demir cevheri ihracatçılarından biridir. 1957'de kurulan şirket, Sivas/Divriği'deki demir cevheri işletmelerinden İrlanda'daki altın arama projelerine uzanan geniş bir portföye sahiptir.",
+  "renkTema": "#0f3460",
+  "ikon": "⛏",
+  "renkGradyan": "linear-gradient(135deg, #0f2d5a, #1a4a8a)",
+  "guncellenmeTarihi": "2026-05-18",
+  "raporDosyasi": "demir_export/index.html",
+  "kaynaklar": [
+    { "ad": "Demir Export Araştırma Raporu", "url": "demir_export/index.html" }
+  ]
+}

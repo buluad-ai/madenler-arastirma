@@ -1,0 +1,104 @@
+{
+  "slug": "eldorado-tuprag",
+  "ad": "TÜPRAG Metal Madencilik A.Ş. — Kışladağ Altın Madeni",
+  "kisaAd": "TÜPRAG / Eldorado Gold",
+  "holding": "Eldorado Gold Corporation (Kanada, TSX/NYSE: ELD)",
+  "sektor": "Altın-Gümüş",
+  "tip": "Yabancı Sermayeli",
+  "bolge": "Uşak / Kışladağ, İzmir / Efemçukuru, Manisa / Sart",
+  "sehir": "Uşak",
+  "ilce": "Eşme / Kışladağ",
+  "koordinatlar": { "lat": 38.4, "lon": 29.2 },
+  "kurulusYili": 2001,
+  "ruhsatSayisi": "IR 7302 (ana ruhsat); ek arama ruhsatları mevcut",
+  "isletmeSayisi": "3 (Kışladağ-Uşak, Efemçukuru-İzmir, Sart-Manisa)",
+  "iscSayisi": "1.347 doğrudan + 950 taşeron ≈ 2.300 (Kışladağ + Efemçukuru birlikte)",
+  "maliVeriler": {
+    "2024_uretim": "174.080 ons altın",
+    "2024_gelir": "423,5 milyon USD",
+    "2024_royalti": "32,8 milyon USD (devlete ödenen royalti)",
+    "2025_uretim": "168.701 ons altın",
+    "2025_gelir": "~596 milyon USD (yaklaşık 26,2 milyar TL)",
+    "2025_net_kar_Eldorado": "519,9 milyon USD (tüm şirket)",
+    "kumulatif_uretim": "4 milyon ons (20 yılda — Q2 2025'te 4. milyonuncu ons)",
+    "toplam_rezerv": "535,4 milyon ton cevher (0,66 gr/ton Au, 1,5 gr/ton Ag)",
+    "kalan_maden_omru": "13 yıl (~2038)",
+    "nakit_maliyet": "918 USD/ons (2024)",
+    "notlar": "Altının büyük çoğunluğu Kanada'ya transfer edilirken devlete ödenen royalti toplam gelirin %5'i bile değil"
+  },
+  "ozellestirilenSahalar": [
+    {
+      "ad": "Kışladağ Altın Madeni Ruhsatı",
+      "aciklama": "MTA (Maden Tetkik Arama) tarafından keşfedilmiş devlet maden sahası, 2000'li yılların başında Kanadalı şirkete lisanslandı. 450 metre derinlik, 1 km genişliğinde dev açık ocak oluşturuldu; 750 hektar arazi tahrip edildi.",
+      "yil": "2000'ler başı"
+    }
+  ],
+  "iscOlumleri": [
+    {
+      "tarih": "2006",
+      "adet": 0,
+      "aciklama": "Siyanür sızıntısı sonucu 1.500 kişi zehirlenme şikayetiyle hastaneye başvurdu; kan örnekleri kaybolduğu için kesin ölüm kanıtlanamadı",
+      "kaynak": "Yerel haberler, 2006"
+    }
+  ],
+  "isgOlaylari": [],
+  "cevreIhlalleri": [
+    {
+      "yer": "Kışladağ, Uşak",
+      "tarih": "2006-günümüz",
+      "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede yönetici açıkladı; şirket 2,5 milyon diyor). 7 köyün içme suyu kesildi — tankerle ikmal yapılıyor. Katrancılar, Ovacık, Söğütlü, Karapınar köyleri boşaldı. İnay köyü çeşme suyunda arsenik 9,92 mg/L'ye çıktı (sınır: 0,01 mg/L). Koyun sürülerinde ölü ve sakat doğumlar raporlandı.",
+      "kaynak": "Ekoloji Birliği, Yeşil Gazete, Yerel mahkeme tutanakları"
+    },
+    {
+      "yer": "Kışladağ, Uşak",
+      "tarih": "2019",
+      "aciklama": "Yığın liçi havuzu kapasitesi yetersiz kaldı — üretim durduruldu. 2021'de yüksek basınçlı otoklav liçi teknolojisiyle yeniden başlatıldı.",
+      "kaynak": "Eldorado Gold yatırımcı sunumları"
+    },
+    {
+      "yer": "Kışladağ, Uşak",
+      "tarih": "2024-04-08",
+      "aciklama": "AİHM, adil yargılanma hakkının ihlal edildiğine hükmetti. Uşak İdare Mahkemesi'nde yeniden yargılama başladı (Şubat 2025).",
+      "kaynak": "AİHM 8 Nisan 2024 kararı"
+    }
+  ],
+  "siyasiBaglantilar": [
+    {
+      "kisi": "AKP hükümeti / ÇED Onayı",
+      "baglantiTuru": "İzin Süreci",
+      "aciklama": "ÇED onayı 2003'te AKP iktidarının ilk yılında verildi. 2019'da maden sahasını genişletmek için yeni lisanslar sessiz sedasız alındı."
+    }
+  ],
+  "vergiBorclari": [
+    {
+      "aciklama": "Transfer fiyatlandırması — yıllık yüz milyonlarca dolarlık karın büyük çoğunluğu Kanada'ya aktarılıyor. Devlete ödenen royalti 2024'te 32,8 milyon USD (toplam gelirin %7,7'si).",
+      "kaynak": "Eldorado Gold 2024 yıllık raporu"
+    }
+  ],
+  "davalar": [
+    {
+      "ad": "AİHM Başvurusu",
+      "aciklama": "Yerel halk AİHM'e başvurdu; mahkeme 8 Nisan 2024'te adil yargılanma hakkının ihlal edildiğine hükmetti",
+      "tarih": "2024-04-08",
+      "sonuc": "İhlal kararı — yeniden yargılama devam ediyor"
+    }
+  ],
+  "sendikaDurumu": {
+    "varMi": "Hayır / Çok sınırlı",
+    "sendikalar": [],
+    "orgutlulukOrani": null,
+    "notlar": "Yabancı sermayeli işletmelerde sendika örgütlenmesi sınırlı. Sendika karşıtı politikaya dair işçi şikayetleri mevcut ancak doğrulanamamış."
+  },
+  "ozet": "TÜPRAG/Kışladağ, Avrupa'nın en büyük altın madeni unvanını taşıyan Kanadalı Eldorado Gold'un %100 iştiraki olarak işletilmektedir. 2006'dan bu yana 4 milyon ons altın çıkarılmış; 2025'te tek yılda ~596 milyon dolar gelir elde edilmiştir. Buna karşın 7 köyün suyu kesilmiş, 4 köy tamamen boşalmış, 350 milyon ton toksik atık birikmiş ve AİHM ihlal kararı çıkmıştır. Devlete ödenen royalti 2024'te 32,8 milyon dolar iken kazancın ezici çoğunluğu Kanada'ya transfer edilmektedir.",
+  "renkTema": "#b8860b",
+  "ikon": "🥇",
+  "renkGradyan": "linear-gradient(135deg, #5a4000, #b8860b)",
+  "guncellenmeTarihi": "2026-05-18",
+  "kaynaklar": [
+    { "ad": "Eldorado Gold 2024 Yıllık Raporu", "url": "https://www.eldoradogold.com" },
+    { "ad": "Kışladağ 2025 Ciro Haberi — EgedeYeniGün", "url": "https://www.egedeyenigun.com/usaktaki-kisladag-altin-madeni-2025te-yaklasik-596-milyon-dolar-ciro-yapti/amp" },
+    { "ad": "AİHM İhlal Kararı — Uşak Haber Merkezi", "url": "https://www.usakhabermerkezi.com/guncel/aihm-den-cehennem-cukuru-kisladag-altin-madeni-icin-ihll-h33413.html" },
+    { "ad": "Kışladağ Su Tüketimi — OdaTV", "url": "https://www.odatv.com/guncel/kisladagin-su-canavari-usaki-kurakliga-surukleyen-madenler-mi-120112143" },
+    { "ad": "Siyanürlü Altın Madenciliğinin Bedeli — Ekoloji Birliği", "url": "https://ekolojibirligi.org/siyanurlu-altin-madenciliginin-dogaya-bedeli-turkiyenin-ve-avrupanin-en-buyugu-kisladagdan-geriye-bu-kaldi/" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "canakkale",
+  "ad": "Çanakkale",
+  "il": "Çanakkale",
+  "koordinatlar": { "lat": 40.15, "lon": 26.41 },
+  "nufus": "~550.000 (il nüfusu)",
+  "ozellik": "Altın-gümüş madenciliği tartışmalarının merkezi",
+  "sirketler": ["yildizlar-sss-nesko", "nurol-tumad"],
+  "tarihselBaglam": "Çanakkale, son yıllarda Kirazlı ve Ağı Dağı altın madeni projeleri nedeniyle büyük çevre tartışmalarına sahne olmuştur. Troykalardan 'Altın değil, yaşam istiyoruz' sloganıyla başlayan protestolar ulusal kamuoyunu etkiledi.",
+  "facialAr": [],
+  "protestolar": [
+    {
+      "ad": "Kirazlı Karşıtı Protestolar",
+      "sirket": "NUROL TÜMAD",
+      "tarih": "2019-2021",
+      "aciklama": "195.000 ağaç kesimine karşı çıkan yerel halk ve çevre örgütlerinin eylemleri"
+    }
+  ],
+  "sendikaDurumu": "Araştırılıyor",
+  "guncellenmeTarihi": "2026-05-18"
+}

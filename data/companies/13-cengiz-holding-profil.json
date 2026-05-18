@@ -1,0 +1,196 @@
+{
+  "slug": "cengiz-holding-profil",
+  "ad": "Cengiz Holding A.Ş.",
+  "kisaAd": "Cengiz Holding",
+  "tip": "Özel Holding",
+  "sektor": "Madencilik, İnşaat, Enerji, Turizm, Sigortacılık, Havacılık",
+  "bolge": "İstanbul (Merkez) — Türkiye geneli ve yurt dışı",
+  "koordinatlar": { "lat": 41.0, "lon": 29.0 },
+
+  "kurucuVeSahibi": {
+    "ad": "Mehmet Cengiz",
+    "dogumTarihi": "4 Temmuz 1958",
+    "dogumYeri": "Rize / Kalkandere",
+    "egitim": "Araştırılıyor",
+    "17aralik": "2013 Aralık sonunda tüm mal varlıklarına tedbir kararı — 13 Ocak 2014'te kaldırıldı",
+    "forbesSiralamasi": "Forbes 'Türkiye'nin En Zenginleri' listesinde 2009'dan bu yana yer alıyor. 2025: 56. sıra.",
+    "servet": "Milyar dolar üzeri (kesin rakam açıklanmıyor)"
+  },
+
+  "kardes": {
+    "ad": "Ekrem Cengiz",
+    "aciklama": "Mehmet Cengiz ile birlikte 1980'de Cengiz İnşaat'ı kurdu"
+  },
+
+  "kurulusYili": 1980,
+  "sirketSayisi": 35,
+  "toplamCalisanSayisi": 45000,
+  "yillikGelir": "~5 milyar USD (tahmini)",
+
+  "sektorler": [
+    "Madencilik (ETİ Bakır, ETİ Alüminyum, Ahen Maden, Truva Bakır)",
+    "İnşaat (Cengiz İnşaat)",
+    "Enerji (Cengiz Enerji, Kalehan Enerji, CK Enerji, Cenal Elektrik)",
+    "Turizm (Cengiz Turizm)",
+    "Sigortacılık",
+    "Havacılık",
+    "Uluslararası (Özbekistan, diğer)"
+  ],
+
+  "anaGrupSirketleri": [
+    {
+      "ad": "Cengiz İnşaat",
+      "sektor": "İnşaat / Altyapı",
+      "notlar": "Holdingin çekirdeği. Karayolu, köprü, havalimanı, demiryolu projeleri."
+    },
+    {
+      "ad": "ETİ Bakır A.Ş.",
+      "sektor": "Bakır Madenciliği ve İşleme",
+      "dosya": "06-cengiz-eti-bakir.json"
+    },
+    {
+      "ad": "ETİ Alüminyum A.Ş.",
+      "sektor": "Alüminyum Üretimi",
+      "dosya": "07-cengiz-eti-aluminyum.json"
+    },
+    {
+      "ad": "Cengiz Enerji",
+      "sektor": "Elektrik Enerjisi",
+      "notlar": "Boğaziçi, Akdeniz, Uludağ Elektrik dağıtım şirketleri özelleştirmelerini aldı"
+    },
+    {
+      "ad": "Ahen Maden",
+      "sektor": "Madencilik"
+    },
+    {
+      "ad": "Truva Bakır Madencilik A.Ş.",
+      "sektor": "Bakır-Altın Madenciliği",
+      "notlar": "Çanakkale Kazdağları / Halilağa projesi. Mahkeme süreçleri devam ediyor."
+    }
+  ],
+
+  "buyukKamuIhaleleri": [
+    {
+      "proje": "İstanbul 3. Havalimanı",
+      "tarih": "2013",
+      "bedel": "Cengiz-Kolin-Limak konsorsiyumu ile ~22,1 milyar EUR teklif",
+      "notlar": "Türkiye tarihinin en büyük ihalesinin ortaklarından"
+    },
+    {
+      "proje": "Ankara-Sivas Yüksek Hızlı Tren",
+      "notlar": "Cengiz İnşaat bazı kesimleri inşa etti"
+    },
+    {
+      "proje": "Karadeniz Sahil Yolu",
+      "tarih": "1990'lar",
+      "notlar": "Holdingin büyüme sürecindeki ilk büyük devlet projelerinden"
+    },
+    {
+      "proje": "Yeşil Yol Projesi",
+      "notlar": "Karadeniz dağ yolu projesi"
+    },
+    {
+      "proje": "Boğaziçi, Akdeniz, Uludağ Elektrik Özelleştirmeleri",
+      "notlar": "Cengiz Enerji üzerinden dağıtım şirketleri satın alındı"
+    },
+    {
+      "proje": "ETİ Bakır Özelleştirmesi",
+      "tarih": "2004",
+      "bedel": "33 milyon USD"
+    },
+    {
+      "proje": "ETİ Alüminyum Özelleştirmesi",
+      "tarih": "2005",
+      "bedel": "305 milyon USD"
+    },
+    {
+      "proje": "Sinop Boyabat Bakır Maden Sahası İhalesi",
+      "tarih": "2022-2023",
+      "notlar": "CHP'li vekillerin 'adrese teslim' dediği ihale"
+    },
+    {
+      "proje": "Elazığ Maden İlçesi Bakır Yatakları",
+      "tarih": "2024-2025",
+      "bedel": "350 milyon USD yatırım, 35 yıl işletme hakkı",
+      "notlar": "Piyasa değeri 100 milyar TL olduğu öne sürülen tesisin ihalesi 3,5 milyar TL'ye Cengiz'e verildi (T24, Sözcü)"
+    }
+  ],
+
+  "ihalelerdeBüyüme": {
+    "2011": "2 ihale = 774 milyon TL",
+    "2017": "8 ihale = 7,9 milyar TL",
+    "aciklama": "6 yılda ihale cirosu yaklaşık 10 kat arttı. 'Beşli çete' olarak adlandırılan (Cengiz, Limak, Kalyon, Kolin, MNG/Makyol) 5 şirket grubu, AKP döneminde 128 milyar TL kamu ihalesinden pay aldı."
+  },
+
+  "vergiBorclariVeAyricaliklar": [
+    {
+      "yil": 2010,
+      "tutar": "420 milyon TL",
+      "aciklama": "Mehmet Cengiz'e ait 420 milyon TL vergi borcu silindi.",
+      "kaynak": "Politeknik, Sözcü"
+    },
+    {
+      "yil": "2013-2023",
+      "tutar": "2,587 milyar TL vergi + 4,919 milyar TL ceza (toplam ~7,5 milyar TL)",
+      "aciklama": "Uzlaşma Komisyonu kanalıyla on yılda silindi. Cengiz İnşaat 30 kez, Kolin 36 kez, Makyol 24 kez vergi-resim-harç istisnası uygulandı.",
+      "kaynak": "Yıldırım Kaya (CHP) Twitter/X, TamgaTürk, Doğruluk Payı"
+    },
+    {
+      "tur": "Özel Endüstri Bölgesi",
+      "kapsamdakiTesisler": [
+        "ETİ Bakır Samsun",
+        "ETİ Bakır Mardin / Mazıdağı",
+        "ETİ Alüminyum Seydişehir (2026)"
+      ],
+      "avantajlar": "Vergi muafiyeti, harç muafiyeti, hızlı izin ve ruhsat, azaltılmış bürokrasi",
+      "kaynak": "Sözcü, Cumhuriyet, Halk TV"
+    }
+  ],
+
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Mehmet Cengiz",
+      "baglantiTuru": "Erdoğan Hükümeti Yakınlığı",
+      "aciklama": "'Erdoğan'ın prensi' ifadesi bazı haber başlıklarında yer aldı. Cengiz Holding AKP döneminin sembol büyük holdinglerinden. 'Beşli çete' içinde anılıyor.",
+      "kaynak": "Cumhuriyet"
+    },
+    {
+      "kisi": "Mehmet Cengiz",
+      "baglantiTuru": "17-25 Aralık 2013 Soruşturması",
+      "aciklama": "Yolsuzluk ve rüşvet soruşturmasına karışan isimler arasında geçti. Mal varlıklarına Aralık 2013 sonunda tedbir konuldu, 13 Ocak 2014'te kaldırıldı.",
+      "kaynak": "Wikipedia, medya arşivleri"
+    }
+  ],
+
+  "uluslararasiVarlik": [
+    {
+      "ulke": "Özbekistan",
+      "aciklama": "Jizzakh'ta üçüncü doğal gaz kombine çevrim santrali inşaatı devam ediyor.",
+      "kaynak": "Platini Online, AA"
+    }
+  ],
+
+  "ozet": "Cengiz Holding, 1980'de Mehmet Cengiz tarafından inşaat sektöründe kurulan ve AKP iktidarı döneminde Türkiye'nin en büyük ve tartışmalı holdinglerinden birine dönüşen şirkettir. Kamuoyunda 'beşli çete' içinde yer aldığı öne sürülen Cengiz Holding; ETİ Bakır ve ETİ Alüminyum'u piyasa değerlerinin çok altında özelleştirme yoluyla satın almış, ardından defalarca vergi borçları silinmiş ve tesisleri için Özel Endüstri Bölgesi statüsü elde etmiştir. 3. Havalimanı, Karadeniz Sahil Yolu, enerji dağıtım özelleştirmeleri ve çok sayıda büyük kamu ihalesiyle devlet kaynaklarından beslenen holding, madencilik alanında Cerattepe, Kazdağları ve Murgul'da ciddi çevre ve halk sağlığı sorunlarına yol açmaktadır.",
+
+  "renkTema": "#8b0000",
+  "ikon": "🏢",
+  "renkGradyan": "linear-gradient(135deg, #3d0000, #8b0000)",
+  "guncellenmeTarihi": "2026-05-18",
+
+  "ilgiliDosyalar": [
+    "06-cengiz-eti-bakir.json",
+    "07-cengiz-eti-aluminyum.json"
+  ],
+
+  "kaynaklar": [
+    { "ad": "Cengiz Holding resmi sitesi", "url": "https://www.cengizholding.com.tr" },
+    { "ad": "Mehmet Cengiz Wikipedia", "url": "https://tr.wikipedia.org/wiki/Mehmet_Cengiz" },
+    { "ad": "AKP'nin ihale kralı Cengiz kimdir? — Politeknik", "url": "https://politeknik.org.tr/akpnin-ihale-krali-cengiz-kimdir/" },
+    { "ad": "Devlet ihaleleriyle büyüdü — Cumhuriyet", "url": "https://www.cumhuriyet.com.tr/ekonomi/devlet-ihaleleriyle-buyudu-cengiz-holding-gozunu-kamu-sirketlerine-dikti-2404664" },
+    { "ad": "Beşli çeteye 94 milyar TL — Cumhuriyet", "url": "https://www.cumhuriyet.com.tr/turkiye/akpden-besli-ceteye-94-milyar-tl-1879177" },
+    { "ad": "Vergi cezası silindi — TamgaTürk", "url": "https://www.tamgaturk.com/akp-li-hazine-ve-maliye-bakanligi-5-li-cetenin-elebaslarindan-cengiz-holding-in-4-9-milyar-tl-lik-vergi-cezasini-sildi/77231/" },
+    { "ad": "Cengiz 3,5 milyar verip 100 milyar kazanacak — Sözcü", "url": "https://www.sozcu.com.tr/cengiz-holding-3-5-milyar-verip-100-milyar-kazanacak-p91417" },
+    { "ad": "Mehmet Cengiz servet 2025 — Kuzey Ekspres", "url": "https://www.kuzeyekspres.com.tr/haber/23653044/mehmet-cengiz-serveti-kac-tl-ne-kadar-2025" },
+    { "ad": "Ne Toprak Ne Haberler Güvende: Cengiz Holding Tahribat Dosyası — KentHali", "url": "https://kenthali.org/ne-toprak-ne-haberler-guvende-cengiz-holdingin-tahribat-dosyasi/" }
+  ]
+}

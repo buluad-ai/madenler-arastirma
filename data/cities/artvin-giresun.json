@@ -1,0 +1,21 @@
+{
+  "slug": "artvin-giresun",
+  "ad": "Artvin & Giresun",
+  "il": "Artvin / Giresun",
+  "koordinatlar": { "lat": 41.18, "lon": 41.82 },
+  "nufus": "Çok bölgeli",
+  "ozellik": "ETİ Bakır bakır madenciliği bölgesi",
+  "sirketler": ["cengiz-eti-bakir"],
+  "tarihselBaglam": "Karadeniz'in yemyeşil coğrafyasında bakır madenciliği. Artvin'deki Cerattepe altın-bakır madeni projesi 'Artın değil, yaşam' sloganıyla ulusal kamuoyunun gündemine girdi.",
+  "facialAr": [],
+  "protestolar": [
+    {
+      "ad": "Cerattepe Karşıtı Protestolar",
+      "sirket": "ETİ BAKIR / CENGİZ",
+      "tarih": "2015-2023",
+      "aciklama": "Artvin ormanlarında açık ocak altın-bakır madeni projesine karşı yerel direniş"
+    }
+  ],
+  "sendikaDurumu": "Maden-İş",
+  "guncellenmeTarihi": "2026-05-18"
+}

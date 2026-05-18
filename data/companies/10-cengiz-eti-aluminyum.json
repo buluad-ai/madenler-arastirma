@@ -1,0 +1,150 @@
+{
+  "slug": "cengiz-eti-aluminyum",
+  "ad": "ETİ Alüminyum A.Ş.",
+  "kisaAd": "ETİ Alüminyum",
+  "holding": "Cengiz Holding",
+  "holdingAdami": "Mehmet Cengiz",
+  "sektor": "Alüminyum (Boksit → Alumina → Alüminyum)",
+  "tip": "Özel (Özelleştirilmiş Kamu Kuruluşu)",
+  "bolge": "Konya / Seydişehir",
+  "sehir": "Konya",
+  "ilce": "Seydişehir",
+  "koordinatlar": { "lat": 37.414, "lon": 31.849 },
+  "kurulusYili": "1973 (Etibank bünyesinde ilk alümina üretimi) — 2005 özelleştirme",
+  "ozellestirmeYili": 2005,
+  "ozellestirmeFiyati": "305 milyon USD",
+  "ozellestirmeNotlari": "9 grup arasında ihaleyi Ce-Ka İnşaat (Cengiz-Kalyon ortaklığı) kazandı. Danıştay 27 Kasım 2007'de özelleştirmeyi iptal etti ancak karar fiilen uygulanmadı. Mahkeme kararı yok sayıldı.",
+
+  "tarihce": {
+    "1960": "Konya Seydişehir'de bir keçi çobanı (Mümin Demiroğlu) boksit taşı buldu, MTA'ya bildirdi.",
+    "1965": "Türkiye-SSCB anlaşmasıyla Seydişehir dahil 10 büyük sanayi projesi kararlaştırıldı.",
+    "1967": "Etibank Genel Müdürlüğü ile SSCB Tiajpromexport arasında 62 milyon USD, %2,5 faiz, 15 yıl vadeli kredi anlaşması.",
+    "1969": "Fabrikanın temeli Ekim 1969'da atıldı.",
+    "1973": "4 Mayıs 1973'te ilk alümina üretimi.",
+    "1974": "21 Eylül 1974'te ilk alüminyum üretimi.",
+    "1976": "İlk profil haddehanesi devreye girdi.",
+    "2005": "17 Haziran 2005 blok satış ihalesi. 305 milyon USD ile Cengiz Holding (Ce-Ka ortaklığıyla) kazandı.",
+    "2007": "Danıştay İdari Dava Daireleri Kurulu özelleştirmeyi iptal etti (27 Kasım 2007). Karar uygulanmadı.",
+    "2024+": "Yeni hadde yatırımı: 3 milyar TL yatırımla başlangıçta 100.000 ton, hedef 200.000-250.000 ton hadde kapasitesi. ÖEB statüsü."
+  },
+
+  "tesisler": [
+    {
+      "ad": "Seydişehir Alüminyum Tesisi",
+      "tur": "Entegre Boksit → Alumina → Alüminyum Tesisi",
+      "bolge": "Konya / Seydişehir",
+      "koordinatlar": { "lat": 37.414, "lon": 31.849 },
+      "alan": "264,98 hektar (ÖEB statüsünde)",
+      "kapasite": {
+        "boksitIsleme": "550.000 ton/yıl",
+        "alumina": "260.000 ton/yıl (alüminyum oksit)",
+        "aluminyumHidroksit": "400.000 tona yakın yan ürün/yıl",
+        "siviAluminyum": "80.000 ton/yıl",
+        "dokulmusurunler": "160.000 ton/yıl",
+        "hadde": "100.000 ton/yıl (yeni yatırım, 250.000 tona genişleme hedefi)"
+      },
+      "turkiyePazarPayi": "%10 (alüminyum)",
+      "ihracat": "75 ülkeye ihracat; 2020 yılı 21 milyon USD ihracat",
+      "ithalatIkamesi": "275 milyon USD/yıl (şirket açıklaması)",
+      "ozelEndüstriBolgesi": true,
+      "oebIlanTarihi": "2026 (Cumhurbaşkanlığı kararıyla)"
+    }
+  ],
+
+  "iscSayisi": {
+    "ozellestirmeOncesi": 15000,
+    "sonrasi": 1500,
+    "notlar": "Devlet işletmeciliğinde 15.000 kişi çalışırken özelleştirme sonrası 1.500'e düştü. 13.500 kişilik istihdam kaybı yaşandı."
+  },
+
+  "maliVeriler": {
+    "ozellestirmeFiyati": "305 milyon USD (2005)",
+    "ozellestirilmisVarliklar": "49 yıllık Oymapınar Barajı işletme hakkı da dahil aktarıldı",
+    "yatirimlar": "Cengiz Holding 2005-2024 arası Seydişehir'e 565 milyon USD yatırdı. 200 milyon USD'lık ek plan açıklandı.",
+    "notlar": "ETİ Alüminyum ayrıntılı mali verilerini kamuoyuyla paylaşmıyor. Türkiye'nin tek birincil alüminyum üreticisi konumu şirkete stratejik tekel gücü veriyor."
+  },
+
+  "sendikaDurumu": {
+    "varMi": "Evet (sarı sendika baskısı ile tartışmalı)",
+    "sendikalar": [
+      {
+        "ad": "Özçelik-İş Sendikası",
+        "konfederasyon": "Hak-İş",
+        "durum": "Cengiz Holding yönetimi tarafından desteklenen sarı sendika olarak nitelendiriliyor. 2024 toplu sözleşmesinde işçilerin %100 zam talebine karşın %62 ile anlaşma imzaladı. İşçiler sendikayı protesto etti.",
+        "kaynak": "Umut-Sen, Direniş Teyiz, ETHA, 2024"
+      }
+    ],
+    "grevler": [
+      {
+        "tarih": "Şubat 2024",
+        "sure": "6 gün",
+        "konu": "Ücret zammı. Şirket %56 (enflasyon+%2 iyileştirme) teklif etti; işçiler %100 istedi. Sonuç: %62 + iyileştirmeler.",
+        "kaynak": "Evrensel, soL Haber, Şubat 2024"
+      }
+    ],
+    "notlar": "İşçiler 'sadaka değil, hakkımızı istiyoruz' sloganıyla fabrika önünde eylem yaptı. Yönetim işçilere baskı uyguladığı öne sürüldü."
+  },
+
+  "cevreIhlalleri": [
+    {
+      "yer": "Seydişehir / Kırmızı Çamur Havuzu",
+      "aciklama": "Alümina üretiminin yan ürünü olan 'kırmızı çamur' (sodyum hidroksit ve ağır metal içerikli atık) uzun vadeli çevre riski oluşturuyor. Kırmızı çamur depolama alanının kapasite ve sızdırmazlık durumu hakkında bağımsız denetim raporu kamuoyuyla paylaşılmamıştır.",
+      "kaynak": "Genel alüminyum endüstrisi literatürü; tesis özgü rapor kamuoyuna açık değil"
+    }
+  ],
+
+  "mahkemeSurecleri": [
+    {
+      "konu": "Özelleştirme İptali",
+      "mahkeme": "Danıştay İdari Dava Daireleri Kurulu",
+      "karar": "27 Kasım 2007: Seydişehir Eti Alüminyum özelleştirmesi iptal edildi.",
+      "sonuc": "Karar uygulanmadı; fabrika Cengiz Holding bünyesinde kalmaya devam etti.",
+      "kaynak": "Metalurji.org.tr, Omedyam.com"
+    }
+  ],
+
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Mehmet Cengiz",
+      "baglantiTuru": "AKP Hükümeti Yakınlığı",
+      "aciklama": "ETİ Alüminyum'un 264,98 hektarlık alanı Cumhurbaşkanlığı kararıyla Özel Endüstri Bölgesi ilan edildi. Daha önce ETİ Bakır'ın Samsun ve Mardin tesisleri de ÖEB statüsüne alınmıştı. Vergi ve harç muafiyeti sağlandı.",
+      "kaynak": "Cumhuriyet, Halk TV, Sözcü, 2024/2026"
+    }
+  ],
+
+  "vergiBorclariVeAyricaliklar": [
+    {
+      "tur": "Özel Endüstri Bölgesi (ÖEB)",
+      "tarih": "2026",
+      "aciklama": "Cumhurbaşkanlığı kararıyla 264,98 hektarlık tesis alanı ÖEB ilan edildi. Vergi muafiyeti, harç muafiyeti, hızlı izin ve ruhsat süreçleri sağlandı.",
+      "kaynak": "Cumhuriyet, Halk TV"
+    },
+    {
+      "tur": "Vergi İstisnaları",
+      "tarih": "2010-2020",
+      "aciklama": "Cengiz Holding bünyesindeki şirketler için 10 yıllık dönemde toplam 128 kez vergi-resim-harç istisnası uygulandı. Cengiz Holding'in vergi cezaları defalarca silindi.",
+      "kaynak": "Doğruluk Payı, Cumhuriyet"
+    }
+  ],
+
+  "ozet": "ETİ Alüminyum, Sovyet yardımıyla 1973'te kurulan ve Türkiye'nin tek birincil alüminyum üreticisi olan stratejik bir tesistir. 1960'ta bir çobanın bulduğu boksit madeninin üzerine inşa edilen tesis, onlarca yıl Türkiye'nin alüminyum ihtiyacının önemli bölümünü karşıladı; devlet döneminde 15.000 kişi istihdam etti. 2005'te 305 milyon USD'a Cengiz Holding'e satıldı, Danıştay 2007'de özelleştirmeyi iptal etmesine rağmen bu karar fiilen uygulanmadı. Özelleştirme sonrası istihdam 1.500'e geriledi. 2024'teki toplu sözleşme sürecinde işçilerin sarı sendika Özçelik-İş'e karşı direniş eylemi yaptığı görüldü. Tesisin 264,98 hektarlık alanı 2026'da Cumhurbaşkanlığı kararıyla Özel Endüstri Bölgesi ilan edilerek vergi muafiyeti sağlandı.",
+
+  "renkTema": "#3a7dc9",
+  "ikon": "🏭",
+  "renkGradyan": "linear-gradient(135deg, #0a2a5c, #3a7dc9)",
+  "guncellenmeTarihi": "2026-05-18",
+
+  "kaynaklar": [
+    { "ad": "Cengiz Holding — ETİ Alüminyum sayfası", "url": "https://www.cengizholding.com.tr/sectors/maden/eti-aluminyum-a-s/" },
+    { "ad": "ETİ Alüminyum resmi sitesi", "url": "https://www.etialuminyum.com/" },
+    { "ad": "ETİ Alüminyum Wikipedia", "url": "https://tr.wikipedia.org/wiki/Eti_Al%C3%BCminyum" },
+    { "ad": "Seydişehir özelleştirme fiyaskosu — Omedyam", "url": "https://omedyam.com/seydisehir-aluminyum-ozellestirme-fiyaskosu/" },
+    { "ad": "Danıştay özelleştirme iptali — Metalurji.org.tr", "url": "https://www.metalurji.org.tr/index.php/davalar/227-iktidarin-goez-yumdugu-seydisehir-eti-alueminyumdaki-isgalin-kaldirilmasi-icin-yargi-son-kez-karar-verdi" },
+    { "ad": "ETİ Alüminyum ÖEB ilanı — Cumhuriyet", "url": "https://www.cumhuriyet.com.tr/turkiye/isadami-mehmet-cengiz-in-sahibi-oldugu-sirket-icin-belirlenen-alan-konya-seydisehir-de-eti-aluminyum-a-ozel-endustri-bolgesi-2498476" },
+    { "ad": "İşçi direnişi Şubat 2024 — Evrensel", "url": "https://www.evrensel.net/haber/510063/seydisehir-eti-aluminyum-iscileri-dusuk-zamma-karsi-eylem-yapti-sadaka-degil-hakkimizi-istiyoruz" },
+    { "ad": "Sarı sendika Özçelik-İş ablukası — Umut-Sen", "url": "https://umutsen.org/index.php/2024/02/cengiz-holdingin-ve-sari-sendika-ozcelik-isin-ablukasi-altinda-seydisehir-eti-aluminyum-iscilerinin-direnisi/" },
+    { "ad": "Seydişehir tarihçe — Aksam", "url": "https://www.aksam.com.tr/ekonomi/konyada-1960-yilinda-bir-cobanin-kesfettigi-aluminyum-madeni-bolgenin-kaderini-degistirdi/haber-781180" },
+    { "ad": "Vergi muafiyeti ve kapasite artışı — Ege Alternatif", "url": "https://www.egealternatif.com/haber/cengiz-holding-e-bir-kolaylik-daha-vergi-muafiyeti-ve-kapasite-artisi_71566/" },
+    { "ad": "Cengiz'e çifte müjde — Sözcü", "url": "https://www.sozcu.com.tr/cengiz-e-cifte-mujde-p314428" }
+  ]
+}

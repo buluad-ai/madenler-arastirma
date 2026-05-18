@@ -1,0 +1,21 @@
+{
+  "slug": "zonguldak",
+  "ad": "Zonguldak",
+  "il": "Zonguldak",
+  "koordinatlar": { "lat": 41.45, "lon": 31.8 },
+  "nufus": "~600.000 (il nüfusu)",
+  "ozellik": "Türkiye'nin taş kömürü başkenti",
+  "sirketler": ["aydem-catalagzi", "hattat-amasra"],
+  "tarihselBaglam": "Zonguldak, Osmanlı döneminden bu yana Türkiye'nin taş kömürü üretim merkezi. TTK (Türkiye Taş Kömürü Kurumu) hâlâ bölgede faaliyet gösteriyor. Özel sektör de maden işletmeciliğinde giderek artan pay alıyor.",
+  "facialAr": [
+    {
+      "tarih": "2022-10-14",
+      "sirket": "HATTAT Holding",
+      "yer": "Amasra",
+      "olumSayisi": 41,
+      "aciklama": "Grizu patlaması"
+    }
+  ],
+  "sendikaDurumu": "Maden-İş ve TTK sendikası tarihsel olarak güçlü",
+  "guncellenmeTarihi": "2026-05-18"
+}

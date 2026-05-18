@@ -1,0 +1,106 @@
+{
+  "slug": "aydem-catalagzi",
+  "ad": "Çates Elektrik Üretim A.Ş. — Çatalağzı Termik Santrali (ÇATES)",
+  "kisaAd": "AYDEM Çatalağzı / ÇATES",
+  "holding": "AYDEM Enerji A.Ş. (eski adı Bereket Enerji; CEO: Ceyhan Saldanlı; BIST: AYDEM)",
+  "sektor": "Termik Enerji (Kömür)",
+  "tip": "Özelleştirilmiş",
+  "bolge": "Zonguldak / Kilimli / Çatalağzı",
+  "sehir": "Zonguldak",
+  "ilce": "Kilimli",
+  "koordinatlar": { "lat": 41.47, "lon": 31.77 },
+  "kurulusYili": 1955,
+  "ruhsatSayisi": "1 termik santral işletme lisansı (EPDK)",
+  "isletmeSayisi": "1 (B Santrali — 2 aktif ünite: B-1 ve B-2)",
+  "iscSayisi": "~400-450 doğrudan + yüzlerce taşeron",
+  "maliVeriler": {
+    "kurulu_guc": "314,68 MW (2 × 157,34 MW)",
+    "yillik_uretim_kapasitesi": "2.386 GWh",
+    "2023_uretim": "2.033 GWh (16 yılın en yüksek üretimi)",
+    "ozellestime_bedeli": "350 milyon USD (Aralık 2014 — Elsan/Aydem)",
+    "halka_arz_2023": "CATES hisselerinin %20,01'i halka arz edildi; fiyat 57,15 TL/hisse; 1,8 milyar TL büyüklük",
+    "2023H1_ciro": "1,8 milyar TL",
+    "2022_ciro": "3,3 milyar TL",
+    "2022_brut_kar": "762 milyon TL",
+    "kamu_ihalesi_2014_2021": "2,4 milyar TL (585 ihale — tüm Bereket/Aydem grubu)",
+    "komur_temini": "TTK ile yıllık min. 500.000 ton taşkömürü anlaşması (2024-2026); 2024'te 722.200 ton, 1,885 milyar TL",
+    "notlar": "Sub-kritik teknoloji — en kirletici sınıf. Üniteler 1989-1991'de kuruldu; teknoloji eskimiş."
+  },
+  "ozellestirilenSahalar": [
+    {
+      "ad": "Çatalağzı Termik Santrali (EÜAŞ'tan Elsan/Aydem'e)",
+      "aciklama": "EÜAŞ bünyesindeki santral 18 Aralık 2014'te özelleştirme ihalesiyle Elsan Elektrik'e (Bereket Enerji/Aydem bağlı ortağı) 350 milyon USD'ye devredildi.",
+      "yil": 2014,
+      "kaynak": "EPDK lisans kayıtları, TMMOB raporları"
+    }
+  ],
+  "iscOlumleri": [
+    {
+      "tarih": "2013",
+      "adet": 1,
+      "aciklama": "Çatalağzı'ndaki kömür yıkama tesisinde (lavuar) çalışan Kadip Çelep yüksekten düşerek hayatını kaybetti",
+      "kaynak": "SGK iş kazası verileri"
+    }
+  ],
+  "isgOlaylari": [],
+  "cevreIhlalleri": [
+    {
+      "yer": "Çatalağzı, Zonguldak",
+      "tarih": "2020-01-01",
+      "aciklama": "Çevre Bakanlığı baca gazı arıtma sistemi eksikliği nedeniyle santrali mühürledi ve kapattı. 4,5 aylık kapatma süresi. Geçici İşletme Lisansı Bakanlık tarafından reddedildi (derin deniz deşarj şartı karşılanmadı).",
+      "kaynak": "Çevre ve Şehircilik Bakanlığı, Ocak 2020"
+    },
+    {
+      "yer": "Çatalağzı, Zonguldak",
+      "tarih": "2024-05",
+      "aciklama": "Kül havuzundan uçuşan kül tozu nedeniyle çevre halkı sağlık şikayetleri bildirdi.",
+      "kaynak": "Pusula Gazetesi, Mayıs 2024"
+    },
+    {
+      "yer": "Çatalağzı, Zonguldak",
+      "tarih": "2024-08",
+      "aciklama": "Kazan patlaması — Çatalağzı kasabası toz bulutuna büründü.",
+      "kaynak": "Yerel haberler, Ağustos 2024"
+    }
+  ],
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Berat Albayrak (eski Enerji Bakanı / Erdoğan'ın damadı)",
+      "baglantiTuru": "Doğrudan Siyasi Bağlantı",
+      "aciklama": "Berat Albayrak, Ceyhan Saldanlı'nın (AYDEM CEO) tesislerinin açılış törenlerine katılarak kurdela kesti. Bereket Enerji/Aydem, AKP iktidarıyla yakın ilişkide büyük enerji yatırımlarını hızla genişletti.",
+      "kaynak": "Diken, Cumhuriyet"
+    },
+    {
+      "kisi": "Bereket Enerji / AYDEM — Kamu İhale Payı",
+      "baglantiTuru": "Kamu İhalesi",
+      "aciklama": "Bereket Enerji 2014-2021 döneminde kamu ihalelerinden en çok pay alan 2. grup olarak kayıtlara geçti (585 ihale, toplam 2,4 milyar TL). Kamu kasasından 'iktidara yakın' elektrik şirketlerine 14,4 milyar TL ödendiği raporlandı.",
+      "kaynak": "Diken, Cumhuriyet"
+    },
+    {
+      "kisi": "AYDEM — Bölgesel Elektrik Tekeli",
+      "baglantiTuru": "Piyasa Hakimiyeti",
+      "aciklama": "AYDEM, devlet destekli dağıtım bölgeleriyle (Aydın, Denizli, Muğla, İzmir, Manisa) bölgesel elektrik tekeli konumuna geldi.",
+      "kaynak": "EPDK lisans kayıtları"
+    }
+  ],
+  "vergiBorclari": [],
+  "davalar": [],
+  "sendikaDurumu": {
+    "varMi": "Evet",
+    "sendikalar": ["TES-İŞ (Türk-İş bağlı)"],
+    "orgutlulukOrani": null,
+    "notlar": "TES-İŞ temsilcisi santralin 2020'deki kapatılmasına karşı çıkarak çalışanlar adına açıklama yaptı. Taşeron kullanımı yaygın."
+  },
+  "ozet": "ÇATES, 1948'den bu yana faaliyette olan Türkiye'nin ilk termik santralinin mirasını sürdüren 315 MW'lık kömür santralidir. 2014'te 350 milyon dolara AKP döneminin 'yandaş sermayesine' devredilen tesis, Berat Albayrak bağlantılı AYDEM/Bereket Enerji grubunun portföyüne girdi. 2020'de filtre eksikliği nedeniyle kapatıldı; 2024'te kül tozu patlaması ile yeniden manşete taşındı. Şirket 2014-2021 arasında 2,4 milyar TL kamu ihalesi aldı.",
+  "renkTema": "#5a1a00",
+  "ikon": "🏭",
+  "renkGradyan": "linear-gradient(135deg, #3a0a00, #7a2a00)",
+  "guncellenmeTarihi": "2026-05-18",
+  "kaynaklar": [
+    { "ad": "Çatalağzı Termik Santrali — Global Energy Monitor", "url": "https://www.gem.wiki/%C3%87atala%C4%9Fz%C4%B1_power_station" },
+    { "ad": "ÇATES Kapatılıyor mu? — Pusula Gazetesi", "url": "https://www.pusulagazetesi.com.tr/cateste-kritik-gunler-kapatiliyor-mu" },
+    { "ad": "Kamu kasasından iktidara yakın şirketlere 14,4 milyar TL — Diken", "url": "https://www.diken.com.tr/kamu-kasasindan-iktidara-yakin-elektrik-sirketlerine-144-milyar-tl-odenmis/" },
+    { "ad": "ÇATES TTK Kömür Anlaşması", "url": "https://www.cates.com.tr/haberler/cates-ttk-ile-komur-tedarik-anlasmasi" },
+    { "ad": "ÇATES Halka Arz — Investing.com", "url": "https://tr.investing.com/analysis/ates-elektrik-retim-cates-halka-arz-hap-bilgiler-200493791" }
+  ]
+}
