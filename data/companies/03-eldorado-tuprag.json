@@ -37,8 +37,8 @@
     {
       "tarih": "2006",
       "adet": 0,
-      "aciklama": "Siyanür sızıntısı sonucu 1.500 kişi zehirlenme şikayetiyle hastaneye başvurdu; kan örnekleri kaybolduğu için kesin ölüm kanıtlanamadı",
-      "kaynak": "Yerel haberler, 2006"
+      "aciklama": "Siyanür sızıntısı sonucu bölge halkından yaklaşık 1.500 kişi baş ağrısı, bulantı ve bilinç bulanıklığı şikayetiyle hastaneye başvurdu. Alınan kan örneklerinin kaybolduğu bildirildi; bu nedenle kesin siyanür zehirlenmesi bağlantısı mahkemede kanıtlanamadı. Olay kamuoyunda örtbas iddialarını gündeme taşıdı.",
+      "kaynak": "Yerel haberler, 2006; Ekoloji Birliği"
     }
   ],
   "isgOlaylari": [],
@@ -46,7 +46,7 @@
     {
       "yer": "Kışladağ, Uşak",
       "tarih": "2006-günümüz",
-      "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede yönetici açıkladı; şirket 2,5 milyon diyor). 7 köyün içme suyu kesildi — tankerle ikmal yapılıyor. Katrancılar, Ovacık, Söğütlü, Karapınar köyleri boşaldı. İnay köyü çeşme suyunda arsenik 9,92 mg/L'ye çıktı (sınır: 0,01 mg/L). Koyun sürülerinde ölü ve sakat doğumlar raporlandı.",
+      "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede şirket yöneticisi açıkladı; şirket resmi beyanında 2,5 milyon m³ diyor). 7 köyün içme suyu kesildi — Uşak Belediyesi tankerle ikmal yapıyor (Katrancılar, Ovacık, Söğütlü, Karapınar, İnay, Poyraz ve Çitgöl). Katrancılar, Ovacık, Söğütlü ve Karapınar köyleri fiilen boşaldı. İnay köyü çeşme suyunda arsenik 9,92 mg/L'ye çıktı (yasal sınır: 0,01 mg/L = sınırın 992 katı). Koyun sürülerinde ölü doğum ve sakat yavru vakaları raporlandı. Yöre çiftçileri tazminat davası açtı; şirket uzlaşma yerine dava sürecini uzatıyor.",
       "kaynak": "Ekoloji Birliği, Yeşil Gazete, Yerel mahkeme tutanakları"
     },
     {
@@ -57,9 +57,9 @@
     },
     {
       "yer": "Kışladağ, Uşak",
-      "tarih": "2024-04-08",
-      "aciklama": "AİHM, adil yargılanma hakkının ihlal edildiğine hükmetti. Uşak İdare Mahkemesi'nde yeniden yargılama başladı (Şubat 2025).",
-      "kaynak": "AİHM 8 Nisan 2024 kararı"
+      "tarih": "2023-11-14",
+      "aciklama": "AİHM, 14 Kasım 2023 tarihinde Sözleşme'nin 6. Maddesi (Adil Yargılanma Hakkı) kapsamında ihlalin gerçekleştiğine hükmetti. Kışladağ çevresinde yaşayan köylüler, 2003'te verilen ilk ÇED onayına karşı Türk mahkemelerinde 10 yıl hukuki mücadele yürüttü. Türk idare mahkemeleri iptal kararı verse de Danıştay bu kararları bozdu ve etkisiz kıldı — AİHM bu sürecin adil yargılanma hakkını ihlal ettiğine karar verdi. Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı.",
+      "kaynak": "AİHM 14 Kasım 2023 kararı (Başvuru No: 45028/07)"
     }
   ],
   "siyasiBaglantilar": [
@@ -77,10 +77,10 @@
   ],
   "davalar": [
     {
-      "ad": "AİHM Başvurusu",
-      "aciklama": "Yerel halk AİHM'e başvurdu; mahkeme 8 Nisan 2024'te adil yargılanma hakkının ihlal edildiğine hükmetti",
-      "tarih": "2024-04-08",
-      "sonuc": "İhlal kararı — yeniden yargılama devam ediyor"
+      "ad": "AİHM Başvurusu — Kışladağ Köylüleri / Türkiye",
+      "aciklama": "Kışladağ çevresindeki köylüler 2007'de AİHM'e başvurdu. Temel şikayet: Türk mahkemelerinin ÇED onayını iptal etmesine karşın Danıştay'ın bu kararları bozarak madene yeşil ışık yakması — dolayısıyla adil yargılanma hakkının (Madde 6) ve özel/aile yaşamı ile çevre hakkının (Madde 8) ihlali. AİHM 14 Kasım 2023'te Madde 6 ihlali kararı verdi. Uşak İdare Mahkemesi yeniden yargılama başlatmak zorunda kaldı (12 Şubat 2025). Madde 8 başvurusu hâlâ Strazburg'da beklemede.",
+      "tarih": "2023-11-14",
+      "sonuc": "Madde 6 ihlali kesinleşti — Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı; Madde 8 başvurusu beklemede"
     }
   ],
   "sendikaDurumu": {
@@ -93,7 +93,7 @@
   "renkTema": "#b8860b",
   "ikon": "🥇",
   "renkGradyan": "linear-gradient(135deg, #5a4000, #b8860b)",
-  "guncellenmeTarihi": "2026-05-18",
+  "guncellenmeTarihi": "2026-05-21",
   "kaynaklar": [
     { "ad": "Eldorado Gold 2024 Yıllık Raporu", "url": "https://www.eldoradogold.com" },
     { "ad": "Kışladağ 2025 Ciro Haberi — EgedeYeniGün", "url": "https://www.egedeyenigun.com/usaktaki-kisladag-altin-madeni-2025te-yaklasik-596-milyon-dolar-ciro-yapti/amp" },

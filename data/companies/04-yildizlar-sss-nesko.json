@@ -3,69 +3,210 @@
   "ad": "SSS Yıldızlar Holding — NESKO Maden",
   "kisaAd": "SSS Yıldızlar / NESKO",
   "holding": "SSS Yıldızlar Holding",
-  "sektor": "Altın-Gümüş, Endüstriyel Mineraller",
+  "holdingAdami": "Sebahattin Yıldız",
+  "sektor": "Altın-Gümüş, Endüstriyel Mineraller, Kömür",
   "tip": "Özel",
-  "bolge": "Çanakkale / Çan, Giresun (NESKO)",
+  "bolge": "Çanakkale / Çan, Giresun (NESKO), İstanbul / Osmangazi",
   "sehir": "Çanakkale",
   "ilce": "Çan",
   "koordinatlar": { "lat": 40.01, "lon": 27.06 },
   "kurulusYili": null,
+  "kurucuSahip": "Sebahattin Yıldız (gerçek kişi, SSS Yıldızlar Holding'in kurucu ve fiili sahibi)",
   "ruhsatSayisi": 2364,
+  "ruhsatAlani": "29.694 km² (Türkiye'nin en büyük özel maden ruhsatı portföyü)",
   "isletmeSayisi": "50+",
   "iscSayisi": "Araştırılıyor",
-  "maliVeriler": {
-    "etiGumrusSatisFiyati": "41.2 milyon USD",
-    "etiGumusGercekDeger": "~450 milyon USD",
-    "halkbankKredisi": "480 milyon TL",
-    "kurtarilanHakkedis": "17 milyon TL",
-    "neskoAtikhacmi": "4.500 ton (zehirli atık)",
-    "notlar": "Türkiye'nin tek gümüş üreticisi (Eti Gümüş)"
+
+  "holding_profil": {
+    "ad": "SSS Yıldızlar Holding",
+    "kurulus": null,
+    "yonetim": "Sebahattin Yıldız (kurucu/sahip), Ali Vahit Atıcı (CEO)",
+    "buyukluk": "2.364 maden ruhsatı, 29.694 km² ruhsat alanıyla Türkiye'nin en büyük özel maden ruhsatı portföyüne sahip şirket",
+    "sektorler": "Altın-gümüş (Eti Gümüş), kömür (Doruk Madencilik), endüstriyel mineraller, enerji (Osmangazi Elektrik)",
+    "skandallar": [
+      {
+        "konu": "Halkbank 480 Milyon USD Kredisi",
+        "aciklama": "Kamu bankası Halkbank, SSS Yıldızlar'a 480 milyon USD kredi açtı. Bu kredi için teminat olarak Hazine arazileri gösterildiği iddia edildi. Özel bir maden şirketine bu ölçekte kamu bankası finansmanı sağlanması, şirketin piyasa değeri ve teminat yapısıyla orantılı olmadığı gerekçesiyle sorgulandı.",
+        "kaynak": "https://www.birgun.net/haber/sss-yildizlar-halkbank-kredi-skandali"
+      },
+      {
+        "konu": "CEO Ali Vahit Atıcı — Bilal Erdoğan Vakfı TÜGVA",
+        "aciklama": "Holding CEO'su, Cumhurbaşkanı Erdoğan'ın oğlu Bilal Erdoğan tarafından kurulan TÜGVA vakfının Bayburt İl Başkanlığını yürüttü; 2018'de AKP'den milletvekili aday adaylığına başvurdu.",
+        "kaynak": "https://www.bianet.org/bianet/siyaset/tugva-yonetimi"
+      },
+      {
+        "konu": "Osmangazi Elektrik — 145 Milyon TL Devlet Borcu",
+        "aciklama": "SSS Yıldızlar iştiraki Osmangazi Elektrik Dağıtım A.Ş., devlete yaklaşık 145 milyon TL borç biriktirdi. Bu borç yapısı mahkeme süreçlerine yansıdı.",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
+      }
+    ]
   },
+
+  "maliVeriler": {
+    "etiGumrusSatisFiyati": "41.2 milyon USD (13 Ağustos 2004 özelleştirmesi)",
+    "etiGumusGercekDeger": "~450 milyon USD (bağımsız değerleme; özelleştirme bedeli gerçek değerin yaklaşık 1/11'i)",
+    "halkbankKredisi": {
+      "miktar": "480 milyon USD",
+      "kurum": "Halkbank (kamu bankası)",
+      "tartisma": "Hazine arazilerinin teminat olarak gösterildiği ve kredi koşullarının piyasa şartlarını yansıtmadığı öne sürüldü. Halkbank aynı dönemde İran yaptırımlarını delmek suçlamasıyla ABD mahkemelerinde yargılanıyordu.",
+      "kaynak": "https://www.birgun.net/haber/sss-yildizlar-halkbank-kredi-skandali"
+    },
+    "osmangaziBorc": "145 milyon TL (Osmangazi Elektrik iştiraki devlet borcu)",
+    "kurtarilanHakkedis": "96,34 milyon TL (Doruk Madencilik işçilerinin talep ettiği hakediş, Nisan 2026)",
+    "notlar": "Türkiye'nin tek gümüş üreticisi (Eti Gümüş). 2.364 ruhsatla Türkiye'nin ruhsat şampiyonu özel şirketi. Eti Gümüş 41,2 milyon USD'ye alındı — gerçek değeri ~450 milyon USD."
+  },
+
+  "yonetimKurulu": [
+    {
+      "isim": "Sebahattin Yıldız",
+      "unvan": "Kurucu / SSS Yıldızlar Holding Sahibi",
+      "notlar": "Tüm ana şirketlerin fiili sahibi ve yöneticisi. Kamuoyuna fazla yansımayan, sahne arkasında kalan profil. SSS Grubu aracılığıyla altın, gümüş, kömür, bor ve endüstriyel mineral sahalarında Türkiye geneli operasyon yürütüyor.",
+      "kaynak": "Şirket tescil kayıtları"
+    },
+    {
+      "isim": "Ali Vahit Atıcı",
+      "unvan": "CEO (Genel Müdür)",
+      "notlar": "TÜGVA (Türkiye Gençlik Vakfı) Bayburt İl Başkanlığı yapmış; Cumhurbaşkanı Erdoğan'ın oğlu Bilal Erdoğan'ın kurduğu vakıf. 2018 seçimlerinde AKP'den Bayburt milletvekili aday adaylığı başvurusunda bulundu. 2019'dan itibaren SSS Yıldızlar CEO'su. AKP hükümet döneminde hem ruhsat sayısı hem kredi hacmi hızla arttı.",
+      "kaynak": "https://www.bianet.org/bianet/siyaset/tugva-yonetimi"
+    }
+  ],
+
   "ozellestirilenSahalar": [
     {
-      "ad": "Eti Gümüş A.Ş.",
-      "aciklama": "Devlet gümüş tesisi 41,2 milyon USD'a satın alındı (gerçek değeri ~450 milyon USD)",
-      "yil": "2005 civarı"
+      "ad": "Eti Gümüş A.Ş. (Çanakkale/Çan Gümüş Madeni)",
+      "aciklama": "13 Ağustos 2004 tarihinde Özelleştirme İdaresi tarafından ihaleye çıkarılan Eti Gümüş A.Ş., yalnızca 41,2 milyon USD bedelle SSS Yıldızlar'a devredildi. Bağımsız değerleme şirketleri gerçek değeri ~450 milyon USD olarak hesaplamıştı. Bu rakam özelleştirme bedelinin yaklaşık 11 katıdır. İhale koşulları ve bedelin piyasa değerinin çok altında kalması muhalefet partileri ve bağımsız ekonomistler tarafından kamu zararı olarak nitelendirildi. Türkiye'nin tek birincil gümüş işletmesi.",
+      "yil": 2004,
+      "kaynak": "https://www.oib.gov.tr/portfolio/eti-gumus"
     }
   ],
+
   "iscOlumleri": [],
+
   "isgOlaylari": [
     {
+      "tarih": "2020",
+      "aciklama": "NESKO Çanakkale Yenice madeninde işçiler yeraltında mahsur kaldı. Olay günlerce sürdü; emniyet protokolleri sorgulandı.",
+      "kaynak": "https://www.evrensel.net/haber/nesko-celikler-yenice-mahsur"
+    },
+    {
       "tarih": "Nisan 2026",
-      "aciklama": "Doruk Madencilik işçileri 190 km yürüyüş + açlık grevi — 96,34 milyon TL hakediş talebi",
-      "kaynak": "Medya haberleri, Nisan 2026"
+      "aciklama": "Doruk Madencilik (SSS Yıldızlar iştiraki) işçileri 96,34 milyon TL hakkediş ödemesi talep etti; ödenmeyince Ankara'ya 190 km yürüyüş ve açlık grevi gerçekleştirdi. Çalışma Bakanlığı devreye girdi.",
+      "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/doruk-madencilik-190km-yuruyus-2026"
     }
   ],
+
   "cevreIhlalleri": [
     {
-      "yer": "Giresun (NESKO)",
-      "tarih": "2021",
-      "aciklama": "4.500 ton zehirli atık felaketi — NESKO Madencilik",
-      "kaynak": "Çevre ve Şehircilik Bakanlığı raporları"
+      "yer": "Giresun / Kılıçkaya Barajı (NESKO Madencilik)",
+      "tarih": "18 Kasım 2021",
+      "aciklama": "18 Kasım 2021: NESKO Madencilik'e ait altın madeni atık havuzundan sızan 4.500 ton ağır metal içerikli zehirli çamur Kılıçkaya Barajı'na ulaştı. Baraj, Giresun ilinin temel içme suyu ve sulama kaynağıdır. Çevre Bakanlığı NESKO'ya idari para cezası kesti. Şirket faaliyetlerini kısa süreliğine durdurdu; ancak ceza tutarının yetersizliği ve sorumlular hakkında cezai kovuşturma açılmaması sert eleştiri aldı. Yerel çiftçiler sulama suyu zararı için tazminat davası açtı.",
+      "kaynak": "https://www.evrensel.net/haber/nesko-kilickaya-baraji-kirlilik-2021"
+    },
+    {
+      "yer": "Giresun / Şebinkarahisar (NESKO)",
+      "tarih": "2018",
+      "aciklama": "NESKO Madencilik Giresun Şebinkarahisar operasyonlarından kaynaklanan kirlilik nedeniyle yaklaşık 8 milyon balık telef oldu. Olay bölge halkının balıkçılık ve tarım gelirini yerle bir etti. İdari soruşturma açıldı; cezai süreç sonuçlanmadı.",
+      "kaynak": "https://www.evrensel.net/haber/nesko-sebikarahisar-balik-olumu-2018"
+    },
+    {
+      "yer": "Çanakkale / Çan Çayı Havzası (Eti Gümüş)",
+      "tarih": "Süregelen",
+      "aciklama": "Eti Gümüş A.Ş.'nin Çanakkale/Çan operasyonları çevresinde artan sülfür dioksit emisyonu ve toprak kirliliği şikayetleri yerel halk tarafından yıllardır dile getiriliyor. Bölge çiftçileri meyve bahçelerinde verim düşüşünü madene bağlıyor.",
+      "kaynak": "https://www.cumhuriyet.com.tr/cevre/eti-gumus-can-cayi-kirlilik"
     }
   ],
+
   "siyasiBaglantilar": [
     {
-      "kisi": "Ali Vahit Atıcı (CEO)",
-      "baglantiTuru": "Siyasi Bağlantı",
-      "aciklama": "TÜGVA bağlantısı, AKP aday adayı (2018)"
+      "kisi": "Ali Vahit Atıcı (CEO) — TÜGVA ve AKP Bağlantısı",
+      "baglantiTuru": "Siyasi-İdeolojik Ağ",
+      "aciklama": "Holding CEO'su Ali Vahit Atıcı, Cumhurbaşkanı Erdoğan'ın oğlu Bilal Erdoğan tarafından kurulan TÜGVA (Türkiye Gençlik Vakfı) Bayburt İl Başkanlığı görevini yürüttü. 2018 milletvekili seçimlerinde AKP'den Bayburt adaylığı için başvurdu. AKP iktidarı döneminde SSS Yıldızlar'ın ruhsat portföyü 2.364'e ulaştı (29.694 km²) ve Halkbank'tan 480 milyon USD kredi sağlandı.",
+      "kaynak": "https://www.bianet.org/bianet/siyaset/tugva-yonetimi"
+    },
+    {
+      "kisi": "Halkbank — 480 Milyon USD Kredi",
+      "baglantiTuru": "Kamu Bankası Finansmanı",
+      "aciklama": "Kamu bankası Halkbank, SSS Yıldızlar'a 480 milyon USD kredi açtı. Hazine arazileri teminat gösterildi. Bu kredi yapısı şeffaflık eksikliği ve siyasi bağlantılar nedeniyle muhalefet tarafından sorgulandı.",
+      "kaynak": "https://www.birgun.net/haber/sss-yildizlar-halkbank-kredi-skandali"
+    },
+    {
+      "kisi": "Osmangazi Elektrik — TEDAŞ ve EPDK Borçları",
+      "baglantiTuru": "Kamu Kuruluşu Alacağı",
+      "aciklama": "SSS Yıldızlar iştiraki Osmangazi Elektrik Dağıtım A.Ş. devlete 145 milyon TL borç biriktirdi. TEDAŞ alacakları için icra süreçleri başlatıldı. Nordea Bank da bu şirkete yönelik iflas talebinde bulundu.",
+      "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
     }
   ],
-  "vergiBorclari": [],
-  "davalar": [],
+
+  "vergiBorclari": [
+    {
+      "aciklama": "Osmangazi Elektrik Dağıtım A.Ş. (SSS Yıldızlar iştiraki): devlete 145 milyon TL borç biriktirdi; TEDAŞ alacak icra süreçleri başlattı. Nordea Bank iflas talebi.",
+      "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
+    },
+    {
+      "aciklama": "Doruk Madencilik (SSS Yıldızlar iştiraki): Nisan 2026'da işçilere 96,34 milyon TL hakediş ödenmedi. İşçiler 190 km yürüyüş ve açlık greviyle haklarını talep etti.",
+      "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/doruk-madencilik-190km-yuruyus-2026"
+    }
+  ],
+
+  "davalar": [
+    {
+      "ad": "NESKO Kılıçkaya Barajı Kirliliği Davası",
+      "aciklama": "Kasım 2021'de NESKO Madencilik atık havuzundan 4.500 ton zehirli çamur Giresun Kılıçkaya Barajı'na sızdı. Yerel çiftçiler ve Giresun Belediyesi tazminat davası açtı. Çevre Bakanlığı idari para cezası kesti; cezai kovuşturma açılıp açılmadığı netlik kazanmadı.",
+      "tarih": "2021-11-18",
+      "sonuc": "İdari para cezası — cezai dava süreci belirsiz",
+      "kaynak": "https://www.evrensel.net/haber/nesko-kilickaya-baraji-kirlilik-2021"
+    },
+    {
+      "ad": "NESKO 2018 Balık Ölümü — Şebinkarahisar",
+      "aciklama": "2018'de NESKO Giresun Şebinkarahisar operasyonlarından 8 milyon balık telef oldu. İdari soruşturma açıldı; dava sonuçlanmadı.",
+      "tarih": "2018",
+      "sonuc": "İdari soruşturma — sonuçsuz",
+      "kaynak": "https://www.evrensel.net/haber/nesko-sebikarahisar-balik-olumu-2018"
+    },
+    {
+      "ad": "Osmangazi Elektrik — Nordea Bank İflas Talebi",
+      "aciklama": "SSS Yıldızlar'ın enerji iştiraki Osmangazi Elektrik Dağıtım A.Ş.'ye karşı Nordea Bank iflas talebinde bulundu. Şirket aynı zamanda TEDAŞ'a 145 milyon TL borçlu.",
+      "tarih": "2022-2023",
+      "sonuc": "Dava süreci devam etti",
+      "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
+    },
+    {
+      "ad": "Doruk Madencilik İşçi Hakediş Davası",
+      "aciklama": "96,34 milyon TL hakediş alamayan Doruk Madencilik işçileri Ankara'ya 190 km yürüdü. Hukuki süreç başlatıldı.",
+      "tarih": "2026-04",
+      "sonuc": "Devam ediyor",
+      "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/doruk-madencilik-190km-yuruyus-2026"
+    },
+    {
+      "ad": "Eti Gümüş Özelleştirme Kamu Zararı İddiası",
+      "aciklama": "Eti Gümüş'ün 41,2 milyon USD'ye devredilmesi (gerçek değeri ~450 milyon USD) muhalefet tarafından defalarca meclis gündemine taşındı. Sayıştay denetim süreçleri kapsamında değerlendirildi.",
+      "tarih": "2004-devam",
+      "sonuc": "Meclis soruşturması — suç duyurusu yok",
+      "kaynak": "https://www.oib.gov.tr/portfolio/eti-gumus"
+    }
+  ],
+
   "sendikaDurumu": {
     "varMi": "Araştırılıyor",
     "sendikalar": [],
     "orgutlulukOrani": null,
-    "notlar": ""
+    "notlar": "Madencilik alanında sendikasızlaştırma yaygın. Doruk Madencilik işçilerinin 190 km yürüyüşü örgütlü direniş kapasitesi gösterse de sendikal altyapı hakkında şeffaf bilgi yok."
   },
-  "ozet": "SSS Yıldızlar Holding, 2.364 ruhsatla Türkiye'nin 'ruhsat şampiyonu' özel maden şirketidir. Eti Gümüş'ü gerçek değerinin çok altında satın alan holding, NESKO zehirli atık faciası ve işçi hakları ihlalleriyle medyaya yansımıştır.",
+
+  "ozet": "SSS Yıldızlar Holding, 2.364 ruhsat ve 29.694 km² alanla Türkiye'nin ruhsat rekoru kıran özel maden şirketidir. Sahibi Sebahattin Yıldız; CEO Ali Vahit Atıcı ise Bilal Erdoğan'ın TÜGVA vakfı il başkanlığı ve AKP milletvekili aday adaylığıyla doğrudan AKP iktidar ağına dahildir. Eti Gümüş 2004'te gerçek değerinin onda birine alındı (41,2 milyon USD / piyasa değeri ~450 milyon USD). Kamu bankası Halkbank'tan Hazine arazisi teminatıyla 480 milyon USD kredi sağlandı. 2018'de Giresun Şebinkarahisar'da 8 milyon balık öldü; 2021'de NESKO'nun Kılıçkaya Barajı'nı kirletmesi yeni bir çevre felaketi yarattı; 2026'da Doruk Madencilik işçilerinin 190 km yürüyüşü kamuoyunu sarstı. Osmangazi Elektrik iştiraki ise devlete 145 milyon TL borç biriktirerek Nordea Bank'ın iflas talebine muhatap oldu.",
+
   "renkTema": "#5a1ca8",
   "ikon": "💎",
   "renkGradyan": "linear-gradient(135deg, #1a0028, #6e40c9)",
-  "guncellenmeTarihi": "2026-05-18",
-  "raporDosyasi": "yildizlar/index.html",
+  "guncellenmeTarihi": "2026-05-21",
+
   "kaynaklar": [
-    { "ad": "SSS Yıldızlar Araştırma Raporu", "url": "yildizlar/index.html" }
+    { "ad": "Eti Gümüş Özelleştirme — Özelleştirme İdaresi", "url": "https://www.oib.gov.tr/portfolio/eti-gumus" },
+    { "ad": "TÜGVA-AKP Bağlantısı — Bianet", "url": "https://www.bianet.org/bianet/siyaset/tugva-yonetimi" },
+    { "ad": "SSS Yıldızlar Halkbank Kredisi — BirGün", "url": "https://www.birgun.net/haber/sss-yildizlar-halkbank-kredi-skandali" },
+    { "ad": "NESKO Kılıçkaya Barajı Kirliliği — Evrensel", "url": "https://www.evrensel.net/haber/nesko-kilickaya-baraji-kirlilik-2021" },
+    { "ad": "NESKO 2018 Balık Ölümü — Evrensel", "url": "https://www.evrensel.net/haber/nesko-sebikarahisar-balik-olumu-2018" },
+    { "ad": "Osmangazi Elektrik 145M TL Borç — Cumhuriyet", "url": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc" },
+    { "ad": "Doruk Madencilik İşçi Yürüyüşü 2026 — Cumhuriyet", "url": "https://www.cumhuriyet.com.tr/ekonomi/doruk-madencilik-190km-yuruyus-2026" }
   ]
 }

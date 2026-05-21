@@ -63,27 +63,54 @@
       "kaynak": "Yerel haberler, Ağustos 2024"
     }
   ],
-  "siyasiBaglantilar": [
+  "yonetimKurulu": [
     {
-      "kisi": "Berat Albayrak (eski Enerji Bakanı / Erdoğan'ın damadı)",
-      "baglantiTuru": "Doğrudan Siyasi Bağlantı",
-      "aciklama": "Berat Albayrak, Ceyhan Saldanlı'nın (AYDEM CEO) tesislerinin açılış törenlerine katılarak kurdela kesti. Bereket Enerji/Aydem, AKP iktidarıyla yakın ilişkide büyük enerji yatırımlarını hızla genişletti.",
-      "kaynak": "Diken, Cumhuriyet"
-    },
-    {
-      "kisi": "Bereket Enerji / AYDEM — Kamu İhale Payı",
-      "baglantiTuru": "Kamu İhalesi",
-      "aciklama": "Bereket Enerji 2014-2021 döneminde kamu ihalelerinden en çok pay alan 2. grup olarak kayıtlara geçti (585 ihale, toplam 2,4 milyar TL). Kamu kasasından 'iktidara yakın' elektrik şirketlerine 14,4 milyar TL ödendiği raporlandı.",
-      "kaynak": "Diken, Cumhuriyet"
-    },
-    {
-      "kisi": "AYDEM — Bölgesel Elektrik Tekeli",
-      "baglantiTuru": "Piyasa Hakimiyeti",
-      "aciklama": "AYDEM, devlet destekli dağıtım bölgeleriyle (Aydın, Denizli, Muğla, İzmir, Manisa) bölgesel elektrik tekeli konumuna geldi.",
-      "kaynak": "EPDK lisans kayıtları"
+      "isim": "Ceyhan Saldanlı",
+      "unvan": "Yönetim Kurulu Başkanı ve CEO",
+      "notlar": "1991'de PTT teknik personeliyken enerji sektörüne geçti. Elsan Elektrik şirketini kurarak Bereket Enerji Grubu'na dönüştürdü. Kurucu ortak Ali Yağlı ile birlikte Türkiye'nin en büyük özel elektrik dağıtım ve üretim gruplarından birini inşa etti.",
+      "kaynak": "Onedio; Bereket Enerji kurumsal"
     }
   ],
-  "vergiBorclari": [],
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Berat Albayrak — Çalık Holding Bağlantısı",
+      "baglantiTuru": "Sektörel Örtüşme / AKP Dönemi Büyüme",
+      "aciklama": "Berat Albayrak 2007-2013 arası Çalık Holding CEO'suydu (Çalık Enerji farklı bölgelerde elektrik dağıtımı işletir). Albayrak Enerji ve Tabii Kaynaklar Bakanı olduğu dönemde (2015-2018) AYDEM/Bereket Enerji, ÇATES dahil birden fazla termik santral özelleştirmesini kazandı ve büyük teşvikler aldı. Açılış törenlerine Albayrak katıldı. Doğrudan sahiplik bağı kanıtlanmamıştır; ancak paralel büyüme somuttur.",
+      "kaynak": "T24; soL Haber; The Black Sea"
+    },
+    {
+      "kisi": "Bereket Enerji / AYDEM — 585 Kamu İhalesi",
+      "baglantiTuru": "Kamu İhalesi",
+      "aciklama": "2014-2021 döneminde 2 milyar 403 milyon TL değerinde 585 kamu ihalesi aldı; tüm iktidara yakın elektrik şirketleri arasında 2. sırada. Kamu kasasından bu tür şirketlere 14,4 milyar TL ödendiği raporlandı. Özelleştirme sırasında şirketin kamu ihale yasağı bulunmasına rağmen işlem Özelleştirme Kanunu'nun 12. maddesiyle meşrulaştırıldı.",
+      "kaynak": "D20Haber; Diken; Cumhuriyet"
+    },
+    {
+      "kisi": "GDZ Elektrik — 263 Milyon Dolar Kıyak",
+      "baglantiTuru": "Borç Yeniden Yapılandırma",
+      "aciklama": "CHP Milletvekili Deniz Yavuzyılmaz, Yatağan Termik Santrali için GDZ Elektrik'in dolar cinsinden özelleştirme borcunun TL'ye çevrilip 6 taksit yapıldığını tespit etti. Hesaplanan kamu zararı: 263 milyon dolar.",
+      "kaynak": "Son Mühür"
+    }
+  ],
+  "vergiBorclari": [
+    {
+      "aciklama": "GDZ Dağıtım, Gediz Perakende ve Aydem Elektrik 2021-2024 döneminde (3-4 yıl boyunca) kurumlar vergisi ödemedi. Konu CHP Milletvekili Deniz Yavuzyılmaz tarafından TBMM gündemine taşındı. Şirket kâr raporlarken vergi ödememesi yoğun eleştiri aldı.",
+      "kaynak": "Epoch Times TR; Bold Medya 2025"
+    }
+  ],
+  "skandallar": [
+    {
+      "ad": "İzmir'de İki Kişi Elektrik Akımına Kapılarak Öldü",
+      "tarih": "2024-07-12",
+      "aciklama": "İzmir Konak'ta sağanak yağmurdan sığınak arayan Özge Ceren Deniz ve İnanç Öktemay elektrik akımına kapılarak hayatını kaybetti. GDZ Elektrik Dağıtım A.Ş. sorumlu tutuldu. Şirket ile İzmir Büyükşehir Belediyesi birbirini suçladı. 585 kamu ihalesi alan şirket, ölümlerden sorumlu tutulurken ihale almaya devam etti.",
+      "kaynak": "Euronews; Artı Gerçek, 2024"
+    },
+    {
+      "ad": "İzmir Orman Yangınları",
+      "tarih": "2025",
+      "aciklama": "İzmir orman yangınlarına elektrik dağıtım hatlarının neden olduğu ileri sürüldü; valilik bu yönde açıklama yaptı. GDZ Elektrik doğrudan hedef gösterildi. Ardından şirketin 3 yıldır kurumlar vergisi ödemediği ortaya çıktı.",
+      "kaynak": "Bold Medya 2025"
+    }
+  ],
   "davalar": [],
   "sendikaDurumu": {
     "varMi": "Evet",
@@ -95,7 +122,7 @@
   "renkTema": "#5a1a00",
   "ikon": "🏭",
   "renkGradyan": "linear-gradient(135deg, #3a0a00, #7a2a00)",
-  "guncellenmeTarihi": "2026-05-18",
+  "guncellenmeTarihi": "2026-05-21",
   "kaynaklar": [
     { "ad": "Çatalağzı Termik Santrali — Global Energy Monitor", "url": "https://www.gem.wiki/%C3%87atala%C4%9Fz%C4%B1_power_station" },
     { "ad": "ÇATES Kapatılıyor mu? — Pusula Gazetesi", "url": "https://www.pusulagazetesi.com.tr/cateste-kritik-gunler-kapatiliyor-mu" },

@@ -1,0 +1,19 @@
+{
+  "slug": "kirsehir",
+  "ad": "Kırşehir",
+  "il": "Kırşehir",
+  "koordinatlar": { "lat": 39.145, "lon": 34.163 },
+  "nufus": "~250.000 (il nüfusu)",
+  "ozellik": "Boztepe Altın Madeni projesi, Seyfe Gölü Ramsar Alanı tehdidi",
+  "sirketler": ["demir-export"],
+  "tarihselBaglam": "Kırşehir ilinde planlanan Boztepe Altın Madeni projesi; Koç Holding iştiraki Demir Export ile AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi Fernas İnşaat'ın Defaş Madencilik ortak girişimiyle yürütülmektedir. 5.856 hektarlık sahada yıllık 37 milyon ton kazı öngörülmekte, proje atığının %92'si pasa atık olarak bırakılacaktır. Tesisin konumu Kırşehir içme suyu kuyularına 3,3 km, Seyfe Gölü Ramsar Alanı'na ise birkaç kilometre mesafededir. Seyfe Gölü'nün koruma sınırları Cumhurbaşkanlığı kararnamesiyle 15 Eylül 2024'te yarıya indirildi. ÇED süreci Aralık 2024'te Kırşehir İdare Mahkemesi kararıyla durduruldu.",
+  "facialAr": [],
+  "cevreselRiskler": [
+    "Kırşehir içme suyu kuyuları 3,3 km mesafede",
+    "Kızılırmak havzası içinde (Ankara içme suyu kaynağı)",
+    "Seyfe Gölü Ramsar alanı — koruma sınırı 15 Eylül 2024'te yarıya indirildi (RG No. 32663)",
+    "DSİ, Kapulukaya Barajı'ndan yönetmeliklere aykırı su tahsisi onayladı"
+  ],
+  "sendikaDurumu": "Araştırılıyor",
+  "guncellenmeTarihi": "2026-05-21"
+}

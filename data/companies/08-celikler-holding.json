@@ -3,164 +3,302 @@
   "ad": "ÇELİKLER Holding",
   "kisaAd": "ÇELİKLER",
   "holding": "ÇELİKLER Holding",
+  "holdingAdami": "Tahir Çelik",
   "sektor": "Kömür (Linyit), Enerji, İnşaat, Turizm",
-  "tip": "Özel",
-  "bolge": "Kahramanmaraş / Afşin-Elbistan, Kütahya / Seyitömer, Aydın",
+  "tip": "Özel (Aile Şirketi)",
+  "bolge": "Kahramanmaraş / Afşin-Elbistan, Kütahya / Seyitömer, Bursa / Orhaneli, Kütahya / Tunçbilek",
   "sehir": "Ankara (merkez), Kahramanmaraş, Kütahya",
   "ilce": "Elbistan",
   "koordinatlar": { "lat": 38.25, "lon": 36.95 },
   "kurulusYili": 1958,
-  "ruhsatSayisi": "Afşin-Elbistan A linyit sahası + Seyitömer linyit sahası + Orhaneli linyit sahası + Tunçbilek linyit sahası (işletme hakları özelleştirme yoluyla elde edildi)",
-  "isletmeSayisi": "4 termik santral ve bağlı linyit maden sahaları: (1) Afşin-Elbistan A (Kahramanmaraş), (2) Seyitömer (Kütahya), (3) Orhaneli (Bursa), (4) Tunçbilek (Kütahya). Ayrıca Kömürsan Madencilik bünyesinde Grup 2 maden ruhsatları (mermer/agrega).",
-  "iscSayisi": "10.000+ (tüm holding bünyesinde). Elbistan A santral ve maden operasyonunda: 3.350-3.764 kadrolu işçi (farklı dönem açıklamaları). 2026 Şubat'ta Afşin-Elbistan A'da 586 işçi kapı önünde işten çıkarıldı.",
-  "maliVeriler": {
-    "ozelleştirmeBedeli": "Seyitömer Termik Santrali için 2.248.000.000 dolar (2013 özelleştirmesi). Toplam enerji varlıkları çok daha yüksek.",
-    "kamuİhalesiz": "2010-2021 arasında 42 ayrı kamu ihalesi; toplam 8 milyar 329 milyon TL",
-    "borcDonusumusumu": "CHP'li milletvekili tespitine göre Orhaneli ve Tunçbilek özelleştirme borçları dolar yerine TL'ye çevrildi ve 6 eşit taksitte ödemeye bağlandı; kamu zararı: 2 milyar 783 milyon TL",
-    "turkiyeElektrikPati": "Türkiye toplam elektrik üretiminin yaklaşık %5'i",
-    "linyitUretimi": "Yılda 40 milyon ton kömür üretim kapasitesi (şirket beyanı)",
-    "notlar": "Şirket, Urgewald Küresel Kömürden Çıkış Listesi'nde yer almaktadır. Türkiye'nin en büyük özel sera gazı salıcılarından biridir."
+  "ruhsatSayisi": "4 termik santral + bağlı linyit maden sahaları (işletme hakları özelleştirme yoluyla elde edildi)",
+  "isletmeSayisi": "4 termik santral: Afşin-Elbistan A (1.355 MW), Seyitömer (600 MW), Orhaneli (210 MW), Tunçbilek (365 MW). Toplam ~2.769 MW. Ayrıca 7 jeotermal ve 1 hidroelektrik santral.",
+
+  "yonetimKurulu": [
+    {
+      "isim": "Tahir Çelik",
+      "unvan": "Yönetim Kurulu Başkanı",
+      "notlar": "Osman Çelik'in oğlu. Cumhurbaşkanı Erdoğan, 2019 ABD dönüşünde Tahir Çelik'i bizzat arayarak filtre takmamanın hesabını sordu. Çelik telefonda 'Ben bırakayım' dedi; Erdoğan telefonu kapattı. Buna rağmen holding kamu ihalesi almaya devam etti.",
+      "kaynak": "Milliyet, Diken, soL Haber, 2019"
+    },
+    {
+      "isim": "Bilal Çelik",
+      "unvan": "Yönetim Kurulu Başkanı (eski dönem)",
+      "notlar": "Çelik ailesinden, farklı dönemlerde başkanlık görevini üstlendi.",
+      "kaynak": "Çelikler Holding kurumsal"
+    },
+    {
+      "isim": "Fadlı Çelik",
+      "unvan": "Yönetim Kurulu Başkan Yardımcısı",
+      "notlar": "Aile şirketi yapısı: yönetim kurulunun tamamı Çelik soyadını taşımaktadır.",
+      "kaynak": "Çelikler Holding kurumsal"
+    },
+    {
+      "isim": "Hasan Çelik",
+      "unvan": "Yönetim Kurulu Üyesi",
+      "kaynak": "Çelikler Holding kurumsal"
+    },
+    {
+      "isim": "Mehmet Çelik",
+      "unvan": "Yönetim Kurulu Üyesi",
+      "kaynak": "Çelikler Holding kurumsal"
+    }
+  ],
+
+  "iscSayisi": {
+    "toplam": "10.000+ (tüm holding bünyesinde)",
+    "elbistanA": "3.350–3.764 kadrolu işçi (şirket açıklaması)",
+    "notlar": "Şubat 2026'da Afşin-Elbistan A'da sabah vardiyasına gelen 586 işçi turnike kartları iptal edilmiş halde kapı önünde işten çıkarıldı. Şirket daha sonra yalnızca 100 kişiyi geri almayı teklif etti."
   },
+
+  "tesisler": [
+    {
+      "ad": "Afşin-Elbistan A Termik Santrali",
+      "tur": "Linyit Yakıtlı Termik Santral",
+      "bolge": "Kahramanmaraş / Elbistan",
+      "kapasite": "1.355 MW",
+      "ozellestirmeYili": 2018,
+      "aciklama": "EÜAŞ bünyesinden 20 yıllık işletme hakkı devriyle Çelikler'e geçti. Türkiye'nin en büyük linyit santrallerinden biri. 720 MW'lık ek ünite projesi mahkemede durduruldu.",
+      "ek720MW": "4 ayrı ÇED davası açıldı; mahkeme onayı çıkmadı. Türkiye'nin COP31'e ev sahipliği yapacağı Kasım 2026 döneminde uluslararası baskıyla tartışmalı hale geldi."
+    },
+    {
+      "ad": "Seyitömer Termik Santrali",
+      "tur": "Linyit Yakıtlı Termik Santral",
+      "bolge": "Kütahya / Seyitömer",
+      "kapasite": "600 MW (4×150 MW)",
+      "ozellestirmeYili": 2013,
+      "ozellestirmeBedeli": "2.248.000.000 USD",
+      "aciklama": "Devir sözleşmesi 17 Haziran 2013'te imzalandı. Santral binası ve ekipman 'varlık satışı,' maden sahaları 2054'e kadar 'işletme hakkı devri' kapsamında verildi.",
+      "heyelan2019": "Mayıs 2019: kül atık sahası zemin kayması. Sahadaki gölet taştı, Seyitömer-il merkezi karayolu sular altında kaldı. 2019'da yasal atık dökümü onay zorunluluğu kaldırıldıktan sonra yaşandı. 50+ trafik kazası."
+    },
+    {
+      "ad": "Orhaneli Termik Santrali",
+      "tur": "Linyit Yakıtlı Termik Santral",
+      "bolge": "Bursa / Orhaneli",
+      "kapasite": "210 MW",
+      "ozellestirmeYili": 2015,
+      "ozellestirmeBedeli": "Tunçbilek ile birlikte 521 milyon USD",
+      "aciklama": "17 Aralık 2014 ihalesinde Çelikler en yüksek teklifi verdi; 22 Haziran 2015'te devredildi. Özelleştirme borcu TL'ye çevrilerek yeniden yapılandırıldı — CHP'nin hesabına göre 2.783 milyon TL kamu zararı."
+    },
+    {
+      "ad": "Tunçbilek Termik Santrali",
+      "tur": "Linyit Yakıtlı Termik Santral",
+      "bolge": "Kütahya / Tunçbilek",
+      "kapasite": "365 MW",
+      "ozellestirmeYili": 2015,
+      "ozellestirmeBedeli": "Orhaneli ile birlikte 521 milyon USD",
+      "aciklama": "Orhaneli ile aynı ihale paketinde devredildi."
+    }
+  ],
+
+  "maliVeriler": {
+    "toplam_ozellestime": "Seyitömer: 2.248M USD (2013) + Orhaneli+Tunçbilek: 521M USD (2015) + Elbistan A: 20 yıllık işletme hakkı (2018)",
+    "kamuIhalesi_2010_2021": "42 ayrı kamu ihalesi; toplam 8 milyar 329 milyon TL. İhale veren kurumlar: KGM (17 ihale), TCDD (4 ihale), TOKİ, DHMİ",
+    "ihale_detay": "4 termik santralinin filtresizlik gerekçesiyle mühürlü olduğu dönemde Karayolları holdinge 533 milyon TL'lik yeni ihale verdi.",
+    "borcYapılandırması": "Orhaneli-Tunçbilek özelleştirme borçları dolar yerine TL'ye çevrilerek 6 eşit taksite bağlandı. CHP milletvekili Deniz Yavuzyılmaz: 2.783 milyon TL kamu zararı.",
+    "turkiyeElektrikPayi": "~%5",
+    "linyitUretimi": "Yılda 40 milyon ton kapasite (şirket beyanı)",
+    "notlar": "Urgewald Küresel Kömürden Çıkış Listesi'nde yer almaktadır. Türkiye'nin en büyük özel sera gazı salıcılarından biridir. Tüm tesisler 8. sırada (2024 elektrik üreticileri sıralaması)."
+  },
+
   "ozellestirilenSahalar": [
     {
       "ad": "Afşin-Elbistan A Termik Santrali ve Linyit Sahası",
-      "aciklama": "EÜAŞ'a ait santral ve bağlı linyit sahası 2018'de Çelikler Holding'e devredildi (ERG-Verbund hisseleri satın alındı ve EÜAŞ ile devir protokolü imzalandı). 20 yıllık işletme hakkı.",
       "yil": 2018,
-      "kaynak": "SoL Haber; EMEP Meclis Soruları"
+      "aciklama": "EÜAŞ bünyesinden 20 yıllık işletme hakkı devri yöntemiyle Çelikler'e geçti. ERG-Verbund hisseleri satın alınmasını içerdi.",
+      "kaynak": "soL Haber; EMEP Meclis Soruları"
     },
     {
       "ad": "Seyitömer Termik Santrali ve Linyit Sahası",
-      "aciklama": "2013'te EÜAŞ özelleştirmesiyle Çelikler Taahhüt İnşaat ve Sanayi A.Ş. tarafından 2.248.000.000 dolar ile satın alındı; işletme hakkı 2054'e kadar.",
       "yil": 2013,
-      "kaynak": "Çelikler Holding; Seyitömer Power Station, Global Energy Monitor"
+      "aciklama": "Çelikler Taahhüt İnşaat ve Sanayi A.Ş. 2.248M USD ile kazandı. Maden sahaları 2054'e kadar işletme hakkıyla verildi.",
+      "kaynak": "NTV, Enerji Günlüğü"
     },
     {
-      "ad": "Orhaneli Termik Santrali ve Linyit Sahası",
-      "aciklama": "Özelleştirme ile Çelikler Holding'e devredildi. Ödeme dolar cinsinden belirlenmişken TL'ye çevrildi.",
-      "yil": null,
-      "kaynak": "CHP Milletvekili açıklaması"
-    },
-    {
-      "ad": "Tunçbilek Termik Santrali ve Linyit Sahası",
-      "aciklama": "Özelleştirme ile Çelikler Holding'e devredildi.",
-      "yil": null,
-      "kaynak": "Çelikler Holding"
+      "ad": "Orhaneli + Tunçbilek Termik Santralleri",
+      "yil": 2015,
+      "aciklama": "Tek paket olarak 521M USD'a Çelikler'e devredildi.",
+      "kaynak": "Özelleştirme İdaresi"
     }
   ],
+
   "iscOlumleri": [
     {
       "tarih": "2022-08",
       "adet": 1,
       "aciklama": "Seyitömer'de bir dolaşım pompası yükleme sırasında düşerek 1 işçiyi öldürdü, 1 işçiyi ağır yaraladı.",
-      "kaynak": "SoL Haber"
+      "kaynak": "soL Haber"
+    },
+    {
+      "tarih": "2022 veya öncesi",
+      "adet": 1,
+      "aciklama": "Afşin-Elbistan A'da kazan bakım işçisi Okan Sönmez (27 yaşında): çalıştığı platformun halatları kopunca 44 metreden 12 metreye düştü, hayatını kaybetti.",
+      "kaynak": "soL Haber"
+    },
+    {
+      "tarih": "2022 veya öncesi",
+      "adet": 1,
+      "aciklama": "Afşin-Elbistan A'da kazan bakım işçisi Taylan Sünbül (36 yaşında, 2 çocuk babası) hayatını kaybetti.",
+      "kaynak": "soL Haber"
     },
     {
       "tarih": "bilinmiyor",
       "adet": 1,
-      "aciklama": "Çelikler Holding bünyesindeki linyit sahasında 33 yaşındaki konveyör işçisi Hasan Karpuz 6.000 volt elektrik çarpması sonucu hayatını kaybetti; 3 çocuk babası.",
-      "kaynak": "SoL Haber"
+      "aciklama": "Çelikler bünyesindeki linyit sahasında konveyör işçisi Hasan Karpuz (33 yaşında, 3 çocuk babası) 6.000 volt elektrik çarpması sonucu hayatını kaybetti.",
+      "kaynak": "soL Haber"
     },
     {
       "tarih": "bilinmiyor",
       "adet": 1,
-      "aciklama": "Çelikler Pamukören Jeotermal Tesisi'nde çalışan Faruk Kırgın (40 yaşında) elektrik çarptması sonucu hayatını kaybetti.",
-      "kaynak": "SoL Haber"
+      "aciklama": "Çelikler Pamukören Jeotermal Tesisi'nde çalışan Faruk Kırgın (40 yaşında) elektrik çarpması sonucu hayatını kaybetti.",
+      "kaynak": "soL Haber"
     }
   ],
+
   "isgOlaylari": [
     {
       "tarih": "2024-04-02",
       "aciklama": "Afşin-Elbistan A Termik Santrali'nde bakım sırasında buhar kazanı patladı; 3 işçi ağır yaralandı.",
-      "kaynak": "SoL Haber"
+      "kaynak": "soL Haber"
+    },
+    {
+      "tarih": "2024-08",
+      "aciklama": "Afşin-Elbistan A'da enflasyon zammı grevi: işçiler %12 isterken şirket %6 teklif etti. Şirket önce 8, sonra 24, ardından 200 işçiyi kovdu. Bir işçi baskı altında silahla intihar girişiminde bulundu, arkadaşları son anda engelledi.",
+      "kaynak": "Ekonomim, 2024"
+    },
+    {
+      "tarih": "2024-10",
+      "aciklama": "Çelikler'in Elbistan linyit sahasında göçük meydana geldi; EÜAŞ'a ait termik santralin enerji üretimi geçici olarak durdu.",
+      "kaynak": "Haberler.com"
     },
     {
       "tarih": "2025-12",
-      "aciklama": "Afşin-Elbistan A Termik Santrali'nde kül çukuru kapakları beklenmedik şekilde açıldı; 4 işçi iskeleteden atladı.",
-      "kaynak": "SoL Haber"
+      "aciklama": "Afşin-Elbistan A'da kül çukuru kapakları beklenmedik şekilde açıldı; 4 işçi iskelet sisteminden atladı.",
+      "kaynak": "soL Haber"
     },
     {
       "tarih": "2026-02-19",
-      "aciklama": "Afşin-Elbistan A Termik Santrali'nde 586 işçi sabah vardiyasına gelmesi sırasında turnikelerde kartları iptal edilmiş halde bularak işten çıkarıldığını öğrendi. Herhangi bir açıklama yapılmadı. Şirket daha sonra yalnızca 100 kişiyi yeniden işe almayı teklif etti.",
-      "kaynak": "SoL Haber; Referans Gazetesi"
+      "aciklama": "Afşin-Elbistan A'da 586 işçi sabah vardiyasında turnike kartları iptal edilmiş buldu. Hiçbir açıklama yapılmadı. Şirket 100 kişiyi geri almayı teklif etti. EMEP Milletvekili Sevda Karaca konuyu TBMM'ye taşıdı.",
+      "kaynak": "soL Haber; Referans Gazetesi; ANEP"
     }
   ],
+
   "cevreIhlalleri": [
     {
       "yer": "Afşin-Elbistan, Kahramanmaraş",
-      "aciklama": "Greenpeace 2019 raporu: Afşin-Elbistan santrallerinin hava kirliliği nedeniyle 17.000 erken ölüme yol açtığı hesaplandı; ömrü boyunca toplam 32.000 erken ölüme neden olacağı öngörüldü. Santral yıllarca baca filtresi yasal gerekliliklerini karşılamadan çalıştı.",
-      "kaynak": "Greenpeace Türkiye Raporu, 2019"
+      "tarih": "2019 raporu / süregelen",
+      "aciklama": "Greenpeace 2019 raporu (analist: Lauri Myllyvirta): Afşin-Elbistan santrallerinin PM2.5 ve NO2 hava kirliliği nedeniyle bugüne kadar yaklaşık 17.000 erken ölüme yol açtığı hesaplandı. Ömrü boyunca toplam 32.000 erken ölüm bekleniyor; 720 MW'lık ek ünite kurulursa 2.200 ek ölüm daha. 1990'lardan bu yana bölgede kanser oranları 8 kat arttı.",
+      "kaynak": "Greenpeace Türkiye; Haber46"
+    },
+    {
+      "yer": "Tüm santraller",
+      "tarih": "2020-01",
+      "aciklama": "Santraller baca filtresi takma yasal yükümlülüğünü yerine getirmediği için Çevre Bakanlığı tarafından mühürlenerek üretim durduruldu. Ardından Meclis, holdinge 2,5 yıllık süre uzatımı verdi (Erdoğan önce veto etti, sonra farklı bir düzenlemeyle çözüldü). Mühürlü dönemde KGM holdinge 533 milyon TL ihale vermeye devam etti.",
+      "kaynak": "Artı Gerçek; soL Haber; Gerçek Gündem"
     },
     {
       "yer": "Seyitömer, Kütahya",
-      "aciklama": "22 Mayıs 2024: Seyitömer maden atık sahasında heyelan; taşkın bölgeyi sular altında bıraktı, kasaba ile il merkezi arasındaki yol kapandı. 2019'da değiştirilen Maden Kanunu'na göre şirketlerin atık depolama alanı için MAPEG onayı alma zorunluluğu kaldırıldıktan sonra yaşandı.",
-      "kaynak": "SoL Haber, Mayıs 2024"
+      "tarih": "2019-05",
+      "aciklama": "Kül atık sahası zemin kayması: sahadaki gölet taştı, kasaba-il karayolu sular altında kaldı. 2019'da Maden Kanunu değişikliğiyle atık dökümü için MAPEG onayı zorunluluğu kaldırıldıktan sonra gerçekleşti. 1 ay+ yol kapandı, 50+ trafik kazası yaşandı.",
+      "kaynak": "soL Haber; Gazete Duvar"
+    },
+    {
+      "yer": "Seyitömer, Kütahya",
+      "tarih": "2024-05-22",
+      "aciklama": "Seyitömer maden atık sahasında yeni heyelan; taşkın köy yolunu ve çevresini etkiledi.",
+      "kaynak": "soL Haber, Mayıs 2024"
     },
     {
       "yer": "Afşin-Elbistan, Kahramanmaraş",
-      "aciklama": "Santrallerin yakınındaki bölge halkı yoğun hava kirliliği, kül ve zehirli gaz emisyonuna maruz kaldı; ciddi sağlık sorunları belgelendi.",
-      "kaynak": "SoL Haber"
+      "tarih": "süregelen",
+      "aciklama": "Susuzlaştırma operasyonları nedeniyle yılda 105 milyon metreküp yeraltı suyu kaybı. Yılda ~7 milyon ton kül-cüruf-alçıtaşı atığı en yakın yerleşim yerine 500 metre mesafeli sahaya dökülüyor.",
+      "kaynak": "Greenpeace"
     }
   ],
+
   "siyasiBaglantilar": [
     {
-      "kisi": "Tahir Çelik (Çelikler Holding Yönetim Kurulu Başkanı)",
-      "baglantiTuru": "AKP Hükümeti ile Doğrudan İlişki",
-      "aciklama": "Cumhurbaşkanı Erdoğan'ın Tahir Çelik'i çevre ihlalleri konusunda bizzat aradığı belgelendi; bu temas, holdinge yönelik eleştiriler bağlamında aktarıldı. Çelikler Holding, AKP döneminde 42 ayrı kamu ihalesini toplam 8,3 milyar TL değerinde kazandı. Holdinge yapılan özelleştirme borç ödemeleri dolardan TL'ye çevrilerek yeniden yapılandırıldı; CHP bu yapılandırmayı 2,7 milyar TL kamu zararı olarak nitelendirdi.",
-      "kaynak": "SoL Haber; CHP Milletvekili açıklaması"
+      "kisi": "Tahir Çelik — Erdoğan telefon görüşmesi",
+      "baglantiTuru": "AKP Hükümeti ile Doğrudan Temas",
+      "aciklama": "Cumhurbaşkanı Erdoğan, 2019 ABD dönüşünde Tahir Çelik'i bizzat arayarak filtre takmamanın hesabını sordu: 'Biz sana süre verdik, şimdiye kadar ne yaptın?' Çelik önce 10.000 kişilik istihdamı öne sürdü, ardından 'Ben bırakayım' dedi. Bu iletişime rağmen holding yüzlerce milyon TL'lik yeni ihaleler almaya devam etti.",
+      "kaynak": "Milliyet; Diken; soL Haber, 2019"
     },
     {
-      "kisi": "Elazığ Depremi (2020) Bağışı",
-      "baglantiTuru": "Kamuya Görünürlük",
-      "aciklama": "Tahir Çelik 2020 Elazığ depremi için 500.000 TL bağış yaptı.",
-      "kaynak": "Gazete Vatan"
+      "kisi": "Çelikler Holding genel",
+      "baglantiTuru": "AKP Döneminde Kamu Kaynaklarından Servet",
+      "aciklama": "AKP iktidarı döneminde 42 ayrı kamu ihalesi (8.3 milyar TL) + 4 büyük özelleştirme. Özelleştirme borçları TL'ye çevrilip yeniden yapılandırıldı (2.783 milyon TL kamu zararı). Filtre ihlali döneminde bile devlet ihalesi vermeye devam etti. CHP ve EMEP milletvekilleri bu ilişkiyi defalarca TBMM'ye taşıdı.",
+      "kaynak": "Birgun; Sözcü; Artı Gerçek"
     }
   ],
+
   "vergiBorclari": [
     {
-      "aciklama": "Orhaneli ve Tunçbilek santralleri için dolar cinsinden belirlenen özelleştirme borçları TL'ye çevrilerek 6 eşit taksitte yeniden yapılandırıldı. CHP milletvekilleri bu yapılandırmayı 2 milyar 783 milyon TL kamu zararı olarak TBMM'ye taşıdı.",
-      "kaynak": "CHP Deniz Yavuzyılmaz açıklaması"
+      "aciklama": "Orhaneli ve Tunçbilek santralleri için dolar cinsinden belirlenen özelleştirme borçları TL'ye çevrilip 6 eşit taksite bağlandı. CHP Milletvekili Deniz Yavuzyılmaz: 2 milyar 783 milyon TL kamu zararı.",
+      "kaynak": "CHP Milletvekili açıklaması"
     }
   ],
-  "davalar": [],
-  "sendikaDurumu": {
-    "varMi": "Evet (bazı tesislerde)",
-    "sendikalar": ["TES-İŞ (enerji sektörü; Çelikler Holding yönetimini ziyaret ettiği belgelendi)"],
-    "orgutlulukOrani": null,
-    "notlar": "Afşin-Elbistan A'da işçiler tarihsel olarak eylem örgütledi; ancak 2026 Şubat'ta 586 işçi toplu işten çıkarmaya maruz kaldı. Çelikler Holding, 586'nın yerine yalnızca 100 kişiyi yeniden işe almayı teklif etti. EMEP milletvekili Kahramanmaraş'ta 1.000'den fazla işçinin işten çıkarılıp çıkarılmadığını Bakanlığa sordu."
-  },
-  "ozet": "Çelikler Holding, 1958'de Osman Çelik tarafından Ankara'da kurulan; Tahir Çelik önderliğinde büyüyen ve Türkiye elektriğinin yaklaşık %5'ini üreten bir enerji ve madencilik holdingidir. Afşin-Elbistan A (2018), Seyitömer (2013), Orhaneli ve Tunçbilek termik santralleri ile bağlı linyit sahalarını AKP döneminde gerçekleştirilen özelleştirmelerle devralmıştır. Bu sahalar kamu varlıkları olup yıllarca TKİ/EÜAŞ bünyesinde işletilmişti. 2010-2021 arasında 8,3 milyar TL değerinde 42 kamu ihalesi kazanan holding, Greenpeace raporuna göre hava kirliliğiyle 17.000 erken ölüme yol açan santralları işletmekte, Seyitömer'de 2024 heyelanına neden olan çevre ihlalleri gerçekleştirmekte ve Şubat 2026'da 586 işçiyi kapı önünde işten çıkarmaktadır.",
-  "renkTema": "#2a0a4a",
-  "ikon": "fire",
-  "renkGradyan": "linear-gradient(135deg, #1a0028, #3a1060)",
-  "guncellenmeTarihi": "2026-05-18",
-  "kaynaklar": [
+
+  "davalar": [
     {
-      "ad": "SoL Haber — Seyitömer'deki Faciasının Sorumlusu Çelikler Holding Kimdir?",
-      "url": "https://haber.sol.org.tr/haber/heyelanin-izleri-hala-silinemedi-seyitomerdeki-facianin-sorumlusu-celikler-holding-kimdir"
+      "konu": "720 MW Ek Ünite ÇED",
+      "mahkeme": "İdare Mahkemeleri",
+      "aciklama": "Afşin-Elbistan A'ya ek 720 MW ünite kurulumu için alınan ÇED onayına karşı 4 ayrı dava açıldı.",
+      "sonuc": "Mahkemeden onay çıkmadı; proje mahkemede askıda.",
+      "kaynak": "Greenpeace; Cumhuriyet, 2025-2026"
     },
     {
-      "ad": "SoL Haber — Çelikler Holding Afşin Elbistan A'da 586 İşçiyi İşten Çıkardı",
-      "url": "https://haber.sol.org.tr/haber/celikler-holding-afsin-elbistan-termik-santralinde-586-isciyi-isten-cikardi-406613"
+      "konu": "Filtresizlik mühürlemesi",
+      "mahkeme": "Çevre Bakanlığı idari işlemi",
+      "aciklama": "Ocak 2020'de baca filtresi yükümlülüğünü yerine getirmeyen santraller mühürlendi. Ardından Meclis 2,5 yıllık süre uzatımı yasalaştırdı.",
+      "sonuc": "Mühür kaldırıldı; filtre sorunlarının çözüm takvimi tartışmalı.",
+      "kaynak": "Artı Gerçek; soL Haber"
     },
     {
-      "ad": "SoL Haber — Termik Santrallerde ve Kömür Madenlerinde Neler Oluyor?",
-      "url": "https://haber.sol.org.tr/haber/termik-santrallerde-ve-komur-madenlerinde-neler-oluyor-406882"
-    },
-    {
-      "ad": "Wikipedia — Çelikler Holding",
-      "url": "https://en.wikipedia.org/wiki/%C3%87elikler_Holding"
-    },
-    {
-      "ad": "SoL Haber — Yine Maden Yine Heyelan Faciası: Seyitömer'de Atık Sahası Neden Çöktü?",
-      "url": "https://haber.sol.org.tr/haber/yine-maden-yine-heyelan-faciasi-seyitomerde-atik-sahasi-neden-coktu-393451"
-    },
-    {
-      "ad": "Global Energy Monitor — Seyitömer Power Station",
-      "url": "https://www.gem.wiki/Seyit%C3%B6mer_power_station"
-    },
-    {
-      "ad": "Greenpeace Türkiye — Afşin-Elbistan Hava Kirliliği Raporu",
-      "url": null
+      "konu": "586 İşçi Toplu Çıkarma",
+      "mahkeme": "Çalışma ve Sosyal Güvenlik Bakanlığı / TBMM",
+      "aciklama": "EMEP Milletvekili Sevda Karaca konuyu Bakanlığa ve TBMM'ye taşıdı. Eş zamanlı olarak 1.000'i aşkın işçinin çıkarılıp çıkarılmadığı soruşturuluyor.",
+      "sonuc": "Devam ediyor (2026).",
+      "kaynak": "ANEP; soL Haber"
     }
+  ],
+
+  "sendikaDurumu": {
+    "varMi": "Evet (kısmi)",
+    "sendikalar": [
+      {
+        "ad": "TES-İŞ",
+        "konfederasyon": "Türk-İş",
+        "durum": "Enerji sektörü sendikası. Çelikler Holding yönetimini ziyaret ettiği belgelendi; ancak 2024 grev sürecinde işçilerin yanında yeterince durmadığına dair iddialar var."
+      }
+    ],
+    "notlar": "Ağustos 2024'te %12 zam talebiyle başlayan grevde işçiler sürecin ardından toplu kovulmaya maruz kaldı. Şubat 2026'da 586 kişi hiçbir bildirim yapılmadan işten çıkarıldı; şirket 100'ünü geri aldı."
+  },
+
+  "ozet": "ÇELİKLER Holding, 1958'de Osman Çelik tarafından kurulan ve bugün Tahir Çelik liderliğinde Türkiye elektriğinin yaklaşık %5'ini üreten dev bir enerji-madencilik holdingidir. Afşin-Elbistan A (2018), Seyitömer (2013, 2.248M$), Orhaneli ve Tunçbilek (2015, 521M$) termik santrallerini AKP döneminde gerçekleştirilen özelleştirmelerle devraldı. Greenpeace raporuna göre Afşin-Elbistan santralleri şimdiye kadar 17.000 erken ölüme yol açtı; ömür boyu tahmini 32.000. Santraller baca filtresi yükümlülüğünü yıllarca yerine getirmedi, 2020'de mühürlendikten sonra bile Karayolları şirkete 533 milyon TL ihale verdi. Erdoğan'ın bizzat telefon ederek 'Ne yaptın?' diye hesap sorduğu Tahir Çelik'e yeni ihaleler akmaya devam etti. Seyitömer'de kül heyelanı, Elbistan'da kanser artışı ve yer altı suyu kaybı belgeli çevre sorunları. Ağustos 2024'te greve katılan 200 işçi kovuldu, bir işçi intihar girişiminde bulundu; Şubat 2026'da 586 işçi daha kapı önünde çıkarıldı.",
+
+  "renkTema": "#5c1a00",
+  "ikon": "🔥",
+  "renkGradyan": "linear-gradient(135deg, #1a0500, #5c1a00)",
+  "guncellenmeTarihi": "2026-05-21",
+
+  "kaynaklar": [
+    { "ad": "soL Haber — Seyitömer'deki Faciasının Sorumlusu Çelikler Holding Kimdir?", "url": "https://haber.sol.org.tr/haber/heyelanin-izleri-hala-silinemedi-seyitomerdeki-facianin-sorumlusu-celikler-holding-kimdir" },
+    { "ad": "soL Haber — Çelikler Holding Afşin Elbistan A'da 586 İşçiyi İşten Çıkardı", "url": "https://haber.sol.org.tr/haber/celikler-holding-afsin-elbistan-termik-santralinde-586-isciyi-isten-cikardi-406613" },
+    { "ad": "Referans Gazetesi — Afşin Elbistan A'da Neden 586 İşçi Çıkarıldı?", "url": "https://www.referansgazetesi.com.tr/afsin-elbistan-a-termik-santralinde-neden-586-isci-cikarildi" },
+    { "ad": "ANEP — EMEP'li Karaca İşten Çıkarmaları TBMM'ye Taşıdı", "url": "https://www.anarsisthaberler.net/emepli-karaca-afsin-elbistan-termik-santralinde-isten-cikarmalari-iddiasini-tbmmye-tasidi" },
+    { "ad": "Greenpeace Türkiye — Maraş ve Esir Edilen Temiz Havası (1)", "url": "https://www.greenpeace.org/turkey/blog/maras-ve-esir-edilen-temiz-havasi-bir-komurlu-termik-santral-hikayesi/" },
+    { "ad": "Greenpeace Türkiye — Maraş ve Esir Edilen Temiz Havası (2)", "url": "https://www.greenpeace.org/turkey/blog/maras-ve-esir-edilen-temiz-havasi-bir-komurlu-termik-santral-hikayesi-2/" },
+    { "ad": "Haber46 — 17 Bin Erken Ölüm ve Yeni Santral ÇED Reddi", "url": "https://www.haber46.com.tr/guncel/bugune-kadar-17-bin-erken-olume-neden-oldugu-belirtilen-afsin-termik-h378308.html" },
+    { "ad": "Artı Gerçek — Dört Termik Santral, Kirletme Hakkı Uzatması", "url": "https://artigercek.com/makale/ozellestirilen-dort-termik-santrali-alan-celikler-holding-istedi-kirletme-hakkina-uzatma-geldi-111075" },
+    { "ad": "Gerçek Gündem — Filtre Sabıkalısına 585 Milyon TL İhale", "url": "https://www.gercekgundem.com/ekonomi/162641/filtre-sabikalisi-celikler-holdinge-devlet-eliyle-585-milyon-tllik-ihale" },
+    { "ad": "Milliyet — Erdoğan'dan Tahir Çelik'e Telefon: Hiçbir Şey Yapmamışsın!", "url": "https://www.milliyet.com.tr/siyaset/erdogandan-is-adamina-telefonda-sert-tepki-hicbir-sey-yapmamissin-6093219" },
+    { "ad": "Diken — Erdoğan ABD Dönüşünde Tahir Çelik'le Konuştu", "url": "https://www.diken.com.tr/abdulkadir-selvi-erdogan-abd-donusunde-afsin-elbistan-termik-santralini-isleten-celikler-holdingin-sahibi-tahir-celikle-konustu/" },
+    { "ad": "soL Haber — Erdoğan'a 'Ben Bırakayım' Demişti, Kirletmeye Devam Ediyor", "url": "https://haber.sol.org.tr/haber/erdogana-telefonda-o-zaman-ben-birakayim-demisti-afsin-elbistan-termik-santrali-zehir-sacmaya" },
+    { "ad": "Ekonomim — Çelikler Holding'de Kriz: 200 İşçi Çıkarıldı, İntihar Girişimi", "url": "https://www.ekonomim.com/sirketler/celikler-holdingde-kriz-200-isci-isten-cikarildi-intihar-girisimi-yasandi-haberi-761726" },
+    { "ad": "NTV — Seyitömer'e 2.2 Milyar Dolar", "url": "https://www.ntv.com.tr/ekonomi/son-ozellestirmeye-2-2-milyar-dolar,QhB2jfER4EmvZ_WIuq5LFg" },
+    { "ad": "soL Haber — Seyitömer Atık Sahası Neden Çöktü?", "url": "https://haber.sol.org.tr/haber/yine-maden-yine-heyelan-faciasi-seyitomerde-atik-sahasi-neden-coktu-393451" },
+    { "ad": "Cumhuriyet — COP31 Öncesi Çevre Örgütleri Elbistan'da", "url": "https://www.cumhuriyet.com.tr/turkiye/cevre-orgutleri-afsin-elbistan-termik-santrali-onunden-seslendi-turkiye-yeni-komurlu-santral-yapmamali-komurun-vadesi-doldu-2498791" },
+    { "ad": "Wikipedia — Çelikler Holding", "url": "https://en.wikipedia.org/wiki/%C3%87elikler_Holding" },
+    { "ad": "Wikipedia — Afşin-Elbistan Power Stations", "url": "https://en.wikipedia.org/wiki/Af%C5%9Fin-Elbistan_power_stations" }
   ]
 }

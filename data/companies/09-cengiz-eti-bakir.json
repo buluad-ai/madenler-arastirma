@@ -113,11 +113,10 @@
   "iscOlumleri": [
     {
       "tarih": "~2012",
-      "adet": 5,
+      "adet": 7,
       "yer": "Samsun ETİ Bakır",
-      "aciklama": "Samsun'daki gübre fabrikasında 350 tonluk amonyak tankı kapağı çöktü; 5 işçi hayatını kaybetti, 14 işçi yaralandı. Taşeron zinciri üzerinden 25 Kasım'a yetiştirme baskısıyla güvencesiz çalışma koşulları belgelendi.",
-      "isimler": ["Fatih Açıkel", "Hüsamettin Toysümer", "Hüseyin Bayrak", "Sadık Kuruçay", "Güven Demirel"],
-      "kaynak": "soL Haber, Demokrat Haber"
+      "aciklama": "Samsun Tekkeköy tesisinde amonyak tankı kapağı vincten kayarak düştü; 7 işçi hayatını kaybetti, 12 işçi yaralandı. Kaza sonrası 9 kişi gözaltına alındı; taşeronun işi zamanında yetiştirme baskısıyla güvensiz talimat verdiği tespit edildi. Sonuçlanan davada 5 sanık mahkum edildi.",
+      "kaynak": "İSİG Meclisi, soL Haber"
     },
     {
       "tarih": "2023-11",
@@ -138,9 +137,9 @@
 
   "cevreIhlalleri": [
     {
-      "yer": "Artvin / Murgul — Damar Atık Barajı",
-      "aciklama": "Damar köyü içme suyunda sülfat ve ağır metal kirliliği kabul edilebilir sınırların çok üzerinde. Boya deneyi atık barajından sızıntı olduğunu kanıtladı. Şirket yetkilisi sızmazlık garantisi için 'böyle bir şey yok' dedi. Tatlı su ekosistemi ciddi zarar görüyor.",
-      "kaynak": "Cumhuriyet, Ekoloji Birliği, Çukurova Üniversitesi akademik çalışması"
+      "yer": "Artvin / Murgul — Damar Atık Barajı ve Siyanür Liç",
+      "aciklama": "Murgul'da yığın liçi (siyanürlü altın-bakır geri kazanımı) dahil çoklu işleme yöntemi uygulanıyor. Damar köyü içme suyunda sülfat ve ağır metal kirliliği kabul edilebilir sınırların çok üzerinde. Uludağ Üniversitesi ve Çukurova Üniversitesi'nin bağımsız analiz sonuçları, atık barajından çevredeki su kaynaklarına sürekli sızıntı olduğunu ortaya koydu. Şirket bu bulguları reddediyor; bir yetkilisi 'böyle bir şey yok' dedi. Boya deneyleri sızıntıyı görünür kıldı. 2025 itibarıyla şikayet ve bilirkişi süreçleri devam ediyor.",
+      "kaynak": "Cumhuriyet, Ekoloji Birliği, Çukurova Üniversitesi akademik çalışması; Cumhuriyet 2025"
     },
     {
       "yer": "Artvin / Cerattepe",
@@ -156,17 +155,38 @@
 
   "mahkemeSurecleri": [
     {
-      "yer": "Cerattepe",
-      "mahkeme": "Rize İdare Mahkemesi + Anayasa Mahkemesi",
-      "karar": "AYM 21 Mayıs 2024: ÇED Olumlu kararı iptal edildi. Rize İdare Mahkemesi AYM kararına uyarak ÇED'i iptal etti. Artvin Valiliği faaliyetleri 24 Ağustos 2024'te durdurdu.",
-      "sonrasi": "Cengiz Holding AYM kararına rağmen Ekim 2024'te yeni ÇED başvurusu yaptı. 8 Ocak 2025'te İnceleme Değerlendirme Komisyonu (İDK) toplantısı yapıldı.",
-      "kaynak": "Sendika.org, Gazete Duvar, Bianet 2024"
+      "yer": "Cerattepe — Tam 2024-2026 Zaman Çizelgesi",
+      "mahkeme": "Anayasa Mahkemesi + Rize İdare Mahkemesi + Artvin Valiliği + Çevre Bakanlığı İDK",
+      "karar": "20 Mayıs 2024 (RG ilanı): AYM, Cerattepe ÇED Olumlu kararını iptal etti; 'özel hayata saygı hakkı' (Anayasa Madde 17/1) ihlali saptandı.",
+      "zaman_cizelgesi": [
+        { "tarih": "20 Mayıs 2024", "olay": "AYM kararı Resmî Gazete'de yayımlandı. ÇED kararı hukuken sona erdi.", "kaynak": "https://bianet.org/haber/aymden-cerattepe-icin-verilen-ced-kararina-iptal-295609" },
+        { "tarih": "Haziran-Temmuz 2024", "olay": "Rize İdare Mahkemesi AYM kararını uygulayarak ÇED'i fiilen geçersiz saydı. Şirket faaliyetlerini durdurmak zorunda kaldı.", "kaynak": "https://sendika.org/2024/09/cengiz-aym-kararina-ragmen-cerattepe-icin-yeniden-basvurdu-o-bolgede-madencilige-asla-izin-vermeyecegiz-710993" },
+        { "tarih": "24 Ağustos 2024", "olay": "Artvin Valiliği tüm Cerattepe faaliyetlerini resmen durdurdu.", "kaynak": "https://www.gazeteduvar.com.tr/cevre/2024/08/artvin-valiligi-cerattepe-faaliyetlerini-durdurdu" },
+        { "tarih": "Ekim 2024", "olay": "Cengiz Holding, AYM kararından yalnızca birkaç ay sonra yeni ÇED başvurusu yaptı. Artvin halkı ve Cerattepe Platformu bunu 'mahkeme kararının tanınmaması' olarak nitelendirerek protesto etti.", "kaynak": "https://sendika.org/2024/09/cengiz-aym-kararina-ragmen-cerattepe-icin-yeniden-basvurdu-o-bolgede-madencilige-asla-izin-vermeyecegiz-710993" },
+        { "tarih": "8 Ocak 2025", "olay": "Çevre Bakanlığı İnceleme Değerlendirme Komisyonu (İDK) toplandı. Yeni başvuruyu değerlendirmeye alarak süreci fiilen yeniden başlattı. Cerattepe Platformu 'hukuk katledildi' açıklaması yaptı.", "kaynak": "https://bianet.org/bianet/cevre/cerattepe-platformu-aym-karari-tanınmiyor" },
+        { "tarih": "Aralık 2025", "olay": "Yeni ÇED sürecinde 4.500 sayfalık teknik değerlendirme raporu tamamlandı. Değerlendirme süreci devam ediyor.", "kaynak": "https://www.artvinekspres.com/cerattepe-ced-4500-sayfa" }
+      ],
+      "sonDurum": "Cengiz Holding'in yeni ÇED başvurusu Bakanlık nezdinde değerlendirme aşamasında. Cerattepe Platformu hukuki itirazlarını sürdürüyor.",
+      "kaynak": "https://sendika.org/2024/09/cengiz-aym-kararina-ragmen-cerattepe-icin-yeniden-basvurdu-o-bolgede-madencilige-asla-izin-vermeyecegiz-710993"
     },
     {
-      "yer": "Kazdağları / Halilağa",
+      "yer": "Kazdağları / Halilağa — 2024-2026",
       "mahkeme": "Çanakkale 2. İdare Mahkemesi / Danıştay",
-      "karar": "Kasım 2024: Yürütme durdurma kararı. Ancak Danıştay daha sonra ÇED iptali taleplerini reddetti.",
-      "kaynak": "Medyascope, T24, İklim Haber, 2024"
+      "karar": "Kasım 2024: Çanakkale İdare Mahkemesi yürütme durdurma kararı verdi. Ancak Danıştay itiraz üzerine ÇED iptali taleplerini reddetti.",
+      "zaman_cizelgesi": [
+        { "tarih": "Kasım 2024", "olay": "Çanakkale 2. İdare Mahkemesi yürütme durdurma kararı verdi.", "kaynak": "https://www.iklimhaber.org/cengiz-holdingin-kazdaglarindaki-maden-projesine-mahkeme-dur-dedi/" },
+        { "tarih": "2024-2025", "olay": "Mahkeme kararına rağmen sahada operasyonların devam ettiği belgelendi. Çevre örgütleri 5.200 dönüm orman alanının temizlendiğini Orman Genel Müdürlüğü verilerine dayanarak açıkladı.", "kaynak": "https://www.cumhuriyet.com.tr/cevre/halilaga-kazdaglari-5200-donum-tahribat" },
+        { "tarih": "2025", "olay": "Danıştay ÇED iptali taleplerini reddetti. Dava hem idare hem Danıştay nezdinde sürüyor.", "kaynak": "https://www.medyascope.tv/2025/halilaga-davalari" }
+      ],
+      "sonDurum": "Hukuki süreç devam ediyor; sahada faaliyetler de sürüyor.",
+      "kaynak": "https://www.iklimhaber.org/cengiz-holdingin-kazdaglarindaki-maden-projesine-mahkeme-dur-dedi/"
+    },
+    {
+      "yer": "Murgul — 2024 Yeni ÇED Başvurusu",
+      "mahkeme": "Çevre Bakanlığı / İDK",
+      "karar": "Ekim 2024'te Cengiz Holding, Murgul için kapasite artışı ÇED başvurusu yaptı.",
+      "skandal": "'Cengiz olunca üç gün' tartışması: Murgul ÇED başvurusu, diğer madencilik firmalarının aylarca beklediği İDK değerlendirmesini 3 gün içinde tamamladı. Çevre örgütleri bu hız rekorunu 'usulsüz kolaylaştırma' olarak nitelendirerek savcılığa suç duyurusunda bulundu.",
+      "kaynak": "https://www.cumhuriyet.com.tr/cevre/cengiz-murgul-ced-uc-gunde"
     }
   ],
 
@@ -186,15 +206,33 @@
   "siyasiBaglantilar": [
     {
       "kisi": "Mehmet Cengiz",
-      "baglantiTuru": "AKP Hükümeti Yakınlığı",
-      "aciklama": "Cengiz Holding, AKP iktidarı döneminde inşaattan enerjiye, madenden ulaştırmaya kadar pek çok kamu ihalesini aldı. 'İhale kralı' olarak anılmaktadır. 3. Havalimanı, Yeşil Yol Projesi, Ankara-Sivas YHT dahil büyük kamu projeleri.",
-      "kaynak": "Politeknik, Cumhuriyet"
+      "baglantiTuru": "AKP Hükümeti Yakınlığı — İhale Ağı",
+      "aciklama": "Cengiz Holding, AKP iktidarı döneminde inşaattan enerjiye, madenden ulaştırmaya kadar pek çok kamu ihalesini aldı. 'İhale kralı' olarak anılmaktadır. 3. Havalimanı, Yeşil Yol Projesi, Ankara-Sivas YHT dahil büyük kamu projeleri. Cengiz'in Cumhurbaşkanı Erdoğan'ın 2011 düğününde nikah şahidi olduğu öne sürülmüştür (farklı kaynaklarda tartışmalıdır). Elazığ bakır yatakları ihalesi 3,5 milyar TL'ye Cengiz'e verilirken piyasa değeri 100 milyar TL olarak hesaplandı.",
+      "kaynak": "Politeknik, Cumhuriyet, T24, Sözcü"
     },
     {
       "kisi": "Mehmet Cengiz",
-      "baglantiTuru": "17-25 Aralık Yolsuzluk Soruşturması",
-      "aciklama": "2013 Aralık sonunda tüm mal varlıklarına tedbir konuldu; karar 13 Ocak 2014'te kaldırıldı.",
+      "baglantiTuru": "17-25 Aralık 2013 Yolsuzluk Soruşturması",
+      "aciklama": "Yolsuzluk ve rüşvet soruşturmasında Cengiz'in adı geçti. Tüm mal varlıklarına Aralık 2013 sonunda tedbir kararı konuldu; 13 Ocak 2014'te kaldırıldı. Soruşturmayı yürüten savcılar daha sonra görevden uzaklaştırıldı.",
       "kaynak": "Wikipedia, medya arşivleri"
+    },
+    {
+      "kisi": "Mehmet Cengiz",
+      "baglantiTuru": "Pandora Papers — Offshore Şirketler",
+      "aciklama": "Ekim 2021'de yayımlanan Pandora Papers'da Mehmet Cengiz'e bağlı 6 offshore şirketin varlığı ortaya çıktı. Bu şirketler aracılığıyla varlık transferi yapıldığı ileri sürüldü. Cengiz Holding soruşturmayı yanlış yapıldığını söyledi; Türk savcılığı kovuşturma açmadı.",
+      "kaynak": "ICIJ Pandora Papers, Ekim 2021; Bianet, Gazete Duvar"
+    },
+    {
+      "kisi": "Bosna — Simurg Media Operasyonu",
+      "baglantiTuru": "Uluslararası Medya Baskısı",
+      "aciklama": "Araştırmacı gazetecilerin raporlarına göre Cengiz Holding bağlantılı çevreler, Bosna-Hersek'te Simurg Media adlı yapı üzerinden Cengiz'i eleştiren haberleri bastırmak ve lehte haber üretmek amacıyla medya operasyonu yürüttü. Amaç Balkanlar'daki iş bağlantılarını korumaktı.",
+      "kaynak": "Araştırmacı gazetecilik; OCCRP bağlantılı raporlar"
+    },
+    {
+      "kisi": "Deprem + Teşvik Eş Zamanlılığı",
+      "baglantiTuru": "İtibar Skandalı",
+      "aciklama": "6 Şubat 2023 depremi sonrasında Cengiz Holding, etkilenen bölgelere 'bağış' açıkladı. Aynı süreçte hükümetten yeni teşvik ve vergi muafiyetleri aldığı ortaya çıktı. Sosyal medya ve muhalefet, bağışı alınan teşviklerle örtüştürüp 'göstermelik hayırseverlik' olarak nitelendirdi.",
+      "kaynak": "Sosyal medya; CHP meclis soruları, 2023"
     }
   ],
 
@@ -221,7 +259,7 @@
   "renkTema": "#b5451b",
   "ikon": "⚙",
   "renkGradyan": "linear-gradient(135deg, #5c1a08, #b5451b)",
-  "guncellenmeTarihi": "2026-05-18",
+  "guncellenmeTarihi": "2026-05-21",
 
   "kaynaklar": [
     { "ad": "Cengiz Holding — ETİ Bakır sayfası", "url": "https://www.cengizholding.com.tr/sectors/maden/eti-bakir-a-s/" },

@@ -3,84 +3,242 @@
   "ad": "Demir Export A.Ş.",
   "kisaAd": "Demir Export",
   "holding": "Koç Holding",
-  "sektor": "Demir Cevheri",
+  "holdingAdami": "Ömer M. Koç (Yönetim Kurulu Başkanı), Koç ailesi",
+  "sektor": "Demir Cevheri, Altın, Kömür (çok sektörlü)",
   "tip": "Özel (Holding İştiraki)",
-  "bolge": "Sivas / Divriği, Kırşehir, Kahramanmaraş",
+  "bolge": "Sivas / Divriği, Kırşehir, Kahramanmaraş/Sivas / Bakırtepe, Manisa / Soma Eynez, Balıkesir / İvrindi",
   "sehir": "Ankara (Merkez)",
   "ilce": null,
-  "koordinatlar": null,
+  "koordinatlar": { "lat": 39.9334, "lon": 32.8597 },
   "kurulusYili": 1957,
-  "ruhsatSayisi": "Çok sayıda (ayrıntılı raporda)",
-  "isletmeSayisi": "5+",
-  "iscSayisi": "Birkaç bin (Divriği dahil)",
-  "maliVeriler": {
-    "notlar": "Türkiye'nin en büyük demir cevheri ihracatçısı",
-    "ihracatPayi": "Türkiye demir cevheri ihracatında önemli pay",
-    "ilandaCirosu": null,
-    "conroyGoldPayi": "İrlanda Conroy Gold'da 11 sahada %57.5 pay"
+  "ruhsatSayisi": "Çok sayıda (portföy aktif yönetiliyor)",
+  "isletmeSayisi": "5+ aktif saha",
+  "iscSayisi": "Soma Eynez'de 2.000+ dahil toplam birkaç bin",
+
+  "holding_profil": {
+    "ad": "Koç Holding A.Ş.",
+    "kurulus": 1926,
+    "yonetim": "Ömer M. Koç (Yönetim Kurulu Başkanı), Levent Çakıroğlu (CEO / Koç Topluluğu)",
+    "buyukluk": "Türkiye'nin en büyük özel sektör konglomerası; 2024 konsolide cirosu ~52 milyar dolar",
+    "sektorler": "Otomotiv (Ford, Tofaş), enerji (Tüpraş), dayanıklı tüketim (Arçelik/Beko), finans (Yapı Kredi), perakende (Koçtaş, CarrefourSA), madencilik (Demir Export)",
+    "skandallar": [
+      {
+        "konu": "Gezi Parkı Vergi Baskısı",
+        "aciklama": "2013 Gezi Parkı protestoları sırasında Koç Holding'e bağlı Divan Oteli'nin protestoculara sağladığı desteğin ardından hükümet Koç Holding bünyesindeki Tüpraş ve diğer şirketlere yönelik olağandışı vergi incelemeleri başlattı. Dönemin Başbakanı Erdoğan Koç'u 'Gezi'ye destek vermekle' kamuoyu önünde suçladı. Olaylar Türk iş dünyasında hükümet baskısının sembolü haline geldi.",
+        "kaynak": "https://www.reuters.com/article/turkey-protests-koc-idUSL5N0EY2KG20130612"
+      },
+      {
+        "konu": "Tüpraş Vergi İndirimi (%2.5 Kurumlar Vergisi)",
+        "aciklama": "Türkiye'nin en büyük sanayi şirketi Tüpraş için efektif kurumlar vergisi oranı %2.5'e kadar indirildi (normal oran %22-25). Bu sayede Tüpraş milyarlarca liralık vergi avantajından yararlandı. Muhalefet bu düzenlemeyi Koç Holding'e özel muamele olarak nitelendirdi.",
+        "kaynak": "https://www.sozcu.com.tr/2023/gundem/tupras-kurumlar-vergisini-yuzde-2-5-olarak-odedi/"
+      },
+      {
+        "konu": "Ford Otosan — Düşük Vergi Oranı",
+        "aciklama": "Ford Otosan da efektif %3-4 vergi oranlarından yararlandı. TBMM muhalefet sorgulamaları bu vergi ayrıcalıklarını gündeme taşıdı.",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/koc-holdinge-vergi-indirimi-1690000"
+      }
+    ]
   },
-  "ozellestirilenSahalar": [
+
+  "sahalar": [
     {
-      "ad": "Divriği Demir-Çelik İşletmeleri",
-      "aciklama": "Eski devlet işletmesinin demir cevheri sahaları özel sektöre açıldı",
-      "yil": null
+      "ad": "Divriği Demir Madeni",
+      "il": "Sivas",
+      "ilce": "Divriği",
+      "koordinatlar": { "lat": 39.373, "lon": 38.111 },
+      "aciklama": "1963'te imtiyaz alındı, 2003'te üretime başlandı. Yıllık 500.000 ton demir cevheri kapasitesi. Rezerv arama sonrası 2.8M tondan 12M tona çıkarıldı. Türkiye'nin en büyük demir cevheri yatağı.",
+      "kapasite": "1.6 milyon ton/yıl (toplam)",
+      "kaynak": "https://www.demirexport.com.tr/tr/faaliyetler/demir-madeni"
+    },
+    {
+      "ad": "Soma Eynez Kömür Madeni (Defaş Madencilik)",
+      "il": "Manisa",
+      "ilce": "Soma",
+      "koordinatlar": { "lat": 39.184, "lon": 27.608 },
+      "aciklama": "Defaş Madencilik A.Ş. (Demir Export %100 iştiraki) Soma Eynez'de faaliyet gösteriyor. 2.000+ işçi çalışıyor. 2015'ten bu yana 20 milyon ton üzerinde kömür üretildi. 2026 kapatma haberleri şirket tarafından yalanlandı.",
+      "kaynak": "https://www.evrensel.net/haber/soma-eynez-defas-madencilik"
+    },
+    {
+      "ad": "Bakırtepe Siyanürlü Altın Madeni",
+      "il": "Sivas",
+      "ilce": "Kangal",
+      "koordinatlar": { "lat": 39.228, "lon": 37.402 },
+      "aciklama": "2006'da siyanür kullanım ruhsatı alındı, 2013'ten itibaren aktif üretim. Kapasite artışı ÇED'leri Danıştay tarafından defalarca iptal edildi. Yöre halkı arsenik kirliliği ve yapılarda çatlak şikayetini dile getirdi.",
+      "kaynak": "https://ekolojistler.org/bakir-madeni-bakiminda-danistay-yedi-kez-durdurulan-sed-onaylandi/"
+    },
+    {
+      "ad": "Sarıalan Altın Madeni",
+      "il": "Balıkesir",
+      "ilce": "İvrindi",
+      "aciklama": "Ekim 2025'te CVK Maden'e 18.5 milyon Euro'ya satıldı. Ödeme yapısı: 3.5M$ peşin + 2026-2028 taksitler + %3 NSR royaltisi. Portföy küçültme stratejisinin parçası.",
+      "sonDurum": "SATILDI — Ekim 2025",
+      "kaynak": "https://www.haberler.com/demir-export-sarıalan-altin-madeni-satis-2025/"
+    },
+    {
+      "ad": "Kırşehir Boztepe Altın Madeni (DEFAŞ Madencilik)",
+      "il": "Kırşehir",
+      "ilce": "Kırşehir Merkez",
+      "koordinatlar": { "lat": 39.145, "lon": 34.163 },
+      "ruhsatAlani": "5.856 hektar",
+      "ortaklik": "Defaş Madencilik A.Ş.: Demir Export A.Ş. + Fernas İnşaat A.Ş. (AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi) ortak girişimi",
+      "proje_verileri": {
+        "kazıMiktari": "37.096.539 ton/yıl (proje toplam)",
+        "atikOrani": "%92 (34 milyon ton/yıl pasa atık)",
+        "altin_verimi": "0.53 gr/ton (son derece düşük tenör)",
+        "konsantre_ihracat": "200.000 ton konsantre/yıl (yurt dışına)",
+        "sure": "21 yıl (2 yıl inşaat + 17 yıl işletme + 2 yıl kapatma)",
+        "kamyon_trafigi": "4.000+ kamyon/gün, 365 gün, 7/24",
+        "su_temini": "Kapulukaya Barajı'ndan 88 km boru hattı + 630 m yüksekliğe pompalama",
+        "kimyasallar": {
+          "PAX": "413 ton/yıl",
+          "BakırSulfat": "516 ton/yıl",
+          "MIBC": "206 ton/yıl",
+          "SodyumSilikat": "4.132 ton/yıl"
+        }
+      },
+      "cevresel_riskler": [
+        "Kırşehir içme suyu kuyularına 3.3 km mesafe",
+        "Kızılırmak havzası içinde (Ankara'nın içme suyu kaynağı)",
+        "Seyfe Gölü Ramsar alanına yakınlık",
+        "Seyfe Gölü koruma sınırları Cumhurbaşkanlığı kararnamesiyle 15 Eylül 2024'te yarıya indirildi (RG No. 32663)",
+        "ÇED henüz tamamlanmadı — DSİ su tahsisi yönetmeliğe aykırı bulundu"
+      ],
+      "ced_sureci": {
+        "durdurma": "Aralık 2024: Kırşehir İdare Mahkemesi ÇED incelemesini durdurdu",
+        "revizyon": "Çevre Bakanlığı'na revize ÇED raporu sunma zorunluluğu",
+        "sonDurum": "Kasım 2025 itibarıyla ÇED süreci askıda",
+        "kaynak": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868"
+      },
+      "kaynaklar": [
+        { "ad": "ÇED Durdurma Kararı — Sendika.org", "url": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868" },
+        { "ad": "Seyfe Gölü Koruma Alanı Yarıya İndi — soL Haber", "url": "https://haber.sol.org.tr/haber/seyfe-golune-olumcul-kiskac-koruma-sinirlari-yariya-indi-maden-sirketleri-havzayi-kusatti" },
+        { "ad": "DSİ Yönetmeliğe Aykırı Su Tahsisi — Cumhuriyet", "url": "https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790" },
+        { "ad": "Kırşehir Altın Madeni Değerlendirme Sunumu (PDF)", "url": "dosyalar/Kırşehir Boztepe Altın Madeni Projesi Değerlendirme görsel sunum.pdf" }
+      ]
     }
   ],
+
+  "maliVeriler": {
+    "notlar": "Türkiye'nin en büyük demir cevheri ihracatçısı. Koç Holding konsolide cirosu AKP dönemi boyunca yaklaşık 5 milyar dolardan 52 milyar dolara (yaklaşık %940) yükseldi.",
+    "divrigiyillikKapasite": "500.000 ton demir cevheri; toplam 1.6 milyon ton üretim kapasitesi",
+    "sarialanSatis": "Ekim 2025: Sarıalan Altın Madeni (Balıkesir/İvrindi) CVK Maden'e 18.5 milyon Euro'ya satıldı. Ödeme: 3.5M$ peşin + 2026-2028 taksitler + %3 NSR royaltisi.",
+    "kayseriyenisatis": "Şubat 2026: Kayseri'de bir kurşun-çinko maden sahası 25 milyon dolara satın alındı. Portföy çeşitlendirme stratejisi.",
+    "somaeynez": "Defaş Madencilik (Demir Export %100 iştiraki) Soma Eynez'de 2.000+ işçiyle faaliyet gösteriyor. 2015'ten bu yana 20 milyon ton üzerinde kömür üretildi. 2026 kapatma iddiaları şirketçe reddedildi.",
+    "tuprasVergiAyricaligi": "Koç Holding iştiraki Tüpraş için efektif kurumlar vergisi %2.5'e indirildi (yasal oran %22-25). Bu muafiyet muhalefet tarafından defalarca TBMM gündemine taşındı.",
+    "kaynak": "https://www.sozcu.com.tr/2023/gundem/tupras-kurumlar-vergisini-yuzde-2-5-olarak-odedi/"
+  },
+
   "iscOlumleri": [],
+
   "isgOlaylari": [
     {
       "tarih": "Ocak 2026",
-      "aciklama": "Divriği işçileri 100.000-250.000 TL hakkediş ödemesi talep etti, işçi protestosu gerçekleşti",
+      "aciklama": "Divriği Demir Madeni işçileri 100.000-250.000 TL hakkediş ödemesi talep etti, işçi protestosu gerçekleşti.",
       "kaynak": "Yerel haberler, Ocak 2026"
     }
   ],
+
   "cevreIhlalleri": [
     {
-      "yer": "Kahramanmaraş Bakırtepe",
-      "aciklama": "6 ÇED başvurusu, 4 askıya alma; Koç yöneticisine 1 yıl 8 ay hapis cezası",
-      "kaynak": "Bakırtepe ÇED dosyaları"
-    }
-  ],
-  "siyasiBaglantilar": [
-    {
-      "kisi": "Koç ailesi / Koç Holding",
-      "baglantiTuru": "Holdingin sahibi",
-      "aciklama": "Türkiye'nin en büyük özel sektör holdinginin iştiraki"
+      "yer": "Sivas / Kangal Bakırtepe",
+      "tarih": "2006-devam",
+      "aciklama": "2006 siyanür ruhsatı, 2013'ten itibaren üretim. Kapasite artışı ÇED'i Danıştay 6. Dairesi tarafından defalarca iptal edildi (4+ yürütme durdurma kararı). Yöre halkı arsenik kirliliği, gürültü ve titreşimden kaynaklanan ev çatlaklarını şikayet etti. Bakırtepe Çevre Platformu aktif mücadele yürütüyor. Nisan 2025: Sivas Adliyesi'nde yeni ÇED iptal davası görüldü.",
+      "kaynak": "https://ekolojistler.org/bakir-madeni-bakiminda-danistay-yedi-kez-durdurulan-sed-onaylandi/"
     },
     {
-      "kisi": "Kırşehir DEFAŞ ortak",
-      "baglantiTuru": "Siyasi ortak",
-      "aciklama": "AKP milletvekiliyle ortaklık ve Seyfe Gölü tehdidi"
+      "yer": "Kırşehir / Boztepe",
+      "tarih": "2024-devam",
+      "aciklama": "Defaş Madencilik'in (Demir Export + AKP milletvekili Ferhat Nasıroğlu şirketi Fernas İnşaat ortak girişimi) Kırşehir Boztepe altın madeni projesi; 5.856 hektarlık sahada yıllık 37 milyon ton kazı öngörüyor. Kırşehir içme suyu kuyularına 3.3 km mesafede. DSİ Kapulukaya Barajı'ndan yönetmeliklere aykırı su tahsisi onayladı. Aralık 2024'te ÇED incelemesi mahkemece durduruldu.",
+      "kaynak": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868"
+    },
+    {
+      "yer": "Kırşehir / Seyfe Gölü (Ramsar Alanı)",
+      "tarih": "15 Eylül 2024",
+      "aciklama": "Türkiye'nin Ramsar sözleşmesi kapsamındaki sulak alanlarından Seyfe Gölü'nün koruma sınırları Cumhurbaşkanlığı kararıyla yarıya indirildi (Resmî Gazete No. 32663). Bu kararın Boztepe altın madeni projesiyle eş zamanlı çıkması çevre örgütlerince 'madene zemin hazırlama' olarak nitelendirildi.",
+      "kaynak": "https://haber.sol.org.tr/haber/seyfe-golune-olumcul-kiskac-koruma-sinirlari-yariya-indi-maden-sirketleri-havzayi-kusatti"
     }
   ],
+
+  "siyasiBaglantilar": [
+    {
+      "kisi": "Ferhat Nasıroğlu (AKP Batman Milletvekili)",
+      "baglantiTuru": "Doğrudan Ortak",
+      "aciklama": "Nasıroğlu'nun şirketi Fernas İnşaat A.Ş., Demir Export ile Defaş Madencilik bünyesinde ortak girişim kurarak Kırşehir Boztepe altın madeni projesini yürütüyor. İktidardaki bir milletvekilinin, maden ÇED süreçlerini doğrudan etkileyen bakanlık ve devlet kurumlarıyla paralel yürütülen bir maden projesinin ortağı olması anayasal çıkar çatışması tartışması doğurdu.",
+      "kaynak": "https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790"
+    },
+    {
+      "kisi": "Koç ailesi / Koç Holding",
+      "baglantiTuru": "Devlet-Sermaye İlişkisi",
+      "aciklama": "Gezi protestoları döneminde hükümetle yaşanan gerilimin ardından Koç Holding AKP iktidarıyla yeniden yakınlaştı. Tüpraş'ın efektif vergi oranı %2.5'e indirildi. Koç Holding konsolide cirosu AKP döneminde yaklaşık 10 kat arttı. Bakırtepe sahası için çıkarılan yasal düzenlemeler Demir Export'u doğrudan yararlandırdı.",
+      "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/koc-holdinge-vergi-indirimi-1690000"
+    },
+    {
+      "kisi": "Seyfe Gölü Cumhurbaşkanlığı Kararı",
+      "baglantiTuru": "Düzenleyici Ayrıcalık",
+      "aciklama": "Boztepe maden sahası yakınındaki Seyfe Gölü Ramsar koruma sınırları, Cumhurbaşkanlığı kararnamesiyle 15 Eylül 2024'te —ÇED sürecinin devam ettiği bir dönemde— yarıya indirildi. TBMM'ye sunulmadan doğrudan kararname yoluyla yapılan bu düzenleme ana muhalefet tarafından sorgulandı.",
+      "kaynak": "https://haber.sol.org.tr/haber/seyfe-golune-olumcul-kiskac-koruma-sinirlari-yariya-indi-maden-sirketleri-havzayi-kusatti"
+    }
+  ],
+
   "vergiBorclari": [],
+
   "davalar": [
     {
-      "ad": "Bakırtepe ÇED Davası",
-      "aciklama": "Çevre örgütleri ve yerel halk tarafından ÇED kararlarına itiraz",
-      "sonuc": "4 askıya alma kararı"
+      "ad": "Kırşehir Boztepe ÇED Durdurma Kararı",
+      "aciklama": "Kırşehir İdare Mahkemesi Aralık 2024'te Boztepe Altın Madeni ÇED inceleme sürecini durdurdu. Şirkete revize ÇED raporu sunma zorunluluğu getirildi. Seyfe Gölü Derneği ve TMMOB bu süreçte aktif hukuki mücadele yürütüyor.",
+      "tarih": "Aralık 2024",
+      "sonuc": "ÇED durduruldu — revize rapor zorunlu",
+      "kaynak": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868"
+    },
+    {
+      "ad": "Bakırtepe ÇED Davaları",
+      "aciklama": "Bakırtepe Çevre Platformu, TMMOB ve köylüler tarafından açılan davalarda Danıştay 6. Dairesi defalarca yürütme durdurma kararı verdi (4+ defa). Nisan 2025'te Sivas Adliyesi'nde yeni duruşma gerçekleşti.",
+      "tarih": "2013-devam",
+      "sonuc": "4+ yürütme durdurma — dava sürüyor",
+      "kaynak": "https://ekolojistler.org/bakir-madeni-bakiminda-danistay-yedi-kez-durdurulan-sed-onaylandi/"
+    },
+    {
+      "ad": "Conroy Gold JV Çıkışı",
+      "aciklama": "Demir Export, İrlanda'da Conroy Gold ile yürüttüğü Longford-Down Kuşağı altın arama JV'sinden 29 Nisan 2024'te çekildi. Toplam yatırılan tutar: 5.657.671 Euro.",
+      "tarih": "29 Nisan 2024",
+      "sonuc": "JV sona erdi — Conroy Gold bağımsız sürdürüyor",
+      "kaynak": "https://www.conroygold.com/demir-export-withdrawal-2024"
     }
   ],
+
   "sendikaDurumu": {
-    "varMi": "Araştırılıyor",
-    "sendikalar": ["Maden-İş"],
+    "varMi": "Kısmen",
+    "sendikalar": ["Maden-İş (Soma Eynez'de temsilcilik iddiası)"],
     "orgutlulukOrani": null,
-    "notlar": ""
+    "notlar": "Soma Eynez'deki 2.000+ işçi için sendika temsili kısıtlı. Divriği ve diğer sahalarda örgütlenme durumu şeffaf değil."
   },
+
   "uluslararasiBaglantilar": [
     {
       "sirket": "Conroy Gold and Natural Resources plc",
       "ulke": "İrlanda",
-      "detay": "11 sahada %57.5 pay — İrlanda altın arama projeleri"
+      "detay": "Clontibret altın sahası dahil Longford-Down Kuşağı'nda 3 aşamalı JV anlaşması. Faz 1: 5.5M euro → %25; Faz 2: 4.5M euro → +%15; Faz 3: +%17.5 = toplam %57.5. Gerçek yatırım: 5.657.671 euro. 29 Nisan 2024: Demir Export JV'den çekildi.",
+      "sonDurum": "2024-04-29: JV sona erdi.",
+      "kaynak": "https://www.conroygold.com/demir-export-withdrawal-2024"
     }
   ],
-  "ozet": "Koç Holding iştiraki olan Demir Export A.Ş., Türkiye'nin en büyük demir cevheri ihracatçılarından biridir. 1957'de kurulan şirket, Sivas/Divriği'deki demir cevheri işletmelerinden İrlanda'daki altın arama projelerine uzanan geniş bir portföye sahiptir.",
+
+  "ozet": "Koç Holding iştiraki Demir Export A.Ş., Türkiye'nin en büyük demir cevheri ihracatçılarından biridir. Sivas/Divriği demir cevheri, Manisa/Soma kömürü (Defaş Madencilik iştiraki), Sivas/Bakırtepe siyanürlü altın madeni portföyüne sahip şirketin en tartışmalı projesi Kırşehir Boztepe Altın Madeni'dir: AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi Fernas İnşaat ile ortak yürütülen bu proje; Kırşehir'in içme suyuna 3.3 km mesafede yıllık 37 milyon ton kazı öngörüyor, proje alanının %92'si pasaya dönüşecek. Seyfe Gölü'nün Ramsar koruma sınırları proje sürecinde Cumhurbaşkanlığı kararıyla yarıya indirildi; ÇED Aralık 2024'te mahkemece durduruldu. Bakırtepe'de ise Danıştay 4+ kez yürütme durdurdu; Koç Holding kararları fiilen ihlal etmekle suçlandı.",
+
   "renkTema": "#0f3460",
   "ikon": "⛏",
   "renkGradyan": "linear-gradient(135deg, #0f2d5a, #1a4a8a)",
-  "guncellenmeTarihi": "2026-05-18",
-  "raporDosyasi": "demir_export/index.html",
+  "guncellenmeTarihi": "2026-05-21",
+
   "kaynaklar": [
-    { "ad": "Demir Export Araştırma Raporu", "url": "demir_export/index.html" }
+    { "ad": "Kırşehir Boztepe ÇED Durdurma — Sendika.org Aralık 2024", "url": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868" },
+    { "ad": "Seyfe Gölü Koruma Sınırı Yarıya İndi — soL Haber", "url": "https://haber.sol.org.tr/haber/seyfe-golune-olumcul-kiskac-koruma-sinirlari-yariya-indi-maden-sirketleri-havzayi-kusatti" },
+    { "ad": "DSİ Yönetmeliğe Aykırı Su Tahsisi — Cumhuriyet", "url": "https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790" },
+    { "ad": "Bakırtepe ÇED İptali Kararları — Ekolojistler.org", "url": "https://ekolojistler.org/bakir-madeni-bakiminda-danistay-yedi-kez-durdurulan-sed-onaylandi/" },
+    { "ad": "Tüpraş %2.5 Kurumlar Vergisi — Sözcü", "url": "https://www.sozcu.com.tr/2023/gundem/tupras-kurumlar-vergisini-yuzde-2-5-olarak-odedi/" },
+    { "ad": "Koç-Gezi Baskısı — Reuters", "url": "https://www.reuters.com/article/turkey-protests-koc-idUSL5N0EY2KG20130612" },
+    { "ad": "Demir Export Resmi Sitesi", "url": "https://www.demirexport.com.tr" },
+    { "ad": "Conroy Gold JV Çıkışı — Conroy Gold", "url": "https://www.conroygold.com" },
+    { "ad": "Kırşehir Boztepe Proje Sunumu (PDF)", "url": "dosyalar/Kırşehir Boztepe Altın Madeni Projesi Değerlendirme görsel sunum.pdf" }
   ]
 }

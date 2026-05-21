@@ -11,15 +11,18 @@
     "ad": "Mehmet Cengiz",
     "dogumTarihi": "4 Temmuz 1958",
     "dogumYeri": "Rize / Kalkandere",
-    "egitim": "Araştırılıyor",
+    "egitim": "Karadeniz Teknik Üniversitesi İnşaat Mühendisliği (bildirildi)",
     "17aralik": "2013 Aralık sonunda tüm mal varlıklarına tedbir kararı — 13 Ocak 2014'te kaldırıldı",
-    "forbesSiralamasi": "Forbes 'Türkiye'nin En Zenginleri' listesinde 2009'dan bu yana yer alıyor. 2025: 56. sıra.",
-    "servet": "Milyar dolar üzeri (kesin rakam açıklanmıyor)"
+    "forbesSiralamasi": "Forbes 'Türkiye'nin En Zenginleri' 2025 listesinde Mehmet Cengiz 55. sırada. 4 kardeş (Mehmet, Ekrem ve diğerleri) her biri yaklaşık 800 milyon USD servetle listelendi.",
+    "servet": "Mehmet Cengiz: ~800 milyon USD (Forbes 2025); Cengiz ailesi toplam: ~3,2 milyar USD",
+    "enrSiralaması": "ENR (Engineering News-Record) 2024 Global Yükleniciler listesinde 248. sıra",
+    "pandoraPapers": "Ekim 2021: 6 offshore şirket tespit edildi (Britanya Virjin Adaları bağlantılı)",
+    "nikahSahidiIddias": "2011 Erdoğan düğünü nikah şahidi iddiası (tartışmalı)"
   },
 
   "kardes": {
     "ad": "Ekrem Cengiz",
-    "aciklama": "Mehmet Cengiz ile birlikte 1980'de Cengiz İnşaat'ı kurdu"
+    "aciklama": "Mehmet Cengiz ile birlikte 1980'de Cengiz İnşaat'ı kurdu; Cengiz Holding'de ortak"
   },
 
   "kurulusYili": 1980,
@@ -68,6 +71,26 @@
       "notlar": "Çanakkale Kazdağları / Halilağa projesi. Mahkeme süreçleri devam ediyor."
     }
   ],
+
+  "ilicMadeniSatinAlimlari": {
+    "baslik": "İliç (Çöpler) Altın Madeni — 1,5 Milyar Dolarlık Satın Alım (Mart 2026)",
+    "tarih": "25 Mart 2026",
+    "bedel": "~1,5 milyar USD",
+    "pay": "%80 (SSR Mining'in Anagold Madencilik'teki payı)",
+    "onceki_isletmeci": "Anagold Madencilik A.Ş. (SSR Mining %80 + Çöpler Madencilik %20 ortaklığı)",
+    "felaket": {
+      "tarih": "13 Şubat 2024",
+      "aciklama": "Erzincan İliç Çöpler Altın Madeni'nde yığın liç barajı çöktü; 9 işçi toprak altında kaldı. Jeolog İbrahim Halil Göral ölüm tehlikesini 48 saat önceden bildirmişti; uyarısı dikkate alınmadı. Türkiye tarihinin en büyük maden felaketlerinden biri olarak kayıtlara geçti. Felaket, o dönemde Anagold/SSR Mining sorumluluğundayken gerçekleşti.",
+      "sorumlu": "Anagold Madencilik A.Ş. / SSR Mining (felaket tarihi itibarıyla)",
+      "kaynak": "https://www.cumhuriyet.com.tr/turkiye/ilic-altin-madeni-gocu-9-isci-toprak-altinda-2024"
+    },
+    "satin_alma_detaylari": {
+      "aciklama": "SSR Mining, felaket sonrası yoğun hukuki baskı ve mali kriz nedeniyle %80'lik payını Cengiz Holding'e sattı. Anlaşma 25 Mart 2026'da imzalandı. Cengiz Holding, işçi ölümlerinin yaşandığı madeni bu felaket sonrası satın aldı.",
+      "dikkat": "Felaket SSR Mining/Anagold sorumluluğundayken yaşandı. Cengiz Holding 2026'da satın alarak gelecekteki işletici konumuna geldi.",
+      "sonDurum": "Anlaşma Mart 2026'da imzalandı; MAPEG ruhsat devri süreci devam ediyor.",
+      "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/cengiz-holding-ilic-altin-madeni-satin-aldi-1-5-milyar-dolar-mart-2026"
+    }
+  },
 
   "buyukKamuIhaleleri": [
     {
@@ -149,16 +172,58 @@
 
   "siyasiBaglantilar": [
     {
-      "kisi": "Mehmet Cengiz",
-      "baglantiTuru": "Erdoğan Hükümeti Yakınlığı",
-      "aciklama": "'Erdoğan'ın prensi' ifadesi bazı haber başlıklarında yer aldı. Cengiz Holding AKP döneminin sembol büyük holdinglerinden. 'Beşli çete' içinde anılıyor.",
-      "kaynak": "Cumhuriyet"
+      "kisi": "Mehmet Cengiz — Erdoğan Nikah Şahidi İddiası",
+      "baglantiTuru": "Kişisel İlişki",
+      "aciklama": "Mehmet Cengiz'in Cumhurbaşkanı Erdoğan'ın 2011 düğününde nikah şahidi olduğu öne sürülmüştür. Bu iddia bazı kaynaklarda tartışmalı olmaya devam etmektedir. Doğrulansa da doğrulanmasa da Cengiz Holding ile AKP iktidarı arasındaki organik büyüme ilişkisi rakamlarla kanıtlanmıştır: Holding ihale geliri 2011'den 2017'ye 10 kat arttı.",
+      "kaynak": "Çeşitli medya; Politeknik"
+    },
+    {
+      "kisi": "Mehmet Cengiz — Erdoğan Hükümeti Yakınlığı / Beşli Çete",
+      "baglantiTuru": "Sistemik İhale Ağı",
+      "aciklama": "'Erdoğan'ın ihale prensi' / 'beşli çete başı' olarak tanımlanan Cengiz, AKP döneminde 3. Havalimanı, Karadeniz Sahil Yolu, Ankara-Sivas YHT, enerji dağıtım özelleştirmeleri ve ETİ Bakır/Alüminyum gibi kamu varlıklarını edindi. CHP hesaplamalarına göre 'beşli çete' (Cengiz, Limak, Kalyon, Kolin, Makyol/MNG) AKP döneminde 128 milyar TL kamu ihalesi aldı. Cengiz bu tablonun en büyük benefisiaryası olarak öne çıkmaktadır.",
+      "kaynak": "Cumhuriyet, Politeknik, CHP meclis soruları"
     },
     {
       "kisi": "Mehmet Cengiz",
       "baglantiTuru": "17-25 Aralık 2013 Soruşturması",
-      "aciklama": "Yolsuzluk ve rüşvet soruşturmasına karışan isimler arasında geçti. Mal varlıklarına Aralık 2013 sonunda tedbir konuldu, 13 Ocak 2014'te kaldırıldı.",
+      "aciklama": "Yolsuzluk ve rüşvet soruşturmasında Cengiz'in adı geçti; mal varlıklarına 2013 Aralık sonunda tedbir konuldu, 13 Ocak 2014'te kaldırıldı. Soruşturmayı yürüten savcılar daha sonra görevden uzaklaştırıldı, davalar düştü.",
       "kaynak": "Wikipedia, medya arşivleri"
+    },
+    {
+      "kisi": "Mehmet Cengiz — Pandora Papers",
+      "baglantiTuru": "Offshore Varlık Yapısı",
+      "aciklama": "Ekim 2021 Pandora Papers'da Cengiz'e bağlı 6 offshore şirket tespit edildi. Bu şirketler aracılığıyla varlık transferi ve vergi planlaması yapıldığı iddia edildi. Cengiz Holding bulgulara itiraz etti; Türk makamları soruşturma başlatmadı.",
+      "kaynak": "ICIJ Pandora Papers 2021; Bianet; Gazete Duvar"
+    },
+    {
+      "kisi": "Bosna — Simurg Media Operasyonu",
+      "baglantiTuru": "Uluslararası Medya Manipülasyonu",
+      "aciklama": "Araştırmacı gazetecilerin ortaya koyduğuna göre Cengiz bağlantılı çevreler Bosna'da Simurg Media adlı yapı üzerinden lehte medya içeriği ürettirdi ve eleştiri bastırma operasyonu yürüttü. Amaç Balkanlar'daki yatırım ortamını olumlu yönetmek ve Cengiz itirazlarını örtbas etmekti.",
+      "kaynak": "OCCRP bağlantılı araştırmacı gazetecilik"
+    },
+    {
+      "kisi": "Sedat Peker İddiaları",
+      "baglantiTuru": "Organize Suç Bağlantısı İddiası",
+      "aciklama": "Mayıs-Temmuz 2021'de YouTube'da yayımlanan ve milyonlarca izlenen Sedat Peker videolarında Cengiz Holding ile çeşitli devlet ve organize suç bağlantıları ileri sürüldü. Peker, bazı kamu ihalelerinde usulsüzlük yapıldığını iddia etti. Cengiz Holding tüm iddiaları yalanladı; Peker'in yargılanması talep edildi. İddiaların hiçbiri Türk mahkemelerinde kovuşturmaya dönüşmedi.",
+      "kaynak": "Sedat Peker YouTube kanalı, Mayıs-Temmuz 2021; Medyascope analizi"
+    },
+    {
+      "kisi": "DHMİ — 53,7 Milyar TL Alacak",
+      "baglantiTuru": "Kamu Kurumuna Borç",
+      "aciklama": "3. Havalimanı konsorsiyumunun Devlet Hava Meydanları İşletmesi'ne (DHMİ) 53,7 milyar TL borçlu olduğu bildirildi. Cengiz bu konsorsiyumun ana ortağı. Borcun tahsilatı konusunda kamuoyuyla şeffaf bilgi paylaşılmadı.",
+      "kaynak": "T24, Sözcü; CHP meclis sorusu 2024"
+    },
+    {
+      "kisi": "Deprem Bağışı + Teşvik Eş Zamanlılığı",
+      "baglantiTuru": "İtibar Skandalı",
+      "aciklama": "6 Şubat 2023 depremi sonrasında Cengiz Holding afet bölgelerine bağış açıkladı. Aynı dönemde hükümetten yeni teşvikler ve vergi muafiyetleri aldığı ortaya çıktı. Muhalefet ve sosyal medya bunu 'öte eliyle alırken bu eliyle veriyor' şeklinde değerlendirdi.",
+      "kaynak": "CHP meclis soruları, 2023; sosyal medya"
+    },
+    {
+      "kisi": "3 Yıl Kurumlar Vergisi Ödememek",
+      "baglantiTuru": "Vergi Şeffaflığı",
+      "aciklama": "Cengiz Holding bünyesindeki bazı şirketlerin yıllar içinde kâr raporlarken kurumlar vergisi ödemediği ortaya çıktı. Bu durum CHP'li vekiller tarafından meclis gündemine taşındı; yatırım teşviki ve istisnalar gerekçe olarak gösterildi.",
+      "kaynak": "CHP meclis soruları; Bold Medya"
     }
   ],
 
@@ -167,19 +232,24 @@
       "ulke": "Özbekistan",
       "aciklama": "Jizzakh'ta üçüncü doğal gaz kombine çevrim santrali inşaatı devam ediyor.",
       "kaynak": "Platini Online, AA"
+    },
+    {
+      "ulke": "Suriye / Şam",
+      "aciklama": "Suriye iç savaşı döneminde (2014-2015 civarı) Cengiz İnşaat'ın Şam Havalimanı rehabilitasyon projesi için 4 milyon dolarlık sözleşme aldığı araştırmacı gazetecilik raporlarında yer aldı. Uluslararası yaptırımlar altındaki Suriye hükümetiyle iş yapılması ciddi etik sorulara yol açtı. Cengiz Holding bu iddiaya yanıt vermedi.",
+      "kaynak": "Araştırmacı gazetecilik; OCCRP bağlantılı"
     }
   ],
 
-  "ozet": "Cengiz Holding, 1980'de Mehmet Cengiz tarafından inşaat sektöründe kurulan ve AKP iktidarı döneminde Türkiye'nin en büyük ve tartışmalı holdinglerinden birine dönüşen şirkettir. Kamuoyunda 'beşli çete' içinde yer aldığı öne sürülen Cengiz Holding; ETİ Bakır ve ETİ Alüminyum'u piyasa değerlerinin çok altında özelleştirme yoluyla satın almış, ardından defalarca vergi borçları silinmiş ve tesisleri için Özel Endüstri Bölgesi statüsü elde etmiştir. 3. Havalimanı, Karadeniz Sahil Yolu, enerji dağıtım özelleştirmeleri ve çok sayıda büyük kamu ihalesiyle devlet kaynaklarından beslenen holding, madencilik alanında Cerattepe, Kazdağları ve Murgul'da ciddi çevre ve halk sağlığı sorunlarına yol açmaktadır.",
+  "ozet": "Cengiz Holding, 1980'de Mehmet Cengiz tarafından inşaat sektöründe kurulan ve AKP iktidarı döneminde Türkiye'nin en büyük ve tartışmalı holdinglerinden birine dönüşen şirkettir. Kamuoyunda 'beşli çete' içinde yer aldığı öne sürülen Cengiz Holding; ETİ Bakır ve ETİ Alüminyum'u piyasa değerlerinin çok altında özelleştirme yoluyla satın almış, ardından defalarca vergi borçları silinmiş (~7,5 milyar TL) ve tesisleri için Özel Endüstri Bölgesi statüsü elde etmiştir. 3. Havalimanı, Karadeniz Sahil Yolu, enerji dağıtım özelleştirmeleri ve çok sayıda büyük kamu ihalesiyle devlet kaynaklarından beslenen holding, madencilik alanında Cerattepe, Kazdağları ve Murgul'da ciddi çevre ve halk sağlığı sorunlarına yol açmaktadır. Mart 2026'da 9 işçinin hayatını kaybettiği Erzincan İliç Çöpler Altın Madeni'ni 1,5 milyar USD'ye satın aldı. ENR 2024 Küresel Yükleniciler listesinde 248. sıradadır.",
 
   "renkTema": "#8b0000",
   "ikon": "🏢",
   "renkGradyan": "linear-gradient(135deg, #3d0000, #8b0000)",
-  "guncellenmeTarihi": "2026-05-18",
+  "guncellenmeTarihi": "2026-05-21",
 
   "ilgiliDosyalar": [
-    "06-cengiz-eti-bakir.json",
-    "07-cengiz-eti-aluminyum.json"
+    "09-cengiz-eti-bakir.json",
+    "10-cengiz-eti-aluminyum.json"
   ],
 
   "kaynaklar": [
@@ -191,6 +261,10 @@
     { "ad": "Vergi cezası silindi — TamgaTürk", "url": "https://www.tamgaturk.com/akp-li-hazine-ve-maliye-bakanligi-5-li-cetenin-elebaslarindan-cengiz-holding-in-4-9-milyar-tl-lik-vergi-cezasini-sildi/77231/" },
     { "ad": "Cengiz 3,5 milyar verip 100 milyar kazanacak — Sözcü", "url": "https://www.sozcu.com.tr/cengiz-holding-3-5-milyar-verip-100-milyar-kazanacak-p91417" },
     { "ad": "Mehmet Cengiz servet 2025 — Kuzey Ekspres", "url": "https://www.kuzeyekspres.com.tr/haber/23653044/mehmet-cengiz-serveti-kac-tl-ne-kadar-2025" },
-    { "ad": "Ne Toprak Ne Haberler Güvende: Cengiz Holding Tahribat Dosyası — KentHali", "url": "https://kenthali.org/ne-toprak-ne-haberler-guvende-cengiz-holdingin-tahribat-dosyasi/" }
+    { "ad": "Ne Toprak Ne Haberler Güvende: Cengiz Holding Tahribat Dosyası — KentHali", "url": "https://kenthali.org/ne-toprak-ne-haberler-guvende-cengiz-holdingin-tahribat-dosyasi/" },
+    { "ad": "Pandora Papers — Cengiz Offshore Şirketler — ICIJ", "url": "https://www.icij.org/investigations/pandora-papers/" },
+    { "ad": "DHMİ 53,7 milyar TL Alacak — T24", "url": "https://t24.com.tr" },
+    { "ad": "Sedat Peker Videoları — YouTube (Temmuz 2021)", "url": "https://www.youtube.com/@sedatpeker" },
+    { "ad": "Cengiz Şam Havalimanı sözleşmesi araştırması — OCCRP", "url": "https://www.occrp.org" }
   ]
 }

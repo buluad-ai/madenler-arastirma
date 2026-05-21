@@ -2,7 +2,7 @@
   "slug": "soma-imbat",
   "ad": "İMBAT Madencilik A.Ş.",
   "kisaAd": "İMBAT",
-  "holding": "İMBAT / Soma Grubu",
+  "holding": "Bağımsız (Sahipler: Arif Kurtel Emin ve Melis Kurtel Emin)",
   "sektor": "Kömür (Linyit)",
   "tip": "Özel",
   "bolge": "Manisa / Soma",
@@ -46,6 +46,12 @@
       "adet": 3,
       "aciklama": "COVID-19 pandemisi sürecinde yaşanan iş kazasında 3 işçi hayatını kaybetti. Sendika raporlarına göre İMBAT üretim durdurdu ancak bazı bölümlerin faaliyetini sürdürdüğü işçilerce bildirildi.",
       "kaynak": "Evrensel, Dev Maden Sen"
+    },
+    {
+      "tarih": "2022",
+      "adet": 1,
+      "aciklama": "İMBAT Madencilik'te kömür ocağında kömür toplarken kepçenin altında kalan Durmuş Şahan hayatını kaybetti. Evrensel gazetesi bu vakayı 'iş cinayeti' olarak nitelendirdi.",
+      "kaynak": "Evrensel, 2022"
     }
   ],
   "isgOlaylari": [
@@ -94,7 +100,7 @@
   "renkTema": "#4a2c0a",
   "ikon": "coal",
   "renkGradyan": "linear-gradient(135deg, #2d1a06, #4a2c0a)",
-  "guncellenmeTarihi": "2026-05-18",
+  "guncellenmeTarihi": "2026-05-21",
   "kaynaklar": [
     {
       "ad": "Cumhuriyet — Soma'da 4.200 çalışanı olan İmbat finansal kriz ve ipotek açmazında",

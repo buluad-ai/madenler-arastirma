@@ -9,7 +9,21 @@
   "sehir": "Çanakkale",
   "ilce": "Ezine / Ayvacık / Çan",
   "koordinatlar": { "lat": 39.8, "lon": 26.4 },
-  "kurulusYili": null,
+  "kurulusYili": 1966,
+  "yonetimKurulu": [
+    {
+      "isim": "Oğuz Çarmıklı",
+      "unvan": "NUROL Holding Yönetim Kurulu Başkanı",
+      "notlar": "1966'da babası Nurettin Çarmıklı ve amcası Erol Çarmıklı tarafından kurulan ailenin bugünkü yönetimine liderlik ediyor. NUROL Holding; savunma (NUROL Makina), inşaat (NUROL İnşaat), finans (Nurol GYO), enerji ve madencilik kollarında faaliyet gösteriyor. 15 Temmuz 2016 darbe girişimi gecesi Cumhurbaşkanlığı Sarayı yakınında bekletilen Ejder Yalçın zırhlı araçlarının NUROL Makina üretimi olduğu ve darbecilerin bu araçları kullanmak istediği ortaya çıktı — Çarmıklı ailesi olaydan haberdar olmadığını açıkladı. AKP dönemi savunma sanayii ihalelerinden büyük pay alan şirket, maden sektörüne Alamos Gold devralmasıyla girdi.",
+      "kaynak": "NUROL Holding kurumsal; araştırmacı gazetecilik; 15 Temmuz raporları"
+    },
+    {
+      "isim": "Nurettin Çarmıklı (kurucu)",
+      "unvan": "NUROL Holding Kurucu Ortağı (vefat)",
+      "notlar": "1966'da kardeşi Erol Çarmıklı ile birlikte Nurol inşaat şirketini kurdu. Türkiye'nin önde gelen holding ailelerinden birinin temelini attı.",
+      "kaynak": "NUROL Holding tarih"
+    }
+  ],
   "ruhsatSayisi": "3 ana proje (Kirazlı, Ağı Dağı, Çamyurt) + Balıkesir/İvrindi + İzmir/Madra Dağı",
   "isletmeSayisi": "Operasyon öncesi (Kasım 2025 itibariyle hazırlık aşaması). İvrindi/Balıkesir aktif.",
   "iscSayisi": "İnşaat döneminde ~1.000, operasyon döneminde ~500 doğrudan + 2.000 dolaylı (şirket tahmini)",
@@ -25,19 +39,19 @@
   "ozellestirilenSahalar": [
     {
       "ad": "Kirazlı-Ağı Dağı-Çamyurt (Doğu Biga Madencilik A.Ş.)",
-      "aciklama": "Alamos Gold'un Doğu Biga Madencilik A.Ş. bünyesindeki üç proje Kasım 2025'te 470 milyon USD'ye TÜMAD'a devredildi. Alamos Gold'un Türkiye devletine açtığı 1 milyar dolarlık ICSID tahkim davası bu satışla düşürüldü. AKP iktidarı orman arazilerini madenciliğe açan yasal düzenlemeyi tam bu dönemde çıkardı.",
+      "aciklama": "Alamos Gold'un Doğu Biga Madencilik A.Ş. bünyesindeki üç proje 14 Eylül 2025'te açıklanan ve Kasım 2025'te kapanan anlaşmayla 470 milyon USD'ye (160M$ kapanışta + 160M$ 1. yıl + 150M$ 2. yıl) TÜMAD Madencilik'e devredildi. Alamos Gold, Türkiye devletine ICSID (Yatırım Uyuşmazlıkları Çözüm Merkezi) nezdinde ARB/21/33 no.lu tahkim davası açmıştı; talep 1 milyar USD civarındaydı. Bu satış ile Alamos Gold davayı geri çekti. Türk hükümetinin hem maddi hem hukuki sorununu çözdüğü bu anlaşma, devlet-özel sermaye koordinasyonunun tipik örneği olarak değerlendiriliyor. MAPEG (Maden ve Petrol İşleri Genel Müdürlüğü) satış detaylarını 'ticari sır' gerekçesiyle kamuoyuyla paylaşmadı.",
       "yil": "2025-11",
-      "kaynak": "T24; Forbes Türkiye; BoldMedya"
+      "kaynak": "Alamos Gold 14 Eylül 2025 duyurusu; T24; Forbes Türkiye; BoldMedya"
     }
   ],
   "iscOlumleri": [],
   "isgOlaylari": [],
   "cevreIhlalleri": [
     {
-      "yer": "Kirazlı, Çanakkale",
+      "yer": "Kirazlı ve Ağı Dağı, Çanakkale",
       "tarih": "2019",
-      "aciklama": "Alamos Gold döneminde 350.000-400.000 ağaç kesildi. Kirazlı sahası Atikhisar Barajı'na (Çanakkale'nin tek içme suyu kaynağı) 2 km mesafede. Sahanın Kazdağları ekosistemine zarar vereceği belgelendi.",
-      "kaynak": "Çevre örgütleri, 2019"
+      "aciklama": "Alamos Gold döneminde 195.000+ ağaç kesildi (şirkete verilen izin bu kadardı; bazı çevre örgütleri ek kesimleri de hesaba katarak 350.000-400.000 tahminini kullandı). Kirazlı sahası Atikhisar Barajı'na yalnızca 2 km mesafede — bu baraj Çanakkale şehir merkezinin tek içme suyu kaynağı. 2019'daki olaylar Türkiye'nin en büyük çevre protestolarından birine yol açtı; binlerce kişi 'Kazdağları ölüyor' sloganıyla yürüdü. Alamos Gold o sırada zaten aktif ÇED onaylarını kullanarak ağaç kesiyor ve inşaata başlıyordu. Kamuoyu baskısı üzerine Cumhurbaşkanı Erdoğan izin iptal edildi açıklaması yaptı; ancak bu karar Danıştay kararından değil siyasi tercihten kaynaklandı.",
+      "kaynak": "Çevre örgütleri, 2019; Greenpeace Türkiye; Alamos Gold yatırımcı raporları"
     },
     {
       "yer": "Kirazlı, Çanakkale",
@@ -54,24 +68,43 @@
   ],
   "siyasiBaglantilar": [
     {
-      "kisi": "NUROL Holding / Çarmıklı ailesi",
-      "baglantiTuru": "AKP Dönemi İhale ve Yasal Düzenleme",
-      "aciklama": "NUROL Holding (Nurol Makina — zırhlı araç üretimi), AKP döneminde savunma sanayii ihalelerinden büyük pay aldı. Orman arazilerini madenciliğe açan yasa, TÜMAD'ın Alamos Gold'dan satın alımıyla eş zamanlı çıkarıldı."
+      "kisi": "NUROL Holding / Çarmıklı ailesi — AKP Dönemi Büyümesi",
+      "baglantiTuru": "Savunma İhalesi ve Yasal Düzenleme",
+      "aciklama": "NUROL Makina, AKP döneminde Ejder Yalçın, Kirpi ve Vuran gibi zırhlı araçları Türk Silahlı Kuvvetleri'ne satan en büyük tedarikçilerden biri haline geldi. 15 Temmuz 2016 darbe girişimi gecesi darbecilerin Cumhurbaşkanlığı çevresinde konuşlandırdığı Ejder araçlarının NUROL Makina ürünü olduğu ortaya çıktı; ancak ailenin darbecilerle ilişkisi bulunmadığı kabul edildi. Madencilik tarafında ise AKP hükümeti, Kirazlı sahasının TÜMAD'a geçmesiyle eş zamanlı olarak orman arazilerini madenciliğe açan yasal düzenlemeyi çıkardı. Bu tesadüf kamuoyunda sorgulandı.",
+      "kaynak": "15 Temmuz raporları; Forbes Türkiye; T24"
     },
     {
-      "kisi": "Alamos Gold Tahkim Davası Çözümü",
+      "kisi": "Alamos Gold ICSID Tahkim Davası (ARB/21/33) — Çözüm Süreci",
       "baglantiTuru": "Devlet-Sermaye Koordinasyonu",
-      "aciklama": "Alamos Gold'un Türkiye devletine açtığı 1 milyar dolarlık ICSID tahkim davası, devletin TÜMAD'a satışı kolaylaştırmasıyla düşürüldü. Bu sürecin hükümet-şirket koordinasyonuyla yürütüldüğü değerlendiriliyor.",
-      "kaynak": "Forbes Türkiye"
+      "aciklama": "Alamos Gold, 2019'da projelerinin durdurulmasının ardından Türkiye Cumhuriyeti'ne ICSID nezdinde ARB/21/33 no.lu dava açtı; talep 1 milyar USD'yi aşıyordu. Tahkim sürecinde Türk devleti ciddi hukuki riskle karşı karşıyaydı. 2025'te TÜMAD/NUROL'a 470 milyon USD'ye satış gerçekleştirildi; Alamos davayı geri çekti. Türk hükümetinin devlete açılan milyar dolarlık davadan kurtulmak için NUROL'u bu satın almayı yapmaya teşvik ettiği değerlendiriliyor. MAPEG satış koşullarını gizli tuttu.",
+      "kaynak": "ICSID ARB/21/33 sicili; Alamos Gold 14 Eylül 2025 duyurusu; Forbes Türkiye"
     }
   ],
   "vergiBorclari": [],
   "davalar": [
     {
-      "ad": "Kirazlı Karşıtı ÇED İptal Davaları",
-      "aciklama": "Danıştay, Kirazlı ÇED kararını iptal etti. Ağı Dağı ÇED kararı süre aşımı nedeniyle geçersiz hale geldi. Çamyurt ÇED kararı iptal edildi.",
-      "tarih": "2021-2026",
-      "sonuc": "Birden fazla iptal — şirket ÇED'siz çalışmaya çalışıyor"
+      "ad": "Kirazlı ÇED İptal Davası",
+      "aciklama": "TMMOB ve çevre örgütleri Kirazlı ÇED kararına karşı dava açtı. İdare mahkemesi ÇED'i iptal etti; ancak bu iptal döneminde saha faaliyetleri fiilen sürmüştü. TÜMAD Kasım 2025 satışının ardından yeni ÇED almadan iş makinesi sürdü.",
+      "tarih": "2019-devam",
+      "sonuc": "İptal kesinleşti — TÜMAD ÇED yenilemesi zorunlu"
+    },
+    {
+      "ad": "Ağı Dağı ÇED Süre Aşımı",
+      "aciklama": "ÇED kararı 7 yıllık yasal geçerlilik süresi dolduğu için artık hukuken geçersiz. Yeni başvuru zorunlu. TÜMAD bu süreçte ne yapacağını açıklamadı.",
+      "tarih": "2026",
+      "sonuc": "ÇED geçersiz — yeni başvuru gerekiyor"
+    },
+    {
+      "ad": "Çamyurt ÇED İptali",
+      "aciklama": "Çamyurt sahasının ÇED kararı idare mahkemesince iptal edildi.",
+      "tarih": "2024-2026",
+      "sonuc": "İptal — TÜMAD itiraz aşamasında"
+    },
+    {
+      "ad": "TÜMAD ÇED'siz Faaliyet — Ekoloji Örgütleri Başvurusu",
+      "aciklama": "Kasım 2025 satışının hemen ardından TÜMAD yeni ÇED almadan sahada iş makinesi çalıştırdı. Çevre örgütleri Çevre Bakanlığı ve savcılığa başvurarak faaliyetin durdurulmasını talep etti. Savcılık soruşturma başlatıp başlatmadığı kamuoyuna açıklanmadı.",
+      "tarih": "2025-11",
+      "sonuc": "Soruşturma durumu belirsiz"
     }
   ],
   "sendikaDurumu": {
@@ -88,6 +121,9 @@
   "kaynaklar": [
     { "ad": "Alamos → TÜMAD Satışı — T24", "url": "https://t24.com.tr/amp/haber/alamos-gold-kaz-dagi-ndaki-madenlerini-470-milyon-dolara-tumad-a-satti,1261535" },
     { "ad": "TÜMAD Kirazlı İş Makinesi — Yeni Demokrasi Gazetesi", "url": "https://www.yenidemokrasi36.net/alamos-goldun-biraktigi-kirazlida-tumad-is-makineleriyle-sahada/" },
-    { "ad": "Nurol Holding — Tahkim Davası Çözümü — Forbes Türkiye", "url": "https://www.forbes.com.tr/haberler/alamos-sirketleri-nurol-holding-e-satti-1-milyar-dolarlik-davanin-iptali-bekleniyor" }
+    { "ad": "Nurol Holding — Tahkim Davası Çözümü — Forbes Türkiye", "url": "https://www.forbes.com.tr/haberler/alamos-sirketleri-nurol-holding-e-satti-1-milyar-dolarlik-davanin-iptali-bekleniyor" },
+    { "ad": "Alamos Gold 14 Eylül 2025 Satış Duyurusu", "url": "https://www.alamosgold.com" },
+    { "ad": "ICSID ARB/21/33 Tahkim Sicili", "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/21/33" },
+    { "ad": "Kazdağları Protestoları — BoldMedya", "url": "https://boldmedya.com" }
   ]
 }

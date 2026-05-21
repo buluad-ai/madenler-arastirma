@@ -57,6 +57,25 @@
       "kaynak": "Yeşil Gazete"
     }
   ],
+  "yonetimKurulu": [
+    {
+      "isim": "Mehmet Hattat",
+      "unvan": "Yönetim Kurulu Başkanı",
+      "notlar": "Forbes Türkiye'ye göre net serveti ~400 milyon dolar. 13 şirketin YK başkanlığını yürütüyor. Pandora Papers: BVI'da 'Agway Supply Management and Investment Limited' ve 'Beaudene Limited' adlı iki offshore şirket kurdu. 'Sanayi yatırımı amacıyla' kurulduğunu açıkladı; soruları yanıtsız bıraktı.",
+      "kaynak": "Forbes Türkiye; Pandora Papers — Türk Haber Gazetesi 2021"
+    },
+    {
+      "isim": "İbrahim Hattat",
+      "unvan": "Otomotiv Grubu Başkanı",
+      "kaynak": "Milliyet"
+    },
+    {
+      "isim": "İpek Hattat",
+      "unvan": "Yönetim Kurulu Üyesi",
+      "kaynak": "Milliyet"
+    }
+  ],
+
   "siyasiBaglantilar": [
     {
       "kisi": "Mehmet Hattat (HATTAT Holding Yönetim Kurulu Başkanı)",
@@ -79,17 +98,45 @@
   ],
   "vergiBorclari": [
     {
-      "aciklama": "HEMA Enerji ve Maden A.Ş., Amasra-B sahası için 600 bin lira teminat yatırmışken TTK'ya 1,5 milyar lira borcu olduğu ortaya çıktı.",
+      "aciklama": "HEMA Enerji ve Maden A.Ş., bölge rezervlerinin %97'sini barındıran Amasra-B sahası için yalnızca 600 bin TL teminat yatırmıştır. TTK'ya biriken borcu ise 1,5–2 milyar TL'ye ulaşmıştır (faizlerle birlikte bazı kaynaklara göre 2 milyar TL'yi geçmiştir).",
       "kaynak": "Tempo Gazetesi"
     }
   ],
+  "sozlesmeUzatmasi": {
+    "ilk": "2005-2025 (20 yıl)",
+    "birinci_uzatma": "2025'ten 2040'a uzatıldı",
+    "ikinci_uzatma": "4 Haziran 2024'ten itibaren 7 Şubat 2045'e kadar 21 yıllık yeni dönem. 56 milyon ton tüvenan kömür üretimi hedefi (ortalama 2.7 Mt/yıl). 17 yıl tek gram üretim yapılmadığı halde sözleşme bir kez daha uzatıldı.",
+    "tepki": "GMİS Genel Sekreteri ve sendikacılar sözleşme uzatmasını şiddetle kınadı.",
+    "kaynak": "İmza Gazetesi; GMİS açıklaması; Madencilik Türkiye"
+  },
   "davalar": [
     {
-      "ad": "Amasra Maden Faciası Ceza Davası",
-      "aciklama": "Amasra Cumhuriyet Başsavcılığı soruşturmasında 24 şüpheli gözaltına alındı. TTK Amasra Müessese Müdürü Cihat Özdemir başta olmak üzere üst yöneticiler ve mühendisler tutuklandı. Suçlama: 'bilinçli taksirle birden fazla kişinin ölümüne ve yaralanmasına neden olma'. Verilen cezalar: Cihat Özdemir 17 yıl, Selçuk Ekmekçi 16 yıl 6 ay, Mehmet Tural 16 yıl 6 ay, Volkan Soylu 15 yıl hapis. 3 sanık beraat etti (Salih Atmaca, Tayfun Uça, Onur Öztürk). Toplam 20 sanık hapis cezası aldı.",
+      "ad": "Amasra Maden Faciası Ceza Davası — İlk Derece",
+      "aciklama": "23 sanık yargılandı. Bartın 1. Ağır Ceza Mahkemesi 'bilinçli taksirle birden fazla kişinin ölümüne ve yaralanmasına neden olma' suçundan karar verdi (savcı 'kasten öldürme' istemişti). Cihat Özdemir (Müessese Müdürü): 16 yıl 12 ay; Selçuk Ekmekci: 16 yıl 6 ay; Mehmet Tural: 16 yıl 6 ay; Volkan Soylu: 15 yıl. Salih Atmaca ve 2 kişi beraat etti. Hattat Holding ve HEMA yöneticileri davada sanık olarak yer almadı.",
       "tarih": "2022-2025",
-      "sonuc": "Mahkumiyet — 24 Mart 2025'te karar açıklandı",
-      "kaynak": "Medyascope, 24.03.2025; AA"
+      "sonuc": "Mahkumiyet — 24 Mart 2025",
+      "kaynak": "Bianet; Milliyet; 24.03.2025"
+    },
+    {
+      "ad": "Amasra Maden Faciası Ceza Davası — İstinaf",
+      "aciklama": "Sakarya Bölge Adliye Mahkemesi 2. Ceza Dairesi, tüm sanıkların cezalarını onadı. Tahliye ve beraat talepleri reddedildi. Dava Yargıtay aşamasına taşındı. ÇHD (Çağdaş Hukukçular Derneği): 'Asıl sorumlular yargılanmadı; bakanlık ve denetim mekanizmaları hiç sorgulanmadı.'",
+      "tarih": "2026-03",
+      "sonuc": "İstinaf onayı — Mart 2026; Yargıtay aşamasında",
+      "kaynak": "Cumhuriyet; Medyascope; ÇHD açıklaması"
+    },
+    {
+      "ad": "Termik Santral Lisans İptali",
+      "aciklama": "Hattat Holding, Amasra kıyısında termik santral kurmak için yıllarca uğraştı. Bartın Platformu (120 STK ve çok sayıda belediye) onlarca dava açtı. Danıştay ve idare mahkemeleri defalarca Hattat aleyhine karar verdi. Termik santral lisansı kesinleşmiş biçimde iptal edildi. Holding ardından kömür lavvar tesisi projesine yöneldi; Bartın Platformu yeni davalar açtı.",
+      "tarih": "2008-2023",
+      "sonuc": "Lisans kesinleşmiş biçimde iptal edildi.",
+      "kaynak": "Yeşil Gazete; Birgun"
+    },
+    {
+      "ad": "Belediye Başkanına Tazminat Davası",
+      "aciklama": "Hattat Holding, termik santrale karşı çıkan Amasra Belediye Başkanı'na 1 milyon TL tazminat davası açtı.",
+      "tarih": "2020 civarı",
+      "sonuc": "Devam etti / sonuç bilinmiyor",
+      "kaynak": "Evrensel"
     }
   ],
   "sendikaDurumu": {
@@ -103,39 +150,21 @@
   "ikon": "explosion",
   "renkGradyan": "linear-gradient(135deg, #0a0a1a, #1a1a2e)",
   "renkAksan": "#ff4444",
-  "guncellenmeTarihi": "2026-05-18",
+  "guncellenmeTarihi": "2026-05-21",
   "kaynaklar": [
-    {
-      "ad": "Wikipedia — Amasra Maden Kazası",
-      "url": "https://tr.wikipedia.org/wiki/Amasra_maden_kazas%C4%B1"
-    },
-    {
-      "ad": "Medyascope — Amasra Maden Faciası Davasında Karar (Mart 2025)",
-      "url": "https://medyascope.tv/2025/03/24/amasra-maden-faciasi-davasinda-karar-aciklandi/"
-    },
-    {
-      "ad": "Diken — Sayıştay Raporları: Maden Sahasının Devrinde Haksız Çıkar",
-      "url": "https://www.diken.com.tr/sayistay-raporlari-bartindaki-madende-alti-yilda-893-isci-yaralandi/"
-    },
-    {
-      "ad": "Diken — Hattat Holding'in Amasra Madenine Niçin Kıyak Geçiliyor?",
-      "url": "https://www.diken.com.tr/hattat-holdingin-amasra-madenine-nicin-kiyak-geciliyor/"
-    },
-    {
-      "ad": "Medyascope — Amasra Komisyonu'nda Hattat Holding Tartışması",
-      "url": "https://medyascope.tv/2022/11/24/amasra-komisyonunda-hattat-holding-tartismasi-chpli-bankoglu-hattat-holdinge-verilen-maden-sahalarinin-geri-alinmasini-istiyoruz/"
-    },
-    {
-      "ad": "ISG Haber — Hattat Enerji 17 yıllık süreçte kömür üretimini başlatmadı",
-      "url": "https://isghaber.com.tr/haber/11653442/hattat-enerji-17-yillik-surecte-komur-uretimini-baslatmadi"
-    },
-    {
-      "ad": "Tempo Gazetesi — Amasra HATTAT Holding'e böyle peşkeş çekildi",
-      "url": "https://www.tempogazetesi.com/amasra-hattat-holdinge-boyle-peskes-cekildi-600-bin-lira-teminati-15-milyar-lira-borcu-var"
-    },
-    {
-      "ad": "Teyit — Amasra'da Patlama Yaşanan Madenin Mehmet Hattat'a Ait Olduğu İddiası",
-      "url": "https://teyit.org/analiz/amasrada-patlama-yasanan-madenin-mehmet-hattata-ait-oldugu-iddiasi"
-    }
+    { "ad": "Wikipedia — Amasra Maden Kazası", "url": "https://tr.wikipedia.org/wiki/Amasra_maden_kazas%C4%B1" },
+    { "ad": "Bianet — Amasra Davasında Karar: Sorumlular Cezasız Bırakıldı", "url": "https://bianet.org/haber/amasra-maden-faciasi-davasinda-karar-sorumlular-cezasiz-birakildi-305790" },
+    { "ad": "Milliyet — Amasra Faciası Kararı Açıklandı", "url": "https://www.milliyet.com.tr/gundem/amasrada-43-kisinin-oldugu-maden-faciasi-davasinda-karar-aciklandi-7336671" },
+    { "ad": "Cumhuriyet — Amasra İstinaf: Cezalar Onandı", "url": "https://www.cumhuriyet.com.tr/turkiye/amasra-maden-faciasinda-istinaf-tan-karar-tutuklu-saniklarin-cezalari-onandi-2487316" },
+    { "ad": "Diken — Hattat Holding'in Amasra Madenine Niçin Kıyak Geçiliyor?", "url": "https://www.diken.com.tr/hattat-holdingin-amasra-madenine-nicin-kiyak-geciliyor/" },
+    { "ad": "Euronews — Sayıştay Raporları Ne Diyor?", "url": "https://tr.euronews.com/2022/10/18/amasra-maden-patlamasi-sayistay-raporlari-ne-diyor-bakanlik-nasil-cevapliyor" },
+    { "ad": "Tempo Gazetesi — Amasra HATTAT Holding'e böyle peşkeş çekildi (600 bin TL teminat)", "url": "https://www.tempogazetesi.com/amasra-hattat-holdinge-boyle-peskes-cekildi-600-bin-lira-teminati-15-milyar-lira-borcu-var" },
+    { "ad": "İmza Gazetesi — 2045'e Uzatıldı, Devasa Üretim Rekoru Hedefledi", "url": "https://www.imzagazetesi.com/2045e-uzatilmisti-devasa-uretim-rekoru-hedefledi" },
+    { "ad": "GMİS — Amasra-B Sözleşme Uzatmasına Tepki", "url": "https://www.mardinlife.com/gundem/gmis-genel-sekreteri-kayadan-amasra-b-sahasinda-sozlesme-uzatilmasina-tepki" },
+    { "ad": "Pandora Papers — Mehmet Hattat BVI Offshore Şirketler", "url": "https://www.turkhabergazetesi.com/haber/mehmet-hattat-pandora-belgelerinde-anilmisti-36332.html" },
+    { "ad": "Yeşil Gazete — Hattat Termik Santral Lisansı Kesinleşmiş Biçimde İptal Edildi", "url": "https://yesilgazete.org/hattat-holding-simdi-de-komur-tesisi-kurmak-istiyor-bartin-platformu-dava-acti/" },
+    { "ad": "Evrensel — Hattat'tan Belediye Başkanına 1 Milyon TL Dava", "url": "https://www.evrensel.net/haber/432179/hattattan-termik-santrale-karsi-cikan-amasra-belediye-baskanina-1-milyonluk-dava" },
+    { "ad": "Teyit — Patlama Yaşanan Madenin Hattat'a Ait Olduğu İddiası", "url": "https://teyit.org/analiz/amasrada-patlama-yasanan-madenin-mehmet-hattata-ait-oldugu-iddiasi" },
+    { "ad": "ÇHD — Amasra: Asıl Sorumlular Yargılanmadı", "url": "https://www.numedya24.com/amasra-maden-katliami-davasi-i-chd-asil-sorumlular-yargilanmadi/" }
   ]
 }
