@@ -400,7 +400,7 @@ function sirketleriGoster(liste) {
       </div>
       <div class="kart-footer">
         <span class="btn btn-blue" onclick="sirketDetay('${c.slug}'); event.stopPropagation()">📋 Detay</span>
-        <a class="btn btn-red" href="/api/report/company/${c.slug}" target="_blank" onclick="event.stopPropagation()">🖨 Rapor</a>
+        <span class="btn btn-red" onclick="sirketRaporAc('${c.slug}'); event.stopPropagation()">🖨 Rapor</span>
         ${c.raporDosyasi ? `<a class="btn btn-green" href="/${c.raporDosyasi}" target="_blank" onclick="event.stopPropagation()">📑 Tam Rapor</a>` : ''}
       </div>
     </div>`;
@@ -423,7 +423,7 @@ function sehirleriGoster(liste) {
         ${olum > 0 ? `<span class="kart-badge" style="background:rgba(248,81,73,.15); color:var(--red); border:1px solid rgba(248,81,73,.3)">💀 ${olum} ölüm</span>` : ''}
       </div>
       <div style="margin-top:12px; display:flex; gap:8px;">
-        <a class="btn btn-blue" href="/api/report/city/${s.slug}" target="_blank" onclick="event.stopPropagation()">🖨 Kent Raporu</a>
+        <span class="btn btn-blue" onclick="sehirDetay('${s.slug}'); event.stopPropagation()">🖨 Kent Raporu</span>
       </div>
     </div>`;
   }).join('');
@@ -438,6 +438,16 @@ function gorunum(isim) {
   if (isim === 'istatistikler') istatistikleriGoster();
 }
 
+// ─── KAYNAK LINK YARDIMCISI ───────────────────────────────────────────────
+function kaynakLink(kaynak) {
+  if (!kaynak) return '';
+  if (kaynak.startsWith('http://') || kaynak.startsWith('https://')) {
+    const kisa = kaynak.replace(/^https?:\/\//, '').split('/')[0];
+    return `<a href="${kaynak}" target="_blank" rel="noopener" style="color:var(--accent)">${kisa}</a>`;
+  }
+  return kaynak;
+}
+
 // ─── ŞİRKET DETAY MODALİ ─────────────────────────────────────────────────
 async function sirketDetay(slug) {
   const overlay = document.getElementById('modal-overlay');
@@ -446,8 +456,12 @@ async function sirketDetay(slug) {
   overlay.classList.add('acik');
 
   try {
-    const res = await fetch(`/api/companies/${slug}`);
-    const c = await res.json();
+    // Önce lokal veri, yoksa API
+    let c = tumSirketler.find(s => s.slug === slug);
+    if (!c) {
+      const res = await fetch(`/api/companies/${slug}`);
+      c = await res.json();
+    }
     const olum = (c.iscOlumleri || []).reduce((s, o) => s + (o.adet || 1), 0);
     const renk = c.renkTema || '#1a4a8a';
 
@@ -458,7 +472,7 @@ async function sirketDetay(slug) {
         <h2>${c.ad}</h2>
         <div class="modal-sub">${c.holding || ''} · ${c.sektor || ''} · ${c.bolge || c.sehir || ''}</div>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <a class="btn btn-red" href="/api/report/company/${c.slug}" target="_blank">🖨 Raporu Yazdır/İndir</a>
+          <span class="btn btn-red" onclick="sirketRaporAc('${c.slug}')">🖨 Raporu Yazdır/İndir</span>
           ${c.raporDosyasi ? `<a class="btn btn-green" href="/${c.raporDosyasi}" target="_blank">📑 Detaylı Rapor</a>` : ''}
         </div>
       </div>
@@ -478,7 +492,7 @@ async function sirketDetay(slug) {
         <div style="font-size:0.7em; color:var(--muted); text-transform:uppercase">İşçi Ölümü</div>
       </div>
       <div style="background:var(--bg3); border-radius:8px; padding:14px; text-align:center;">
-        <div style="font-size:1.6em; font-weight:900; color:var(--accent)">${c.iscSayisi || '?'}</div>
+        <div style="font-size:1.6em; font-weight:900; color:var(--accent)">${typeof c.iscSayisi === 'object' && c.iscSayisi !== null ? (c.iscSayisi.toplam || c.iscSayisi.sonrasi || c.iscSayisi.dogrudan || '?') : (c.iscSayisi || '?')}</div>
         <div style="font-size:0.7em; color:var(--muted); text-transform:uppercase">İşçi</div>
       </div>
     </div>
@@ -494,11 +508,28 @@ async function sirketDetay(slug) {
 
     <div class="tab-panel aktif" id="tab-ozet">
       <p style="font-size:0.92em; line-height:1.8;">${c.ozet || '—'}</p>
+
+      ${c.yonetimKurulu?.length ? `
+      <div class="section-title">YÖNETİM KURULU</div>
+      ${c.yonetimKurulu.map(y => `<div class="olay-kart" style="margin-bottom:8px">
+        <strong>${y.isim || ''}</strong> <span style="color:var(--muted); font-size:0.85em">— ${y.unvan || ''}</span>
+        ${y.notlar ? `<div style="margin-top:4px; font-size:0.84em; line-height:1.6">${y.notlar}</div>` : ''}
+      </div>`).join('')}` : ''}
+
+      ${c.tesisler?.length ? `
+      <div class="section-title">TESİSLER</div>
+      ${c.tesisler.map(t => `<div class="olay-kart" style="margin-bottom:8px">
+        <strong>${t.ad || ''}</strong> <span style="color:var(--muted); font-size:0.82em">· ${t.bolge || ''} · ${t.tur || ''}</span>
+        ${t.aciklama ? `<div style="margin-top:4px; font-size:0.84em; line-height:1.6">${t.aciklama}</div>` : ''}
+        ${t.kapasite && typeof t.kapasite === 'string' ? `<div style="font-size:0.82em; color:var(--muted); margin-top:3px">Kapasite: ${t.kapasite}</div>` : ''}
+      </div>`).join('')}` : ''}
+
       ${c.sendikaDurumu ? `
       <div class="section-title">SENDİKA DURUMU</div>
       <div class="olay-kart ${c.sendikaDurumu.varMi === 'Hayır' ? 'danger' : 'warn'}">
         <strong>Sendika var mı:</strong> ${c.sendikaDurumu.varMi || '?'}
-        ${c.sendikaDurumu.sendikalar?.length ? `<br><strong>Sendikalar:</strong> ${c.sendikaDurumu.sendikalar.join(', ')}` : ''}
+        ${c.sendikaDurumu.sendikalar?.length ? `<br><strong>Sendikalar:</strong> ${c.sendikaDurumu.sendikalar.map(s => s.ad || s).join(', ')}` : ''}
+        ${c.sendikaDurumu.sendikalar?.length && c.sendikaDurumu.sendikalar[0]?.durum ? `<div style="margin-top:4px; font-size:0.83em; color:var(--muted)">${c.sendikaDurumu.sendikalar[0].durum}</div>` : ''}
         ${c.sendikaDurumu.notlar ? `<div class="kaynak">${c.sendikaDurumu.notlar}</div>` : ''}
       </div>` : ''}
     </div>
@@ -510,7 +541,7 @@ async function sirketDetay(slug) {
         <div class="tarih">${o.tarih || ''}</div>
         <div class="icerik"><strong>${o.adet ? o.adet + ' ölü — ' : ''}${o.aciklama || ''}</strong></div>
         ${o.detay ? `<div style="margin-top:6px; font-size:0.85em;">${o.detay}</div>` : ''}
-        ${o.kaynak ? `<div class="kaynak">📎 ${o.kaynak}</div>` : ''}
+        ${o.kaynak ? `<div class="kaynak">📎 ${kaynakLink(o.kaynak)}</div>` : ''}
       </div>`).join('')}` : '<div class="empty">Kayıtlı işçi ölümü yok.</div>'}
 
       ${c.isgOlaylari?.length ? `
@@ -518,15 +549,28 @@ async function sirketDetay(slug) {
       ${c.isgOlaylari.map(o => `<div class="olay-kart warn">
         <div class="tarih">${o.tarih || o.yer || ''}</div>
         <div class="icerik">${o.aciklama || ''}</div>
-        ${o.kaynak ? `<div class="kaynak">📎 ${o.kaynak}</div>` : ''}
+        ${o.kaynak ? `<div class="kaynak">📎 ${kaynakLink(o.kaynak)}</div>` : ''}
       </div>`).join('')}` : ''}
+
+      ${c.sendikaDurumu?.grevler?.length ? `
+      <div class="section-title">GREV VE EYLEMLER</div>
+      ${c.sendikaDurumu.grevler.map(g => `<div class="olay-kart warn">
+        <div class="tarih">${g.tarih || ''}</div>
+        <div class="icerik">${g.konu || g.aciklama || ''}</div>
+        ${g.sure ? `<div style="font-size:0.83em; color:var(--muted)">Süre: ${g.sure}</div>` : ''}
+        ${g.kaynak ? `<div class="kaynak">📎 ${kaynakLink(g.kaynak)}</div>` : ''}
+      </div>`).join('')}` : ''}
+
+      ${typeof c.iscSayisi === 'object' && c.iscSayisi !== null && c.iscSayisi.notlar ? `
+      <div class="section-title">İSTİHDAM NOTLARI</div>
+      <div class="olay-kart"><div style="font-size:0.88em">${c.iscSayisi.notlar}</div></div>` : ''}
     </div>
 
     <div class="tab-panel" id="tab-cevre">
       ${c.cevreIhlalleri?.length ? c.cevreIhlalleri.map(i => `<div class="olay-kart warn">
         <div class="tarih">${i.yer || ''} · ${i.tarih || ''}</div>
         <div class="icerik">${i.aciklama || ''}</div>
-        ${i.kaynak ? `<div class="kaynak">📎 ${i.kaynak}</div>` : ''}
+        ${i.kaynak ? `<div class="kaynak">📎 ${kaynakLink(i.kaynak)}</div>` : ''}
       </div>`).join('') : '<div class="empty">Kayıtlı çevre ihlali yok.</div>'}
     </div>
 
@@ -537,7 +581,7 @@ async function sirketDetay(slug) {
         ${c.siyasiBaglantilar.map(b => `<tr>
           <td><strong>${b.kisi || ''}</strong></td>
           <td style="color:var(--yellow)">${b.baglantiTuru || ''}</td>
-          <td style="font-size:0.85em">${b.aciklama || ''}</td>
+          <td style="font-size:0.85em">${b.aciklama || ''}${b.kaynak ? `<br><span class="kaynak">📎 ${kaynakLink(b.kaynak)}</span>` : ''}</td>
         </tr>`).join('')}
       </table>
       ${c.ozellestirilenSahalar?.length ? `
@@ -545,13 +589,13 @@ async function sirketDetay(slug) {
       ${c.ozellestirilenSahalar.map(s => `<div class="olay-kart warn">
         <strong>${s.ad}</strong> (${s.yil || '?'})
         <div style="margin-top:4px; font-size:0.85em">${s.aciklama || ''}</div>
-        ${s.kaynak ? `<div class="kaynak">📎 ${s.kaynak}</div>` : ''}
+        ${s.kaynak ? `<div class="kaynak">📎 ${kaynakLink(s.kaynak)}</div>` : ''}
       </div>`).join('')}` : ''}` : '<div class="empty">Kayıtlı siyasi bağlantı yok.</div>'}
     </div>
 
     <div class="tab-panel" id="tab-mali">
       ${c.maliVeriler ? `<div class="olay-kart">
-        ${Object.entries(c.maliVeriler).map(([k, v]) => k !== 'notlar' ? `<div style="padding:6px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:0.88em"><span style="color:var(--muted)">${k}</span><strong>${v}</strong></div>` : '').join('')}
+        ${Object.entries(c.maliVeriler).map(([k, v]) => k !== 'notlar' && typeof v !== 'object' ? `<div style="padding:6px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:0.88em"><span style="color:var(--muted)">${k}</span><strong>${v}</strong></div>` : '').join('')}
         ${c.maliVeriler.notlar ? `<p style="margin-top:10px; font-size:0.85em; color:var(--muted)">${c.maliVeriler.notlar}</p>` : ''}
       </div>` : '<div class="empty">Mali veri yok.</div>'}
     </div>
@@ -560,8 +604,26 @@ async function sirketDetay(slug) {
       ${c.davalar?.length ? c.davalar.map(d => `<div class="olay-kart">
         <strong>${d.ad}</strong>
         <div style="margin-top:4px; font-size:0.85em">${d.aciklama || ''}</div>
+        ${d.tarih ? `<div style="margin-top:4px; font-size:0.8em; color:var(--muted)">Tarih: ${d.tarih}</div>` : ''}
         ${d.sonuc ? `<div style="margin-top:6px; color:var(--yellow); font-size:0.82em">Sonuç: ${d.sonuc}</div>` : ''}
+        ${d.kaynak ? `<div class="kaynak">📎 ${kaynakLink(d.kaynak)}</div>` : ''}
       </div>`).join('') : '<div class="empty">Kayıtlı dava yok.</div>'}
+
+      ${c.mahkemeSurecleri?.length ? `
+      <div class="section-title">MAHKEME SÜREÇLERİ</div>
+      ${c.mahkemeSurecleri.map(m => `<div class="olay-kart warn">
+        <strong>${m.yer || m.konu || ''}</strong>
+        ${m.mahkeme ? `<div style="font-size:0.82em; color:var(--muted); margin-top:2px">${m.mahkeme}</div>` : ''}
+        <div style="margin-top:6px; font-size:0.85em">${m.karar || ''}</div>
+        ${m.zaman_cizelgesi?.length ? `<div style="margin-top:8px; padding-left:8px; border-left:2px solid var(--accent)">
+          ${m.zaman_cizelgesi.map(z => `<div style="margin-bottom:6px; font-size:0.82em"><strong style="color:var(--accent)">${z.tarih}:</strong> ${z.olay}${z.kaynak ? ` <span class="kaynak">[${kaynakLink(z.kaynak)}]</span>` : ''}</div>`).join('')}
+        </div>` : ''}
+        ${m.sonrasi ? `<div style="margin-top:4px; font-size:0.83em; color:var(--yellow)">${m.sonrasi}</div>` : ''}
+        ${m.sonDurum ? `<div style="margin-top:4px; font-size:0.83em; color:var(--yellow)">Son Durum: ${m.sonDurum}</div>` : ''}
+        ${m.skandal ? `<div style="margin-top:6px; font-size:0.83em; color:var(--red)">⚠ ${m.skandal}</div>` : ''}
+        ${m.sonuc ? `<div style="margin-top:4px; font-size:0.83em; color:var(--yellow)">Sonuç: ${m.sonuc}</div>` : ''}
+        ${m.kaynak ? `<div class="kaynak">📎 ${kaynakLink(m.kaynak)}</div>` : ''}
+      </div>`).join('')}` : ''}
 
       ${c.kaynaklar?.length ? `
       <div class="section-title">KAYNAKLAR</div>
@@ -576,7 +638,12 @@ async function sirketDetay(slug) {
 
 // ─── ŞEHİR DETAY ──────────────────────────────────────────────────────────
 function sehirDetay(slug) {
-  window.open(`/api/report/city/${slug}`, '_blank');
+  const city = tumSehirler.find(s => s.slug === slug);
+  if (!city) { alert('Kent verisi bulunamadı: ' + slug); return; }
+  const companies = tumSirketler.filter(c => (city.sirketler || []).includes(c.slug));
+  const win = window.open('', '_blank');
+  win.document.write(generateCityReport(city, companies));
+  win.document.close();
 }
 
 // ─── SEKME ────────────────────────────────────────────────────────────────
@@ -589,7 +656,7 @@ function sekmeAc(btn, id) {
 
 // ─── MODAL KAPAT ──────────────────────────────────────────────────────────
 function modalKapat(e) {
-  if (!e || e.target === document.getElementById('modal-overlay') || e.type === 'click') {
+  if (!e || e.target === document.getElementById('modal-overlay')) {
     document.getElementById('modal-overlay').classList.remove('acik');
   }
 }
@@ -605,11 +672,14 @@ function aramaYap() {
     sonucDiv.innerHTML = '<div class="yukleniyor">Aranıyor...</div>';
 
     try {
-      const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
-      const sonuclar = await res.json();
+      const qLow = q.toLowerCase();
+      const sonuclar = [
+        ...tumSirketler.filter(c => JSON.stringify(c).toLowerCase().includes(qLow)).map(c => ({...c, _type: 'company'})),
+        ...tumSehirler.filter(s => JSON.stringify(s).toLowerCase().includes(qLow)).map(s => ({...s, _type: 'city'}))
+      ];
       if (!sonuclar.length) { sonucDiv.innerHTML = '<div class="empty">Sonuç bulunamadı.</div>'; return; }
       sonucDiv.innerHTML = sonuclar.map(s => `
-      <div class="olay-kart" style="margin-bottom:10px; cursor:pointer" onclick="${s._type==='company' ? `sirketDetay('${s.slug}')` : `window.open('/api/report/city/${s.slug}','_blank')`}">
+      <div class="olay-kart" style="margin-bottom:10px; cursor:pointer" onclick="${s._type==='company' ? `sirketDetay('${s.slug}')` : `sehirDetay('${s.slug}')`}">
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <strong>${s.ad}</strong>
           <span class="kart-badge" style="background:rgba(88,166,255,.15); color:var(--accent); border:1px solid rgba(88,166,255,.3)">${s._type === 'company' ? '⛏ Şirket' : '📍 Kent'}</span>
@@ -691,13 +761,196 @@ function istatistikleriGoster() {
 function tumunuRaporla() {
   const sirketler = document.querySelectorAll('.sirket-kart');
   // Tüm görünür şirketlerin raporlarını yeni sekmede aç
-  let win = window.open('', '_blank');
-  win.document.write('<h1>Madenler — Toplu Rapor</h1><p>Her şirketin raporunu ayrı ayrı açın:</p><ul>');
-  tumSirketler.forEach(c => {
-    win.document.write(`<li><a href="/api/report/company/${c.slug}" target="_blank">${c.ad}</a></li>`);
-  });
-  win.document.write('</ul>');
+  const items = tumSirketler.map(c =>
+    `<li style="margin:8px 0"><a href="#" style="color:#1a4a8a" onclick="window.opener.sirketRaporAc('${c.slug}'); return false;">${c.ad}</a></li>`
+  ).join('');
+  const win = window.open('', '_blank');
+  win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Madenler — Toplu Rapor</title>
+    <style>body{font-family:'Segoe UI',sans-serif;padding:40px;max-width:600px;margin:0 auto;} h1{margin-bottom:10px;} p{color:#555;margin-bottom:20px;} ul{line-height:2.2;}</style>
+    </head><body><h1>⛏ Madenler — Toplu Rapor</h1>
+    <p>Her şirket için ayrı rapor penceresini açmak üzere tıklayın:</p>
+    <ul>${items}</ul></body></html>`);
   win.document.close();
+}
+
+// ─── KLİENT RAPOR ─────────────────────────────────────────────────────────
+function sirketRaporAc(slug) {
+  const c = tumSirketler.find(s => s.slug === slug);
+  if (!c) { alert('Şirket verisi bulunamadı: ' + slug); return; }
+  const win = window.open('', '_blank');
+  win.document.write(generateCompanyReport(c));
+  win.document.close();
+}
+
+function generateCompanyReport(c) {
+  const renk = c.renkTema || '#1a4a8a';
+  const olumSayisi = (c.iscOlumleri || []).reduce((s, o) => s + (o.adet || 1), 0);
+  const cevreOlay = (c.cevreIhlalleri || []).length;
+  const davaSayisi = (c.davalar || []).length;
+  const tarih = new Date().toLocaleDateString('tr-TR');
+
+  return `<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${c.ad} — Araştırma Raporu</title>
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: 'Georgia', serif; background: #fafaf8; color: #1a1a1a; max-width: 850px; margin: 0 auto; padding: 40px 32px; font-size: 15px; line-height: 1.85; }
+.kapak { text-align: center; border-bottom: 3px solid #1a1a1a; padding-bottom: 40px; margin-bottom: 40px; }
+.holding-badge { display: inline-block; background: ${renk}22; color: ${renk}; border: 1px solid ${renk}; padding: 4px 14px; border-radius: 20px; font-size: 0.82em; font-weight: 700; margin-bottom: 12px; font-family: 'Segoe UI', sans-serif; }
+.kapak h1 { font-size: 2.2em; font-weight: 900; margin-bottom: 8px; }
+.kapak .bolge { color: #555; font-size: 0.95em; margin-bottom: 16px; }
+.istatlar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+.istat { background: #f0f0ee; border-radius: 8px; padding: 14px; text-align: center; }
+.istat .sayi { font-size: 1.8em; font-weight: 900; color: ${renk}; }
+.istat.kirmizi .sayi { color: #c00; }
+.istat .etiket { font-size: 0.72em; color: #666; font-family: 'Segoe UI', sans-serif; text-transform: uppercase; margin-top: 4px; }
+h2 { font-size: 1.2em; font-weight: 900; border-top: 2px solid #1a1a1a; padding-top: 24px; margin-top: 36px; margin-bottom: 14px; font-family: 'Segoe UI', sans-serif; text-transform: uppercase; }
+h2.kirmizi { border-color: #c00; color: #c00; }
+.kutu { border: 1px solid #ccc; border-radius: 6px; padding: 14px 18px; margin: 12px 0; background: #f9f9f7; }
+.kutu.kirmizi { border-color: #c00; background: #fff5f5; }
+.kutu.mavi { border-color: #1a56b0; background: #f0f5ff; }
+.kutu .meta { font-size: 0.8em; color: #888; font-family: 'Segoe UI', sans-serif; margin-bottom: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.88em; }
+th { background: #1a1a1a; color: white; padding: 8px 12px; text-align: left; }
+td { padding: 8px 12px; border-bottom: 1px solid #ddd; }
+tr:nth-child(even) td { background: #f5f5f2; }
+.print-btn { position: fixed; top: 20px; right: 20px; background: ${renk}; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 0.9em; font-weight: 700; font-family: 'Segoe UI', sans-serif; }
+@media print { .print-btn { display: none; } body { padding: 20px; } }
+footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.8em; color: #888; text-align: center; font-family: 'Segoe UI', sans-serif; }
+</style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">🖨 Yazdır / PDF</button>
+<div class="kapak">
+  <div class="holding-badge">${c.holding || 'Bağımsız'}</div>
+  <div style="font-size:3em; margin:8px 0;">${c.ikon || '⛏'}</div>
+  <h1>${c.ad}</h1>
+  <div class="bolge">${c.bolge || c.sehir || ''} · ${c.sektor || ''}</div>
+  <div class="istatlar">
+    <div class="istat"><div class="sayi">${c.ruhsatSayisi || '?'}</div><div class="etiket">Ruhsat</div></div>
+    <div class="istat"><div class="sayi">${c.isletmeSayisi || '?'}</div><div class="etiket">İşletme</div></div>
+    <div class="istat kirmizi"><div class="sayi">${olumSayisi || '?'}</div><div class="etiket">İşçi Ölümü</div></div>
+    <div class="istat"><div class="sayi">${davaSayisi || '?'}</div><div class="etiket">Dava</div></div>
+  </div>
+</div>
+
+<h2>ÖZET</h2>
+<p>${c.ozet || '—'}</p>
+
+${c.iscOlumleri && c.iscOlumleri.length ? `<h2 class="kirmizi">İŞÇİ ÖLÜMLERİ VE İŞ CİNAYETLERİ</h2>
+${c.iscOlumleri.map(o => `<div class="kutu kirmizi"><div class="meta">${o.tarih || ''}</div><strong>${o.adet ? o.adet + ' işçi' : ''} ${o.aciklama || ''}</strong>${o.kaynak ? `<div class="meta">Kaynak: ${o.kaynak}</div>` : ''}</div>`).join('')}` : ''}
+
+${c.cevreIhlalleri && c.cevreIhlalleri.length ? `<h2>ÇEVRE İHLALLERİ</h2>
+${c.cevreIhlalleri.map(i => `<div class="kutu mavi"><div class="meta">${i.yer || ''} · ${i.tarih || ''}</div>${i.aciklama || ''}${i.kaynak ? `<div class="meta">Kaynak: ${i.kaynak}</div>` : ''}</div>`).join('')}` : ''}
+
+${c.siyasiBaglantilar && c.siyasiBaglantilar.length ? `<h2>SİYASİ BAĞLANTILAR</h2>
+<table><tr><th>Kişi/Kurum</th><th>Bağlantı Türü</th><th>Açıklama</th></tr>
+${c.siyasiBaglantilar.map(b => `<tr><td><strong>${b.kisi || ''}</strong></td><td>${b.baglantiTuru || ''}</td><td>${b.aciklama || ''}</td></tr>`).join('')}
+</table>` : ''}
+
+${c.ozellestirilenSahalar && c.ozellestirilenSahalar.length ? `<h2>ÖZELLEŞTİRİLEN SAHALAR</h2>
+${c.ozellestirilenSahalar.map(s => `<div class="kutu"><strong>${s.ad}</strong> (${s.yil || 'tarih bilinmiyor'})<br>${s.aciklama || ''}</div>`).join('')}` : ''}
+
+${c.maliVeriler ? `<h2>MALİ VERİLER</h2>
+<div class="kutu">${Object.entries(c.maliVeriler).filter(([k]) => k !== 'notlar').map(([k, v]) => `<p><strong>${k}:</strong> ${v}</p>`).join('')}${c.maliVeriler.notlar ? `<p><em>${c.maliVeriler.notlar}</em></p>` : ''}</div>` : ''}
+
+${c.sendikaDurumu ? `<h2>SENDİKA VE ÖRGÜTLÜLÜK DURUMU</h2>
+<div class="kutu ${c.sendikaDurumu.varMi === 'Hayır' ? 'kirmizi' : 'mavi'}">
+<strong>Sendika var mı:</strong> ${c.sendikaDurumu.varMi || '?'}<br>
+${c.sendikaDurumu.sendikalar && c.sendikaDurumu.sendikalar.length ? `<strong>Sendikalar:</strong> ${c.sendikaDurumu.sendikalar.map(s => s.ad || s).join(', ')}<br>` : ''}
+${c.sendikaDurumu.orgutlulukOrani ? `<strong>Örgütlülük oranı:</strong> %${c.sendikaDurumu.orgutlulukOrani}<br>` : ''}
+${c.sendikaDurumu.notlar ? `<p>${c.sendikaDurumu.notlar}</p>` : ''}
+</div>` : ''}
+
+${c.davalar && c.davalar.length ? `<h2>DAVALAR</h2>
+<table><tr><th>Dava</th><th>Açıklama</th><th>Sonuç</th></tr>
+${c.davalar.map(d => `<tr><td><strong>${d.ad || d.konu || ''}</strong></td><td>${d.aciklama || ''}</td><td>${d.sonuc || 'Devam ediyor'}</td></tr>`).join('')}
+</table>` : ''}
+
+${c.kaynaklar && c.kaynaklar.length ? `<h2>KAYNAKLAR</h2>
+<ul style="padding-left:20px; margin-top:10px;">
+${c.kaynaklar.map(k => `<li>${k.url ? `<a href="${k.url}">${k.ad}</a>` : k.ad}</li>`).join('')}
+</ul>` : ''}
+
+<footer>
+Madenler Araştırma Platformu · TKP Kamulaştırma Kampanyası · ${tarih} · Tüm bilgiler kamuya açık kaynaklardan derlenmiştir.
+</footer>
+</body>
+</html>`;
+}
+
+function generateCityReport(city, companies) {
+  const toplamOlum = companies.reduce((s, c) =>
+    s + (c.iscOlumleri || []).reduce((ss, o) => ss + (o.adet || 1), 0), 0);
+  const tarih = new Date().toLocaleDateString('tr-TR');
+
+  return `<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${city.ad} Maden Raporu</title>
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: 'Georgia', serif; background: #fafaf8; color: #1a1a1a; max-width: 850px; margin: 0 auto; padding: 40px 32px; font-size: 15px; line-height: 1.85; }
+.kapak { text-align: center; border-bottom: 3px solid #1a1a1a; padding-bottom: 32px; margin-bottom: 36px; }
+.kapak h1 { font-size: 2.4em; font-weight: 900; }
+.kapak .alt { color: #555; margin-top: 8px; }
+.istatlar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+.istat { background: #f0f0ee; border-radius: 8px; padding: 14px; text-align: center; }
+.istat .sayi { font-size: 2em; font-weight: 900; color: #1a4a8a; }
+.istat.kirmizi .sayi { color: #c00; }
+.istat .etiket { font-size: 0.72em; color: #666; font-family: 'Segoe UI', sans-serif; text-transform: uppercase; margin-top: 4px; }
+h2 { font-size: 1.2em; font-weight: 900; border-top: 2px solid #1a1a1a; padding-top: 24px; margin-top: 36px; margin-bottom: 14px; font-family: 'Segoe UI', sans-serif; text-transform: uppercase; }
+.sirket-kart { border: 1px solid #ddd; border-radius: 8px; padding: 16px 20px; margin: 12px 0; background: #f9f9f7; }
+.sirket-kart h3 { font-size: 1em; font-weight: 700; margin-bottom: 8px; }
+.print-btn { position: fixed; top: 20px; right: 20px; background: #1a4a8a; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 0.9em; font-weight: 700; font-family: 'Segoe UI', sans-serif; }
+@media print { .print-btn { display: none; } }
+footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.8em; color: #888; text-align: center; font-family: 'Segoe UI', sans-serif; }
+</style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">🖨 Yazdır / PDF</button>
+<div class="kapak">
+  <h1>📍 ${city.ad} — Maden Raporu</h1>
+  <div class="alt">${city.il} · ${city.ozellik || ''}</div>
+  <div class="istatlar">
+    <div class="istat"><div class="sayi">${companies.length}</div><div class="etiket">Aktif Şirket</div></div>
+    <div class="istat kirmizi"><div class="sayi">${toplamOlum || '?'}</div><div class="etiket">Toplam Ölüm</div></div>
+    <div class="istat"><div class="sayi">${city.nufus || '?'}</div><div class="etiket">Nüfus</div></div>
+  </div>
+</div>
+
+<h2>TARİHSEL BAĞLAM</h2>
+<p>${city.tarihselBaglam || '—'}</p>
+
+<h2>BÖLGEDEKİ ŞİRKETLER</h2>
+${companies.map(c => `
+<div class="sirket-kart">
+  <h3>${c.ikon || '⛏'} ${c.ad} (${c.holding || ''})</h3>
+  <p><strong>Sektör:</strong> ${c.sektor || '—'} · <strong>Sendika:</strong> ${c.sendikaDurumu && c.sendikaDurumu.varMi ? c.sendikaDurumu.varMi : '?'}</p>
+  <p>${c.ozet || ''}</p>
+</div>`).join('')}
+
+${city.facialAr && city.facialAr.length ? `<h2>FACİALAR VE KAZALAR</h2>
+${city.facialAr.map(f => `<div style="border: 2px solid #c00; border-radius: 6px; padding: 14px 18px; margin: 10px 0; background: #fff5f5;">
+<strong style="color:#c00;">${f.tarih || ''} — ${f.olumSayisi} ölü · ${f.sirket}</strong><br>
+${f.aciklama || ''}
+</div>`).join('')}` : ''}
+
+${city.protestolar && city.protestolar.length ? `<h2>PROTESTOLAR VE DİRENİŞLER</h2>
+${city.protestolar.map(p => `<div style="border: 1px solid #1a56b0; border-radius: 6px; padding: 14px 18px; margin: 10px 0; background: #f0f5ff;">
+<strong>${p.tarih || ''} — ${p.ad}</strong> (${p.sirket})<br>${p.aciklama || ''}
+</div>`).join('')}` : ''}
+
+<footer>
+Madenler Araştırma Platformu · TKP Kamulaştırma Kampanyası · ${tarih}
+</footer>
+</body>
+</html>`;
 }
 
 // ─── BAŞLAT ────────────────────────────────────────────────────────────────

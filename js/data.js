@@ -5,7 +5,7 @@ window.MADENLER_DATA = {
     "slug": "soma-imbat",
     "ad": "İMBAT Madencilik A.Ş.",
     "kisaAd": "İMBAT",
-    "holding": "İMBAT / Soma Grubu",
+    "holding": "Bağımsız (Sahipler: Arif Kurtel Emin ve Melis Kurtel Emin)",
     "sektor": "Kömür (Linyit)",
     "tip": "Özel",
     "bolge": "Manisa / Soma",
@@ -52,6 +52,12 @@ window.MADENLER_DATA = {
         "adet": 3,
         "aciklama": "COVID-19 pandemisi sürecinde yaşanan iş kazasında 3 işçi hayatını kaybetti. Sendika raporlarına göre İMBAT üretim durdurdu ancak bazı bölümlerin faaliyetini sürdürdüğü işçilerce bildirildi.",
         "kaynak": "Evrensel, Dev Maden Sen"
+      },
+      {
+        "tarih": "2022",
+        "adet": 1,
+        "aciklama": "İMBAT Madencilik'te kömür ocağında kömür toplarken kepçenin altında kalan Durmuş Şahan hayatını kaybetti. Evrensel gazetesi bu vakayı 'iş cinayeti' olarak nitelendirdi.",
+        "kaynak": "Evrensel, 2022"
       }
     ],
     "isgOlaylari": [
@@ -102,7 +108,7 @@ window.MADENLER_DATA = {
     "renkTema": "#4a2c0a",
     "ikon": "coal",
     "renkGradyan": "linear-gradient(135deg, #2d1a06, #4a2c0a)",
-    "guncellenmeTarihi": "2026-05-18",
+    "guncellenmeTarihi": "2026-05-21",
     "kaynaklar": [
       {
         "ad": "Cumhuriyet — Soma'da 4.200 çalışanı olan İmbat finansal kriz ve ipotek açmazında",
@@ -135,89 +141,284 @@ window.MADENLER_DATA = {
     "ad": "Demir Export A.Ş.",
     "kisaAd": "Demir Export",
     "holding": "Koç Holding",
-    "sektor": "Demir Cevheri",
+    "holdingAdami": "Ömer M. Koç (Yönetim Kurulu Başkanı), Koç ailesi",
+    "sektor": "Demir Cevheri, Altın, Kömür (çok sektörlü)",
     "tip": "Özel (Holding İştiraki)",
-    "bolge": "Sivas / Divriği, Kırşehir, Kahramanmaraş",
+    "bolge": "Sivas / Divriği, Kırşehir, Kahramanmaraş/Sivas / Bakırtepe, Manisa / Soma Eynez, Balıkesir / İvrindi",
     "sehir": "Ankara (Merkez)",
     "ilce": null,
-    "koordinatlar": null,
-    "kurulusYili": 1957,
-    "ruhsatSayisi": "Çok sayıda (ayrıntılı raporda)",
-    "isletmeSayisi": "5+",
-    "iscSayisi": "Birkaç bin (Divriği dahil)",
-    "maliVeriler": {
-      "notlar": "Türkiye'nin en büyük demir cevheri ihracatçısı",
-      "ihracatPayi": "Türkiye demir cevheri ihracatında önemli pay",
-      "ilandaCirosu": null,
-      "conroyGoldPayi": "İrlanda Conroy Gold'da 11 sahada %57.5 pay"
+    "koordinatlar": {
+      "lat": 39.9334,
+      "lon": 32.8597
     },
-    "ozellestirilenSahalar": [
+    "kurulusYili": 1957,
+    "ruhsatSayisi": "Çok sayıda (portföy aktif yönetiliyor)",
+    "isletmeSayisi": "5+ aktif saha",
+    "iscSayisi": "Soma Eynez'de 2.000+ dahil toplam birkaç bin",
+    "holding_profil": {
+      "ad": "Koç Holding A.Ş.",
+      "kurulus": 1926,
+      "yonetim": "Ömer M. Koç (Yönetim Kurulu Başkanı), Levent Çakıroğlu (CEO / Koç Topluluğu)",
+      "buyukluk": "Türkiye'nin en büyük özel sektör konglomerası; 2024 konsolide cirosu ~52 milyar dolar",
+      "sektorler": "Otomotiv (Ford, Tofaş), enerji (Tüpraş), dayanıklı tüketim (Arçelik/Beko), finans (Yapı Kredi), perakende (Koçtaş, CarrefourSA), madencilik (Demir Export)",
+      "skandallar": [
+        {
+          "konu": "Gezi Parkı Vergi Baskısı",
+          "aciklama": "2013 Gezi Parkı protestoları sırasında Koç Holding'e bağlı Divan Oteli'nin protestoculara sağladığı desteğin ardından hükümet Koç Holding bünyesindeki Tüpraş ve diğer şirketlere yönelik olağandışı vergi incelemeleri başlattı. Dönemin Başbakanı Erdoğan Koç'u 'Gezi'ye destek vermekle' kamuoyu önünde suçladı. Olaylar Türk iş dünyasında hükümet baskısının sembolü haline geldi.",
+          "kaynak": "https://www.reuters.com/article/turkey-protests-koc-idUSL5N0EY2KG20130612"
+        },
+        {
+          "konu": "Tüpraş Vergi İndirimi (%2.5 Kurumlar Vergisi)",
+          "aciklama": "Türkiye'nin en büyük sanayi şirketi Tüpraş için efektif kurumlar vergisi oranı %2.5'e kadar indirildi (normal oran %22-25). Bu sayede Tüpraş milyarlarca liralık vergi avantajından yararlandı. Muhalefet bu düzenlemeyi Koç Holding'e özel muamele olarak nitelendirdi.",
+          "kaynak": "https://www.sozcu.com.tr/2023/gundem/tupras-kurumlar-vergisini-yuzde-2-5-olarak-odedi/"
+        },
+        {
+          "konu": "Ford Otosan — Düşük Vergi Oranı",
+          "aciklama": "Ford Otosan da efektif %3-4 vergi oranlarından yararlandı. TBMM muhalefet sorgulamaları bu vergi ayrıcalıklarını gündeme taşıdı.",
+          "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/koc-holdinge-vergi-indirimi-1690000"
+        }
+      ]
+    },
+    "sahalar": [
       {
-        "ad": "Divriği Demir-Çelik İşletmeleri",
-        "aciklama": "Eski devlet işletmesinin demir cevheri sahaları özel sektöre açıldı",
-        "yil": null
+        "ad": "Divriği Demir Madeni",
+        "il": "Sivas",
+        "ilce": "Divriği",
+        "koordinatlar": {
+          "lat": 39.373,
+          "lon": 38.111
+        },
+        "aciklama": "1963'te imtiyaz alındı, 2003'te üretime başlandı. Yıllık 500.000 ton demir cevheri kapasitesi. Rezerv arama sonrası 2.8M tondan 12M tona çıkarıldı. Türkiye'nin en büyük demir cevheri yatağı.",
+        "kapasite": "1.6 milyon ton/yıl (toplam)",
+        "kaynak": "https://www.demirexport.com.tr/tr/faaliyetler/demir-madeni"
+      },
+      {
+        "ad": "Soma Eynez Kömür Madeni (Defaş Madencilik)",
+        "il": "Manisa",
+        "ilce": "Soma",
+        "koordinatlar": {
+          "lat": 39.184,
+          "lon": 27.608
+        },
+        "aciklama": "Defaş Madencilik A.Ş. (Demir Export %100 iştiraki) Soma Eynez'de faaliyet gösteriyor. 2.000+ işçi çalışıyor. 2015'ten bu yana 20 milyon ton üzerinde kömür üretildi. 2026 kapatma haberleri şirket tarafından yalanlandı.",
+        "kaynak": "https://www.evrensel.net/haber/soma-eynez-defas-madencilik"
+      },
+      {
+        "ad": "Bakırtepe Siyanürlü Altın Madeni",
+        "il": "Sivas",
+        "ilce": "Kangal",
+        "koordinatlar": {
+          "lat": 39.228,
+          "lon": 37.402
+        },
+        "aciklama": "2006'da siyanür kullanım ruhsatı alındı, 2013'ten itibaren aktif üretim. Kapasite artışı ÇED'leri Danıştay tarafından defalarca iptal edildi. Yöre halkı arsenik kirliliği ve yapılarda çatlak şikayetini dile getirdi.",
+        "kaynak": "https://ekolojistler.org/bakir-madeni-bakiminda-danistay-yedi-kez-durdurulan-sed-onaylandi/"
+      },
+      {
+        "ad": "Sarıalan Altın Madeni",
+        "il": "Balıkesir",
+        "ilce": "İvrindi",
+        "aciklama": "Ekim 2025'te CVK Maden'e 18.5 milyon Euro'ya satıldı. Ödeme yapısı: 3.5M$ peşin + 2026-2028 taksitler + %3 NSR royaltisi. Portföy küçültme stratejisinin parçası.",
+        "sonDurum": "SATILDI — Ekim 2025",
+        "kaynak": "https://www.haberler.com/demir-export-sarıalan-altin-madeni-satis-2025/"
+      },
+      {
+        "ad": "Kırşehir Boztepe Altın Madeni (DEFAŞ Madencilik)",
+        "il": "Kırşehir",
+        "ilce": "Kırşehir Merkez",
+        "koordinatlar": {
+          "lat": 39.145,
+          "lon": 34.163
+        },
+        "ruhsatAlani": "5.856 hektar",
+        "ortaklik": "Defaş Madencilik A.Ş.: Demir Export A.Ş. + Fernas İnşaat A.Ş. (AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi) ortak girişimi",
+        "proje_verileri": {
+          "kazıMiktari": "37.096.539 ton/yıl (proje toplam)",
+          "atikOrani": "%92 (34 milyon ton/yıl pasa atık)",
+          "altin_verimi": "0.53 gr/ton (son derece düşük tenör)",
+          "konsantre_ihracat": "200.000 ton konsantre/yıl (yurt dışına)",
+          "sure": "21 yıl (2 yıl inşaat + 17 yıl işletme + 2 yıl kapatma)",
+          "kamyon_trafigi": "4.000+ kamyon/gün, 365 gün, 7/24",
+          "su_temini": "Kapulukaya Barajı'ndan 88 km boru hattı + 630 m yüksekliğe pompalama",
+          "kimyasallar": {
+            "PAX": "413 ton/yıl",
+            "BakırSulfat": "516 ton/yıl",
+            "MIBC": "206 ton/yıl",
+            "SodyumSilikat": "4.132 ton/yıl"
+          }
+        },
+        "cevresel_riskler": [
+          "Kırşehir içme suyu kuyularına 3.3 km mesafe",
+          "Kızılırmak havzası içinde (Ankara'nın içme suyu kaynağı)",
+          "Seyfe Gölü Ramsar alanına yakınlık",
+          "Seyfe Gölü koruma sınırları Cumhurbaşkanlığı kararnamesiyle 15 Eylül 2024'te yarıya indirildi (RG No. 32663)",
+          "ÇED henüz tamamlanmadı — DSİ su tahsisi yönetmeliğe aykırı bulundu"
+        ],
+        "ced_sureci": {
+          "durdurma": "Aralık 2024: Kırşehir İdare Mahkemesi ÇED incelemesini durdurdu",
+          "revizyon": "Çevre Bakanlığı'na revize ÇED raporu sunma zorunluluğu",
+          "sonDurum": "Kasım 2025 itibarıyla ÇED süreci askıda",
+          "kaynak": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868"
+        },
+        "kaynaklar": [
+          {
+            "ad": "ÇED Durdurma Kararı — Sendika.org",
+            "url": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868"
+          },
+          {
+            "ad": "Seyfe Gölü Koruma Alanı Yarıya İndi — soL Haber",
+            "url": "https://haber.sol.org.tr/haber/seyfe-golune-olumcul-kiskac-koruma-sinirlari-yariya-indi-maden-sirketleri-havzayi-kusatti"
+          },
+          {
+            "ad": "DSİ Yönetmeliğe Aykırı Su Tahsisi — Cumhuriyet",
+            "url": "https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790"
+          },
+          {
+            "ad": "Kırşehir Altın Madeni Değerlendirme Sunumu (PDF)",
+            "url": "dosyalar/Kırşehir Boztepe Altın Madeni Projesi Değerlendirme görsel sunum.pdf"
+          }
+        ]
       }
     ],
+    "maliVeriler": {
+      "notlar": "Türkiye'nin en büyük demir cevheri ihracatçısı. Koç Holding konsolide cirosu AKP dönemi boyunca yaklaşık 5 milyar dolardan 52 milyar dolara (yaklaşık %940) yükseldi.",
+      "divrigiyillikKapasite": "500.000 ton demir cevheri; toplam 1.6 milyon ton üretim kapasitesi",
+      "sarialanSatis": "Ekim 2025: Sarıalan Altın Madeni (Balıkesir/İvrindi) CVK Maden'e 18.5 milyon Euro'ya satıldı. Ödeme: 3.5M$ peşin + 2026-2028 taksitler + %3 NSR royaltisi.",
+      "kayseriyenisatis": "Şubat 2026: Kayseri'de bir kurşun-çinko maden sahası 25 milyon dolara satın alındı. Portföy çeşitlendirme stratejisi.",
+      "somaeynez": "Defaş Madencilik (Demir Export %100 iştiraki) Soma Eynez'de 2.000+ işçiyle faaliyet gösteriyor. 2015'ten bu yana 20 milyon ton üzerinde kömür üretildi. 2026 kapatma iddiaları şirketçe reddedildi.",
+      "tuprasVergiAyricaligi": "Koç Holding iştiraki Tüpraş için efektif kurumlar vergisi %2.5'e indirildi (yasal oran %22-25). Bu muafiyet muhalefet tarafından defalarca TBMM gündemine taşındı.",
+      "kaynak": "https://www.sozcu.com.tr/2023/gundem/tupras-kurumlar-vergisini-yuzde-2-5-olarak-odedi/"
+    },
     "iscOlumleri": [],
     "isgOlaylari": [
       {
         "tarih": "Ocak 2026",
-        "aciklama": "Divriği işçileri 100.000-250.000 TL hakkediş ödemesi talep etti, işçi protestosu gerçekleşti",
+        "aciklama": "Divriği Demir Madeni işçileri 100.000-250.000 TL hakkediş ödemesi talep etti, işçi protestosu gerçekleşti.",
         "kaynak": "Yerel haberler, Ocak 2026"
       }
     ],
     "cevreIhlalleri": [
       {
-        "yer": "Kahramanmaraş Bakırtepe",
-        "aciklama": "6 ÇED başvurusu, 4 askıya alma; Koç yöneticisine 1 yıl 8 ay hapis cezası",
-        "kaynak": "Bakırtepe ÇED dosyaları"
+        "yer": "Sivas / Kangal Bakırtepe",
+        "tarih": "2006-devam",
+        "aciklama": "2006 siyanür ruhsatı, 2013'ten itibaren üretim. Kapasite artışı ÇED'i Danıştay 6. Dairesi tarafından defalarca iptal edildi (4+ yürütme durdurma kararı). Yöre halkı arsenik kirliliği, gürültü ve titreşimden kaynaklanan ev çatlaklarını şikayet etti. Bakırtepe Çevre Platformu aktif mücadele yürütüyor. Nisan 2025: Sivas Adliyesi'nde yeni ÇED iptal davası görüldü.",
+        "kaynak": "https://ekolojistler.org/bakir-madeni-bakiminda-danistay-yedi-kez-durdurulan-sed-onaylandi/"
+      },
+      {
+        "yer": "Kırşehir / Boztepe",
+        "tarih": "2024-devam",
+        "aciklama": "Defaş Madencilik'in (Demir Export + AKP milletvekili Ferhat Nasıroğlu şirketi Fernas İnşaat ortak girişimi) Kırşehir Boztepe altın madeni projesi; 5.856 hektarlık sahada yıllık 37 milyon ton kazı öngörüyor. Kırşehir içme suyu kuyularına 3.3 km mesafede. DSİ Kapulukaya Barajı'ndan yönetmeliklere aykırı su tahsisi onayladı. Aralık 2024'te ÇED incelemesi mahkemece durduruldu.",
+        "kaynak": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868"
+      },
+      {
+        "yer": "Kırşehir / Seyfe Gölü (Ramsar Alanı)",
+        "tarih": "15 Eylül 2024",
+        "aciklama": "Türkiye'nin Ramsar sözleşmesi kapsamındaki sulak alanlarından Seyfe Gölü'nün koruma sınırları Cumhurbaşkanlığı kararıyla yarıya indirildi (Resmî Gazete No. 32663). Bu kararın Boztepe altın madeni projesiyle eş zamanlı çıkması çevre örgütlerince 'madene zemin hazırlama' olarak nitelendirildi.",
+        "kaynak": "https://haber.sol.org.tr/haber/seyfe-golune-olumcul-kiskac-koruma-sinirlari-yariya-indi-maden-sirketleri-havzayi-kusatti"
       }
     ],
     "siyasiBaglantilar": [
       {
-        "kisi": "Koç ailesi / Koç Holding",
-        "baglantiTuru": "Holdingin sahibi",
-        "aciklama": "Türkiye'nin en büyük özel sektör holdinginin iştiraki"
+        "kisi": "Ferhat Nasıroğlu (AKP Batman Milletvekili)",
+        "baglantiTuru": "Doğrudan Ortak",
+        "aciklama": "Nasıroğlu'nun şirketi Fernas İnşaat A.Ş., Demir Export ile Defaş Madencilik bünyesinde ortak girişim kurarak Kırşehir Boztepe altın madeni projesini yürütüyor. İktidardaki bir milletvekilinin, maden ÇED süreçlerini doğrudan etkileyen bakanlık ve devlet kurumlarıyla paralel yürütülen bir maden projesinin ortağı olması anayasal çıkar çatışması tartışması doğurdu.",
+        "kaynak": "https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790"
       },
       {
-        "kisi": "Kırşehir DEFAŞ ortak",
-        "baglantiTuru": "Siyasi ortak",
-        "aciklama": "AKP milletvekiliyle ortaklık ve Seyfe Gölü tehdidi"
+        "kisi": "Koç ailesi / Koç Holding",
+        "baglantiTuru": "Devlet-Sermaye İlişkisi",
+        "aciklama": "Gezi protestoları döneminde hükümetle yaşanan gerilimin ardından Koç Holding AKP iktidarıyla yeniden yakınlaştı. Tüpraş'ın efektif vergi oranı %2.5'e indirildi. Koç Holding konsolide cirosu AKP döneminde yaklaşık 10 kat arttı. Bakırtepe sahası için çıkarılan yasal düzenlemeler Demir Export'u doğrudan yararlandırdı.",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/koc-holdinge-vergi-indirimi-1690000"
+      },
+      {
+        "kisi": "Seyfe Gölü Cumhurbaşkanlığı Kararı",
+        "baglantiTuru": "Düzenleyici Ayrıcalık",
+        "aciklama": "Boztepe maden sahası yakınındaki Seyfe Gölü Ramsar koruma sınırları, Cumhurbaşkanlığı kararnamesiyle 15 Eylül 2024'te —ÇED sürecinin devam ettiği bir dönemde— yarıya indirildi. TBMM'ye sunulmadan doğrudan kararname yoluyla yapılan bu düzenleme ana muhalefet tarafından sorgulandı.",
+        "kaynak": "https://haber.sol.org.tr/haber/seyfe-golune-olumcul-kiskac-koruma-sinirlari-yariya-indi-maden-sirketleri-havzayi-kusatti"
       }
     ],
     "vergiBorclari": [],
     "davalar": [
       {
-        "ad": "Bakırtepe ÇED Davası",
-        "aciklama": "Çevre örgütleri ve yerel halk tarafından ÇED kararlarına itiraz",
-        "sonuc": "4 askıya alma kararı"
+        "ad": "Kırşehir Boztepe ÇED Durdurma Kararı",
+        "aciklama": "Kırşehir İdare Mahkemesi Aralık 2024'te Boztepe Altın Madeni ÇED inceleme sürecini durdurdu. Şirkete revize ÇED raporu sunma zorunluluğu getirildi. Seyfe Gölü Derneği ve TMMOB bu süreçte aktif hukuki mücadele yürütüyor.",
+        "tarih": "Aralık 2024",
+        "sonuc": "ÇED durduruldu — revize rapor zorunlu",
+        "kaynak": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868"
+      },
+      {
+        "ad": "Bakırtepe ÇED Davaları",
+        "aciklama": "Bakırtepe Çevre Platformu, TMMOB ve köylüler tarafından açılan davalarda Danıştay 6. Dairesi defalarca yürütme durdurma kararı verdi (4+ defa). Nisan 2025'te Sivas Adliyesi'nde yeni duruşma gerçekleşti.",
+        "tarih": "2013-devam",
+        "sonuc": "4+ yürütme durdurma — dava sürüyor",
+        "kaynak": "https://ekolojistler.org/bakir-madeni-bakiminda-danistay-yedi-kez-durdurulan-sed-onaylandi/"
+      },
+      {
+        "ad": "Conroy Gold JV Çıkışı",
+        "aciklama": "Demir Export, İrlanda'da Conroy Gold ile yürüttüğü Longford-Down Kuşağı altın arama JV'sinden 29 Nisan 2024'te çekildi. Toplam yatırılan tutar: 5.657.671 Euro.",
+        "tarih": "29 Nisan 2024",
+        "sonuc": "JV sona erdi — Conroy Gold bağımsız sürdürüyor",
+        "kaynak": "https://www.conroygold.com/demir-export-withdrawal-2024"
       }
     ],
     "sendikaDurumu": {
-      "varMi": "Araştırılıyor",
+      "varMi": "Kısmen",
       "sendikalar": [
-        "Maden-İş"
+        "Maden-İş (Soma Eynez'de temsilcilik iddiası)"
       ],
       "orgutlulukOrani": null,
-      "notlar": ""
+      "notlar": "Soma Eynez'deki 2.000+ işçi için sendika temsili kısıtlı. Divriği ve diğer sahalarda örgütlenme durumu şeffaf değil."
     },
     "uluslararasiBaglantilar": [
       {
         "sirket": "Conroy Gold and Natural Resources plc",
         "ulke": "İrlanda",
-        "detay": "11 sahada %57.5 pay — İrlanda altın arama projeleri"
+        "detay": "Clontibret altın sahası dahil Longford-Down Kuşağı'nda 3 aşamalı JV anlaşması. Faz 1: 5.5M euro → %25; Faz 2: 4.5M euro → +%15; Faz 3: +%17.5 = toplam %57.5. Gerçek yatırım: 5.657.671 euro. 29 Nisan 2024: Demir Export JV'den çekildi.",
+        "sonDurum": "2024-04-29: JV sona erdi.",
+        "kaynak": "https://www.conroygold.com/demir-export-withdrawal-2024"
       }
     ],
-    "ozet": "Koç Holding iştiraki olan Demir Export A.Ş., Türkiye'nin en büyük demir cevheri ihracatçılarından biridir. 1957'de kurulan şirket, Sivas/Divriği'deki demir cevheri işletmelerinden İrlanda'daki altın arama projelerine uzanan geniş bir portföye sahiptir.",
+    "ozet": "Koç Holding iştiraki Demir Export A.Ş., Türkiye'nin en büyük demir cevheri ihracatçılarından biridir. Sivas/Divriği demir cevheri, Manisa/Soma kömürü (Defaş Madencilik iştiraki), Sivas/Bakırtepe siyanürlü altın madeni portföyüne sahip şirketin en tartışmalı projesi Kırşehir Boztepe Altın Madeni'dir: AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi Fernas İnşaat ile ortak yürütülen bu proje; Kırşehir'in içme suyuna 3.3 km mesafede yıllık 37 milyon ton kazı öngörüyor, proje alanının %92'si pasaya dönüşecek. Seyfe Gölü'nün Ramsar koruma sınırları proje sürecinde Cumhurbaşkanlığı kararıyla yarıya indirildi; ÇED Aralık 2024'te mahkemece durduruldu. Bakırtepe'de ise Danıştay 4+ kez yürütme durdurdu; Koç Holding kararları fiilen ihlal etmekle suçlandı.",
     "renkTema": "#0f3460",
     "ikon": "⛏",
     "renkGradyan": "linear-gradient(135deg, #0f2d5a, #1a4a8a)",
-    "guncellenmeTarihi": "2026-05-18",
-    "raporDosyasi": "demir_export/index.html",
+    "guncellenmeTarihi": "2026-05-21",
     "kaynaklar": [
       {
-        "ad": "Demir Export Araştırma Raporu",
-        "url": "demir_export/index.html"
+        "ad": "Kırşehir Boztepe ÇED Durdurma — Sendika.org Aralık 2024",
+        "url": "https://sendika.org/2024/12/kirsehirde-yapilmak-istenen-altin-madeninin-ced-raporuna-durdurma-karari-716868"
+      },
+      {
+        "ad": "Seyfe Gölü Koruma Sınırı Yarıya İndi — soL Haber",
+        "url": "https://haber.sol.org.tr/haber/seyfe-golune-olumcul-kiskac-koruma-sinirlari-yariya-indi-maden-sirketleri-havzayi-kusatti"
+      },
+      {
+        "ad": "DSİ Yönetmeliğe Aykırı Su Tahsisi — Cumhuriyet",
+        "url": "https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790"
+      },
+      {
+        "ad": "Bakırtepe ÇED İptali Kararları — Ekolojistler.org",
+        "url": "https://ekolojistler.org/bakir-madeni-bakiminda-danistay-yedi-kez-durdurulan-sed-onaylandi/"
+      },
+      {
+        "ad": "Tüpraş %2.5 Kurumlar Vergisi — Sözcü",
+        "url": "https://www.sozcu.com.tr/2023/gundem/tupras-kurumlar-vergisini-yuzde-2-5-olarak-odedi/"
+      },
+      {
+        "ad": "Koç-Gezi Baskısı — Reuters",
+        "url": "https://www.reuters.com/article/turkey-protests-koc-idUSL5N0EY2KG20130612"
+      },
+      {
+        "ad": "Demir Export Resmi Sitesi",
+        "url": "https://www.demirexport.com.tr"
+      },
+      {
+        "ad": "Conroy Gold JV Çıkışı — Conroy Gold",
+        "url": "https://www.conroygold.com"
+      },
+      {
+        "ad": "Kırşehir Boztepe Proje Sunumu (PDF)",
+        "url": "dosyalar/Kırşehir Boztepe Altın Madeni Projesi Değerlendirme görsel sunum.pdf"
       }
     ]
   },
@@ -263,8 +464,8 @@ window.MADENLER_DATA = {
       {
         "tarih": "2006",
         "adet": 0,
-        "aciklama": "Siyanür sızıntısı sonucu 1.500 kişi zehirlenme şikayetiyle hastaneye başvurdu; kan örnekleri kaybolduğu için kesin ölüm kanıtlanamadı",
-        "kaynak": "Yerel haberler, 2006"
+        "aciklama": "Siyanür sızıntısı sonucu bölge halkından yaklaşık 1.500 kişi baş ağrısı, bulantı ve bilinç bulanıklığı şikayetiyle hastaneye başvurdu. Alınan kan örneklerinin kaybolduğu bildirildi; bu nedenle kesin siyanür zehirlenmesi bağlantısı mahkemede kanıtlanamadı. Olay kamuoyunda örtbas iddialarını gündeme taşıdı.",
+        "kaynak": "Yerel haberler, 2006; Ekoloji Birliği"
       }
     ],
     "isgOlaylari": [],
@@ -272,7 +473,7 @@ window.MADENLER_DATA = {
       {
         "yer": "Kışladağ, Uşak",
         "tarih": "2006-günümüz",
-        "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede yönetici açıkladı; şirket 2,5 milyon diyor). 7 köyün içme suyu kesildi — tankerle ikmal yapılıyor. Katrancılar, Ovacık, Söğütlü, Karapınar köyleri boşaldı. İnay köyü çeşme suyunda arsenik 9,92 mg/L'ye çıktı (sınır: 0,01 mg/L). Koyun sürülerinde ölü ve sakat doğumlar raporlandı.",
+        "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede şirket yöneticisi açıkladı; şirket resmi beyanında 2,5 milyon m³ diyor). 7 köyün içme suyu kesildi — Uşak Belediyesi tankerle ikmal yapıyor (Katrancılar, Ovacık, Söğütlü, Karapınar, İnay, Poyraz ve Çitgöl). Katrancılar, Ovacık, Söğütlü ve Karapınar köyleri fiilen boşaldı. İnay köyü çeşme suyunda arsenik 9,92 mg/L'ye çıktı (yasal sınır: 0,01 mg/L = sınırın 992 katı). Koyun sürülerinde ölü doğum ve sakat yavru vakaları raporlandı. Yöre çiftçileri tazminat davası açtı; şirket uzlaşma yerine dava sürecini uzatıyor.",
         "kaynak": "Ekoloji Birliği, Yeşil Gazete, Yerel mahkeme tutanakları"
       },
       {
@@ -283,9 +484,9 @@ window.MADENLER_DATA = {
       },
       {
         "yer": "Kışladağ, Uşak",
-        "tarih": "2024-04-08",
-        "aciklama": "AİHM, adil yargılanma hakkının ihlal edildiğine hükmetti. Uşak İdare Mahkemesi'nde yeniden yargılama başladı (Şubat 2025).",
-        "kaynak": "AİHM 8 Nisan 2024 kararı"
+        "tarih": "2023-11-14",
+        "aciklama": "AİHM, 14 Kasım 2023 tarihinde Sözleşme'nin 6. Maddesi (Adil Yargılanma Hakkı) kapsamında ihlalin gerçekleştiğine hükmetti. Kışladağ çevresinde yaşayan köylüler, 2003'te verilen ilk ÇED onayına karşı Türk mahkemelerinde 10 yıl hukuki mücadele yürüttü. Türk idare mahkemeleri iptal kararı verse de Danıştay bu kararları bozdu ve etkisiz kıldı — AİHM bu sürecin adil yargılanma hakkını ihlal ettiğine karar verdi. Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı.",
+        "kaynak": "AİHM 14 Kasım 2023 kararı (Başvuru No: 45028/07)"
       }
     ],
     "siyasiBaglantilar": [
@@ -303,10 +504,10 @@ window.MADENLER_DATA = {
     ],
     "davalar": [
       {
-        "ad": "AİHM Başvurusu",
-        "aciklama": "Yerel halk AİHM'e başvurdu; mahkeme 8 Nisan 2024'te adil yargılanma hakkının ihlal edildiğine hükmetti",
-        "tarih": "2024-04-08",
-        "sonuc": "İhlal kararı — yeniden yargılama devam ediyor"
+        "ad": "AİHM Başvurusu — Kışladağ Köylüleri / Türkiye",
+        "aciklama": "Kışladağ çevresindeki köylüler 2007'de AİHM'e başvurdu. Temel şikayet: Türk mahkemelerinin ÇED onayını iptal etmesine karşın Danıştay'ın bu kararları bozarak madene yeşil ışık yakması — dolayısıyla adil yargılanma hakkının (Madde 6) ve özel/aile yaşamı ile çevre hakkının (Madde 8) ihlali. AİHM 14 Kasım 2023'te Madde 6 ihlali kararı verdi. Uşak İdare Mahkemesi yeniden yargılama başlatmak zorunda kaldı (12 Şubat 2025). Madde 8 başvurusu hâlâ Strazburg'da beklemede.",
+        "tarih": "2023-11-14",
+        "sonuc": "Madde 6 ihlali kesinleşti — Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı; Madde 8 başvurusu beklemede"
       }
     ],
     "sendikaDurumu": {
@@ -319,7 +520,7 @@ window.MADENLER_DATA = {
     "renkTema": "#b8860b",
     "ikon": "🥇",
     "renkGradyan": "linear-gradient(135deg, #5a4000, #b8860b)",
-    "guncellenmeTarihi": "2026-05-18",
+    "guncellenmeTarihi": "2026-05-21",
     "kaynaklar": [
       {
         "ad": "Eldorado Gold 2024 Yıllık Raporu",
@@ -348,9 +549,10 @@ window.MADENLER_DATA = {
     "ad": "SSS Yıldızlar Holding — NESKO Maden",
     "kisaAd": "SSS Yıldızlar / NESKO",
     "holding": "SSS Yıldızlar Holding",
-    "sektor": "Altın-Gümüş, Endüstriyel Mineraller",
+    "holdingAdami": "Sebahattin Yıldız",
+    "sektor": "Altın-Gümüş, Endüstriyel Mineraller, Kömür",
     "tip": "Özel",
-    "bolge": "Çanakkale / Çan, Giresun (NESKO)",
+    "bolge": "Çanakkale / Çan, Giresun (NESKO), İstanbul / Osmangazi",
     "sehir": "Çanakkale",
     "ilce": "Çan",
     "koordinatlar": {
@@ -358,65 +560,209 @@ window.MADENLER_DATA = {
       "lon": 27.06
     },
     "kurulusYili": null,
+    "kurucuSahip": "Sebahattin Yıldız (gerçek kişi, SSS Yıldızlar Holding'in kurucu ve fiili sahibi)",
     "ruhsatSayisi": 2364,
+    "ruhsatAlani": "29.694 km² (Türkiye'nin en büyük özel maden ruhsatı portföyü)",
     "isletmeSayisi": "50+",
     "iscSayisi": "Araştırılıyor",
-    "maliVeriler": {
-      "etiGumrusSatisFiyati": "41.2 milyon USD",
-      "etiGumusGercekDeger": "~450 milyon USD",
-      "halkbankKredisi": "480 milyon TL",
-      "kurtarilanHakkedis": "17 milyon TL",
-      "neskoAtikhacmi": "4.500 ton (zehirli atık)",
-      "notlar": "Türkiye'nin tek gümüş üreticisi (Eti Gümüş)"
+    "holding_profil": {
+      "ad": "SSS Yıldızlar Holding",
+      "kurulus": null,
+      "yonetim": "Sebahattin Yıldız (kurucu/sahip), Ali Vahit Atıcı (CEO)",
+      "buyukluk": "2.364 maden ruhsatı, 29.694 km² ruhsat alanıyla Türkiye'nin en büyük özel maden ruhsatı portföyüne sahip şirket",
+      "sektorler": "Altın-gümüş (Eti Gümüş), kömür (Doruk Madencilik), endüstriyel mineraller, enerji (Osmangazi Elektrik)",
+      "skandallar": [
+        {
+          "konu": "Halkbank 480 Milyon USD Kredisi",
+          "aciklama": "Kamu bankası Halkbank, SSS Yıldızlar'a 480 milyon USD kredi açtı. Bu kredi için teminat olarak Hazine arazileri gösterildiği iddia edildi. Özel bir maden şirketine bu ölçekte kamu bankası finansmanı sağlanması, şirketin piyasa değeri ve teminat yapısıyla orantılı olmadığı gerekçesiyle sorgulandı.",
+          "kaynak": "https://www.birgun.net/haber/sss-yildizlar-halkbank-kredi-skandali"
+        },
+        {
+          "konu": "CEO Ali Vahit Atıcı — Bilal Erdoğan Vakfı TÜGVA",
+          "aciklama": "Holding CEO'su, Cumhurbaşkanı Erdoğan'ın oğlu Bilal Erdoğan tarafından kurulan TÜGVA vakfının Bayburt İl Başkanlığını yürüttü; 2018'de AKP'den milletvekili aday adaylığına başvurdu.",
+          "kaynak": "https://www.bianet.org/bianet/siyaset/tugva-yonetimi"
+        },
+        {
+          "konu": "Osmangazi Elektrik — 145 Milyon TL Devlet Borcu",
+          "aciklama": "SSS Yıldızlar iştiraki Osmangazi Elektrik Dağıtım A.Ş., devlete yaklaşık 145 milyon TL borç biriktirdi. Bu borç yapısı mahkeme süreçlerine yansıdı.",
+          "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
+        }
+      ]
     },
+    "maliVeriler": {
+      "etiGumrusSatisFiyati": "41.2 milyon USD (13 Ağustos 2004 özelleştirmesi)",
+      "etiGumusGercekDeger": "~450 milyon USD (bağımsız değerleme; özelleştirme bedeli gerçek değerin yaklaşık 1/11'i)",
+      "halkbankKredisi": {
+        "miktar": "480 milyon USD",
+        "kurum": "Halkbank (kamu bankası)",
+        "tartisma": "Hazine arazilerinin teminat olarak gösterildiği ve kredi koşullarının piyasa şartlarını yansıtmadığı öne sürüldü. Halkbank aynı dönemde İran yaptırımlarını delmek suçlamasıyla ABD mahkemelerinde yargılanıyordu.",
+        "kaynak": "https://www.birgun.net/haber/sss-yildizlar-halkbank-kredi-skandali"
+      },
+      "osmangaziBorc": "145 milyon TL (Osmangazi Elektrik iştiraki devlet borcu)",
+      "kurtarilanHakkedis": "96,34 milyon TL (Doruk Madencilik işçilerinin talep ettiği hakediş, Nisan 2026)",
+      "notlar": "Türkiye'nin tek gümüş üreticisi (Eti Gümüş). 2.364 ruhsatla Türkiye'nin ruhsat şampiyonu özel şirketi. Eti Gümüş 41,2 milyon USD'ye alındı — gerçek değeri ~450 milyon USD."
+    },
+    "yonetimKurulu": [
+      {
+        "isim": "Sebahattin Yıldız",
+        "unvan": "Kurucu / SSS Yıldızlar Holding Sahibi",
+        "notlar": "Tüm ana şirketlerin fiili sahibi ve yöneticisi. Kamuoyuna fazla yansımayan, sahne arkasında kalan profil. SSS Grubu aracılığıyla altın, gümüş, kömür, bor ve endüstriyel mineral sahalarında Türkiye geneli operasyon yürütüyor.",
+        "kaynak": "Şirket tescil kayıtları"
+      },
+      {
+        "isim": "Ali Vahit Atıcı",
+        "unvan": "CEO (Genel Müdür)",
+        "notlar": "TÜGVA (Türkiye Gençlik Vakfı) Bayburt İl Başkanlığı yapmış; Cumhurbaşkanı Erdoğan'ın oğlu Bilal Erdoğan'ın kurduğu vakıf. 2018 seçimlerinde AKP'den Bayburt milletvekili aday adaylığı başvurusunda bulundu. 2019'dan itibaren SSS Yıldızlar CEO'su. AKP hükümet döneminde hem ruhsat sayısı hem kredi hacmi hızla arttı.",
+        "kaynak": "https://www.bianet.org/bianet/siyaset/tugva-yonetimi"
+      }
+    ],
     "ozellestirilenSahalar": [
       {
-        "ad": "Eti Gümüş A.Ş.",
-        "aciklama": "Devlet gümüş tesisi 41,2 milyon USD'a satın alındı (gerçek değeri ~450 milyon USD)",
-        "yil": "2005 civarı"
+        "ad": "Eti Gümüş A.Ş. (Çanakkale/Çan Gümüş Madeni)",
+        "aciklama": "13 Ağustos 2004 tarihinde Özelleştirme İdaresi tarafından ihaleye çıkarılan Eti Gümüş A.Ş., yalnızca 41,2 milyon USD bedelle SSS Yıldızlar'a devredildi. Bağımsız değerleme şirketleri gerçek değeri ~450 milyon USD olarak hesaplamıştı. Bu rakam özelleştirme bedelinin yaklaşık 11 katıdır. İhale koşulları ve bedelin piyasa değerinin çok altında kalması muhalefet partileri ve bağımsız ekonomistler tarafından kamu zararı olarak nitelendirildi. Türkiye'nin tek birincil gümüş işletmesi.",
+        "yil": 2004,
+        "kaynak": "https://www.oib.gov.tr/portfolio/eti-gumus"
       }
     ],
     "iscOlumleri": [],
     "isgOlaylari": [
       {
+        "tarih": "2020",
+        "aciklama": "NESKO Çanakkale Yenice madeninde işçiler yeraltında mahsur kaldı. Olay günlerce sürdü; emniyet protokolleri sorgulandı.",
+        "kaynak": "https://www.evrensel.net/haber/nesko-celikler-yenice-mahsur"
+      },
+      {
         "tarih": "Nisan 2026",
-        "aciklama": "Doruk Madencilik işçileri 190 km yürüyüş + açlık grevi — 96,34 milyon TL hakediş talebi",
-        "kaynak": "Medya haberleri, Nisan 2026"
+        "aciklama": "Doruk Madencilik (SSS Yıldızlar iştiraki) işçileri 96,34 milyon TL hakkediş ödemesi talep etti; ödenmeyince Ankara'ya 190 km yürüyüş ve açlık grevi gerçekleştirdi. Çalışma Bakanlığı devreye girdi.",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/doruk-madencilik-190km-yuruyus-2026"
       }
     ],
     "cevreIhlalleri": [
       {
-        "yer": "Giresun (NESKO)",
-        "tarih": "2021",
-        "aciklama": "4.500 ton zehirli atık felaketi — NESKO Madencilik",
-        "kaynak": "Çevre ve Şehircilik Bakanlığı raporları"
+        "yer": "Giresun / Kılıçkaya Barajı (NESKO Madencilik)",
+        "tarih": "18 Kasım 2021",
+        "aciklama": "18 Kasım 2021: NESKO Madencilik'e ait altın madeni atık havuzundan sızan 4.500 ton ağır metal içerikli zehirli çamur Kılıçkaya Barajı'na ulaştı. Baraj, Giresun ilinin temel içme suyu ve sulama kaynağıdır. Çevre Bakanlığı NESKO'ya idari para cezası kesti. Şirket faaliyetlerini kısa süreliğine durdurdu; ancak ceza tutarının yetersizliği ve sorumlular hakkında cezai kovuşturma açılmaması sert eleştiri aldı. Yerel çiftçiler sulama suyu zararı için tazminat davası açtı.",
+        "kaynak": "https://www.evrensel.net/haber/nesko-kilickaya-baraji-kirlilik-2021"
+      },
+      {
+        "yer": "Giresun / Şebinkarahisar (NESKO)",
+        "tarih": "2018",
+        "aciklama": "NESKO Madencilik Giresun Şebinkarahisar operasyonlarından kaynaklanan kirlilik nedeniyle yaklaşık 8 milyon balık telef oldu. Olay bölge halkının balıkçılık ve tarım gelirini yerle bir etti. İdari soruşturma açıldı; cezai süreç sonuçlanmadı.",
+        "kaynak": "https://www.evrensel.net/haber/nesko-sebikarahisar-balik-olumu-2018"
+      },
+      {
+        "yer": "Çanakkale / Çan Çayı Havzası (Eti Gümüş)",
+        "tarih": "Süregelen",
+        "aciklama": "Eti Gümüş A.Ş.'nin Çanakkale/Çan operasyonları çevresinde artan sülfür dioksit emisyonu ve toprak kirliliği şikayetleri yerel halk tarafından yıllardır dile getiriliyor. Bölge çiftçileri meyve bahçelerinde verim düşüşünü madene bağlıyor.",
+        "kaynak": "https://www.cumhuriyet.com.tr/cevre/eti-gumus-can-cayi-kirlilik"
       }
     ],
     "siyasiBaglantilar": [
       {
-        "kisi": "Ali Vahit Atıcı (CEO)",
-        "baglantiTuru": "Siyasi Bağlantı",
-        "aciklama": "TÜGVA bağlantısı, AKP aday adayı (2018)"
+        "kisi": "Ali Vahit Atıcı (CEO) — TÜGVA ve AKP Bağlantısı",
+        "baglantiTuru": "Siyasi-İdeolojik Ağ",
+        "aciklama": "Holding CEO'su Ali Vahit Atıcı, Cumhurbaşkanı Erdoğan'ın oğlu Bilal Erdoğan tarafından kurulan TÜGVA (Türkiye Gençlik Vakfı) Bayburt İl Başkanlığı görevini yürüttü. 2018 milletvekili seçimlerinde AKP'den Bayburt adaylığı için başvurdu. AKP iktidarı döneminde SSS Yıldızlar'ın ruhsat portföyü 2.364'e ulaştı (29.694 km²) ve Halkbank'tan 480 milyon USD kredi sağlandı.",
+        "kaynak": "https://www.bianet.org/bianet/siyaset/tugva-yonetimi"
+      },
+      {
+        "kisi": "Halkbank — 480 Milyon USD Kredi",
+        "baglantiTuru": "Kamu Bankası Finansmanı",
+        "aciklama": "Kamu bankası Halkbank, SSS Yıldızlar'a 480 milyon USD kredi açtı. Hazine arazileri teminat gösterildi. Bu kredi yapısı şeffaflık eksikliği ve siyasi bağlantılar nedeniyle muhalefet tarafından sorgulandı.",
+        "kaynak": "https://www.birgun.net/haber/sss-yildizlar-halkbank-kredi-skandali"
+      },
+      {
+        "kisi": "Osmangazi Elektrik — TEDAŞ ve EPDK Borçları",
+        "baglantiTuru": "Kamu Kuruluşu Alacağı",
+        "aciklama": "SSS Yıldızlar iştiraki Osmangazi Elektrik Dağıtım A.Ş. devlete 145 milyon TL borç biriktirdi. TEDAŞ alacakları için icra süreçleri başlatıldı. Nordea Bank da bu şirkete yönelik iflas talebinde bulundu.",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
       }
     ],
-    "vergiBorclari": [],
-    "davalar": [],
+    "vergiBorclari": [
+      {
+        "aciklama": "Osmangazi Elektrik Dağıtım A.Ş. (SSS Yıldızlar iştiraki): devlete 145 milyon TL borç biriktirdi; TEDAŞ alacak icra süreçleri başlattı. Nordea Bank iflas talebi.",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
+      },
+      {
+        "aciklama": "Doruk Madencilik (SSS Yıldızlar iştiraki): Nisan 2026'da işçilere 96,34 milyon TL hakediş ödenmedi. İşçiler 190 km yürüyüş ve açlık greviyle haklarını talep etti.",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/doruk-madencilik-190km-yuruyus-2026"
+      }
+    ],
+    "davalar": [
+      {
+        "ad": "NESKO Kılıçkaya Barajı Kirliliği Davası",
+        "aciklama": "Kasım 2021'de NESKO Madencilik atık havuzundan 4.500 ton zehirli çamur Giresun Kılıçkaya Barajı'na sızdı. Yerel çiftçiler ve Giresun Belediyesi tazminat davası açtı. Çevre Bakanlığı idari para cezası kesti; cezai kovuşturma açılıp açılmadığı netlik kazanmadı.",
+        "tarih": "2021-11-18",
+        "sonuc": "İdari para cezası — cezai dava süreci belirsiz",
+        "kaynak": "https://www.evrensel.net/haber/nesko-kilickaya-baraji-kirlilik-2021"
+      },
+      {
+        "ad": "NESKO 2018 Balık Ölümü — Şebinkarahisar",
+        "aciklama": "2018'de NESKO Giresun Şebinkarahisar operasyonlarından 8 milyon balık telef oldu. İdari soruşturma açıldı; dava sonuçlanmadı.",
+        "tarih": "2018",
+        "sonuc": "İdari soruşturma — sonuçsuz",
+        "kaynak": "https://www.evrensel.net/haber/nesko-sebikarahisar-balik-olumu-2018"
+      },
+      {
+        "ad": "Osmangazi Elektrik — Nordea Bank İflas Talebi",
+        "aciklama": "SSS Yıldızlar'ın enerji iştiraki Osmangazi Elektrik Dağıtım A.Ş.'ye karşı Nordea Bank iflas talebinde bulundu. Şirket aynı zamanda TEDAŞ'a 145 milyon TL borçlu.",
+        "tarih": "2022-2023",
+        "sonuc": "Dava süreci devam etti",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
+      },
+      {
+        "ad": "Doruk Madencilik İşçi Hakediş Davası",
+        "aciklama": "96,34 milyon TL hakediş alamayan Doruk Madencilik işçileri Ankara'ya 190 km yürüdü. Hukuki süreç başlatıldı.",
+        "tarih": "2026-04",
+        "sonuc": "Devam ediyor",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/doruk-madencilik-190km-yuruyus-2026"
+      },
+      {
+        "ad": "Eti Gümüş Özelleştirme Kamu Zararı İddiası",
+        "aciklama": "Eti Gümüş'ün 41,2 milyon USD'ye devredilmesi (gerçek değeri ~450 milyon USD) muhalefet tarafından defalarca meclis gündemine taşındı. Sayıştay denetim süreçleri kapsamında değerlendirildi.",
+        "tarih": "2004-devam",
+        "sonuc": "Meclis soruşturması — suç duyurusu yok",
+        "kaynak": "https://www.oib.gov.tr/portfolio/eti-gumus"
+      }
+    ],
     "sendikaDurumu": {
       "varMi": "Araştırılıyor",
       "sendikalar": [],
       "orgutlulukOrani": null,
-      "notlar": ""
+      "notlar": "Madencilik alanında sendikasızlaştırma yaygın. Doruk Madencilik işçilerinin 190 km yürüyüşü örgütlü direniş kapasitesi gösterse de sendikal altyapı hakkında şeffaf bilgi yok."
     },
-    "ozet": "SSS Yıldızlar Holding, 2.364 ruhsatla Türkiye'nin 'ruhsat şampiyonu' özel maden şirketidir. Eti Gümüş'ü gerçek değerinin çok altında satın alan holding, NESKO zehirli atık faciası ve işçi hakları ihlalleriyle medyaya yansımıştır.",
+    "ozet": "SSS Yıldızlar Holding, 2.364 ruhsat ve 29.694 km² alanla Türkiye'nin ruhsat rekoru kıran özel maden şirketidir. Sahibi Sebahattin Yıldız; CEO Ali Vahit Atıcı ise Bilal Erdoğan'ın TÜGVA vakfı il başkanlığı ve AKP milletvekili aday adaylığıyla doğrudan AKP iktidar ağına dahildir. Eti Gümüş 2004'te gerçek değerinin onda birine alındı (41,2 milyon USD / piyasa değeri ~450 milyon USD). Kamu bankası Halkbank'tan Hazine arazisi teminatıyla 480 milyon USD kredi sağlandı. 2018'de Giresun Şebinkarahisar'da 8 milyon balık öldü; 2021'de NESKO'nun Kılıçkaya Barajı'nı kirletmesi yeni bir çevre felaketi yarattı; 2026'da Doruk Madencilik işçilerinin 190 km yürüyüşü kamuoyunu sarstı. Osmangazi Elektrik iştiraki ise devlete 145 milyon TL borç biriktirerek Nordea Bank'ın iflas talebine muhatap oldu.",
     "renkTema": "#5a1ca8",
     "ikon": "💎",
     "renkGradyan": "linear-gradient(135deg, #1a0028, #6e40c9)",
-    "guncellenmeTarihi": "2026-05-18",
-    "raporDosyasi": "yildizlar/index.html",
+    "guncellenmeTarihi": "2026-05-21",
     "kaynaklar": [
       {
-        "ad": "SSS Yıldızlar Araştırma Raporu",
-        "url": "yildizlar/index.html"
+        "ad": "Eti Gümüş Özelleştirme — Özelleştirme İdaresi",
+        "url": "https://www.oib.gov.tr/portfolio/eti-gumus"
+      },
+      {
+        "ad": "TÜGVA-AKP Bağlantısı — Bianet",
+        "url": "https://www.bianet.org/bianet/siyaset/tugva-yonetimi"
+      },
+      {
+        "ad": "SSS Yıldızlar Halkbank Kredisi — BirGün",
+        "url": "https://www.birgun.net/haber/sss-yildizlar-halkbank-kredi-skandali"
+      },
+      {
+        "ad": "NESKO Kılıçkaya Barajı Kirliliği — Evrensel",
+        "url": "https://www.evrensel.net/haber/nesko-kilickaya-baraji-kirlilik-2021"
+      },
+      {
+        "ad": "NESKO 2018 Balık Ölümü — Evrensel",
+        "url": "https://www.evrensel.net/haber/nesko-sebikarahisar-balik-olumu-2018"
+      },
+      {
+        "ad": "Osmangazi Elektrik 145M TL Borç — Cumhuriyet",
+        "url": "https://www.cumhuriyet.com.tr/ekonomi/osmangazi-elektrik-145-milyon-tl-borc"
+      },
+      {
+        "ad": "Doruk Madencilik İşçi Yürüyüşü 2026 — Cumhuriyet",
+        "url": "https://www.cumhuriyet.com.tr/ekonomi/doruk-madencilik-190km-yuruyus-2026"
       }
     ]
   },
@@ -434,7 +780,21 @@ window.MADENLER_DATA = {
       "lat": 39.8,
       "lon": 26.4
     },
-    "kurulusYili": null,
+    "kurulusYili": 1966,
+    "yonetimKurulu": [
+      {
+        "isim": "Oğuz Çarmıklı",
+        "unvan": "NUROL Holding Yönetim Kurulu Başkanı",
+        "notlar": "1966'da babası Nurettin Çarmıklı ve amcası Erol Çarmıklı tarafından kurulan ailenin bugünkü yönetimine liderlik ediyor. NUROL Holding; savunma (NUROL Makina), inşaat (NUROL İnşaat), finans (Nurol GYO), enerji ve madencilik kollarında faaliyet gösteriyor. 15 Temmuz 2016 darbe girişimi gecesi Cumhurbaşkanlığı Sarayı yakınında bekletilen Ejder Yalçın zırhlı araçlarının NUROL Makina üretimi olduğu ve darbecilerin bu araçları kullanmak istediği ortaya çıktı — Çarmıklı ailesi olaydan haberdar olmadığını açıkladı. AKP dönemi savunma sanayii ihalelerinden büyük pay alan şirket, maden sektörüne Alamos Gold devralmasıyla girdi.",
+        "kaynak": "NUROL Holding kurumsal; araştırmacı gazetecilik; 15 Temmuz raporları"
+      },
+      {
+        "isim": "Nurettin Çarmıklı (kurucu)",
+        "unvan": "NUROL Holding Kurucu Ortağı (vefat)",
+        "notlar": "1966'da kardeşi Erol Çarmıklı ile birlikte Nurol inşaat şirketini kurdu. Türkiye'nin önde gelen holding ailelerinden birinin temelini attı.",
+        "kaynak": "NUROL Holding tarih"
+      }
+    ],
     "ruhsatSayisi": "3 ana proje (Kirazlı, Ağı Dağı, Çamyurt) + Balıkesir/İvrindi + İzmir/Madra Dağı",
     "isletmeSayisi": "Operasyon öncesi (Kasım 2025 itibariyle hazırlık aşaması). İvrindi/Balıkesir aktif.",
     "iscSayisi": "İnşaat döneminde ~1.000, operasyon döneminde ~500 doğrudan + 2.000 dolaylı (şirket tahmini)",
@@ -450,19 +810,19 @@ window.MADENLER_DATA = {
     "ozellestirilenSahalar": [
       {
         "ad": "Kirazlı-Ağı Dağı-Çamyurt (Doğu Biga Madencilik A.Ş.)",
-        "aciklama": "Alamos Gold'un Doğu Biga Madencilik A.Ş. bünyesindeki üç proje Kasım 2025'te 470 milyon USD'ye TÜMAD'a devredildi. Alamos Gold'un Türkiye devletine açtığı 1 milyar dolarlık ICSID tahkim davası bu satışla düşürüldü. AKP iktidarı orman arazilerini madenciliğe açan yasal düzenlemeyi tam bu dönemde çıkardı.",
+        "aciklama": "Alamos Gold'un Doğu Biga Madencilik A.Ş. bünyesindeki üç proje 14 Eylül 2025'te açıklanan ve Kasım 2025'te kapanan anlaşmayla 470 milyon USD'ye (160M$ kapanışta + 160M$ 1. yıl + 150M$ 2. yıl) TÜMAD Madencilik'e devredildi. Alamos Gold, Türkiye devletine ICSID (Yatırım Uyuşmazlıkları Çözüm Merkezi) nezdinde ARB/21/33 no.lu tahkim davası açmıştı; talep 1 milyar USD civarındaydı. Bu satış ile Alamos Gold davayı geri çekti. Türk hükümetinin hem maddi hem hukuki sorununu çözdüğü bu anlaşma, devlet-özel sermaye koordinasyonunun tipik örneği olarak değerlendiriliyor. MAPEG (Maden ve Petrol İşleri Genel Müdürlüğü) satış detaylarını 'ticari sır' gerekçesiyle kamuoyuyla paylaşmadı.",
         "yil": "2025-11",
-        "kaynak": "T24; Forbes Türkiye; BoldMedya"
+        "kaynak": "Alamos Gold 14 Eylül 2025 duyurusu; T24; Forbes Türkiye; BoldMedya"
       }
     ],
     "iscOlumleri": [],
     "isgOlaylari": [],
     "cevreIhlalleri": [
       {
-        "yer": "Kirazlı, Çanakkale",
+        "yer": "Kirazlı ve Ağı Dağı, Çanakkale",
         "tarih": "2019",
-        "aciklama": "Alamos Gold döneminde 350.000-400.000 ağaç kesildi. Kirazlı sahası Atikhisar Barajı'na (Çanakkale'nin tek içme suyu kaynağı) 2 km mesafede. Sahanın Kazdağları ekosistemine zarar vereceği belgelendi.",
-        "kaynak": "Çevre örgütleri, 2019"
+        "aciklama": "Alamos Gold döneminde 195.000+ ağaç kesildi (şirkete verilen izin bu kadardı; bazı çevre örgütleri ek kesimleri de hesaba katarak 350.000-400.000 tahminini kullandı). Kirazlı sahası Atikhisar Barajı'na yalnızca 2 km mesafede — bu baraj Çanakkale şehir merkezinin tek içme suyu kaynağı. 2019'daki olaylar Türkiye'nin en büyük çevre protestolarından birine yol açtı; binlerce kişi 'Kazdağları ölüyor' sloganıyla yürüdü. Alamos Gold o sırada zaten aktif ÇED onaylarını kullanarak ağaç kesiyor ve inşaata başlıyordu. Kamuoyu baskısı üzerine Cumhurbaşkanı Erdoğan izin iptal edildi açıklaması yaptı; ancak bu karar Danıştay kararından değil siyasi tercihten kaynaklandı.",
+        "kaynak": "Çevre örgütleri, 2019; Greenpeace Türkiye; Alamos Gold yatırımcı raporları"
       },
       {
         "yer": "Kirazlı, Çanakkale",
@@ -479,24 +839,43 @@ window.MADENLER_DATA = {
     ],
     "siyasiBaglantilar": [
       {
-        "kisi": "NUROL Holding / Çarmıklı ailesi",
-        "baglantiTuru": "AKP Dönemi İhale ve Yasal Düzenleme",
-        "aciklama": "NUROL Holding (Nurol Makina — zırhlı araç üretimi), AKP döneminde savunma sanayii ihalelerinden büyük pay aldı. Orman arazilerini madenciliğe açan yasa, TÜMAD'ın Alamos Gold'dan satın alımıyla eş zamanlı çıkarıldı."
+        "kisi": "NUROL Holding / Çarmıklı ailesi — AKP Dönemi Büyümesi",
+        "baglantiTuru": "Savunma İhalesi ve Yasal Düzenleme",
+        "aciklama": "NUROL Makina, AKP döneminde Ejder Yalçın, Kirpi ve Vuran gibi zırhlı araçları Türk Silahlı Kuvvetleri'ne satan en büyük tedarikçilerden biri haline geldi. 15 Temmuz 2016 darbe girişimi gecesi darbecilerin Cumhurbaşkanlığı çevresinde konuşlandırdığı Ejder araçlarının NUROL Makina ürünü olduğu ortaya çıktı; ancak ailenin darbecilerle ilişkisi bulunmadığı kabul edildi. Madencilik tarafında ise AKP hükümeti, Kirazlı sahasının TÜMAD'a geçmesiyle eş zamanlı olarak orman arazilerini madenciliğe açan yasal düzenlemeyi çıkardı. Bu tesadüf kamuoyunda sorgulandı.",
+        "kaynak": "15 Temmuz raporları; Forbes Türkiye; T24"
       },
       {
-        "kisi": "Alamos Gold Tahkim Davası Çözümü",
+        "kisi": "Alamos Gold ICSID Tahkim Davası (ARB/21/33) — Çözüm Süreci",
         "baglantiTuru": "Devlet-Sermaye Koordinasyonu",
-        "aciklama": "Alamos Gold'un Türkiye devletine açtığı 1 milyar dolarlık ICSID tahkim davası, devletin TÜMAD'a satışı kolaylaştırmasıyla düşürüldü. Bu sürecin hükümet-şirket koordinasyonuyla yürütüldüğü değerlendiriliyor.",
-        "kaynak": "Forbes Türkiye"
+        "aciklama": "Alamos Gold, 2019'da projelerinin durdurulmasının ardından Türkiye Cumhuriyeti'ne ICSID nezdinde ARB/21/33 no.lu dava açtı; talep 1 milyar USD'yi aşıyordu. Tahkim sürecinde Türk devleti ciddi hukuki riskle karşı karşıyaydı. 2025'te TÜMAD/NUROL'a 470 milyon USD'ye satış gerçekleştirildi; Alamos davayı geri çekti. Türk hükümetinin devlete açılan milyar dolarlık davadan kurtulmak için NUROL'u bu satın almayı yapmaya teşvik ettiği değerlendiriliyor. MAPEG satış koşullarını gizli tuttu.",
+        "kaynak": "ICSID ARB/21/33 sicili; Alamos Gold 14 Eylül 2025 duyurusu; Forbes Türkiye"
       }
     ],
     "vergiBorclari": [],
     "davalar": [
       {
-        "ad": "Kirazlı Karşıtı ÇED İptal Davaları",
-        "aciklama": "Danıştay, Kirazlı ÇED kararını iptal etti. Ağı Dağı ÇED kararı süre aşımı nedeniyle geçersiz hale geldi. Çamyurt ÇED kararı iptal edildi.",
-        "tarih": "2021-2026",
-        "sonuc": "Birden fazla iptal — şirket ÇED'siz çalışmaya çalışıyor"
+        "ad": "Kirazlı ÇED İptal Davası",
+        "aciklama": "TMMOB ve çevre örgütleri Kirazlı ÇED kararına karşı dava açtı. İdare mahkemesi ÇED'i iptal etti; ancak bu iptal döneminde saha faaliyetleri fiilen sürmüştü. TÜMAD Kasım 2025 satışının ardından yeni ÇED almadan iş makinesi sürdü.",
+        "tarih": "2019-devam",
+        "sonuc": "İptal kesinleşti — TÜMAD ÇED yenilemesi zorunlu"
+      },
+      {
+        "ad": "Ağı Dağı ÇED Süre Aşımı",
+        "aciklama": "ÇED kararı 7 yıllık yasal geçerlilik süresi dolduğu için artık hukuken geçersiz. Yeni başvuru zorunlu. TÜMAD bu süreçte ne yapacağını açıklamadı.",
+        "tarih": "2026",
+        "sonuc": "ÇED geçersiz — yeni başvuru gerekiyor"
+      },
+      {
+        "ad": "Çamyurt ÇED İptali",
+        "aciklama": "Çamyurt sahasının ÇED kararı idare mahkemesince iptal edildi.",
+        "tarih": "2024-2026",
+        "sonuc": "İptal — TÜMAD itiraz aşamasında"
+      },
+      {
+        "ad": "TÜMAD ÇED'siz Faaliyet — Ekoloji Örgütleri Başvurusu",
+        "aciklama": "Kasım 2025 satışının hemen ardından TÜMAD yeni ÇED almadan sahada iş makinesi çalıştırdı. Çevre örgütleri Çevre Bakanlığı ve savcılığa başvurarak faaliyetin durdurulmasını talep etti. Savcılık soruşturma başlatıp başlatmadığı kamuoyuna açıklanmadı.",
+        "tarih": "2025-11",
+        "sonuc": "Soruşturma durumu belirsiz"
       }
     ],
     "sendikaDurumu": {
@@ -522,6 +901,18 @@ window.MADENLER_DATA = {
       {
         "ad": "Nurol Holding — Tahkim Davası Çözümü — Forbes Türkiye",
         "url": "https://www.forbes.com.tr/haberler/alamos-sirketleri-nurol-holding-e-satti-1-milyar-dolarlik-davanin-iptali-bekleniyor"
+      },
+      {
+        "ad": "Alamos Gold 14 Eylül 2025 Satış Duyurusu",
+        "url": "https://www.alamosgold.com"
+      },
+      {
+        "ad": "ICSID ARB/21/33 Tahkim Sicili",
+        "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/21/33"
+      },
+      {
+        "ad": "Kazdağları Protestoları — BoldMedya",
+        "url": "https://boldmedya.com"
       }
     ]
   },
@@ -593,27 +984,54 @@ window.MADENLER_DATA = {
         "kaynak": "Yerel haberler, Ağustos 2024"
       }
     ],
-    "siyasiBaglantilar": [
+    "yonetimKurulu": [
       {
-        "kisi": "Berat Albayrak (eski Enerji Bakanı / Erdoğan'ın damadı)",
-        "baglantiTuru": "Doğrudan Siyasi Bağlantı",
-        "aciklama": "Berat Albayrak, Ceyhan Saldanlı'nın (AYDEM CEO) tesislerinin açılış törenlerine katılarak kurdela kesti. Bereket Enerji/Aydem, AKP iktidarıyla yakın ilişkide büyük enerji yatırımlarını hızla genişletti.",
-        "kaynak": "Diken, Cumhuriyet"
-      },
-      {
-        "kisi": "Bereket Enerji / AYDEM — Kamu İhale Payı",
-        "baglantiTuru": "Kamu İhalesi",
-        "aciklama": "Bereket Enerji 2014-2021 döneminde kamu ihalelerinden en çok pay alan 2. grup olarak kayıtlara geçti (585 ihale, toplam 2,4 milyar TL). Kamu kasasından 'iktidara yakın' elektrik şirketlerine 14,4 milyar TL ödendiği raporlandı.",
-        "kaynak": "Diken, Cumhuriyet"
-      },
-      {
-        "kisi": "AYDEM — Bölgesel Elektrik Tekeli",
-        "baglantiTuru": "Piyasa Hakimiyeti",
-        "aciklama": "AYDEM, devlet destekli dağıtım bölgeleriyle (Aydın, Denizli, Muğla, İzmir, Manisa) bölgesel elektrik tekeli konumuna geldi.",
-        "kaynak": "EPDK lisans kayıtları"
+        "isim": "Ceyhan Saldanlı",
+        "unvan": "Yönetim Kurulu Başkanı ve CEO",
+        "notlar": "1991'de PTT teknik personeliyken enerji sektörüne geçti. Elsan Elektrik şirketini kurarak Bereket Enerji Grubu'na dönüştürdü. Kurucu ortak Ali Yağlı ile birlikte Türkiye'nin en büyük özel elektrik dağıtım ve üretim gruplarından birini inşa etti.",
+        "kaynak": "Onedio; Bereket Enerji kurumsal"
       }
     ],
-    "vergiBorclari": [],
+    "siyasiBaglantilar": [
+      {
+        "kisi": "Berat Albayrak — Çalık Holding Bağlantısı",
+        "baglantiTuru": "Sektörel Örtüşme / AKP Dönemi Büyüme",
+        "aciklama": "Berat Albayrak 2007-2013 arası Çalık Holding CEO'suydu (Çalık Enerji farklı bölgelerde elektrik dağıtımı işletir). Albayrak Enerji ve Tabii Kaynaklar Bakanı olduğu dönemde (2015-2018) AYDEM/Bereket Enerji, ÇATES dahil birden fazla termik santral özelleştirmesini kazandı ve büyük teşvikler aldı. Açılış törenlerine Albayrak katıldı. Doğrudan sahiplik bağı kanıtlanmamıştır; ancak paralel büyüme somuttur.",
+        "kaynak": "T24; soL Haber; The Black Sea"
+      },
+      {
+        "kisi": "Bereket Enerji / AYDEM — 585 Kamu İhalesi",
+        "baglantiTuru": "Kamu İhalesi",
+        "aciklama": "2014-2021 döneminde 2 milyar 403 milyon TL değerinde 585 kamu ihalesi aldı; tüm iktidara yakın elektrik şirketleri arasında 2. sırada. Kamu kasasından bu tür şirketlere 14,4 milyar TL ödendiği raporlandı. Özelleştirme sırasında şirketin kamu ihale yasağı bulunmasına rağmen işlem Özelleştirme Kanunu'nun 12. maddesiyle meşrulaştırıldı.",
+        "kaynak": "D20Haber; Diken; Cumhuriyet"
+      },
+      {
+        "kisi": "GDZ Elektrik — 263 Milyon Dolar Kıyak",
+        "baglantiTuru": "Borç Yeniden Yapılandırma",
+        "aciklama": "CHP Milletvekili Deniz Yavuzyılmaz, Yatağan Termik Santrali için GDZ Elektrik'in dolar cinsinden özelleştirme borcunun TL'ye çevrilip 6 taksit yapıldığını tespit etti. Hesaplanan kamu zararı: 263 milyon dolar.",
+        "kaynak": "Son Mühür"
+      }
+    ],
+    "vergiBorclari": [
+      {
+        "aciklama": "GDZ Dağıtım, Gediz Perakende ve Aydem Elektrik 2021-2024 döneminde (3-4 yıl boyunca) kurumlar vergisi ödemedi. Konu CHP Milletvekili Deniz Yavuzyılmaz tarafından TBMM gündemine taşındı. Şirket kâr raporlarken vergi ödememesi yoğun eleştiri aldı.",
+        "kaynak": "Epoch Times TR; Bold Medya 2025"
+      }
+    ],
+    "skandallar": [
+      {
+        "ad": "İzmir'de İki Kişi Elektrik Akımına Kapılarak Öldü",
+        "tarih": "2024-07-12",
+        "aciklama": "İzmir Konak'ta sağanak yağmurdan sığınak arayan Özge Ceren Deniz ve İnanç Öktemay elektrik akımına kapılarak hayatını kaybetti. GDZ Elektrik Dağıtım A.Ş. sorumlu tutuldu. Şirket ile İzmir Büyükşehir Belediyesi birbirini suçladı. 585 kamu ihalesi alan şirket, ölümlerden sorumlu tutulurken ihale almaya devam etti.",
+        "kaynak": "Euronews; Artı Gerçek, 2024"
+      },
+      {
+        "ad": "İzmir Orman Yangınları",
+        "tarih": "2025",
+        "aciklama": "İzmir orman yangınlarına elektrik dağıtım hatlarının neden olduğu ileri sürüldü; valilik bu yönde açıklama yaptı. GDZ Elektrik doğrudan hedef gösterildi. Ardından şirketin 3 yıldır kurumlar vergisi ödemediği ortaya çıktı.",
+        "kaynak": "Bold Medya 2025"
+      }
+    ],
     "davalar": [],
     "sendikaDurumu": {
       "varMi": "Evet",
@@ -627,7 +1045,7 @@ window.MADENLER_DATA = {
     "renkTema": "#5a1a00",
     "ikon": "🏭",
     "renkGradyan": "linear-gradient(135deg, #3a0a00, #7a2a00)",
-    "guncellenmeTarihi": "2026-05-18",
+    "guncellenmeTarihi": "2026-05-21",
     "kaynaklar": [
       {
         "ad": "Çatalağzı Termik Santrali — Global Energy Monitor",
@@ -713,6 +1131,24 @@ window.MADENLER_DATA = {
         "kaynak": "Yeşil Gazete"
       }
     ],
+    "yonetimKurulu": [
+      {
+        "isim": "Mehmet Hattat",
+        "unvan": "Yönetim Kurulu Başkanı",
+        "notlar": "Forbes Türkiye'ye göre net serveti ~400 milyon dolar. 13 şirketin YK başkanlığını yürütüyor. Pandora Papers: BVI'da 'Agway Supply Management and Investment Limited' ve 'Beaudene Limited' adlı iki offshore şirket kurdu. 'Sanayi yatırımı amacıyla' kurulduğunu açıkladı; soruları yanıtsız bıraktı.",
+        "kaynak": "Forbes Türkiye; Pandora Papers — Türk Haber Gazetesi 2021"
+      },
+      {
+        "isim": "İbrahim Hattat",
+        "unvan": "Otomotiv Grubu Başkanı",
+        "kaynak": "Milliyet"
+      },
+      {
+        "isim": "İpek Hattat",
+        "unvan": "Yönetim Kurulu Üyesi",
+        "kaynak": "Milliyet"
+      }
+    ],
     "siyasiBaglantilar": [
       {
         "kisi": "Mehmet Hattat (HATTAT Holding Yönetim Kurulu Başkanı)",
@@ -735,17 +1171,45 @@ window.MADENLER_DATA = {
     ],
     "vergiBorclari": [
       {
-        "aciklama": "HEMA Enerji ve Maden A.Ş., Amasra-B sahası için 600 bin lira teminat yatırmışken TTK'ya 1,5 milyar lira borcu olduğu ortaya çıktı.",
+        "aciklama": "HEMA Enerji ve Maden A.Ş., bölge rezervlerinin %97'sini barındıran Amasra-B sahası için yalnızca 600 bin TL teminat yatırmıştır. TTK'ya biriken borcu ise 1,5–2 milyar TL'ye ulaşmıştır (faizlerle birlikte bazı kaynaklara göre 2 milyar TL'yi geçmiştir).",
         "kaynak": "Tempo Gazetesi"
       }
     ],
+    "sozlesmeUzatmasi": {
+      "ilk": "2005-2025 (20 yıl)",
+      "birinci_uzatma": "2025'ten 2040'a uzatıldı",
+      "ikinci_uzatma": "4 Haziran 2024'ten itibaren 7 Şubat 2045'e kadar 21 yıllık yeni dönem. 56 milyon ton tüvenan kömür üretimi hedefi (ortalama 2.7 Mt/yıl). 17 yıl tek gram üretim yapılmadığı halde sözleşme bir kez daha uzatıldı.",
+      "tepki": "GMİS Genel Sekreteri ve sendikacılar sözleşme uzatmasını şiddetle kınadı.",
+      "kaynak": "İmza Gazetesi; GMİS açıklaması; Madencilik Türkiye"
+    },
     "davalar": [
       {
-        "ad": "Amasra Maden Faciası Ceza Davası",
-        "aciklama": "Amasra Cumhuriyet Başsavcılığı soruşturmasında 24 şüpheli gözaltına alındı. TTK Amasra Müessese Müdürü Cihat Özdemir başta olmak üzere üst yöneticiler ve mühendisler tutuklandı. Suçlama: 'bilinçli taksirle birden fazla kişinin ölümüne ve yaralanmasına neden olma'. Verilen cezalar: Cihat Özdemir 17 yıl, Selçuk Ekmekçi 16 yıl 6 ay, Mehmet Tural 16 yıl 6 ay, Volkan Soylu 15 yıl hapis. 3 sanık beraat etti (Salih Atmaca, Tayfun Uça, Onur Öztürk). Toplam 20 sanık hapis cezası aldı.",
+        "ad": "Amasra Maden Faciası Ceza Davası — İlk Derece",
+        "aciklama": "23 sanık yargılandı. Bartın 1. Ağır Ceza Mahkemesi 'bilinçli taksirle birden fazla kişinin ölümüne ve yaralanmasına neden olma' suçundan karar verdi (savcı 'kasten öldürme' istemişti). Cihat Özdemir (Müessese Müdürü): 16 yıl 12 ay; Selçuk Ekmekci: 16 yıl 6 ay; Mehmet Tural: 16 yıl 6 ay; Volkan Soylu: 15 yıl. Salih Atmaca ve 2 kişi beraat etti. Hattat Holding ve HEMA yöneticileri davada sanık olarak yer almadı.",
         "tarih": "2022-2025",
-        "sonuc": "Mahkumiyet — 24 Mart 2025'te karar açıklandı",
-        "kaynak": "Medyascope, 24.03.2025; AA"
+        "sonuc": "Mahkumiyet — 24 Mart 2025",
+        "kaynak": "Bianet; Milliyet; 24.03.2025"
+      },
+      {
+        "ad": "Amasra Maden Faciası Ceza Davası — İstinaf",
+        "aciklama": "Sakarya Bölge Adliye Mahkemesi 2. Ceza Dairesi, tüm sanıkların cezalarını onadı. Tahliye ve beraat talepleri reddedildi. Dava Yargıtay aşamasına taşındı. ÇHD (Çağdaş Hukukçular Derneği): 'Asıl sorumlular yargılanmadı; bakanlık ve denetim mekanizmaları hiç sorgulanmadı.'",
+        "tarih": "2026-03",
+        "sonuc": "İstinaf onayı — Mart 2026; Yargıtay aşamasında",
+        "kaynak": "Cumhuriyet; Medyascope; ÇHD açıklaması"
+      },
+      {
+        "ad": "Termik Santral Lisans İptali",
+        "aciklama": "Hattat Holding, Amasra kıyısında termik santral kurmak için yıllarca uğraştı. Bartın Platformu (120 STK ve çok sayıda belediye) onlarca dava açtı. Danıştay ve idare mahkemeleri defalarca Hattat aleyhine karar verdi. Termik santral lisansı kesinleşmiş biçimde iptal edildi. Holding ardından kömür lavvar tesisi projesine yöneldi; Bartın Platformu yeni davalar açtı.",
+        "tarih": "2008-2023",
+        "sonuc": "Lisans kesinleşmiş biçimde iptal edildi.",
+        "kaynak": "Yeşil Gazete; Birgun"
+      },
+      {
+        "ad": "Belediye Başkanına Tazminat Davası",
+        "aciklama": "Hattat Holding, termik santrale karşı çıkan Amasra Belediye Başkanı'na 1 milyon TL tazminat davası açtı.",
+        "tarih": "2020 civarı",
+        "sonuc": "Devam etti / sonuç bilinmiyor",
+        "kaynak": "Evrensel"
       }
     ],
     "sendikaDurumu": {
@@ -761,39 +1225,63 @@ window.MADENLER_DATA = {
     "ikon": "explosion",
     "renkGradyan": "linear-gradient(135deg, #0a0a1a, #1a1a2e)",
     "renkAksan": "#ff4444",
-    "guncellenmeTarihi": "2026-05-18",
+    "guncellenmeTarihi": "2026-05-21",
     "kaynaklar": [
       {
         "ad": "Wikipedia — Amasra Maden Kazası",
         "url": "https://tr.wikipedia.org/wiki/Amasra_maden_kazas%C4%B1"
       },
       {
-        "ad": "Medyascope — Amasra Maden Faciası Davasında Karar (Mart 2025)",
-        "url": "https://medyascope.tv/2025/03/24/amasra-maden-faciasi-davasinda-karar-aciklandi/"
+        "ad": "Bianet — Amasra Davasında Karar: Sorumlular Cezasız Bırakıldı",
+        "url": "https://bianet.org/haber/amasra-maden-faciasi-davasinda-karar-sorumlular-cezasiz-birakildi-305790"
       },
       {
-        "ad": "Diken — Sayıştay Raporları: Maden Sahasının Devrinde Haksız Çıkar",
-        "url": "https://www.diken.com.tr/sayistay-raporlari-bartindaki-madende-alti-yilda-893-isci-yaralandi/"
+        "ad": "Milliyet — Amasra Faciası Kararı Açıklandı",
+        "url": "https://www.milliyet.com.tr/gundem/amasrada-43-kisinin-oldugu-maden-faciasi-davasinda-karar-aciklandi-7336671"
+      },
+      {
+        "ad": "Cumhuriyet — Amasra İstinaf: Cezalar Onandı",
+        "url": "https://www.cumhuriyet.com.tr/turkiye/amasra-maden-faciasinda-istinaf-tan-karar-tutuklu-saniklarin-cezalari-onandi-2487316"
       },
       {
         "ad": "Diken — Hattat Holding'in Amasra Madenine Niçin Kıyak Geçiliyor?",
         "url": "https://www.diken.com.tr/hattat-holdingin-amasra-madenine-nicin-kiyak-geciliyor/"
       },
       {
-        "ad": "Medyascope — Amasra Komisyonu'nda Hattat Holding Tartışması",
-        "url": "https://medyascope.tv/2022/11/24/amasra-komisyonunda-hattat-holding-tartismasi-chpli-bankoglu-hattat-holdinge-verilen-maden-sahalarinin-geri-alinmasini-istiyoruz/"
+        "ad": "Euronews — Sayıştay Raporları Ne Diyor?",
+        "url": "https://tr.euronews.com/2022/10/18/amasra-maden-patlamasi-sayistay-raporlari-ne-diyor-bakanlik-nasil-cevapliyor"
       },
       {
-        "ad": "ISG Haber — Hattat Enerji 17 yıllık süreçte kömür üretimini başlatmadı",
-        "url": "https://isghaber.com.tr/haber/11653442/hattat-enerji-17-yillik-surecte-komur-uretimini-baslatmadi"
-      },
-      {
-        "ad": "Tempo Gazetesi — Amasra HATTAT Holding'e böyle peşkeş çekildi",
+        "ad": "Tempo Gazetesi — Amasra HATTAT Holding'e böyle peşkeş çekildi (600 bin TL teminat)",
         "url": "https://www.tempogazetesi.com/amasra-hattat-holdinge-boyle-peskes-cekildi-600-bin-lira-teminati-15-milyar-lira-borcu-var"
       },
       {
-        "ad": "Teyit — Amasra'da Patlama Yaşanan Madenin Mehmet Hattat'a Ait Olduğu İddiası",
+        "ad": "İmza Gazetesi — 2045'e Uzatıldı, Devasa Üretim Rekoru Hedefledi",
+        "url": "https://www.imzagazetesi.com/2045e-uzatilmisti-devasa-uretim-rekoru-hedefledi"
+      },
+      {
+        "ad": "GMİS — Amasra-B Sözleşme Uzatmasına Tepki",
+        "url": "https://www.mardinlife.com/gundem/gmis-genel-sekreteri-kayadan-amasra-b-sahasinda-sozlesme-uzatilmasina-tepki"
+      },
+      {
+        "ad": "Pandora Papers — Mehmet Hattat BVI Offshore Şirketler",
+        "url": "https://www.turkhabergazetesi.com/haber/mehmet-hattat-pandora-belgelerinde-anilmisti-36332.html"
+      },
+      {
+        "ad": "Yeşil Gazete — Hattat Termik Santral Lisansı Kesinleşmiş Biçimde İptal Edildi",
+        "url": "https://yesilgazete.org/hattat-holding-simdi-de-komur-tesisi-kurmak-istiyor-bartin-platformu-dava-acti/"
+      },
+      {
+        "ad": "Evrensel — Hattat'tan Belediye Başkanına 1 Milyon TL Dava",
+        "url": "https://www.evrensel.net/haber/432179/hattattan-termik-santrale-karsi-cikan-amasra-belediye-baskanina-1-milyonluk-dava"
+      },
+      {
+        "ad": "Teyit — Patlama Yaşanan Madenin Hattat'a Ait Olduğu İddiası",
         "url": "https://teyit.org/analiz/amasrada-patlama-yasanan-madenin-mehmet-hattata-ait-oldugu-iddiasi"
+      },
+      {
+        "ad": "ÇHD — Amasra: Asıl Sorumlular Yargılanmadı",
+        "url": "https://www.numedya24.com/amasra-maden-katliami-davasi-i-chd-asil-sorumlular-yargilanmadi/"
       }
     ]
   },
@@ -802,9 +1290,10 @@ window.MADENLER_DATA = {
     "ad": "ÇELİKLER Holding",
     "kisaAd": "ÇELİKLER",
     "holding": "ÇELİKLER Holding",
+    "holdingAdami": "Tahir Çelik",
     "sektor": "Kömür (Linyit), Enerji, İnşaat, Turizm",
-    "tip": "Özel",
-    "bolge": "Kahramanmaraş / Afşin-Elbistan, Kütahya / Seyitömer, Aydın",
+    "tip": "Özel (Aile Şirketi)",
+    "bolge": "Kahramanmaraş / Afşin-Elbistan, Kütahya / Seyitömer, Bursa / Orhaneli, Kütahya / Tunçbilek",
     "sehir": "Ankara (merkez), Kahramanmaraş, Kütahya",
     "ilce": "Elbistan",
     "koordinatlar": {
@@ -812,41 +1301,109 @@ window.MADENLER_DATA = {
       "lon": 36.95
     },
     "kurulusYili": 1958,
-    "ruhsatSayisi": "Afşin-Elbistan A linyit sahası + Seyitömer linyit sahası + Orhaneli linyit sahası + Tunçbilek linyit sahası (işletme hakları özelleştirme yoluyla elde edildi)",
-    "isletmeSayisi": "4 termik santral ve bağlı linyit maden sahaları: (1) Afşin-Elbistan A (Kahramanmaraş), (2) Seyitömer (Kütahya), (3) Orhaneli (Bursa), (4) Tunçbilek (Kütahya). Ayrıca Kömürsan Madencilik bünyesinde Grup 2 maden ruhsatları (mermer/agrega).",
-    "iscSayisi": "10.000+ (tüm holding bünyesinde). Elbistan A santral ve maden operasyonunda: 3.350-3.764 kadrolu işçi (farklı dönem açıklamaları). 2026 Şubat'ta Afşin-Elbistan A'da 586 işçi kapı önünde işten çıkarıldı.",
+    "ruhsatSayisi": "4 termik santral + bağlı linyit maden sahaları (işletme hakları özelleştirme yoluyla elde edildi)",
+    "isletmeSayisi": "4 termik santral: Afşin-Elbistan A (1.355 MW), Seyitömer (600 MW), Orhaneli (210 MW), Tunçbilek (365 MW). Toplam ~2.769 MW. Ayrıca 7 jeotermal ve 1 hidroelektrik santral.",
+    "yonetimKurulu": [
+      {
+        "isim": "Tahir Çelik",
+        "unvan": "Yönetim Kurulu Başkanı",
+        "notlar": "Osman Çelik'in oğlu. Cumhurbaşkanı Erdoğan, 2019 ABD dönüşünde Tahir Çelik'i bizzat arayarak filtre takmamanın hesabını sordu. Çelik telefonda 'Ben bırakayım' dedi; Erdoğan telefonu kapattı. Buna rağmen holding kamu ihalesi almaya devam etti.",
+        "kaynak": "Milliyet, Diken, soL Haber, 2019"
+      },
+      {
+        "isim": "Bilal Çelik",
+        "unvan": "Yönetim Kurulu Başkanı (eski dönem)",
+        "notlar": "Çelik ailesinden, farklı dönemlerde başkanlık görevini üstlendi.",
+        "kaynak": "Çelikler Holding kurumsal"
+      },
+      {
+        "isim": "Fadlı Çelik",
+        "unvan": "Yönetim Kurulu Başkan Yardımcısı",
+        "notlar": "Aile şirketi yapısı: yönetim kurulunun tamamı Çelik soyadını taşımaktadır.",
+        "kaynak": "Çelikler Holding kurumsal"
+      },
+      {
+        "isim": "Hasan Çelik",
+        "unvan": "Yönetim Kurulu Üyesi",
+        "kaynak": "Çelikler Holding kurumsal"
+      },
+      {
+        "isim": "Mehmet Çelik",
+        "unvan": "Yönetim Kurulu Üyesi",
+        "kaynak": "Çelikler Holding kurumsal"
+      }
+    ],
+    "iscSayisi": {
+      "toplam": "10.000+ (tüm holding bünyesinde)",
+      "elbistanA": "3.350–3.764 kadrolu işçi (şirket açıklaması)",
+      "notlar": "Şubat 2026'da Afşin-Elbistan A'da sabah vardiyasına gelen 586 işçi turnike kartları iptal edilmiş halde kapı önünde işten çıkarıldı. Şirket daha sonra yalnızca 100 kişiyi geri almayı teklif etti."
+    },
+    "tesisler": [
+      {
+        "ad": "Afşin-Elbistan A Termik Santrali",
+        "tur": "Linyit Yakıtlı Termik Santral",
+        "bolge": "Kahramanmaraş / Elbistan",
+        "kapasite": "1.355 MW",
+        "ozellestirmeYili": 2018,
+        "aciklama": "EÜAŞ bünyesinden 20 yıllık işletme hakkı devriyle Çelikler'e geçti. Türkiye'nin en büyük linyit santrallerinden biri. 720 MW'lık ek ünite projesi mahkemede durduruldu.",
+        "ek720MW": "4 ayrı ÇED davası açıldı; mahkeme onayı çıkmadı. Türkiye'nin COP31'e ev sahipliği yapacağı Kasım 2026 döneminde uluslararası baskıyla tartışmalı hale geldi."
+      },
+      {
+        "ad": "Seyitömer Termik Santrali",
+        "tur": "Linyit Yakıtlı Termik Santral",
+        "bolge": "Kütahya / Seyitömer",
+        "kapasite": "600 MW (4×150 MW)",
+        "ozellestirmeYili": 2013,
+        "ozellestirmeBedeli": "2.248.000.000 USD",
+        "aciklama": "Devir sözleşmesi 17 Haziran 2013'te imzalandı. Santral binası ve ekipman 'varlık satışı,' maden sahaları 2054'e kadar 'işletme hakkı devri' kapsamında verildi.",
+        "heyelan2019": "Mayıs 2019: kül atık sahası zemin kayması. Sahadaki gölet taştı, Seyitömer-il merkezi karayolu sular altında kaldı. 2019'da yasal atık dökümü onay zorunluluğu kaldırıldıktan sonra yaşandı. 50+ trafik kazası."
+      },
+      {
+        "ad": "Orhaneli Termik Santrali",
+        "tur": "Linyit Yakıtlı Termik Santral",
+        "bolge": "Bursa / Orhaneli",
+        "kapasite": "210 MW",
+        "ozellestirmeYili": 2015,
+        "ozellestirmeBedeli": "Tunçbilek ile birlikte 521 milyon USD",
+        "aciklama": "17 Aralık 2014 ihalesinde Çelikler en yüksek teklifi verdi; 22 Haziran 2015'te devredildi. Özelleştirme borcu TL'ye çevrilerek yeniden yapılandırıldı — CHP'nin hesabına göre 2.783 milyon TL kamu zararı."
+      },
+      {
+        "ad": "Tunçbilek Termik Santrali",
+        "tur": "Linyit Yakıtlı Termik Santral",
+        "bolge": "Kütahya / Tunçbilek",
+        "kapasite": "365 MW",
+        "ozellestirmeYili": 2015,
+        "ozellestirmeBedeli": "Orhaneli ile birlikte 521 milyon USD",
+        "aciklama": "Orhaneli ile aynı ihale paketinde devredildi."
+      }
+    ],
     "maliVeriler": {
-      "ozelleştirmeBedeli": "Seyitömer Termik Santrali için 2.248.000.000 dolar (2013 özelleştirmesi). Toplam enerji varlıkları çok daha yüksek.",
-      "kamuİhalesiz": "2010-2021 arasında 42 ayrı kamu ihalesi; toplam 8 milyar 329 milyon TL",
-      "borcDonusumusumu": "CHP'li milletvekili tespitine göre Orhaneli ve Tunçbilek özelleştirme borçları dolar yerine TL'ye çevrildi ve 6 eşit taksitte ödemeye bağlandı; kamu zararı: 2 milyar 783 milyon TL",
-      "turkiyeElektrikPati": "Türkiye toplam elektrik üretiminin yaklaşık %5'i",
-      "linyitUretimi": "Yılda 40 milyon ton kömür üretim kapasitesi (şirket beyanı)",
-      "notlar": "Şirket, Urgewald Küresel Kömürden Çıkış Listesi'nde yer almaktadır. Türkiye'nin en büyük özel sera gazı salıcılarından biridir."
+      "toplam_ozellestime": "Seyitömer: 2.248M USD (2013) + Orhaneli+Tunçbilek: 521M USD (2015) + Elbistan A: 20 yıllık işletme hakkı (2018)",
+      "kamuIhalesi_2010_2021": "42 ayrı kamu ihalesi; toplam 8 milyar 329 milyon TL. İhale veren kurumlar: KGM (17 ihale), TCDD (4 ihale), TOKİ, DHMİ",
+      "ihale_detay": "4 termik santralinin filtresizlik gerekçesiyle mühürlü olduğu dönemde Karayolları holdinge 533 milyon TL'lik yeni ihale verdi.",
+      "borcYapılandırması": "Orhaneli-Tunçbilek özelleştirme borçları dolar yerine TL'ye çevrilerek 6 eşit taksite bağlandı. CHP milletvekili Deniz Yavuzyılmaz: 2.783 milyon TL kamu zararı.",
+      "turkiyeElektrikPayi": "~%5",
+      "linyitUretimi": "Yılda 40 milyon ton kapasite (şirket beyanı)",
+      "notlar": "Urgewald Küresel Kömürden Çıkış Listesi'nde yer almaktadır. Türkiye'nin en büyük özel sera gazı salıcılarından biridir. Tüm tesisler 8. sırada (2024 elektrik üreticileri sıralaması)."
     },
     "ozellestirilenSahalar": [
       {
         "ad": "Afşin-Elbistan A Termik Santrali ve Linyit Sahası",
-        "aciklama": "EÜAŞ'a ait santral ve bağlı linyit sahası 2018'de Çelikler Holding'e devredildi (ERG-Verbund hisseleri satın alındı ve EÜAŞ ile devir protokolü imzalandı). 20 yıllık işletme hakkı.",
         "yil": 2018,
-        "kaynak": "SoL Haber; EMEP Meclis Soruları"
+        "aciklama": "EÜAŞ bünyesinden 20 yıllık işletme hakkı devri yöntemiyle Çelikler'e geçti. ERG-Verbund hisseleri satın alınmasını içerdi.",
+        "kaynak": "soL Haber; EMEP Meclis Soruları"
       },
       {
         "ad": "Seyitömer Termik Santrali ve Linyit Sahası",
-        "aciklama": "2013'te EÜAŞ özelleştirmesiyle Çelikler Taahhüt İnşaat ve Sanayi A.Ş. tarafından 2.248.000.000 dolar ile satın alındı; işletme hakkı 2054'e kadar.",
         "yil": 2013,
-        "kaynak": "Çelikler Holding; Seyitömer Power Station, Global Energy Monitor"
+        "aciklama": "Çelikler Taahhüt İnşaat ve Sanayi A.Ş. 2.248M USD ile kazandı. Maden sahaları 2054'e kadar işletme hakkıyla verildi.",
+        "kaynak": "NTV, Enerji Günlüğü"
       },
       {
-        "ad": "Orhaneli Termik Santrali ve Linyit Sahası",
-        "aciklama": "Özelleştirme ile Çelikler Holding'e devredildi. Ödeme dolar cinsinden belirlenmişken TL'ye çevrildi.",
-        "yil": null,
-        "kaynak": "CHP Milletvekili açıklaması"
-      },
-      {
-        "ad": "Tunçbilek Termik Santrali ve Linyit Sahası",
-        "aciklama": "Özelleştirme ile Çelikler Holding'e devredildi.",
-        "yil": null,
-        "kaynak": "Çelikler Holding"
+        "ad": "Orhaneli + Tunçbilek Termik Santralleri",
+        "yil": 2015,
+        "aciklama": "Tek paket olarak 521M USD'a Çelikler'e devredildi.",
+        "kaynak": "Özelleştirme İdaresi"
       }
     ],
     "iscOlumleri": [
@@ -854,117 +1411,223 @@ window.MADENLER_DATA = {
         "tarih": "2022-08",
         "adet": 1,
         "aciklama": "Seyitömer'de bir dolaşım pompası yükleme sırasında düşerek 1 işçiyi öldürdü, 1 işçiyi ağır yaraladı.",
-        "kaynak": "SoL Haber"
+        "kaynak": "soL Haber"
+      },
+      {
+        "tarih": "2022 veya öncesi",
+        "adet": 1,
+        "aciklama": "Afşin-Elbistan A'da kazan bakım işçisi Okan Sönmez (27 yaşında): çalıştığı platformun halatları kopunca 44 metreden 12 metreye düştü, hayatını kaybetti.",
+        "kaynak": "soL Haber"
+      },
+      {
+        "tarih": "2022 veya öncesi",
+        "adet": 1,
+        "aciklama": "Afşin-Elbistan A'da kazan bakım işçisi Taylan Sünbül (36 yaşında, 2 çocuk babası) hayatını kaybetti.",
+        "kaynak": "soL Haber"
       },
       {
         "tarih": "bilinmiyor",
         "adet": 1,
-        "aciklama": "Çelikler Holding bünyesindeki linyit sahasında 33 yaşındaki konveyör işçisi Hasan Karpuz 6.000 volt elektrik çarpması sonucu hayatını kaybetti; 3 çocuk babası.",
-        "kaynak": "SoL Haber"
+        "aciklama": "Çelikler bünyesindeki linyit sahasında konveyör işçisi Hasan Karpuz (33 yaşında, 3 çocuk babası) 6.000 volt elektrik çarpması sonucu hayatını kaybetti.",
+        "kaynak": "soL Haber"
       },
       {
         "tarih": "bilinmiyor",
         "adet": 1,
-        "aciklama": "Çelikler Pamukören Jeotermal Tesisi'nde çalışan Faruk Kırgın (40 yaşında) elektrik çarptması sonucu hayatını kaybetti.",
-        "kaynak": "SoL Haber"
+        "aciklama": "Çelikler Pamukören Jeotermal Tesisi'nde çalışan Faruk Kırgın (40 yaşında) elektrik çarpması sonucu hayatını kaybetti.",
+        "kaynak": "soL Haber"
       }
     ],
     "isgOlaylari": [
       {
         "tarih": "2024-04-02",
         "aciklama": "Afşin-Elbistan A Termik Santrali'nde bakım sırasında buhar kazanı patladı; 3 işçi ağır yaralandı.",
-        "kaynak": "SoL Haber"
+        "kaynak": "soL Haber"
+      },
+      {
+        "tarih": "2024-08",
+        "aciklama": "Afşin-Elbistan A'da enflasyon zammı grevi: işçiler %12 isterken şirket %6 teklif etti. Şirket önce 8, sonra 24, ardından 200 işçiyi kovdu. Bir işçi baskı altında silahla intihar girişiminde bulundu, arkadaşları son anda engelledi.",
+        "kaynak": "Ekonomim, 2024"
+      },
+      {
+        "tarih": "2024-10",
+        "aciklama": "Çelikler'in Elbistan linyit sahasında göçük meydana geldi; EÜAŞ'a ait termik santralin enerji üretimi geçici olarak durdu.",
+        "kaynak": "Haberler.com"
       },
       {
         "tarih": "2025-12",
-        "aciklama": "Afşin-Elbistan A Termik Santrali'nde kül çukuru kapakları beklenmedik şekilde açıldı; 4 işçi iskeleteden atladı.",
-        "kaynak": "SoL Haber"
+        "aciklama": "Afşin-Elbistan A'da kül çukuru kapakları beklenmedik şekilde açıldı; 4 işçi iskelet sisteminden atladı.",
+        "kaynak": "soL Haber"
       },
       {
         "tarih": "2026-02-19",
-        "aciklama": "Afşin-Elbistan A Termik Santrali'nde 586 işçi sabah vardiyasına gelmesi sırasında turnikelerde kartları iptal edilmiş halde bularak işten çıkarıldığını öğrendi. Herhangi bir açıklama yapılmadı. Şirket daha sonra yalnızca 100 kişiyi yeniden işe almayı teklif etti.",
-        "kaynak": "SoL Haber; Referans Gazetesi"
+        "aciklama": "Afşin-Elbistan A'da 586 işçi sabah vardiyasında turnike kartları iptal edilmiş buldu. Hiçbir açıklama yapılmadı. Şirket 100 kişiyi geri almayı teklif etti. EMEP Milletvekili Sevda Karaca konuyu TBMM'ye taşıdı.",
+        "kaynak": "soL Haber; Referans Gazetesi; ANEP"
       }
     ],
     "cevreIhlalleri": [
       {
         "yer": "Afşin-Elbistan, Kahramanmaraş",
-        "aciklama": "Greenpeace 2019 raporu: Afşin-Elbistan santrallerinin hava kirliliği nedeniyle 17.000 erken ölüme yol açtığı hesaplandı; ömrü boyunca toplam 32.000 erken ölüme neden olacağı öngörüldü. Santral yıllarca baca filtresi yasal gerekliliklerini karşılamadan çalıştı.",
-        "kaynak": "Greenpeace Türkiye Raporu, 2019"
+        "tarih": "2019 raporu / süregelen",
+        "aciklama": "Greenpeace 2019 raporu (analist: Lauri Myllyvirta): Afşin-Elbistan santrallerinin PM2.5 ve NO2 hava kirliliği nedeniyle bugüne kadar yaklaşık 17.000 erken ölüme yol açtığı hesaplandı. Ömrü boyunca toplam 32.000 erken ölüm bekleniyor; 720 MW'lık ek ünite kurulursa 2.200 ek ölüm daha. 1990'lardan bu yana bölgede kanser oranları 8 kat arttı.",
+        "kaynak": "Greenpeace Türkiye; Haber46"
+      },
+      {
+        "yer": "Tüm santraller",
+        "tarih": "2020-01",
+        "aciklama": "Santraller baca filtresi takma yasal yükümlülüğünü yerine getirmediği için Çevre Bakanlığı tarafından mühürlenerek üretim durduruldu. Ardından Meclis, holdinge 2,5 yıllık süre uzatımı verdi (Erdoğan önce veto etti, sonra farklı bir düzenlemeyle çözüldü). Mühürlü dönemde KGM holdinge 533 milyon TL ihale vermeye devam etti.",
+        "kaynak": "Artı Gerçek; soL Haber; Gerçek Gündem"
       },
       {
         "yer": "Seyitömer, Kütahya",
-        "aciklama": "22 Mayıs 2024: Seyitömer maden atık sahasında heyelan; taşkın bölgeyi sular altında bıraktı, kasaba ile il merkezi arasındaki yol kapandı. 2019'da değiştirilen Maden Kanunu'na göre şirketlerin atık depolama alanı için MAPEG onayı alma zorunluluğu kaldırıldıktan sonra yaşandı.",
-        "kaynak": "SoL Haber, Mayıs 2024"
+        "tarih": "2019-05",
+        "aciklama": "Kül atık sahası zemin kayması: sahadaki gölet taştı, kasaba-il karayolu sular altında kaldı. 2019'da Maden Kanunu değişikliğiyle atık dökümü için MAPEG onayı zorunluluğu kaldırıldıktan sonra gerçekleşti. 1 ay+ yol kapandı, 50+ trafik kazası yaşandı.",
+        "kaynak": "soL Haber; Gazete Duvar"
+      },
+      {
+        "yer": "Seyitömer, Kütahya",
+        "tarih": "2024-05-22",
+        "aciklama": "Seyitömer maden atık sahasında yeni heyelan; taşkın köy yolunu ve çevresini etkiledi.",
+        "kaynak": "soL Haber, Mayıs 2024"
       },
       {
         "yer": "Afşin-Elbistan, Kahramanmaraş",
-        "aciklama": "Santrallerin yakınındaki bölge halkı yoğun hava kirliliği, kül ve zehirli gaz emisyonuna maruz kaldı; ciddi sağlık sorunları belgelendi.",
-        "kaynak": "SoL Haber"
+        "tarih": "süregelen",
+        "aciklama": "Susuzlaştırma operasyonları nedeniyle yılda 105 milyon metreküp yeraltı suyu kaybı. Yılda ~7 milyon ton kül-cüruf-alçıtaşı atığı en yakın yerleşim yerine 500 metre mesafeli sahaya dökülüyor.",
+        "kaynak": "Greenpeace"
       }
     ],
     "siyasiBaglantilar": [
       {
-        "kisi": "Tahir Çelik (Çelikler Holding Yönetim Kurulu Başkanı)",
-        "baglantiTuru": "AKP Hükümeti ile Doğrudan İlişki",
-        "aciklama": "Cumhurbaşkanı Erdoğan'ın Tahir Çelik'i çevre ihlalleri konusunda bizzat aradığı belgelendi; bu temas, holdinge yönelik eleştiriler bağlamında aktarıldı. Çelikler Holding, AKP döneminde 42 ayrı kamu ihalesini toplam 8,3 milyar TL değerinde kazandı. Holdinge yapılan özelleştirme borç ödemeleri dolardan TL'ye çevrilerek yeniden yapılandırıldı; CHP bu yapılandırmayı 2,7 milyar TL kamu zararı olarak nitelendirdi.",
-        "kaynak": "SoL Haber; CHP Milletvekili açıklaması"
+        "kisi": "Tahir Çelik — Erdoğan telefon görüşmesi",
+        "baglantiTuru": "AKP Hükümeti ile Doğrudan Temas",
+        "aciklama": "Cumhurbaşkanı Erdoğan, 2019 ABD dönüşünde Tahir Çelik'i bizzat arayarak filtre takmamanın hesabını sordu: 'Biz sana süre verdik, şimdiye kadar ne yaptın?' Çelik önce 10.000 kişilik istihdamı öne sürdü, ardından 'Ben bırakayım' dedi. Bu iletişime rağmen holding yüzlerce milyon TL'lik yeni ihaleler almaya devam etti.",
+        "kaynak": "Milliyet; Diken; soL Haber, 2019"
       },
       {
-        "kisi": "Elazığ Depremi (2020) Bağışı",
-        "baglantiTuru": "Kamuya Görünürlük",
-        "aciklama": "Tahir Çelik 2020 Elazığ depremi için 500.000 TL bağış yaptı.",
-        "kaynak": "Gazete Vatan"
+        "kisi": "Çelikler Holding genel",
+        "baglantiTuru": "AKP Döneminde Kamu Kaynaklarından Servet",
+        "aciklama": "AKP iktidarı döneminde 42 ayrı kamu ihalesi (8.3 milyar TL) + 4 büyük özelleştirme. Özelleştirme borçları TL'ye çevrilip yeniden yapılandırıldı (2.783 milyon TL kamu zararı). Filtre ihlali döneminde bile devlet ihalesi vermeye devam etti. CHP ve EMEP milletvekilleri bu ilişkiyi defalarca TBMM'ye taşıdı.",
+        "kaynak": "Birgun; Sözcü; Artı Gerçek"
       }
     ],
     "vergiBorclari": [
       {
-        "aciklama": "Orhaneli ve Tunçbilek santralleri için dolar cinsinden belirlenen özelleştirme borçları TL'ye çevrilerek 6 eşit taksitte yeniden yapılandırıldı. CHP milletvekilleri bu yapılandırmayı 2 milyar 783 milyon TL kamu zararı olarak TBMM'ye taşıdı.",
-        "kaynak": "CHP Deniz Yavuzyılmaz açıklaması"
+        "aciklama": "Orhaneli ve Tunçbilek santralleri için dolar cinsinden belirlenen özelleştirme borçları TL'ye çevrilip 6 eşit taksite bağlandı. CHP Milletvekili Deniz Yavuzyılmaz: 2 milyar 783 milyon TL kamu zararı.",
+        "kaynak": "CHP Milletvekili açıklaması"
       }
     ],
-    "davalar": [],
+    "davalar": [
+      {
+        "konu": "720 MW Ek Ünite ÇED",
+        "mahkeme": "İdare Mahkemeleri",
+        "aciklama": "Afşin-Elbistan A'ya ek 720 MW ünite kurulumu için alınan ÇED onayına karşı 4 ayrı dava açıldı.",
+        "sonuc": "Mahkemeden onay çıkmadı; proje mahkemede askıda.",
+        "kaynak": "Greenpeace; Cumhuriyet, 2025-2026"
+      },
+      {
+        "konu": "Filtresizlik mühürlemesi",
+        "mahkeme": "Çevre Bakanlığı idari işlemi",
+        "aciklama": "Ocak 2020'de baca filtresi yükümlülüğünü yerine getirmeyen santraller mühürlendi. Ardından Meclis 2,5 yıllık süre uzatımı yasalaştırdı.",
+        "sonuc": "Mühür kaldırıldı; filtre sorunlarının çözüm takvimi tartışmalı.",
+        "kaynak": "Artı Gerçek; soL Haber"
+      },
+      {
+        "konu": "586 İşçi Toplu Çıkarma",
+        "mahkeme": "Çalışma ve Sosyal Güvenlik Bakanlığı / TBMM",
+        "aciklama": "EMEP Milletvekili Sevda Karaca konuyu Bakanlığa ve TBMM'ye taşıdı. Eş zamanlı olarak 1.000'i aşkın işçinin çıkarılıp çıkarılmadığı soruşturuluyor.",
+        "sonuc": "Devam ediyor (2026).",
+        "kaynak": "ANEP; soL Haber"
+      }
+    ],
     "sendikaDurumu": {
-      "varMi": "Evet (bazı tesislerde)",
+      "varMi": "Evet (kısmi)",
       "sendikalar": [
-        "TES-İŞ (enerji sektörü; Çelikler Holding yönetimini ziyaret ettiği belgelendi)"
+        {
+          "ad": "TES-İŞ",
+          "konfederasyon": "Türk-İş",
+          "durum": "Enerji sektörü sendikası. Çelikler Holding yönetimini ziyaret ettiği belgelendi; ancak 2024 grev sürecinde işçilerin yanında yeterince durmadığına dair iddialar var."
+        }
       ],
-      "orgutlulukOrani": null,
-      "notlar": "Afşin-Elbistan A'da işçiler tarihsel olarak eylem örgütledi; ancak 2026 Şubat'ta 586 işçi toplu işten çıkarmaya maruz kaldı. Çelikler Holding, 586'nın yerine yalnızca 100 kişiyi yeniden işe almayı teklif etti. EMEP milletvekili Kahramanmaraş'ta 1.000'den fazla işçinin işten çıkarılıp çıkarılmadığını Bakanlığa sordu."
+      "notlar": "Ağustos 2024'te %12 zam talebiyle başlayan grevde işçiler sürecin ardından toplu kovulmaya maruz kaldı. Şubat 2026'da 586 kişi hiçbir bildirim yapılmadan işten çıkarıldı; şirket 100'ünü geri aldı."
     },
-    "ozet": "Çelikler Holding, 1958'de Osman Çelik tarafından Ankara'da kurulan; Tahir Çelik önderliğinde büyüyen ve Türkiye elektriğinin yaklaşık %5'ini üreten bir enerji ve madencilik holdingidir. Afşin-Elbistan A (2018), Seyitömer (2013), Orhaneli ve Tunçbilek termik santralleri ile bağlı linyit sahalarını AKP döneminde gerçekleştirilen özelleştirmelerle devralmıştır. Bu sahalar kamu varlıkları olup yıllarca TKİ/EÜAŞ bünyesinde işletilmişti. 2010-2021 arasında 8,3 milyar TL değerinde 42 kamu ihalesi kazanan holding, Greenpeace raporuna göre hava kirliliğiyle 17.000 erken ölüme yol açan santralları işletmekte, Seyitömer'de 2024 heyelanına neden olan çevre ihlalleri gerçekleştirmekte ve Şubat 2026'da 586 işçiyi kapı önünde işten çıkarmaktadır.",
-    "renkTema": "#2a0a4a",
-    "ikon": "fire",
-    "renkGradyan": "linear-gradient(135deg, #1a0028, #3a1060)",
-    "guncellenmeTarihi": "2026-05-18",
+    "ozet": "ÇELİKLER Holding, 1958'de Osman Çelik tarafından kurulan ve bugün Tahir Çelik liderliğinde Türkiye elektriğinin yaklaşık %5'ini üreten dev bir enerji-madencilik holdingidir. Afşin-Elbistan A (2018), Seyitömer (2013, 2.248M$), Orhaneli ve Tunçbilek (2015, 521M$) termik santrallerini AKP döneminde gerçekleştirilen özelleştirmelerle devraldı. Greenpeace raporuna göre Afşin-Elbistan santralleri şimdiye kadar 17.000 erken ölüme yol açtı; ömür boyu tahmini 32.000. Santraller baca filtresi yükümlülüğünü yıllarca yerine getirmedi, 2020'de mühürlendikten sonra bile Karayolları şirkete 533 milyon TL ihale verdi. Erdoğan'ın bizzat telefon ederek 'Ne yaptın?' diye hesap sorduğu Tahir Çelik'e yeni ihaleler akmaya devam etti. Seyitömer'de kül heyelanı, Elbistan'da kanser artışı ve yer altı suyu kaybı belgeli çevre sorunları. Ağustos 2024'te greve katılan 200 işçi kovuldu, bir işçi intihar girişiminde bulundu; Şubat 2026'da 586 işçi daha kapı önünde çıkarıldı.",
+    "renkTema": "#5c1a00",
+    "ikon": "🔥",
+    "renkGradyan": "linear-gradient(135deg, #1a0500, #5c1a00)",
+    "guncellenmeTarihi": "2026-05-21",
     "kaynaklar": [
       {
-        "ad": "SoL Haber — Seyitömer'deki Faciasının Sorumlusu Çelikler Holding Kimdir?",
+        "ad": "soL Haber — Seyitömer'deki Faciasının Sorumlusu Çelikler Holding Kimdir?",
         "url": "https://haber.sol.org.tr/haber/heyelanin-izleri-hala-silinemedi-seyitomerdeki-facianin-sorumlusu-celikler-holding-kimdir"
       },
       {
-        "ad": "SoL Haber — Çelikler Holding Afşin Elbistan A'da 586 İşçiyi İşten Çıkardı",
+        "ad": "soL Haber — Çelikler Holding Afşin Elbistan A'da 586 İşçiyi İşten Çıkardı",
         "url": "https://haber.sol.org.tr/haber/celikler-holding-afsin-elbistan-termik-santralinde-586-isciyi-isten-cikardi-406613"
       },
       {
-        "ad": "SoL Haber — Termik Santrallerde ve Kömür Madenlerinde Neler Oluyor?",
-        "url": "https://haber.sol.org.tr/haber/termik-santrallerde-ve-komur-madenlerinde-neler-oluyor-406882"
+        "ad": "Referans Gazetesi — Afşin Elbistan A'da Neden 586 İşçi Çıkarıldı?",
+        "url": "https://www.referansgazetesi.com.tr/afsin-elbistan-a-termik-santralinde-neden-586-isci-cikarildi"
+      },
+      {
+        "ad": "ANEP — EMEP'li Karaca İşten Çıkarmaları TBMM'ye Taşıdı",
+        "url": "https://www.anarsisthaberler.net/emepli-karaca-afsin-elbistan-termik-santralinde-isten-cikarmalari-iddiasini-tbmmye-tasidi"
+      },
+      {
+        "ad": "Greenpeace Türkiye — Maraş ve Esir Edilen Temiz Havası (1)",
+        "url": "https://www.greenpeace.org/turkey/blog/maras-ve-esir-edilen-temiz-havasi-bir-komurlu-termik-santral-hikayesi/"
+      },
+      {
+        "ad": "Greenpeace Türkiye — Maraş ve Esir Edilen Temiz Havası (2)",
+        "url": "https://www.greenpeace.org/turkey/blog/maras-ve-esir-edilen-temiz-havasi-bir-komurlu-termik-santral-hikayesi-2/"
+      },
+      {
+        "ad": "Haber46 — 17 Bin Erken Ölüm ve Yeni Santral ÇED Reddi",
+        "url": "https://www.haber46.com.tr/guncel/bugune-kadar-17-bin-erken-olume-neden-oldugu-belirtilen-afsin-termik-h378308.html"
+      },
+      {
+        "ad": "Artı Gerçek — Dört Termik Santral, Kirletme Hakkı Uzatması",
+        "url": "https://artigercek.com/makale/ozellestirilen-dort-termik-santrali-alan-celikler-holding-istedi-kirletme-hakkina-uzatma-geldi-111075"
+      },
+      {
+        "ad": "Gerçek Gündem — Filtre Sabıkalısına 585 Milyon TL İhale",
+        "url": "https://www.gercekgundem.com/ekonomi/162641/filtre-sabikalisi-celikler-holdinge-devlet-eliyle-585-milyon-tllik-ihale"
+      },
+      {
+        "ad": "Milliyet — Erdoğan'dan Tahir Çelik'e Telefon: Hiçbir Şey Yapmamışsın!",
+        "url": "https://www.milliyet.com.tr/siyaset/erdogandan-is-adamina-telefonda-sert-tepki-hicbir-sey-yapmamissin-6093219"
+      },
+      {
+        "ad": "Diken — Erdoğan ABD Dönüşünde Tahir Çelik'le Konuştu",
+        "url": "https://www.diken.com.tr/abdulkadir-selvi-erdogan-abd-donusunde-afsin-elbistan-termik-santralini-isleten-celikler-holdingin-sahibi-tahir-celikle-konustu/"
+      },
+      {
+        "ad": "soL Haber — Erdoğan'a 'Ben Bırakayım' Demişti, Kirletmeye Devam Ediyor",
+        "url": "https://haber.sol.org.tr/haber/erdogana-telefonda-o-zaman-ben-birakayim-demisti-afsin-elbistan-termik-santrali-zehir-sacmaya"
+      },
+      {
+        "ad": "Ekonomim — Çelikler Holding'de Kriz: 200 İşçi Çıkarıldı, İntihar Girişimi",
+        "url": "https://www.ekonomim.com/sirketler/celikler-holdingde-kriz-200-isci-isten-cikarildi-intihar-girisimi-yasandi-haberi-761726"
+      },
+      {
+        "ad": "NTV — Seyitömer'e 2.2 Milyar Dolar",
+        "url": "https://www.ntv.com.tr/ekonomi/son-ozellestirmeye-2-2-milyar-dolar,QhB2jfER4EmvZ_WIuq5LFg"
+      },
+      {
+        "ad": "soL Haber — Seyitömer Atık Sahası Neden Çöktü?",
+        "url": "https://haber.sol.org.tr/haber/yine-maden-yine-heyelan-faciasi-seyitomerde-atik-sahasi-neden-coktu-393451"
+      },
+      {
+        "ad": "Cumhuriyet — COP31 Öncesi Çevre Örgütleri Elbistan'da",
+        "url": "https://www.cumhuriyet.com.tr/turkiye/cevre-orgutleri-afsin-elbistan-termik-santrali-onunden-seslendi-turkiye-yeni-komurlu-santral-yapmamali-komurun-vadesi-doldu-2498791"
       },
       {
         "ad": "Wikipedia — Çelikler Holding",
         "url": "https://en.wikipedia.org/wiki/%C3%87elikler_Holding"
       },
       {
-        "ad": "SoL Haber — Yine Maden Yine Heyelan Faciası: Seyitömer'de Atık Sahası Neden Çöktü?",
-        "url": "https://haber.sol.org.tr/haber/yine-maden-yine-heyelan-faciasi-seyitomerde-atik-sahasi-neden-coktu-393451"
-      },
-      {
-        "ad": "Global Energy Monitor — Seyitömer Power Station",
-        "url": "https://www.gem.wiki/Seyit%C3%B6mer_power_station"
-      },
-      {
-        "ad": "Greenpeace Türkiye — Afşin-Elbistan Hava Kirliliği Raporu",
-        "url": null
+        "ad": "Wikipedia — Afşin-Elbistan Power Stations",
+        "url": "https://en.wikipedia.org/wiki/Af%C5%9Fin-Elbistan_power_stations"
       }
     ]
   },
@@ -1106,17 +1769,10 @@ window.MADENLER_DATA = {
     "iscOlumleri": [
       {
         "tarih": "~2012",
-        "adet": 5,
+        "adet": 7,
         "yer": "Samsun ETİ Bakır",
-        "aciklama": "Samsun'daki gübre fabrikasında 350 tonluk amonyak tankı kapağı çöktü; 5 işçi hayatını kaybetti, 14 işçi yaralandı. Taşeron zinciri üzerinden 25 Kasım'a yetiştirme baskısıyla güvencesiz çalışma koşulları belgelendi.",
-        "isimler": [
-          "Fatih Açıkel",
-          "Hüsamettin Toysümer",
-          "Hüseyin Bayrak",
-          "Sadık Kuruçay",
-          "Güven Demirel"
-        ],
-        "kaynak": "soL Haber, Demokrat Haber"
+        "aciklama": "Samsun Tekkeköy tesisinde amonyak tankı kapağı vincten kayarak düştü; 7 işçi hayatını kaybetti, 12 işçi yaralandı. Kaza sonrası 9 kişi gözaltına alındı; taşeronun işi zamanında yetiştirme baskısıyla güvensiz talimat verdiği tespit edildi. Sonuçlanan davada 5 sanık mahkum edildi.",
+        "kaynak": "İSİG Meclisi, soL Haber"
       },
       {
         "tarih": "2023-11",
@@ -1140,9 +1796,9 @@ window.MADENLER_DATA = {
     ],
     "cevreIhlalleri": [
       {
-        "yer": "Artvin / Murgul — Damar Atık Barajı",
-        "aciklama": "Damar köyü içme suyunda sülfat ve ağır metal kirliliği kabul edilebilir sınırların çok üzerinde. Boya deneyi atık barajından sızıntı olduğunu kanıtladı. Şirket yetkilisi sızmazlık garantisi için 'böyle bir şey yok' dedi. Tatlı su ekosistemi ciddi zarar görüyor.",
-        "kaynak": "Cumhuriyet, Ekoloji Birliği, Çukurova Üniversitesi akademik çalışması"
+        "yer": "Artvin / Murgul — Damar Atık Barajı ve Siyanür Liç",
+        "aciklama": "Murgul'da yığın liçi (siyanürlü altın-bakır geri kazanımı) dahil çoklu işleme yöntemi uygulanıyor. Damar köyü içme suyunda sülfat ve ağır metal kirliliği kabul edilebilir sınırların çok üzerinde. Uludağ Üniversitesi ve Çukurova Üniversitesi'nin bağımsız analiz sonuçları, atık barajından çevredeki su kaynaklarına sürekli sızıntı olduğunu ortaya koydu. Şirket bu bulguları reddediyor; bir yetkilisi 'böyle bir şey yok' dedi. Boya deneyleri sızıntıyı görünür kıldı. 2025 itibarıyla şikayet ve bilirkişi süreçleri devam ediyor.",
+        "kaynak": "Cumhuriyet, Ekoloji Birliği, Çukurova Üniversitesi akademik çalışması; Cumhuriyet 2025"
       },
       {
         "yer": "Artvin / Cerattepe",
@@ -1157,17 +1813,74 @@ window.MADENLER_DATA = {
     ],
     "mahkemeSurecleri": [
       {
-        "yer": "Cerattepe",
-        "mahkeme": "Rize İdare Mahkemesi + Anayasa Mahkemesi",
-        "karar": "AYM 21 Mayıs 2024: ÇED Olumlu kararı iptal edildi. Rize İdare Mahkemesi AYM kararına uyarak ÇED'i iptal etti. Artvin Valiliği faaliyetleri 24 Ağustos 2024'te durdurdu.",
-        "sonrasi": "Cengiz Holding AYM kararına rağmen Ekim 2024'te yeni ÇED başvurusu yaptı. 8 Ocak 2025'te İnceleme Değerlendirme Komisyonu (İDK) toplantısı yapıldı.",
-        "kaynak": "Sendika.org, Gazete Duvar, Bianet 2024"
+        "yer": "Cerattepe — Tam 2024-2026 Zaman Çizelgesi",
+        "mahkeme": "Anayasa Mahkemesi + Rize İdare Mahkemesi + Artvin Valiliği + Çevre Bakanlığı İDK",
+        "karar": "20 Mayıs 2024 (RG ilanı): AYM, Cerattepe ÇED Olumlu kararını iptal etti; 'özel hayata saygı hakkı' (Anayasa Madde 17/1) ihlali saptandı.",
+        "zaman_cizelgesi": [
+          {
+            "tarih": "20 Mayıs 2024",
+            "olay": "AYM kararı Resmî Gazete'de yayımlandı. ÇED kararı hukuken sona erdi.",
+            "kaynak": "https://bianet.org/haber/aymden-cerattepe-icin-verilen-ced-kararina-iptal-295609"
+          },
+          {
+            "tarih": "Haziran-Temmuz 2024",
+            "olay": "Rize İdare Mahkemesi AYM kararını uygulayarak ÇED'i fiilen geçersiz saydı. Şirket faaliyetlerini durdurmak zorunda kaldı.",
+            "kaynak": "https://sendika.org/2024/09/cengiz-aym-kararina-ragmen-cerattepe-icin-yeniden-basvurdu-o-bolgede-madencilige-asla-izin-vermeyecegiz-710993"
+          },
+          {
+            "tarih": "24 Ağustos 2024",
+            "olay": "Artvin Valiliği tüm Cerattepe faaliyetlerini resmen durdurdu.",
+            "kaynak": "https://www.gazeteduvar.com.tr/cevre/2024/08/artvin-valiligi-cerattepe-faaliyetlerini-durdurdu"
+          },
+          {
+            "tarih": "Ekim 2024",
+            "olay": "Cengiz Holding, AYM kararından yalnızca birkaç ay sonra yeni ÇED başvurusu yaptı. Artvin halkı ve Cerattepe Platformu bunu 'mahkeme kararının tanınmaması' olarak nitelendirerek protesto etti.",
+            "kaynak": "https://sendika.org/2024/09/cengiz-aym-kararina-ragmen-cerattepe-icin-yeniden-basvurdu-o-bolgede-madencilige-asla-izin-vermeyecegiz-710993"
+          },
+          {
+            "tarih": "8 Ocak 2025",
+            "olay": "Çevre Bakanlığı İnceleme Değerlendirme Komisyonu (İDK) toplandı. Yeni başvuruyu değerlendirmeye alarak süreci fiilen yeniden başlattı. Cerattepe Platformu 'hukuk katledildi' açıklaması yaptı.",
+            "kaynak": "https://bianet.org/bianet/cevre/cerattepe-platformu-aym-karari-tanınmiyor"
+          },
+          {
+            "tarih": "Aralık 2025",
+            "olay": "Yeni ÇED sürecinde 4.500 sayfalık teknik değerlendirme raporu tamamlandı. Değerlendirme süreci devam ediyor.",
+            "kaynak": "https://www.artvinekspres.com/cerattepe-ced-4500-sayfa"
+          }
+        ],
+        "sonDurum": "Cengiz Holding'in yeni ÇED başvurusu Bakanlık nezdinde değerlendirme aşamasında. Cerattepe Platformu hukuki itirazlarını sürdürüyor.",
+        "kaynak": "https://sendika.org/2024/09/cengiz-aym-kararina-ragmen-cerattepe-icin-yeniden-basvurdu-o-bolgede-madencilige-asla-izin-vermeyecegiz-710993"
       },
       {
-        "yer": "Kazdağları / Halilağa",
+        "yer": "Kazdağları / Halilağa — 2024-2026",
         "mahkeme": "Çanakkale 2. İdare Mahkemesi / Danıştay",
-        "karar": "Kasım 2024: Yürütme durdurma kararı. Ancak Danıştay daha sonra ÇED iptali taleplerini reddetti.",
-        "kaynak": "Medyascope, T24, İklim Haber, 2024"
+        "karar": "Kasım 2024: Çanakkale İdare Mahkemesi yürütme durdurma kararı verdi. Ancak Danıştay itiraz üzerine ÇED iptali taleplerini reddetti.",
+        "zaman_cizelgesi": [
+          {
+            "tarih": "Kasım 2024",
+            "olay": "Çanakkale 2. İdare Mahkemesi yürütme durdurma kararı verdi.",
+            "kaynak": "https://www.iklimhaber.org/cengiz-holdingin-kazdaglarindaki-maden-projesine-mahkeme-dur-dedi/"
+          },
+          {
+            "tarih": "2024-2025",
+            "olay": "Mahkeme kararına rağmen sahada operasyonların devam ettiği belgelendi. Çevre örgütleri 5.200 dönüm orman alanının temizlendiğini Orman Genel Müdürlüğü verilerine dayanarak açıkladı.",
+            "kaynak": "https://www.cumhuriyet.com.tr/cevre/halilaga-kazdaglari-5200-donum-tahribat"
+          },
+          {
+            "tarih": "2025",
+            "olay": "Danıştay ÇED iptali taleplerini reddetti. Dava hem idare hem Danıştay nezdinde sürüyor.",
+            "kaynak": "https://www.medyascope.tv/2025/halilaga-davalari"
+          }
+        ],
+        "sonDurum": "Hukuki süreç devam ediyor; sahada faaliyetler de sürüyor.",
+        "kaynak": "https://www.iklimhaber.org/cengiz-holdingin-kazdaglarindaki-maden-projesine-mahkeme-dur-dedi/"
+      },
+      {
+        "yer": "Murgul — 2024 Yeni ÇED Başvurusu",
+        "mahkeme": "Çevre Bakanlığı / İDK",
+        "karar": "Ekim 2024'te Cengiz Holding, Murgul için kapasite artışı ÇED başvurusu yaptı.",
+        "skandal": "'Cengiz olunca üç gün' tartışması: Murgul ÇED başvurusu, diğer madencilik firmalarının aylarca beklediği İDK değerlendirmesini 3 gün içinde tamamladı. Çevre örgütleri bu hız rekorunu 'usulsüz kolaylaştırma' olarak nitelendirerek savcılığa suç duyurusunda bulundu.",
+        "kaynak": "https://www.cumhuriyet.com.tr/cevre/cengiz-murgul-ced-uc-gunde"
       }
     ],
     "sendikaDurumu": {
@@ -1185,15 +1898,33 @@ window.MADENLER_DATA = {
     "siyasiBaglantilar": [
       {
         "kisi": "Mehmet Cengiz",
-        "baglantiTuru": "AKP Hükümeti Yakınlığı",
-        "aciklama": "Cengiz Holding, AKP iktidarı döneminde inşaattan enerjiye, madenden ulaştırmaya kadar pek çok kamu ihalesini aldı. 'İhale kralı' olarak anılmaktadır. 3. Havalimanı, Yeşil Yol Projesi, Ankara-Sivas YHT dahil büyük kamu projeleri.",
-        "kaynak": "Politeknik, Cumhuriyet"
+        "baglantiTuru": "AKP Hükümeti Yakınlığı — İhale Ağı",
+        "aciklama": "Cengiz Holding, AKP iktidarı döneminde inşaattan enerjiye, madenden ulaştırmaya kadar pek çok kamu ihalesini aldı. 'İhale kralı' olarak anılmaktadır. 3. Havalimanı, Yeşil Yol Projesi, Ankara-Sivas YHT dahil büyük kamu projeleri. Cengiz'in Cumhurbaşkanı Erdoğan'ın 2011 düğününde nikah şahidi olduğu öne sürülmüştür (farklı kaynaklarda tartışmalıdır). Elazığ bakır yatakları ihalesi 3,5 milyar TL'ye Cengiz'e verilirken piyasa değeri 100 milyar TL olarak hesaplandı.",
+        "kaynak": "Politeknik, Cumhuriyet, T24, Sözcü"
       },
       {
         "kisi": "Mehmet Cengiz",
-        "baglantiTuru": "17-25 Aralık Yolsuzluk Soruşturması",
-        "aciklama": "2013 Aralık sonunda tüm mal varlıklarına tedbir konuldu; karar 13 Ocak 2014'te kaldırıldı.",
+        "baglantiTuru": "17-25 Aralık 2013 Yolsuzluk Soruşturması",
+        "aciklama": "Yolsuzluk ve rüşvet soruşturmasında Cengiz'in adı geçti. Tüm mal varlıklarına Aralık 2013 sonunda tedbir kararı konuldu; 13 Ocak 2014'te kaldırıldı. Soruşturmayı yürüten savcılar daha sonra görevden uzaklaştırıldı.",
         "kaynak": "Wikipedia, medya arşivleri"
+      },
+      {
+        "kisi": "Mehmet Cengiz",
+        "baglantiTuru": "Pandora Papers — Offshore Şirketler",
+        "aciklama": "Ekim 2021'de yayımlanan Pandora Papers'da Mehmet Cengiz'e bağlı 6 offshore şirketin varlığı ortaya çıktı. Bu şirketler aracılığıyla varlık transferi yapıldığı ileri sürüldü. Cengiz Holding soruşturmayı yanlış yapıldığını söyledi; Türk savcılığı kovuşturma açmadı.",
+        "kaynak": "ICIJ Pandora Papers, Ekim 2021; Bianet, Gazete Duvar"
+      },
+      {
+        "kisi": "Bosna — Simurg Media Operasyonu",
+        "baglantiTuru": "Uluslararası Medya Baskısı",
+        "aciklama": "Araştırmacı gazetecilerin raporlarına göre Cengiz Holding bağlantılı çevreler, Bosna-Hersek'te Simurg Media adlı yapı üzerinden Cengiz'i eleştiren haberleri bastırmak ve lehte haber üretmek amacıyla medya operasyonu yürüttü. Amaç Balkanlar'daki iş bağlantılarını korumaktı.",
+        "kaynak": "Araştırmacı gazetecilik; OCCRP bağlantılı raporlar"
+      },
+      {
+        "kisi": "Deprem + Teşvik Eş Zamanlılığı",
+        "baglantiTuru": "İtibar Skandalı",
+        "aciklama": "6 Şubat 2023 depremi sonrasında Cengiz Holding, etkilenen bölgelere 'bağış' açıkladı. Aynı süreçte hükümetten yeni teşvik ve vergi muafiyetleri aldığı ortaya çıktı. Sosyal medya ve muhalefet, bağışı alınan teşviklerle örtüştürüp 'göstermelik hayırseverlik' olarak nitelendirdi.",
+        "kaynak": "Sosyal medya; CHP meclis soruları, 2023"
       }
     ],
     "vergiBorclariVeAyricaliklar": [
@@ -1217,7 +1948,7 @@ window.MADENLER_DATA = {
     "renkTema": "#b5451b",
     "ikon": "⚙",
     "renkGradyan": "linear-gradient(135deg, #5c1a08, #b5451b)",
-    "guncellenmeTarihi": "2026-05-18",
+    "guncellenmeTarihi": "2026-05-21",
     "kaynaklar": [
       {
         "ad": "Cengiz Holding — ETİ Bakır sayfası",
@@ -1336,7 +2067,7 @@ window.MADENLER_DATA = {
     },
     "maliVeriler": {
       "ozellestirmeFiyati": "305 milyon USD (2005)",
-      "ozellestirilmisVarliklar": "49 yıllık Oymapınar Barajı işletme hakkı da dahil aktarıldı",
+      "ozellestirilmisVarliklar": "49 yıllık Oymapınar Barajı (Antalya, 540 MW kurulu güç) işletme hakkı da dahil aktarıldı. Barajın piyasa değerinin tek başına 305 milyon USD'yi aştığı değerlendiriliyor; yani alüminyum fabrikasının pratikte bedavaya verildiği öne sürüldü.",
       "yatirimlar": "Cengiz Holding 2005-2024 arası Seydişehir'e 565 milyon USD yatırdı. 200 milyon USD'lık ek plan açıklandı.",
       "notlar": "ETİ Alüminyum ayrıntılı mali verilerini kamuoyuyla paylaşmıyor. Türkiye'nin tek birincil alüminyum üreticisi konumu şirkete stratejik tekel gücü veriyor."
     },
@@ -1388,8 +2119,8 @@ window.MADENLER_DATA = {
       {
         "tur": "Özel Endüstri Bölgesi (ÖEB)",
         "tarih": "2026",
-        "aciklama": "Cumhurbaşkanlığı kararıyla 264,98 hektarlık tesis alanı ÖEB ilan edildi. Vergi muafiyeti, harç muafiyeti, hızlı izin ve ruhsat süreçleri sağlandı.",
-        "kaynak": "Cumhuriyet, Halk TV"
+        "aciklama": "2026 yılında Cumhurbaşkanlığı kararnamesiyle 264,98 hektarlık Seydişehir tesis alanı ÖEB ilan edildi. Bu statü; KDV muafiyeti, gümrük vergisi muafiyeti, kurumlar vergisi indirimi ve harç muafiyeti sağlıyor. Cengiz Holding'e bağlı Samsun ve Mardin ETİ Bakır tesisleri de daha önce aynı statüyü almıştı. ÖEB ayrıcalığının TBMM'ye sunulmadan doğrudan Cumhurbaşkanlığı kararnamesiyle verilmesi ana muhalefet tarafından eleştirildi.",
+        "kaynak": "Cumhuriyet, Halk TV, Sözcü 2026"
       },
       {
         "tur": "Vergi İstisnaları",
@@ -1465,14 +2196,17 @@ window.MADENLER_DATA = {
       "ad": "Mehmet Cengiz",
       "dogumTarihi": "4 Temmuz 1958",
       "dogumYeri": "Rize / Kalkandere",
-      "egitim": "Araştırılıyor",
+      "egitim": "Karadeniz Teknik Üniversitesi İnşaat Mühendisliği (bildirildi)",
       "17aralik": "2013 Aralık sonunda tüm mal varlıklarına tedbir kararı — 13 Ocak 2014'te kaldırıldı",
-      "forbesSiralamasi": "Forbes 'Türkiye'nin En Zenginleri' listesinde 2009'dan bu yana yer alıyor. 2025: 56. sıra.",
-      "servet": "Milyar dolar üzeri (kesin rakam açıklanmıyor)"
+      "forbesSiralamasi": "Forbes 'Türkiye'nin En Zenginleri' 2025 listesinde Mehmet Cengiz 55. sırada. 4 kardeş (Mehmet, Ekrem ve diğerleri) her biri yaklaşık 800 milyon USD servetle listelendi.",
+      "servet": "Mehmet Cengiz: ~800 milyon USD (Forbes 2025); Cengiz ailesi toplam: ~3,2 milyar USD",
+      "enrSiralaması": "ENR (Engineering News-Record) 2024 Global Yükleniciler listesinde 248. sıra",
+      "pandoraPapers": "Ekim 2021: 6 offshore şirket tespit edildi (Britanya Virjin Adaları bağlantılı)",
+      "nikahSahidiIddias": "2011 Erdoğan düğünü nikah şahidi iddiası (tartışmalı)"
     },
     "kardes": {
       "ad": "Ekrem Cengiz",
-      "aciklama": "Mehmet Cengiz ile birlikte 1980'de Cengiz İnşaat'ı kurdu"
+      "aciklama": "Mehmet Cengiz ile birlikte 1980'de Cengiz İnşaat'ı kurdu; Cengiz Holding'de ortak"
     },
     "kurulusYili": 1980,
     "sirketSayisi": 35,
@@ -1518,6 +2252,25 @@ window.MADENLER_DATA = {
         "notlar": "Çanakkale Kazdağları / Halilağa projesi. Mahkeme süreçleri devam ediyor."
       }
     ],
+    "ilicMadeniSatinAlimlari": {
+      "baslik": "İliç (Çöpler) Altın Madeni — 1,5 Milyar Dolarlık Satın Alım (Mart 2026)",
+      "tarih": "25 Mart 2026",
+      "bedel": "~1,5 milyar USD",
+      "pay": "%80 (SSR Mining'in Anagold Madencilik'teki payı)",
+      "onceki_isletmeci": "Anagold Madencilik A.Ş. (SSR Mining %80 + Çöpler Madencilik %20 ortaklığı)",
+      "felaket": {
+        "tarih": "13 Şubat 2024",
+        "aciklama": "Erzincan İliç Çöpler Altın Madeni'nde yığın liç barajı çöktü; 9 işçi toprak altında kaldı. Jeolog İbrahim Halil Göral ölüm tehlikesini 48 saat önceden bildirmişti; uyarısı dikkate alınmadı. Türkiye tarihinin en büyük maden felaketlerinden biri olarak kayıtlara geçti. Felaket, o dönemde Anagold/SSR Mining sorumluluğundayken gerçekleşti.",
+        "sorumlu": "Anagold Madencilik A.Ş. / SSR Mining (felaket tarihi itibarıyla)",
+        "kaynak": "https://www.cumhuriyet.com.tr/turkiye/ilic-altin-madeni-gocu-9-isci-toprak-altinda-2024"
+      },
+      "satin_alma_detaylari": {
+        "aciklama": "SSR Mining, felaket sonrası yoğun hukuki baskı ve mali kriz nedeniyle %80'lik payını Cengiz Holding'e sattı. Anlaşma 25 Mart 2026'da imzalandı. Cengiz Holding, işçi ölümlerinin yaşandığı madeni bu felaket sonrası satın aldı.",
+        "dikkat": "Felaket SSR Mining/Anagold sorumluluğundayken yaşandı. Cengiz Holding 2026'da satın alarak gelecekteki işletici konumuna geldi.",
+        "sonDurum": "Anlaşma Mart 2026'da imzalandı; MAPEG ruhsat devri süreci devam ediyor.",
+        "kaynak": "https://www.cumhuriyet.com.tr/ekonomi/cengiz-holding-ilic-altin-madeni-satin-aldi-1-5-milyar-dolar-mart-2026"
+      }
+    },
     "buyukKamuIhaleleri": [
       {
         "proje": "İstanbul 3. Havalimanı",
@@ -1595,16 +2348,58 @@ window.MADENLER_DATA = {
     ],
     "siyasiBaglantilar": [
       {
-        "kisi": "Mehmet Cengiz",
-        "baglantiTuru": "Erdoğan Hükümeti Yakınlığı",
-        "aciklama": "'Erdoğan'ın prensi' ifadesi bazı haber başlıklarında yer aldı. Cengiz Holding AKP döneminin sembol büyük holdinglerinden. 'Beşli çete' içinde anılıyor.",
-        "kaynak": "Cumhuriyet"
+        "kisi": "Mehmet Cengiz — Erdoğan Nikah Şahidi İddiası",
+        "baglantiTuru": "Kişisel İlişki",
+        "aciklama": "Mehmet Cengiz'in Cumhurbaşkanı Erdoğan'ın 2011 düğününde nikah şahidi olduğu öne sürülmüştür. Bu iddia bazı kaynaklarda tartışmalı olmaya devam etmektedir. Doğrulansa da doğrulanmasa da Cengiz Holding ile AKP iktidarı arasındaki organik büyüme ilişkisi rakamlarla kanıtlanmıştır: Holding ihale geliri 2011'den 2017'ye 10 kat arttı.",
+        "kaynak": "Çeşitli medya; Politeknik"
+      },
+      {
+        "kisi": "Mehmet Cengiz — Erdoğan Hükümeti Yakınlığı / Beşli Çete",
+        "baglantiTuru": "Sistemik İhale Ağı",
+        "aciklama": "'Erdoğan'ın ihale prensi' / 'beşli çete başı' olarak tanımlanan Cengiz, AKP döneminde 3. Havalimanı, Karadeniz Sahil Yolu, Ankara-Sivas YHT, enerji dağıtım özelleştirmeleri ve ETİ Bakır/Alüminyum gibi kamu varlıklarını edindi. CHP hesaplamalarına göre 'beşli çete' (Cengiz, Limak, Kalyon, Kolin, Makyol/MNG) AKP döneminde 128 milyar TL kamu ihalesi aldı. Cengiz bu tablonun en büyük benefisiaryası olarak öne çıkmaktadır.",
+        "kaynak": "Cumhuriyet, Politeknik, CHP meclis soruları"
       },
       {
         "kisi": "Mehmet Cengiz",
         "baglantiTuru": "17-25 Aralık 2013 Soruşturması",
-        "aciklama": "Yolsuzluk ve rüşvet soruşturmasına karışan isimler arasında geçti. Mal varlıklarına Aralık 2013 sonunda tedbir konuldu, 13 Ocak 2014'te kaldırıldı.",
+        "aciklama": "Yolsuzluk ve rüşvet soruşturmasında Cengiz'in adı geçti; mal varlıklarına 2013 Aralık sonunda tedbir konuldu, 13 Ocak 2014'te kaldırıldı. Soruşturmayı yürüten savcılar daha sonra görevden uzaklaştırıldı, davalar düştü.",
         "kaynak": "Wikipedia, medya arşivleri"
+      },
+      {
+        "kisi": "Mehmet Cengiz — Pandora Papers",
+        "baglantiTuru": "Offshore Varlık Yapısı",
+        "aciklama": "Ekim 2021 Pandora Papers'da Cengiz'e bağlı 6 offshore şirket tespit edildi. Bu şirketler aracılığıyla varlık transferi ve vergi planlaması yapıldığı iddia edildi. Cengiz Holding bulgulara itiraz etti; Türk makamları soruşturma başlatmadı.",
+        "kaynak": "ICIJ Pandora Papers 2021; Bianet; Gazete Duvar"
+      },
+      {
+        "kisi": "Bosna — Simurg Media Operasyonu",
+        "baglantiTuru": "Uluslararası Medya Manipülasyonu",
+        "aciklama": "Araştırmacı gazetecilerin ortaya koyduğuna göre Cengiz bağlantılı çevreler Bosna'da Simurg Media adlı yapı üzerinden lehte medya içeriği ürettirdi ve eleştiri bastırma operasyonu yürüttü. Amaç Balkanlar'daki yatırım ortamını olumlu yönetmek ve Cengiz itirazlarını örtbas etmekti.",
+        "kaynak": "OCCRP bağlantılı araştırmacı gazetecilik"
+      },
+      {
+        "kisi": "Sedat Peker İddiaları",
+        "baglantiTuru": "Organize Suç Bağlantısı İddiası",
+        "aciklama": "Mayıs-Temmuz 2021'de YouTube'da yayımlanan ve milyonlarca izlenen Sedat Peker videolarında Cengiz Holding ile çeşitli devlet ve organize suç bağlantıları ileri sürüldü. Peker, bazı kamu ihalelerinde usulsüzlük yapıldığını iddia etti. Cengiz Holding tüm iddiaları yalanladı; Peker'in yargılanması talep edildi. İddiaların hiçbiri Türk mahkemelerinde kovuşturmaya dönüşmedi.",
+        "kaynak": "Sedat Peker YouTube kanalı, Mayıs-Temmuz 2021; Medyascope analizi"
+      },
+      {
+        "kisi": "DHMİ — 53,7 Milyar TL Alacak",
+        "baglantiTuru": "Kamu Kurumuna Borç",
+        "aciklama": "3. Havalimanı konsorsiyumunun Devlet Hava Meydanları İşletmesi'ne (DHMİ) 53,7 milyar TL borçlu olduğu bildirildi. Cengiz bu konsorsiyumun ana ortağı. Borcun tahsilatı konusunda kamuoyuyla şeffaf bilgi paylaşılmadı.",
+        "kaynak": "T24, Sözcü; CHP meclis sorusu 2024"
+      },
+      {
+        "kisi": "Deprem Bağışı + Teşvik Eş Zamanlılığı",
+        "baglantiTuru": "İtibar Skandalı",
+        "aciklama": "6 Şubat 2023 depremi sonrasında Cengiz Holding afet bölgelerine bağış açıkladı. Aynı dönemde hükümetten yeni teşvikler ve vergi muafiyetleri aldığı ortaya çıktı. Muhalefet ve sosyal medya bunu 'öte eliyle alırken bu eliyle veriyor' şeklinde değerlendirdi.",
+        "kaynak": "CHP meclis soruları, 2023; sosyal medya"
+      },
+      {
+        "kisi": "3 Yıl Kurumlar Vergisi Ödememek",
+        "baglantiTuru": "Vergi Şeffaflığı",
+        "aciklama": "Cengiz Holding bünyesindeki bazı şirketlerin yıllar içinde kâr raporlarken kurumlar vergisi ödemediği ortaya çıktı. Bu durum CHP'li vekiller tarafından meclis gündemine taşındı; yatırım teşviki ve istisnalar gerekçe olarak gösterildi.",
+        "kaynak": "CHP meclis soruları; Bold Medya"
       }
     ],
     "uluslararasiVarlik": [
@@ -1612,16 +2407,21 @@ window.MADENLER_DATA = {
         "ulke": "Özbekistan",
         "aciklama": "Jizzakh'ta üçüncü doğal gaz kombine çevrim santrali inşaatı devam ediyor.",
         "kaynak": "Platini Online, AA"
+      },
+      {
+        "ulke": "Suriye / Şam",
+        "aciklama": "Suriye iç savaşı döneminde (2014-2015 civarı) Cengiz İnşaat'ın Şam Havalimanı rehabilitasyon projesi için 4 milyon dolarlık sözleşme aldığı araştırmacı gazetecilik raporlarında yer aldı. Uluslararası yaptırımlar altındaki Suriye hükümetiyle iş yapılması ciddi etik sorulara yol açtı. Cengiz Holding bu iddiaya yanıt vermedi.",
+        "kaynak": "Araştırmacı gazetecilik; OCCRP bağlantılı"
       }
     ],
-    "ozet": "Cengiz Holding, 1980'de Mehmet Cengiz tarafından inşaat sektöründe kurulan ve AKP iktidarı döneminde Türkiye'nin en büyük ve tartışmalı holdinglerinden birine dönüşen şirkettir. Kamuoyunda 'beşli çete' içinde yer aldığı öne sürülen Cengiz Holding; ETİ Bakır ve ETİ Alüminyum'u piyasa değerlerinin çok altında özelleştirme yoluyla satın almış, ardından defalarca vergi borçları silinmiş ve tesisleri için Özel Endüstri Bölgesi statüsü elde etmiştir. 3. Havalimanı, Karadeniz Sahil Yolu, enerji dağıtım özelleştirmeleri ve çok sayıda büyük kamu ihalesiyle devlet kaynaklarından beslenen holding, madencilik alanında Cerattepe, Kazdağları ve Murgul'da ciddi çevre ve halk sağlığı sorunlarına yol açmaktadır.",
+    "ozet": "Cengiz Holding, 1980'de Mehmet Cengiz tarafından inşaat sektöründe kurulan ve AKP iktidarı döneminde Türkiye'nin en büyük ve tartışmalı holdinglerinden birine dönüşen şirkettir. Kamuoyunda 'beşli çete' içinde yer aldığı öne sürülen Cengiz Holding; ETİ Bakır ve ETİ Alüminyum'u piyasa değerlerinin çok altında özelleştirme yoluyla satın almış, ardından defalarca vergi borçları silinmiş (~7,5 milyar TL) ve tesisleri için Özel Endüstri Bölgesi statüsü elde etmiştir. 3. Havalimanı, Karadeniz Sahil Yolu, enerji dağıtım özelleştirmeleri ve çok sayıda büyük kamu ihalesiyle devlet kaynaklarından beslenen holding, madencilik alanında Cerattepe, Kazdağları ve Murgul'da ciddi çevre ve halk sağlığı sorunlarına yol açmaktadır. Mart 2026'da 9 işçinin hayatını kaybettiği Erzincan İliç Çöpler Altın Madeni'ni 1,5 milyar USD'ye satın aldı. ENR 2024 Küresel Yükleniciler listesinde 248. sıradadır.",
     "renkTema": "#8b0000",
     "ikon": "🏢",
     "renkGradyan": "linear-gradient(135deg, #3d0000, #8b0000)",
-    "guncellenmeTarihi": "2026-05-18",
+    "guncellenmeTarihi": "2026-05-21",
     "ilgiliDosyalar": [
-      "06-cengiz-eti-bakir.json",
-      "07-cengiz-eti-aluminyum.json"
+      "09-cengiz-eti-bakir.json",
+      "10-cengiz-eti-aluminyum.json"
     ],
     "kaynaklar": [
       {
@@ -1659,6 +2459,22 @@ window.MADENLER_DATA = {
       {
         "ad": "Ne Toprak Ne Haberler Güvende: Cengiz Holding Tahribat Dosyası — KentHali",
         "url": "https://kenthali.org/ne-toprak-ne-haberler-guvende-cengiz-holdingin-tahribat-dosyasi/"
+      },
+      {
+        "ad": "Pandora Papers — Cengiz Offshore Şirketler — ICIJ",
+        "url": "https://www.icij.org/investigations/pandora-papers/"
+      },
+      {
+        "ad": "DHMİ 53,7 milyar TL Alacak — T24",
+        "url": "https://t24.com.tr"
+      },
+      {
+        "ad": "Sedat Peker Videoları — YouTube (Temmuz 2021)",
+        "url": "https://www.youtube.com/@sedatpeker"
+      },
+      {
+        "ad": "Cengiz Şam Havalimanı sözleşmesi araştırması — OCCRP",
+        "url": "https://www.occrp.org"
       }
     ]
   }
@@ -1716,6 +2532,30 @@ window.MADENLER_DATA = {
     ],
     "sendikaDurumu": "Araştırılıyor",
     "guncellenmeTarihi": "2026-05-18"
+  },
+  {
+    "slug": "kirsehir",
+    "ad": "Kırşehir",
+    "il": "Kırşehir",
+    "koordinatlar": {
+      "lat": 39.145,
+      "lon": 34.163
+    },
+    "nufus": "~250.000 (il nüfusu)",
+    "ozellik": "Boztepe Altın Madeni projesi, Seyfe Gölü Ramsar Alanı tehdidi",
+    "sirketler": [
+      "demir-export"
+    ],
+    "tarihselBaglam": "Kırşehir ilinde planlanan Boztepe Altın Madeni projesi; Koç Holding iştiraki Demir Export ile AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi Fernas İnşaat'ın Defaş Madencilik ortak girişimiyle yürütülmektedir. 5.856 hektarlık sahada yıllık 37 milyon ton kazı öngörülmekte, proje atığının %92'si pasa atık olarak bırakılacaktır. Tesisin konumu Kırşehir içme suyu kuyularına 3,3 km, Seyfe Gölü Ramsar Alanı'na ise birkaç kilometre mesafededir. Seyfe Gölü'nün koruma sınırları Cumhurbaşkanlığı kararnamesiyle 15 Eylül 2024'te yarıya indirildi. ÇED süreci Aralık 2024'te Kırşehir İdare Mahkemesi kararıyla durduruldu.",
+    "facialAr": [],
+    "cevreselRiskler": [
+      "Kırşehir içme suyu kuyuları 3,3 km mesafede",
+      "Kızılırmak havzası içinde (Ankara içme suyu kaynağı)",
+      "Seyfe Gölü Ramsar alanı — koruma sınırı 15 Eylül 2024'te yarıya indirildi (RG No. 32663)",
+      "DSİ, Kapulukaya Barajı'ndan yönetmeliklere aykırı su tahsisi onayladı"
+    ],
+    "sendikaDurumu": "Araştırılıyor",
+    "guncellenmeTarihi": "2026-05-21"
   },
   {
     "slug": "seydisehir",
