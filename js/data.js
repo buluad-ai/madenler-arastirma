@@ -23,8 +23,8 @@ window.MADENLER_DATA = {
       "ciro": "809.983.203 TL (Capital 500, son yayımlanan dönem)",
       "vergioncesiKar": "146.241.678 TL",
       "kapital500Sirasi": 286,
-      "finansalDurum": "2025 yılında yaklaşık 3 milyar TL zarar açıklandı; şirket banka borçları ve ipotek sorunlarıyla karşı karşıya. Soma B Termik Santrali operatörüyle kömür alım sözleşmesi çökmesi temel kriz nedeni (operatörün borcu 20 milyar TL'yi aştı).",
-      "notlar": "İthal kömür rekabeti ve artan operasyonel maliyetler nedeniyle finansal baskı artıyor. İşçi ücretlerinde gecikmeler yaşandığı raporlanıyor."
+      "finansalDurum": "2025 yılında yaklaşık 3 milyar TL zarar açıklandı; şirket banka borçları ve ipotek sorunlarıyla karşı karşıya. Koç-Fernas ortaklığının işlettiği Soma B Termik Santrali operatörü TKİ'ye 20 milyar TL borçlandı; TKİ kömür alım sözleşmesini iptal etti. Bu durum İMBAT'ın en büyük alıcısını yok etmesiyle finansal krizi derinleştirdi. Koç-Fernas'ın aylık ~100 milyon TL zarar ettiği ve yıl sonu tasfiyesi planladığı iddia ediliyor.",
+      "notlar": "Mayıs 2026 itibarıyla binlerce madenci işsiz kalma tehlikesiyle karşı karşıya. Eynez madeninin kapatılacağı iddiaları bölgede paniğe yol açtı."
     },
     "ozellestirilenSahalar": [
       {
@@ -67,9 +67,19 @@ window.MADENLER_DATA = {
         "kaynak": "Dev Maden Sen"
       },
       {
-        "tarih": "2025",
-        "aciklama": "İşçi ücret gecikmelerine karşı bölgede dönemsel eylemler yapıldı.",
-        "kaynak": "Cumhuriyet, 2025"
+        "tarih": "2025-09-11",
+        "aciklama": "~3 aydır gecikmiş maaş nedeniyle işçiler gece vardiyasını terk etti. Şirket yönetimi 'Daha 5 ay idare edin' diyerek işçileri tehdit etti.",
+        "kaynak": "https://haber.sol.org.tr/haber/5-ay-idare-edin-diyerek-tehdit-ettiler-somada-maaslari-odenmeyen-madenciler-ocaga-girmedi"
+      },
+      {
+        "tarih": "2026-02-28",
+        "aciklama": "İMBAT, Polyak Eynez, Anadolu Madencilik ve Soma B Termik Santrali işçileri eş zamanlı yürüyüş düzenledi. 8 aydır düzenli maaş ödenmiyor iddiasıyla 'Alacaklarımız düzelene kadar eylemler sürecek' açıklaması yapıldı. Soma Belediyesi ve esnaf odaları desteğini bildirdi.",
+        "kaynak": "https://www.cumhuriyet.com.tr/turkiye/soma-da-maden-iscileri-yuruyus-duzenledi-alacaklarimiz-duzelene-kadar-eylemler-surecek-2482747"
+      },
+      {
+        "tarih": "2026-04-22",
+        "aciklama": "Demir Export-Fernas (Koç ortaklığı) Eynez madenini 31 Aralık 2026'da kapatma başvurusu yaptığı iddia edildi. Söylentiler üzerine binlerce madenci işsiz kalma kaygısıyla tedirginleşti. Şirket 'kesinleşmiş karar yok' açıklaması yaptı.",
+        "kaynak": "https://www.odatv.com/ekonomi/somadaki-eynez-komur-madeninin-kapatilacagi-one-suruldu-demir-export-somadan-cikacak-mi-120144332"
       }
     ],
     "cevreIhlalleri": [],
@@ -133,6 +143,30 @@ window.MADENLER_DATA = {
       {
         "ad": "Odatv — TKİ bünyesindeki madenlerde tasfiye operasyonu",
         "url": "https://www.odatv.com/gundem/turkiye-komur-isletmeleri-bunyesindeki-madenlerde-tasfiye-operasyonu-odatv-komisyon-raporuna-ulasti-soma-katliami-detayi-120146641"
+      },
+      {
+        "ad": "soL Haber — '5 Ay İdare Edin' Diyerek Tehdit Ettiler (Eylül 2025)",
+        "url": "https://haber.sol.org.tr/haber/5-ay-idare-edin-diyerek-tehdit-ettiler-somada-maaslari-odenmeyen-madenciler-ocaga-girmedi"
+      },
+      {
+        "ad": "Cumhuriyet — Soma'da Maden İşçileri Yürüyüş Düzenledi (Şubat 2026)",
+        "url": "https://www.cumhuriyet.com.tr/turkiye/soma-da-maden-iscileri-yuruyus-duzenledi-alacaklarimiz-duzelene-kadar-eylemler-surecek-2482747"
+      },
+      {
+        "ad": "Soma Haberi — Soma Diken Üstünde: İşçiler, Esnaf ve STK'lar Ayakta (27 Şubat 2026)",
+        "url": "https://www.somahaberi.com/haber/soma-diken-ustunde-isciler-esnaf-ve-stklar-santral-ve-madenler-icin-ayakta-6084"
+      },
+      {
+        "ad": "Soma Haberi — Binlerce Madenci İşsiz Kalma Tehlikesi (Mayıs 2026)",
+        "url": "https://www.somahaberi.com/haber/somada-kirmizi-alarm-binlerce-madenci-issiz-kalma-tehlikesiyle-karsi-karsiya-6158"
+      },
+      {
+        "ad": "OdaTV — Eynez Kömür Madeninin Kapatılacağı İddiası (Nisan 2026)",
+        "url": "https://www.odatv.com/ekonomi/somadaki-eynez-komur-madeninin-kapatilacagi-one-suruldu-demir-export-somadan-cikacak-mi-120144332"
+      },
+      {
+        "ad": "Nefes.com.tr — Madenlerde Maaş Krizi Büyüyecek",
+        "url": "https://www.nefes.com.tr/madenlerde-maas-krizi-buyuyecek-120743"
       }
     ]
   },
@@ -444,14 +478,17 @@ window.MADENLER_DATA = {
       "2024_uretim": "174.080 ons altın",
       "2024_gelir": "423,5 milyon USD",
       "2024_royalti": "32,8 milyon USD (devlete ödenen royalti)",
-      "2025_uretim": "168.701 ons altın",
-      "2025_gelir": "~596 milyon USD (yaklaşık 26,2 milyar TL)",
+      "2025_uretim": "168.701 ons altın (%3 azalış — 2024: 174.080 ons)",
+      "2025_gelir": "595,8 milyon USD (2024: 423,5 milyon — yüksek altın fiyatı etkisiyle artış)",
+      "2025_nakit_maliyet": "1.264 USD/ons (2024: 918 USD/ons — royalti artışı ve işgücü enflasyonu)",
+      "2025_buyume_sermayesi": "104,9 milyon USD (yığın liçi genişletme, ADR altyapısı)",
       "2025_net_kar_Eldorado": "519,9 milyon USD (tüm şirket)",
+      "2026_Q1_uretim": "28.339 ons (%36 azalış — batı bölümünde pasa sıyırma çalışmaları)",
       "kumulatif_uretim": "4 milyon ons (20 yılda — Q2 2025'te 4. milyonuncu ons)",
       "toplam_rezerv": "535,4 milyon ton cevher (0,66 gr/ton Au, 1,5 gr/ton Ag)",
-      "kalan_maden_omru": "13 yıl (~2038)",
+      "kalan_maden_omru": "~13 yıl (~2038)",
       "nakit_maliyet": "918 USD/ons (2024)",
-      "notlar": "Altının büyük çoğunluğu Kanada'ya transfer edilirken devlete ödenen royalti toplam gelirin %5'i bile değil"
+      "notlar": "Altının büyük çoğunluğu Kanada'ya transfer edilirken devlete ödenen royalti 2024'te 32,8 milyon USD (toplam gelirin ~%7,7'si). 2025'te artan royalti oranları maliyetleri belirgin biçimde yükseltti."
     },
     "ozellestirilenSahalar": [
       {
@@ -473,8 +510,8 @@ window.MADENLER_DATA = {
       {
         "yer": "Kışladağ, Uşak",
         "tarih": "2006-günümüz",
-        "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede şirket yöneticisi açıkladı; şirket resmi beyanında 2,5 milyon m³ diyor). 7 köyün içme suyu kesildi — Uşak Belediyesi tankerle ikmal yapıyor (Katrancılar, Ovacık, Söğütlü, Karapınar, İnay, Poyraz ve Çitgöl). Katrancılar, Ovacık, Söğütlü ve Karapınar köyleri fiilen boşaldı. İnay köyü çeşme suyunda arsenik 9,92 mg/L'ye çıktı (yasal sınır: 0,01 mg/L = sınırın 992 katı). Koyun sürülerinde ölü doğum ve sakat yavru vakaları raporlandı. Yöre çiftçileri tazminat davası açtı; şirket uzlaşma yerine dava sürecini uzatıyor.",
-        "kaynak": "Ekoloji Birliği, Yeşil Gazete, Yerel mahkeme tutanakları"
+        "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede şirket yöneticisi açıkladı; şirket resmi beyanında 2,5 milyon m³ diyor). 7 köyün içme suyu kesildi — Uşak Belediyesi tankerle ikmal yapıyor (Katrancılar, Ovacık, Söğütlü, Karapınar, İnay, Poyraz ve Çitgöl). Katrancılar, Ovacık, Söğütlü ve Karapınar köyleri fiilen boşaldı. Eşme-Ulubey bölgesinde arsenik değerleri yasal sınırın 700 katına ulaşıyor. Koyun sürülerinde ölü doğum ve sakat yavru vakaları raporlandı. Yöre çiftçileri tazminat davası açtı; şirket uzlaşma yerine dava sürecini uzatıyor.",
+        "kaynak": "https://www.sozcu.com.tr/cehennem-cukurundan-bolgeye-zehir-yayiliyor-p137729"
       },
       {
         "yer": "Kışladağ, Uşak",
@@ -485,8 +522,8 @@ window.MADENLER_DATA = {
       {
         "yer": "Kışladağ, Uşak",
         "tarih": "2023-11-14",
-        "aciklama": "AİHM, 14 Kasım 2023 tarihinde Sözleşme'nin 6. Maddesi (Adil Yargılanma Hakkı) kapsamında ihlalin gerçekleştiğine hükmetti. Kışladağ çevresinde yaşayan köylüler, 2003'te verilen ilk ÇED onayına karşı Türk mahkemelerinde 10 yıl hukuki mücadele yürüttü. Türk idare mahkemeleri iptal kararı verse de Danıştay bu kararları bozdu ve etkisiz kıldı — AİHM bu sürecin adil yargılanma hakkını ihlal ettiğine karar verdi. Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı.",
-        "kaynak": "AİHM 14 Kasım 2023 kararı (Başvuru No: 45028/07)"
+        "aciklama": "AİHM, 14 Kasım 2023 tarihinde Sözleşme'nin 6. Maddesi (Adil Yargılanma Hakkı) kapsamında ihlalin gerçekleştiğine hükmetti; karar 8 Nisan 2024'te kesinleşti. Kışladağ çevresinde yaşayan köylüler (Oya Otyıldız, Ertuğrul Barka ve üç diğer), 2003'te verilen ilk ÇED onayına karşı Türk mahkemelerinde 10 yıl hukuki mücadele yürüttü. Türk idare mahkemeleri iptal kararı verse de Danıştay bu kararları bozdu ve etkisiz kıldı — AİHM bu sürecin adil yargılanma hakkını ihlal ettiğine karar verdi. Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı; Uşak Barosu ve meslek odaları müdahillik başvurusu yaptı.",
+        "kaynak": "https://www.usakhabermerkezi.com/guncel/aihm-den-cehennem-cukuru-kisladag-altin-madeni-icin-ihll-h33413.html"
       }
     ],
     "siyasiBaglantilar": [
@@ -505,7 +542,7 @@ window.MADENLER_DATA = {
     "davalar": [
       {
         "ad": "AİHM Başvurusu — Kışladağ Köylüleri / Türkiye",
-        "aciklama": "Kışladağ çevresindeki köylüler 2007'de AİHM'e başvurdu. Temel şikayet: Türk mahkemelerinin ÇED onayını iptal etmesine karşın Danıştay'ın bu kararları bozarak madene yeşil ışık yakması — dolayısıyla adil yargılanma hakkının (Madde 6) ve özel/aile yaşamı ile çevre hakkının (Madde 8) ihlali. AİHM 14 Kasım 2023'te Madde 6 ihlali kararı verdi. Uşak İdare Mahkemesi yeniden yargılama başlatmak zorunda kaldı (12 Şubat 2025). Madde 8 başvurusu hâlâ Strazburg'da beklemede.",
+        "aciklama": "Kışladağ çevresindeki köylüler 2007'de AİHM'e başvurdu (Başvuru No: 45028/07). Temel şikayet: Türk mahkemelerinin ÇED onayını iptal etmesine karşın Danıştay'ın bu kararları bozarak madene yeşil ışık yakması — dolayısıyla adil yargılanma hakkının (Madde 6) ve özel/aile yaşamı ile çevre hakkının (Madde 8) ihlali. AİHM 14 Kasım 2023'te Madde 6 ihlali kararı verdi; karar 8 Nisan 2024'te kesinleşti. Uşak İdare Mahkemesi yeniden yargılama başlatmak zorunda kaldı (12 Şubat 2025). Madde 8 başvurusu hâlâ Strazburg'da beklemede.",
         "tarih": "2023-11-14",
         "sonuc": "Madde 6 ihlali kesinleşti — Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı; Madde 8 başvurusu beklemede"
       }
@@ -541,6 +578,42 @@ window.MADENLER_DATA = {
       {
         "ad": "Siyanürlü Altın Madenciliğinin Bedeli — Ekoloji Birliği",
         "url": "https://ekolojibirligi.org/siyanurlu-altin-madenciliginin-dogaya-bedeli-turkiyenin-ve-avrupanin-en-buyugu-kisladagdan-geriye-bu-kaldi/"
+      },
+      {
+        "ad": "Eldorado Gold 2025 Tam Yıl Finansal Sonuçları",
+        "url": "https://www.eldoradogold.com/investors/news-releases/eldorado-gold-delivers-strong-2025-full-year-and-fourth-quarter-financial"
+      },
+      {
+        "ad": "Kışladağ Altın Madeni Davası Uşak'ta Yeniden Görülecek — AA Enerji Terminali",
+        "url": "https://www.aa.com.tr/tr/enerjiterminali/maden/kisladag-altin-madeni-davasi-yarin-usakta-yeniden-gorulecek/47463"
+      },
+      {
+        "ad": "Kışladağ için Yeniden Yargılama Başlıyor — T24 (Şubat 2025)",
+        "url": "https://t24.com.tr/haber/kisladag-altin-madeni-icin-yeniden-yargilama-basliyor-20-yil-onceki-dosyayla-karar-verilemez,1217523"
+      },
+      {
+        "ad": "Kışladağ Yeniden Yargılama — Ekoloji Birliği",
+        "url": "https://ekolojibirligi.org/kisladag-altin-madeni-icin-yeniden-yargilama-basliyor-20-yil-onceki-dosyayla-karar-verilemez/"
+      },
+      {
+        "ad": "Sözcü — Cehennem Çukurundan Bölgeye Zehir Yayılıyor (Şubat 2025)",
+        "url": "https://www.sozcu.com.tr/cehennem-cukurundan-bolgeye-zehir-yayiliyor-p137729"
+      },
+      {
+        "ad": "Ege'de Yeni Gün — Arsenik Oranı Çok Yüksek Çıktı (Şubat 2025)",
+        "url": "https://www.egedeyenigun.com/usakin-suyunu-bu-cukur-yutuyor-esme-ve-ulubeydeki-arsenik-orani-cok-yuksek-cikti"
+      },
+      {
+        "ad": "Uşak Port — Uşak'ın Havası ve Suyu İçin İlk Duruşma (Şubat 2025)",
+        "url": "https://www.usakport.com.tr/usakin-havasi-ve-suyu-icin-ilk-durusma"
+      },
+      {
+        "ad": "Bianet — Kanda Siyanür, Suda Arsenik (2006, Erken Belge)",
+        "url": "https://bianet.org/bianet/bianet/82504-kanda-siyanur-suda-arsenik"
+      },
+      {
+        "ad": "Yeni Yaşam Gazetesi — Efemçukuru Altın Madeninde Genişleme Hazırlığı (Ekim 2022)",
+        "url": "https://yeniyasamgazetesi9.com/efemcukuru-altin-madeninde-genisleme-hazirligi/"
       }
     ]
   },
@@ -828,13 +901,25 @@ window.MADENLER_DATA = {
         "yer": "Kirazlı, Çanakkale",
         "tarih": "2025-11",
         "aciklama": "TÜMAD, Kasım 2025 satışının hemen ardından ÇED yenilenmeden iş makinesi sürdü. Ekoloji örgütleri 'hükümsüz satış, işgal' açıklaması yaptı.",
-        "kaynak": "Yeni Demokrasi Gazetesi"
+        "kaynak": "https://www.yenidemokrasi36.net/alamos-goldun-biraktigi-kirazlida-tumad-is-makineleriyle-sahada/"
+      },
+      {
+        "yer": "Kirazlı, Çanakkale",
+        "tarih": "2026-04-19",
+        "aciklama": "TÜMAD son üç ayda bölgede personel alımı ve yeni ofisler açtı; 19 Nisan 2026'da Kazdağı Kardeşliği'nin çektiği görüntüler TÜMAD'ın ağır iş makineleriyle aktif çalışmayı başlattığını ortaya koydu. Ekoloji örgütleri: 'Satış hükümsüzdür, TÜMAD alanı işgal ediyor.' 20 Mayıs 2026'da Çanakkale'de kitlesel dilekçe eylemi düzenlendi.",
+        "kaynak": "https://www.dokuz8haber.net/kazdaglarindaki-ekoloji-orgutlerinden-kirazlida-calismalara-tepki-satis-hukumsuzdur-tumad-alani-isgal-ediyor"
       },
       {
         "yer": "Ağı Dağı / Çamyurt",
-        "tarih": "2026",
-        "aciklama": "Ağı Dağı ÇED onaylı kararı 7 yıllık yasal süre aşımı nedeniyle geçerliliğini yitirdi. Çamyurt ÇED kararı da iptal edildi.",
-        "kaynak": "Çevre örgütleri, 2026"
+        "tarih": "2021-2024",
+        "aciklama": "Ağı Dağı ÇED olumlu kararı, ÇED Yönetmeliği Madde 14-(4) uyarınca 7 yıllık yasal geçerlilik süresi dolduğundan geçerliliğini yitirdi. TEMA Vakfı Ağustos 2021'de Çevre Bakanlığı'na başvurarak kararın geçersizliğinin tespitini istedi. Çamyurt projesinin ÇED süreci ise belirtilen süre içinde ÇED raporu sunulmadığı gerekçesiyle Bakanlıkça sonlandırıldı.",
+        "kaynak": "https://yesilgazete.org/agi-dagi-maden-projesine-verilen-ced-olumlu-karari-zaman-asimindan-dolayi-gecerliligini-yitirdi/"
+      },
+      {
+        "yer": "Çamyurt, Çanakkale",
+        "tarih": "2020-2021",
+        "aciklama": "Çamyurt altın madeni kapasite artışı projesi için 'özel format' verilmesine karşın yasal süre içinde ÇED raporu teslim edilmedi; Bakanlık süreci sonlandırdı.",
+        "kaynak": "https://ekolojibirligi.org/kazdaglarinda-bir-iptal-daha-alamosgolda-ait-camyurt-altin-madeni-projesi-ced-sureci-durduruldu/"
       }
     ],
     "siyasiBaglantilar": [
@@ -903,16 +988,36 @@ window.MADENLER_DATA = {
         "url": "https://www.forbes.com.tr/haberler/alamos-sirketleri-nurol-holding-e-satti-1-milyar-dolarlik-davanin-iptali-bekleniyor"
       },
       {
-        "ad": "Alamos Gold 14 Eylül 2025 Satış Duyurusu",
-        "url": "https://www.alamosgold.com"
+        "ad": "Alamos Gold — Türk Projelerinin Satışının Kapanışı (27 Ekim 2025)",
+        "url": "https://www.alamosgold.com/news-and-events/news/news-details/2025/Alamos-Gold-Announces-Closing-of-the-Sale-of-its-Turkish-Development-Projects/default.aspx"
       },
       {
-        "ad": "ICSID ARB/21/33 Tahkim Sicili",
+        "ad": "ICSID ARB/21/33 — Alamos Gold v. Türkiye Tahkim Sicili",
         "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/21/33"
       },
       {
-        "ad": "Kazdağları Protestoları — BoldMedya",
-        "url": "https://boldmedya.com"
+        "ad": "UNCTAD — Alamos Gold v. Turkey Dava Sayfası",
+        "url": "https://investmentpolicy.unctad.org/investment-dispute-settlement/cases/1119/alamos-gold-v-turkey"
+      },
+      {
+        "ad": "dokuz8HABER — Satış hükümsüzdür, TÜMAD alanı işgal ediyor",
+        "url": "https://www.dokuz8haber.net/kazdaglarindaki-ekoloji-orgutlerinden-kirazlida-calismalara-tepki-satis-hukumsuzdur-tumad-alani-isgal-ediyor"
+      },
+      {
+        "ad": "Ege Postası — Kazdağları'nda yeni tehdit, TÜMAD iş makineleriyle sahada",
+        "url": "https://www.egepostasi.com/haber/Kazdaglarinda-yeni-tehdit-Alamos-Gold-gitti-TUMAD-is-makineleriyle-sahada/387516"
+      },
+      {
+        "ad": "Yeşil Gazete — Ağı Dağı ÇED süre aşımı",
+        "url": "https://yesilgazete.org/agi-dagi-maden-projesine-verilen-ced-olumlu-karari-zaman-asimindan-dolayi-gecerliligini-yitirdi/"
+      },
+      {
+        "ad": "Ekoloji Birliği — Çamyurt ÇED durduruldu",
+        "url": "https://ekolojibirligi.org/kazdaglarinda-bir-iptal-daha-alamosgolda-ait-camyurt-altin-madeni-projesi-ced-sureci-durduruldu/"
+      },
+      {
+        "ad": "Birgün — Kazdağları'nda TÜMAD yeni tehdit",
+        "url": "https://www.birgun.net/haber/kazdaglarinda-yeni-tehdit-alamos-gold-gitti-tumad-is-makineleriyle-sahada-708205"
       }
     ]
   },
@@ -1014,22 +1119,22 @@ window.MADENLER_DATA = {
     ],
     "vergiBorclari": [
       {
-        "aciklama": "GDZ Dağıtım, Gediz Perakende ve Aydem Elektrik 2021-2024 döneminde (3-4 yıl boyunca) kurumlar vergisi ödemedi. Konu CHP Milletvekili Deniz Yavuzyılmaz tarafından TBMM gündemine taşındı. Şirket kâr raporlarken vergi ödememesi yoğun eleştiri aldı.",
-        "kaynak": "Epoch Times TR; Bold Medya 2025"
+        "aciklama": "GDZ Dağıtım, Gediz Perakende ve Aydem Elektrik 2021-2024 döneminde (3-4 yıl boyunca) kurumlar vergisi ödemedi. Aydın, Denizli ve Muğla'da faaliyet gösteren ADM Elektrik de aynı dönemde tek kuruş kurumlar vergisi ödemedi. Konu CHP Milletvekili Deniz Yavuzyılmaz tarafından TBMM gündemine taşındı. İzmir orman yangınlarından sonra şirketin vergi ödemediği ortaya çıktı.",
+        "kaynak": "https://boldmedya.com/2025/07/05/orman-yanginlariyla-suclanmisti-gdz-elektrikin-3-yildir-vergi-vermedigi-ortaya-cikti/"
       }
     ],
     "skandallar": [
       {
         "ad": "İzmir'de İki Kişi Elektrik Akımına Kapılarak Öldü",
         "tarih": "2024-07-12",
-        "aciklama": "İzmir Konak'ta sağanak yağmurdan sığınak arayan Özge Ceren Deniz ve İnanç Öktemay elektrik akımına kapılarak hayatını kaybetti. GDZ Elektrik Dağıtım A.Ş. sorumlu tutuldu. Şirket ile İzmir Büyükşehir Belediyesi birbirini suçladı. 585 kamu ihalesi alan şirket, ölümlerden sorumlu tutulurken ihale almaya devam etti.",
-        "kaynak": "Euronews; Artı Gerçek, 2024"
+        "aciklama": "İzmir Konak'ta sağanak yağmurdan sığınak arayan Özge Ceren Deniz ve İnanç Öktemay elektrik akımına kapılarak hayatını kaybetti. GDZ Elektrik Dağıtım A.Ş. sorumlu tutuldu. Şirket ile İzmir Büyükşehir Belediyesi birbirini suçladı. Eylül 2024'te 42 sanık hakim karşısına çıktı; Aralık 2025'te gerekçeli karar açıklandı.",
+        "kaynak": "https://tr.euronews.com/2024/07/14/2-kisinin-oldugu-olayda-izmir-buyuksehir-belediyesi-ve-gdz-elektrikten-karsilikli-suclamal"
       },
       {
-        "ad": "İzmir Orman Yangınları",
+        "ad": "İzmir Orman Yangınları — GDZ Elektrik",
         "tarih": "2025",
-        "aciklama": "İzmir orman yangınlarına elektrik dağıtım hatlarının neden olduğu ileri sürüldü; valilik bu yönde açıklama yaptı. GDZ Elektrik doğrudan hedef gösterildi. Ardından şirketin 3 yıldır kurumlar vergisi ödemediği ortaya çıktı.",
-        "kaynak": "Bold Medya 2025"
+        "aciklama": "İzmir'de çıkan orman yangınları (Çeşme, Seferihisar, Ödemiş, Foça) nedeniyle GDZ Elektrik doğrudan hedef gösterildi. İzmir Valisi Süleyman Elban yangınların elektrik hatlarından kaynaklandığını açıkladı. TİP Sözcüsü Sera Kadıgil konuyu TBMM'ye taşıdı. Ardından şirketin son 4 yıldır kurumlar vergisi ödemediği ortaya çıktı; Aydem bağlı ADM Elektrik de aynı dönemde vergi ödememişti.",
+        "kaynak": "https://boldmedya.com/2025/07/05/orman-yanginlariyla-suclanmisti-gdz-elektrikin-3-yildir-vergi-vermedigi-ortaya-cikti/"
       }
     ],
     "davalar": [],
@@ -1066,6 +1171,38 @@ window.MADENLER_DATA = {
       {
         "ad": "ÇATES Halka Arz — Investing.com",
         "url": "https://tr.investing.com/analysis/ates-elektrik-retim-cates-halka-arz-hap-bilgiler-200493791"
+      },
+      {
+        "ad": "T24 — 6 Termik Santral Mühürlendi (Ocak 2020)",
+        "url": "https://t24.com.tr/haber/erdogan-tarafindan-veto-edilmisti-6-termik-santral-muhurlendi,854373"
+      },
+      {
+        "ad": "Evrensel — 6 Termik Santral Mühürlendi (Ocak 2020)",
+        "url": "https://www.evrensel.net/haber/394423/bacasina-filtre-takilmayan-6-termik-santral-muhurlendi"
+      },
+      {
+        "ad": "Cumhuriyet — 'Can al, yak ama tek kuruş vergi ödeme' — GDZ Elektrik imtiyazlı çıktı",
+        "url": "https://www.cumhuriyet.com.tr/siyaset/can-al-yak-ama-tek-kurus-vergi-odeme-izmir-in-dagitimcisi-gdz-elektrik-imtiyaz-li-cikti-2415138"
+      },
+      {
+        "ad": "BoldMedya — GDZ Elektrik 3 Yıldır Vergi Vermiyor (Temmuz 2025)",
+        "url": "https://boldmedya.com/2025/07/05/orman-yanginlariyla-suclanmisti-gdz-elektrikin-3-yildir-vergi-vermedigi-ortaya-cikti/"
+      },
+      {
+        "ad": "Tele1 — İzmir Cehennemi Meclis Gündeminde, GDZ Hiç Vergi Vermemiş",
+        "url": "https://www.tele1.com.tr/izmir-cehennemi-meclis-gundeminde-gdz-elektrik-hic-vergi-vermemis"
+      },
+      {
+        "ad": "Medyascope — İzmir Elektrik Ölümleri Davası: 42 Sanık Hakim Karşısında (Eylül 2024)",
+        "url": "https://medyascope.tv/2024/09/05/izmirde-iki-kisinin-elektrik-akimina-kapilip-oldugu-olayda-42-sanik-ilk-kez-hakim-karsisinda-kablo-yeniden-incelensin-talebi/"
+      },
+      {
+        "ad": "Son Mühür — CHP'li Yavuzyılmaz: GDZ'ye 263 Milyon Dolarlık Kıyak",
+        "url": "https://www.sonmuhur.com/chpli-yavuzyilmaz-ak-partiden-gdz-elektrik-asye-263-milyon-dolarlik-kiyak"
+      },
+      {
+        "ad": "Z Haber — ÇATES'te İş Kazası (Ağustos 2024)",
+        "url": "https://www.zhaber.com.tr/asayis/cates-te-is-kazasi-h6600.html"
       }
     ]
   },
@@ -1135,8 +1272,8 @@ window.MADENLER_DATA = {
       {
         "isim": "Mehmet Hattat",
         "unvan": "Yönetim Kurulu Başkanı",
-        "notlar": "Forbes Türkiye'ye göre net serveti ~400 milyon dolar. 13 şirketin YK başkanlığını yürütüyor. Pandora Papers: BVI'da 'Agway Supply Management and Investment Limited' ve 'Beaudene Limited' adlı iki offshore şirket kurdu. 'Sanayi yatırımı amacıyla' kurulduğunu açıkladı; soruları yanıtsız bıraktı.",
-        "kaynak": "Forbes Türkiye; Pandora Papers — Türk Haber Gazetesi 2021"
+        "notlar": "Forbes Türkiye'ye göre net serveti ~400 milyon dolar. 13 şirketin YK başkanlığını yürütüyor. Pandora Papers: BVI'da 'Agway Supply Management and Investment Limited' ve 'Beaudene Limited' adlı iki offshore şirket kurdu. 'Sanayi yatırımı amacıyla' kurulduğunu açıkladı; soruları yanıtsız bıraktı. ICIJ Offshore Leaks veritabanında kayıtlı.",
+        "kaynak": "https://offshoreleaks.icij.org/nodes/12137602"
       },
       {
         "isim": "İbrahim Hattat",
@@ -1180,7 +1317,12 @@ window.MADENLER_DATA = {
       "birinci_uzatma": "2025'ten 2040'a uzatıldı",
       "ikinci_uzatma": "4 Haziran 2024'ten itibaren 7 Şubat 2045'e kadar 21 yıllık yeni dönem. 56 milyon ton tüvenan kömür üretimi hedefi (ortalama 2.7 Mt/yıl). 17 yıl tek gram üretim yapılmadığı halde sözleşme bir kez daha uzatıldı.",
       "tepki": "GMİS Genel Sekreteri ve sendikacılar sözleşme uzatmasını şiddetle kınadı.",
-      "kaynak": "İmza Gazetesi; GMİS açıklaması; Madencilik Türkiye"
+      "kaynak": "https://www.imzagazetesi.com/2045e-uzatilmisti-devasa-uretim-rekoru-hedefledi"
+    },
+    "uretimBaslangici2026": {
+      "tarih": "2026-01",
+      "aciklama": "17 yıl boyunca tek gram kömür çıkarmayan HEMA/Hattat, Amasra-B sahasında Ocak 2026 itibarıyla tam mekanize kömür üretimine başladığını açıkladı. Günlük 3.000-4.000 ton üretim hedefleniyor. Kazma-kürek yerine tam mekanik sistem devreye alındı.",
+      "kaynak": "https://www.haberler.com/yerel/amasra-da-tam-mekanize-komur-uretimi-basladi-19466823-haberi/"
     },
     "davalar": [
       {
@@ -1266,6 +1408,26 @@ window.MADENLER_DATA = {
       {
         "ad": "Pandora Papers — Mehmet Hattat BVI Offshore Şirketler",
         "url": "https://www.turkhabergazetesi.com/haber/mehmet-hattat-pandora-belgelerinde-anilmisti-36332.html"
+      },
+      {
+        "ad": "İsteGündem — Pandora Belgelerinden Mehmet Hattat da çıktı",
+        "url": "https://www.istegundem.com/haber/pandora-belgelerinden-mehmet-hattat-da-cikti/255949"
+      },
+      {
+        "ad": "ICIJ Offshore Leaks — Mehmet Hattat kaydı",
+        "url": "https://offshoreleaks.icij.org/nodes/12137602"
+      },
+      {
+        "ad": "Haberler.com — Amasra'da Tam Mekanize Kömür Üretimi Başladı (Ocak 2026)",
+        "url": "https://www.haberler.com/yerel/amasra-da-tam-mekanize-komur-uretimi-basladi-19466823-haberi/"
+      },
+      {
+        "ad": "Medyascope — Amasra Maden Faciası Davası Kararı (24 Mart 2025)",
+        "url": "https://medyascope.tv/2025/03/24/amasra-maden-faciasi-davasinda-karar-aciklandi/"
+      },
+      {
+        "ad": "Bartın Hergün Gazetesi — Amasra Maden Davası İstinaf Kararı (Mart 2026)",
+        "url": "https://www.bartinhergungazetesi.com/amasra-maden-faciasi-davasinda-istinaf-karari/27866"
       },
       {
         "ad": "Yeşil Gazete — Hattat Termik Santral Lisansı Kesinleşmiş Biçimde İptal Edildi",
@@ -1520,10 +1682,17 @@ window.MADENLER_DATA = {
     "davalar": [
       {
         "konu": "720 MW Ek Ünite ÇED",
-        "mahkeme": "İdare Mahkemeleri",
-        "aciklama": "Afşin-Elbistan A'ya ek 720 MW ünite kurulumu için alınan ÇED onayına karşı 4 ayrı dava açıldı.",
-        "sonuc": "Mahkemeden onay çıkmadı; proje mahkemede askıda.",
-        "kaynak": "Greenpeace; Cumhuriyet, 2025-2026"
+        "mahkeme": "Kahramanmaraş 4. İdare Mahkemesi",
+        "aciklama": "Afşin-Elbistan A'ya ek 720 MW ünite (2 yeni ünite) kurulumu için alınan ÇED onayına karşı 4 ayrı dava açıldı. Haziran 2025'te keşif gerçekleştirildi. Birinci bilirkişi raporu Eylül 2025'te açıklandı: Proje kamu yararına uygun değil. Toplam maliyet: 37 milyar 548 milyon 758 bin 500 TL (2024 fiyatlarıyla). İkinci bilirkişi raporu: 9 uzmanlık alanından 7'sinde ÇED uygunsuz bulundu (çevre, ormancılık, tarım, madencilik, jeoloji, sosyoloji mühendisliği). Ocak 2025'te Hükümet 720 MW projesini onayladı; çevre örgütleri ve HRW bunu eleştirdi.",
+        "sonuc": "Dava devam ediyor; her iki bilirkişi raporu projeyi 'kamu yararına aykırı' buldu.",
+        "kaynak": "https://bianet.org/haber/afsin-elbistan-da-ikinci-bilirkisi-raporu-cede-bir-kez-daha-uygunsuz-316889"
+      },
+      {
+        "konu": "Afşin-Elbistan Sağlık Verileri Gizleme",
+        "mahkeme": "Ankara 10. İdare Mahkemesi",
+        "aciklama": "Greenpeace Türkiye ve 11 yerel sakin, Sağlık Bakanlığı'nın Afşin ve Elbistan halkına ilişkin sağlık verilerini paylaşmayı reddetmesi üzerine dava açtı. Mahkeme, verilerin gizlenemeyeceğine ve Bakanlık'ın açıklamakla yükümlü olduğuna hükmetti. Bakanlık 'veriler zaten kamuya açık, hava kalitesi ölçümü Çevre Bakanlığı'nın görevi' demişti; mahkeme bu gerekçeyi reddetti.",
+        "sonuc": "Mahkeme Sağlık Bakanlığı'nın Afşin-Elbistan sağlık verilerini paylaşması gerektiğine hükmetti.",
+        "kaynak": "https://bianet.org/haber/mahkeme-termik-santralin-afsin-ve-elbistan-halkinin-sagligina-etkileri-aciklanmali-dedi-319397"
       },
       {
         "konu": "Filtresizlik mühürlemesi",
@@ -1628,6 +1797,46 @@ window.MADENLER_DATA = {
       {
         "ad": "Wikipedia — Afşin-Elbistan Power Stations",
         "url": "https://en.wikipedia.org/wiki/Af%C5%9Fin-Elbistan_power_stations"
+      },
+      {
+        "ad": "Bianet — Afşin-Elbistan İkinci Bilirkişi Raporu: ÇED Uygunsuz",
+        "url": "https://bianet.org/haber/afsin-elbistan-da-ikinci-bilirkisi-raporu-cede-bir-kez-daha-uygunsuz-316889"
+      },
+      {
+        "ad": "HalkTV — Afşin-Elbistan ÇED'e İkinci Bilirkişi Şoku",
+        "url": "https://halktv.com.tr/gundem/afsin-elbistan-termik-santrali-cedine-ikinci-bilirkisi-soku-1009575h"
+      },
+      {
+        "ad": "Yeşil Gazete — Afşin'de ÇED İptal: Kamu Yararı Yok",
+        "url": "https://yesilgazete.org/afsinde-komurlu-termik-santrale-verilen-ced-olumlu-karari-iptal-kamu-yarari-yok/"
+      },
+      {
+        "ad": "Bianet — Mahkeme: Termik Santralin Afşin-Elbistan Sağlığına Etkileri Açıklanmalı",
+        "url": "https://bianet.org/haber/mahkeme-termik-santralin-afsin-ve-elbistan-halkinin-sagligina-etkileri-aciklanmali-dedi-319397"
+      },
+      {
+        "ad": "T24 — Mahkemeden Sağlık Bakanlığı'na Afşin-Elbistan Kararı",
+        "url": "https://t24.com.tr/cevre/mahkemeden-saglik-bakanligina-afsin-elbistan-karari-halk-sagligi-verileri-paylasilacak,1320030"
+      },
+      {
+        "ad": "HRW — Türkiye Kömür Santrali Genişlemesini Onayladı (Ocak 2025)",
+        "url": "https://www.hrw.org/tr/news/2025/01/08/turkish-government-approves-coal-power-plant-expansion"
+      },
+      {
+        "ad": "Sözcü — CHP'li Yavuzyılmaz: Kamu Zararı 2 Milyar 783 Milyon TL",
+        "url": "https://www.sozcu.com.tr/chpli-yavuzyilmazdan-celikler-holding-aciklamasi-kamu-zarari-2-milyar-783-milyon-tl-wp7530568"
+      },
+      {
+        "ad": "Cumhuriyet — CHP'li Yavuzyılmaz Çelikler Holding Açıklaması",
+        "url": "https://www.cumhuriyet.com.tr/siyaset/chpli-deniz-yavuzyilmazdan-celikler-holding-aciklamasi-kamu-zarari-2-milyar-783-milyon-tl-2013532"
+      },
+      {
+        "ad": "Greenpeace — Afşin-Elbistan A Hava Kalitesi Raporu (PDF)",
+        "url": "https://www.greenpeace.org/static/planet4-turkey-stateless/2022/04/c73a17f7-tr-afsin-a-genisleme-raporu-greenpeace.pdf"
+      },
+      {
+        "ad": "Temiz Hava Hakkı — Belediyeler ve Çevre Örgütleri Dava Açtı",
+        "url": "https://temizhavahakki.org/elbistan-halki-davaci/"
       }
     ]
   },
