@@ -68,12 +68,14 @@ fs.writeFileSync(path.join(DIST_DIR, 'js', 'data.js'), dataJsContent);
 
 // index.html'e data.js scriptini ekle (statik mod için)
 const indexPath = path.join(DIST_DIR, 'index.html');
+const buildVer = Date.now();
 if (fs.existsSync(indexPath)) {
   let html = fs.readFileSync(indexPath, 'utf8');
   // Statik modda API yerine window.MADENLER_DATA kullanmak için
+  // Mevcut data.js tag'ini versiyonlu URL ile değiştir (CDN cache bypass)
   html = html.replace(
-    '</head>',
-    '<script src="/js/data.js"></script>\n</head>'
+    /<script src="\/js\/data\.js"[^>]*><\/script>/,
+    `<script src="/js/data.js?v=${buildVer}"></script>`
   ).replace(
     "fetch('/api/companies')",
     "Promise.resolve(window.MADENLER_DATA?.companies ? { json: () => Promise.resolve(window.MADENLER_DATA.companies) } : fetch('/api/companies'))"
