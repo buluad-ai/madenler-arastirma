@@ -93,22 +93,22 @@
   ],
   "vergiBorclari": [
     {
-      "aciklama": "GDZ Dağıtım, Gediz Perakende ve Aydem Elektrik 2021-2024 döneminde (3-4 yıl boyunca) kurumlar vergisi ödemedi. Konu CHP Milletvekili Deniz Yavuzyılmaz tarafından TBMM gündemine taşındı. Şirket kâr raporlarken vergi ödememesi yoğun eleştiri aldı.",
-      "kaynak": "Epoch Times TR; Bold Medya 2025"
+      "aciklama": "GDZ Dağıtım, Gediz Perakende ve Aydem Elektrik 2021-2024 döneminde (3-4 yıl boyunca) kurumlar vergisi ödemedi. Aydın, Denizli ve Muğla'da faaliyet gösteren ADM Elektrik de aynı dönemde tek kuruş kurumlar vergisi ödemedi. Konu CHP Milletvekili Deniz Yavuzyılmaz tarafından TBMM gündemine taşındı. İzmir orman yangınlarından sonra şirketin vergi ödemediği ortaya çıktı.",
+      "kaynak": "https://boldmedya.com/2025/07/05/orman-yanginlariyla-suclanmisti-gdz-elektrikin-3-yildir-vergi-vermedigi-ortaya-cikti/"
     }
   ],
   "skandallar": [
     {
       "ad": "İzmir'de İki Kişi Elektrik Akımına Kapılarak Öldü",
       "tarih": "2024-07-12",
-      "aciklama": "İzmir Konak'ta sağanak yağmurdan sığınak arayan Özge Ceren Deniz ve İnanç Öktemay elektrik akımına kapılarak hayatını kaybetti. GDZ Elektrik Dağıtım A.Ş. sorumlu tutuldu. Şirket ile İzmir Büyükşehir Belediyesi birbirini suçladı. 585 kamu ihalesi alan şirket, ölümlerden sorumlu tutulurken ihale almaya devam etti.",
-      "kaynak": "Euronews; Artı Gerçek, 2024"
+      "aciklama": "İzmir Konak'ta sağanak yağmurdan sığınak arayan Özge Ceren Deniz ve İnanç Öktemay elektrik akımına kapılarak hayatını kaybetti. GDZ Elektrik Dağıtım A.Ş. sorumlu tutuldu. Şirket ile İzmir Büyükşehir Belediyesi birbirini suçladı. Eylül 2024'te 42 sanık hakim karşısına çıktı; Aralık 2025'te gerekçeli karar açıklandı.",
+      "kaynak": "https://tr.euronews.com/2024/07/14/2-kisinin-oldugu-olayda-izmir-buyuksehir-belediyesi-ve-gdz-elektrikten-karsilikli-suclamal"
     },
     {
-      "ad": "İzmir Orman Yangınları",
+      "ad": "İzmir Orman Yangınları — GDZ Elektrik",
       "tarih": "2025",
-      "aciklama": "İzmir orman yangınlarına elektrik dağıtım hatlarının neden olduğu ileri sürüldü; valilik bu yönde açıklama yaptı. GDZ Elektrik doğrudan hedef gösterildi. Ardından şirketin 3 yıldır kurumlar vergisi ödemediği ortaya çıktı.",
-      "kaynak": "Bold Medya 2025"
+      "aciklama": "İzmir'de çıkan orman yangınları (Çeşme, Seferihisar, Ödemiş, Foça) nedeniyle GDZ Elektrik doğrudan hedef gösterildi. İzmir Valisi Süleyman Elban yangınların elektrik hatlarından kaynaklandığını açıkladı. TİP Sözcüsü Sera Kadıgil konuyu TBMM'ye taşıdı. Ardından şirketin son 4 yıldır kurumlar vergisi ödemediği ortaya çıktı; Aydem bağlı ADM Elektrik de aynı dönemde vergi ödememişti.",
+      "kaynak": "https://boldmedya.com/2025/07/05/orman-yanginlariyla-suclanmisti-gdz-elektrikin-3-yildir-vergi-vermedigi-ortaya-cikti/"
     }
   ],
   "davalar": [],
@@ -128,6 +128,14 @@
     { "ad": "ÇATES Kapatılıyor mu? — Pusula Gazetesi", "url": "https://www.pusulagazetesi.com.tr/cateste-kritik-gunler-kapatiliyor-mu" },
     { "ad": "Kamu kasasından iktidara yakın şirketlere 14,4 milyar TL — Diken", "url": "https://www.diken.com.tr/kamu-kasasindan-iktidara-yakin-elektrik-sirketlerine-144-milyar-tl-odenmis/" },
     { "ad": "ÇATES TTK Kömür Anlaşması", "url": "https://www.cates.com.tr/haberler/cates-ttk-ile-komur-tedarik-anlasmasi" },
-    { "ad": "ÇATES Halka Arz — Investing.com", "url": "https://tr.investing.com/analysis/ates-elektrik-retim-cates-halka-arz-hap-bilgiler-200493791" }
+    { "ad": "ÇATES Halka Arz — Investing.com", "url": "https://tr.investing.com/analysis/ates-elektrik-retim-cates-halka-arz-hap-bilgiler-200493791" },
+    { "ad": "T24 — 6 Termik Santral Mühürlendi (Ocak 2020)", "url": "https://t24.com.tr/haber/erdogan-tarafindan-veto-edilmisti-6-termik-santral-muhurlendi,854373" },
+    { "ad": "Evrensel — 6 Termik Santral Mühürlendi (Ocak 2020)", "url": "https://www.evrensel.net/haber/394423/bacasina-filtre-takilmayan-6-termik-santral-muhurlendi" },
+    { "ad": "Cumhuriyet — 'Can al, yak ama tek kuruş vergi ödeme' — GDZ Elektrik imtiyazlı çıktı", "url": "https://www.cumhuriyet.com.tr/siyaset/can-al-yak-ama-tek-kurus-vergi-odeme-izmir-in-dagitimcisi-gdz-elektrik-imtiyaz-li-cikti-2415138" },
+    { "ad": "BoldMedya — GDZ Elektrik 3 Yıldır Vergi Vermiyor (Temmuz 2025)", "url": "https://boldmedya.com/2025/07/05/orman-yanginlariyla-suclanmisti-gdz-elektrikin-3-yildir-vergi-vermedigi-ortaya-cikti/" },
+    { "ad": "Tele1 — İzmir Cehennemi Meclis Gündeminde, GDZ Hiç Vergi Vermemiş", "url": "https://www.tele1.com.tr/izmir-cehennemi-meclis-gundeminde-gdz-elektrik-hic-vergi-vermemis" },
+    { "ad": "Medyascope — İzmir Elektrik Ölümleri Davası: 42 Sanık Hakim Karşısında (Eylül 2024)", "url": "https://medyascope.tv/2024/09/05/izmirde-iki-kisinin-elektrik-akimina-kapilip-oldugu-olayda-42-sanik-ilk-kez-hakim-karsisinda-kablo-yeniden-incelensin-talebi/" },
+    { "ad": "Son Mühür — CHP'li Yavuzyılmaz: GDZ'ye 263 Milyon Dolarlık Kıyak", "url": "https://www.sonmuhur.com/chpli-yavuzyilmaz-ak-partiden-gdz-elektrik-asye-263-milyon-dolarlik-kiyak" },
+    { "ad": "Z Haber — ÇATES'te İş Kazası (Ağustos 2024)", "url": "https://www.zhaber.com.tr/asayis/cates-te-is-kazasi-h6600.html" }
   ]
 }

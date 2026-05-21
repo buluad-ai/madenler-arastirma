@@ -241,10 +241,17 @@
   "davalar": [
     {
       "konu": "720 MW Ek Ünite ÇED",
-      "mahkeme": "İdare Mahkemeleri",
-      "aciklama": "Afşin-Elbistan A'ya ek 720 MW ünite kurulumu için alınan ÇED onayına karşı 4 ayrı dava açıldı.",
-      "sonuc": "Mahkemeden onay çıkmadı; proje mahkemede askıda.",
-      "kaynak": "Greenpeace; Cumhuriyet, 2025-2026"
+      "mahkeme": "Kahramanmaraş 4. İdare Mahkemesi",
+      "aciklama": "Afşin-Elbistan A'ya ek 720 MW ünite (2 yeni ünite) kurulumu için alınan ÇED onayına karşı 4 ayrı dava açıldı. Haziran 2025'te keşif gerçekleştirildi. Birinci bilirkişi raporu Eylül 2025'te açıklandı: Proje kamu yararına uygun değil. Toplam maliyet: 37 milyar 548 milyon 758 bin 500 TL (2024 fiyatlarıyla). İkinci bilirkişi raporu: 9 uzmanlık alanından 7'sinde ÇED uygunsuz bulundu (çevre, ormancılık, tarım, madencilik, jeoloji, sosyoloji mühendisliği). Ocak 2025'te Hükümet 720 MW projesini onayladı; çevre örgütleri ve HRW bunu eleştirdi.",
+      "sonuc": "Dava devam ediyor; her iki bilirkişi raporu projeyi 'kamu yararına aykırı' buldu.",
+      "kaynak": "https://bianet.org/haber/afsin-elbistan-da-ikinci-bilirkisi-raporu-cede-bir-kez-daha-uygunsuz-316889"
+    },
+    {
+      "konu": "Afşin-Elbistan Sağlık Verileri Gizleme",
+      "mahkeme": "Ankara 10. İdare Mahkemesi",
+      "aciklama": "Greenpeace Türkiye ve 11 yerel sakin, Sağlık Bakanlığı'nın Afşin ve Elbistan halkına ilişkin sağlık verilerini paylaşmayı reddetmesi üzerine dava açtı. Mahkeme, verilerin gizlenemeyeceğine ve Bakanlık'ın açıklamakla yükümlü olduğuna hükmetti. Bakanlık 'veriler zaten kamuya açık, hava kalitesi ölçümü Çevre Bakanlığı'nın görevi' demişti; mahkeme bu gerekçeyi reddetti.",
+      "sonuc": "Mahkeme Sağlık Bakanlığı'nın Afşin-Elbistan sağlık verilerini paylaşması gerektiğine hükmetti.",
+      "kaynak": "https://bianet.org/haber/mahkeme-termik-santralin-afsin-ve-elbistan-halkinin-sagligina-etkileri-aciklanmali-dedi-319397"
     },
     {
       "konu": "Filtresizlik mühürlemesi",
@@ -299,6 +306,16 @@
     { "ad": "soL Haber — Seyitömer Atık Sahası Neden Çöktü?", "url": "https://haber.sol.org.tr/haber/yine-maden-yine-heyelan-faciasi-seyitomerde-atik-sahasi-neden-coktu-393451" },
     { "ad": "Cumhuriyet — COP31 Öncesi Çevre Örgütleri Elbistan'da", "url": "https://www.cumhuriyet.com.tr/turkiye/cevre-orgutleri-afsin-elbistan-termik-santrali-onunden-seslendi-turkiye-yeni-komurlu-santral-yapmamali-komurun-vadesi-doldu-2498791" },
     { "ad": "Wikipedia — Çelikler Holding", "url": "https://en.wikipedia.org/wiki/%C3%87elikler_Holding" },
-    { "ad": "Wikipedia — Afşin-Elbistan Power Stations", "url": "https://en.wikipedia.org/wiki/Af%C5%9Fin-Elbistan_power_stations" }
+    { "ad": "Wikipedia — Afşin-Elbistan Power Stations", "url": "https://en.wikipedia.org/wiki/Af%C5%9Fin-Elbistan_power_stations" },
+    { "ad": "Bianet — Afşin-Elbistan İkinci Bilirkişi Raporu: ÇED Uygunsuz", "url": "https://bianet.org/haber/afsin-elbistan-da-ikinci-bilirkisi-raporu-cede-bir-kez-daha-uygunsuz-316889" },
+    { "ad": "HalkTV — Afşin-Elbistan ÇED'e İkinci Bilirkişi Şoku", "url": "https://halktv.com.tr/gundem/afsin-elbistan-termik-santrali-cedine-ikinci-bilirkisi-soku-1009575h" },
+    { "ad": "Yeşil Gazete — Afşin'de ÇED İptal: Kamu Yararı Yok", "url": "https://yesilgazete.org/afsinde-komurlu-termik-santrale-verilen-ced-olumlu-karari-iptal-kamu-yarari-yok/" },
+    { "ad": "Bianet — Mahkeme: Termik Santralin Afşin-Elbistan Sağlığına Etkileri Açıklanmalı", "url": "https://bianet.org/haber/mahkeme-termik-santralin-afsin-ve-elbistan-halkinin-sagligina-etkileri-aciklanmali-dedi-319397" },
+    { "ad": "T24 — Mahkemeden Sağlık Bakanlığı'na Afşin-Elbistan Kararı", "url": "https://t24.com.tr/cevre/mahkemeden-saglik-bakanligina-afsin-elbistan-karari-halk-sagligi-verileri-paylasilacak,1320030" },
+    { "ad": "HRW — Türkiye Kömür Santrali Genişlemesini Onayladı (Ocak 2025)", "url": "https://www.hrw.org/tr/news/2025/01/08/turkish-government-approves-coal-power-plant-expansion" },
+    { "ad": "Sözcü — CHP'li Yavuzyılmaz: Kamu Zararı 2 Milyar 783 Milyon TL", "url": "https://www.sozcu.com.tr/chpli-yavuzyilmazdan-celikler-holding-aciklamasi-kamu-zarari-2-milyar-783-milyon-tl-wp7530568" },
+    { "ad": "Cumhuriyet — CHP'li Yavuzyılmaz Çelikler Holding Açıklaması", "url": "https://www.cumhuriyet.com.tr/siyaset/chpli-deniz-yavuzyilmazdan-celikler-holding-aciklamasi-kamu-zarari-2-milyar-783-milyon-tl-2013532" },
+    { "ad": "Greenpeace — Afşin-Elbistan A Hava Kalitesi Raporu (PDF)", "url": "https://www.greenpeace.org/static/planet4-turkey-stateless/2022/04/c73a17f7-tr-afsin-a-genisleme-raporu-greenpeace.pdf" },
+    { "ad": "Temiz Hava Hakkı — Belediyeler ve Çevre Örgütleri Dava Açtı", "url": "https://temizhavahakki.org/elbistan-halki-davaci/" }
   ]
 }

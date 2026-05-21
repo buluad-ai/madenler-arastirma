@@ -57,13 +57,25 @@
       "yer": "Kirazlı, Çanakkale",
       "tarih": "2025-11",
       "aciklama": "TÜMAD, Kasım 2025 satışının hemen ardından ÇED yenilenmeden iş makinesi sürdü. Ekoloji örgütleri 'hükümsüz satış, işgal' açıklaması yaptı.",
-      "kaynak": "Yeni Demokrasi Gazetesi"
+      "kaynak": "https://www.yenidemokrasi36.net/alamos-goldun-biraktigi-kirazlida-tumad-is-makineleriyle-sahada/"
+    },
+    {
+      "yer": "Kirazlı, Çanakkale",
+      "tarih": "2026-04-19",
+      "aciklama": "TÜMAD son üç ayda bölgede personel alımı ve yeni ofisler açtı; 19 Nisan 2026'da Kazdağı Kardeşliği'nin çektiği görüntüler TÜMAD'ın ağır iş makineleriyle aktif çalışmayı başlattığını ortaya koydu. Ekoloji örgütleri: 'Satış hükümsüzdür, TÜMAD alanı işgal ediyor.' 20 Mayıs 2026'da Çanakkale'de kitlesel dilekçe eylemi düzenlendi.",
+      "kaynak": "https://www.dokuz8haber.net/kazdaglarindaki-ekoloji-orgutlerinden-kirazlida-calismalara-tepki-satis-hukumsuzdur-tumad-alani-isgal-ediyor"
     },
     {
       "yer": "Ağı Dağı / Çamyurt",
-      "tarih": "2026",
-      "aciklama": "Ağı Dağı ÇED onaylı kararı 7 yıllık yasal süre aşımı nedeniyle geçerliliğini yitirdi. Çamyurt ÇED kararı da iptal edildi.",
-      "kaynak": "Çevre örgütleri, 2026"
+      "tarih": "2021-2024",
+      "aciklama": "Ağı Dağı ÇED olumlu kararı, ÇED Yönetmeliği Madde 14-(4) uyarınca 7 yıllık yasal geçerlilik süresi dolduğundan geçerliliğini yitirdi. TEMA Vakfı Ağustos 2021'de Çevre Bakanlığı'na başvurarak kararın geçersizliğinin tespitini istedi. Çamyurt projesinin ÇED süreci ise belirtilen süre içinde ÇED raporu sunulmadığı gerekçesiyle Bakanlıkça sonlandırıldı.",
+      "kaynak": "https://yesilgazete.org/agi-dagi-maden-projesine-verilen-ced-olumlu-karari-zaman-asimindan-dolayi-gecerliligini-yitirdi/"
+    },
+    {
+      "yer": "Çamyurt, Çanakkale",
+      "tarih": "2020-2021",
+      "aciklama": "Çamyurt altın madeni kapasite artışı projesi için 'özel format' verilmesine karşın yasal süre içinde ÇED raporu teslim edilmedi; Bakanlık süreci sonlandırdı.",
+      "kaynak": "https://ekolojibirligi.org/kazdaglarinda-bir-iptal-daha-alamosgolda-ait-camyurt-altin-madeni-projesi-ced-sureci-durduruldu/"
     }
   ],
   "siyasiBaglantilar": [
@@ -122,8 +134,13 @@
     { "ad": "Alamos → TÜMAD Satışı — T24", "url": "https://t24.com.tr/amp/haber/alamos-gold-kaz-dagi-ndaki-madenlerini-470-milyon-dolara-tumad-a-satti,1261535" },
     { "ad": "TÜMAD Kirazlı İş Makinesi — Yeni Demokrasi Gazetesi", "url": "https://www.yenidemokrasi36.net/alamos-goldun-biraktigi-kirazlida-tumad-is-makineleriyle-sahada/" },
     { "ad": "Nurol Holding — Tahkim Davası Çözümü — Forbes Türkiye", "url": "https://www.forbes.com.tr/haberler/alamos-sirketleri-nurol-holding-e-satti-1-milyar-dolarlik-davanin-iptali-bekleniyor" },
-    { "ad": "Alamos Gold 14 Eylül 2025 Satış Duyurusu", "url": "https://www.alamosgold.com" },
-    { "ad": "ICSID ARB/21/33 Tahkim Sicili", "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/21/33" },
-    { "ad": "Kazdağları Protestoları — BoldMedya", "url": "https://boldmedya.com" }
+    { "ad": "Alamos Gold — Türk Projelerinin Satışının Kapanışı (27 Ekim 2025)", "url": "https://www.alamosgold.com/news-and-events/news/news-details/2025/Alamos-Gold-Announces-Closing-of-the-Sale-of-its-Turkish-Development-Projects/default.aspx" },
+    { "ad": "ICSID ARB/21/33 — Alamos Gold v. Türkiye Tahkim Sicili", "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/21/33" },
+    { "ad": "UNCTAD — Alamos Gold v. Turkey Dava Sayfası", "url": "https://investmentpolicy.unctad.org/investment-dispute-settlement/cases/1119/alamos-gold-v-turkey" },
+    { "ad": "dokuz8HABER — Satış hükümsüzdür, TÜMAD alanı işgal ediyor", "url": "https://www.dokuz8haber.net/kazdaglarindaki-ekoloji-orgutlerinden-kirazlida-calismalara-tepki-satis-hukumsuzdur-tumad-alani-isgal-ediyor" },
+    { "ad": "Ege Postası — Kazdağları'nda yeni tehdit, TÜMAD iş makineleriyle sahada", "url": "https://www.egepostasi.com/haber/Kazdaglarinda-yeni-tehdit-Alamos-Gold-gitti-TUMAD-is-makineleriyle-sahada/387516" },
+    { "ad": "Yeşil Gazete — Ağı Dağı ÇED süre aşımı", "url": "https://yesilgazete.org/agi-dagi-maden-projesine-verilen-ced-olumlu-karari-zaman-asimindan-dolayi-gecerliligini-yitirdi/" },
+    { "ad": "Ekoloji Birliği — Çamyurt ÇED durduruldu", "url": "https://ekolojibirligi.org/kazdaglarinda-bir-iptal-daha-alamosgolda-ait-camyurt-altin-madeni-projesi-ced-sureci-durduruldu/" },
+    { "ad": "Birgün — Kazdağları'nda TÜMAD yeni tehdit", "url": "https://www.birgun.net/haber/kazdaglarinda-yeni-tehdit-alamos-gold-gitti-tumad-is-makineleriyle-sahada-708205" }
   ]
 }

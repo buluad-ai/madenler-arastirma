@@ -17,14 +17,17 @@
     "2024_uretim": "174.080 ons altın",
     "2024_gelir": "423,5 milyon USD",
     "2024_royalti": "32,8 milyon USD (devlete ödenen royalti)",
-    "2025_uretim": "168.701 ons altın",
-    "2025_gelir": "~596 milyon USD (yaklaşık 26,2 milyar TL)",
+    "2025_uretim": "168.701 ons altın (%3 azalış — 2024: 174.080 ons)",
+    "2025_gelir": "595,8 milyon USD (2024: 423,5 milyon — yüksek altın fiyatı etkisiyle artış)",
+    "2025_nakit_maliyet": "1.264 USD/ons (2024: 918 USD/ons — royalti artışı ve işgücü enflasyonu)",
+    "2025_buyume_sermayesi": "104,9 milyon USD (yığın liçi genişletme, ADR altyapısı)",
     "2025_net_kar_Eldorado": "519,9 milyon USD (tüm şirket)",
+    "2026_Q1_uretim": "28.339 ons (%36 azalış — batı bölümünde pasa sıyırma çalışmaları)",
     "kumulatif_uretim": "4 milyon ons (20 yılda — Q2 2025'te 4. milyonuncu ons)",
     "toplam_rezerv": "535,4 milyon ton cevher (0,66 gr/ton Au, 1,5 gr/ton Ag)",
-    "kalan_maden_omru": "13 yıl (~2038)",
+    "kalan_maden_omru": "~13 yıl (~2038)",
     "nakit_maliyet": "918 USD/ons (2024)",
-    "notlar": "Altının büyük çoğunluğu Kanada'ya transfer edilirken devlete ödenen royalti toplam gelirin %5'i bile değil"
+    "notlar": "Altının büyük çoğunluğu Kanada'ya transfer edilirken devlete ödenen royalti 2024'te 32,8 milyon USD (toplam gelirin ~%7,7'si). 2025'te artan royalti oranları maliyetleri belirgin biçimde yükseltti."
   },
   "ozellestirilenSahalar": [
     {
@@ -46,8 +49,8 @@
     {
       "yer": "Kışladağ, Uşak",
       "tarih": "2006-günümüz",
-      "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede şirket yöneticisi açıkladı; şirket resmi beyanında 2,5 milyon m³ diyor). 7 köyün içme suyu kesildi — Uşak Belediyesi tankerle ikmal yapıyor (Katrancılar, Ovacık, Söğütlü, Karapınar, İnay, Poyraz ve Çitgöl). Katrancılar, Ovacık, Söğütlü ve Karapınar köyleri fiilen boşaldı. İnay köyü çeşme suyunda arsenik 9,92 mg/L'ye çıktı (yasal sınır: 0,01 mg/L = sınırın 992 katı). Koyun sürülerinde ölü doğum ve sakat yavru vakaları raporlandı. Yöre çiftçileri tazminat davası açtı; şirket uzlaşma yerine dava sürecini uzatıyor.",
-      "kaynak": "Ekoloji Birliği, Yeşil Gazete, Yerel mahkeme tutanakları"
+      "aciklama": "Siyanür yığın liçi yöntemi kullanılıyor. 350 milyon ton toksik atık birikimi (18 yılda). Yıllık gerçek su tüketimi 12 milyon m³ (mahkemede şirket yöneticisi açıkladı; şirket resmi beyanında 2,5 milyon m³ diyor). 7 köyün içme suyu kesildi — Uşak Belediyesi tankerle ikmal yapıyor (Katrancılar, Ovacık, Söğütlü, Karapınar, İnay, Poyraz ve Çitgöl). Katrancılar, Ovacık, Söğütlü ve Karapınar köyleri fiilen boşaldı. Eşme-Ulubey bölgesinde arsenik değerleri yasal sınırın 700 katına ulaşıyor. Koyun sürülerinde ölü doğum ve sakat yavru vakaları raporlandı. Yöre çiftçileri tazminat davası açtı; şirket uzlaşma yerine dava sürecini uzatıyor.",
+      "kaynak": "https://www.sozcu.com.tr/cehennem-cukurundan-bolgeye-zehir-yayiliyor-p137729"
     },
     {
       "yer": "Kışladağ, Uşak",
@@ -58,8 +61,8 @@
     {
       "yer": "Kışladağ, Uşak",
       "tarih": "2023-11-14",
-      "aciklama": "AİHM, 14 Kasım 2023 tarihinde Sözleşme'nin 6. Maddesi (Adil Yargılanma Hakkı) kapsamında ihlalin gerçekleştiğine hükmetti. Kışladağ çevresinde yaşayan köylüler, 2003'te verilen ilk ÇED onayına karşı Türk mahkemelerinde 10 yıl hukuki mücadele yürüttü. Türk idare mahkemeleri iptal kararı verse de Danıştay bu kararları bozdu ve etkisiz kıldı — AİHM bu sürecin adil yargılanma hakkını ihlal ettiğine karar verdi. Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı.",
-      "kaynak": "AİHM 14 Kasım 2023 kararı (Başvuru No: 45028/07)"
+      "aciklama": "AİHM, 14 Kasım 2023 tarihinde Sözleşme'nin 6. Maddesi (Adil Yargılanma Hakkı) kapsamında ihlalin gerçekleştiğine hükmetti; karar 8 Nisan 2024'te kesinleşti. Kışladağ çevresinde yaşayan köylüler (Oya Otyıldız, Ertuğrul Barka ve üç diğer), 2003'te verilen ilk ÇED onayına karşı Türk mahkemelerinde 10 yıl hukuki mücadele yürüttü. Türk idare mahkemeleri iptal kararı verse de Danıştay bu kararları bozdu ve etkisiz kıldı — AİHM bu sürecin adil yargılanma hakkını ihlal ettiğine karar verdi. Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı; Uşak Barosu ve meslek odaları müdahillik başvurusu yaptı.",
+      "kaynak": "https://www.usakhabermerkezi.com/guncel/aihm-den-cehennem-cukuru-kisladag-altin-madeni-icin-ihll-h33413.html"
     }
   ],
   "siyasiBaglantilar": [
@@ -78,7 +81,7 @@
   "davalar": [
     {
       "ad": "AİHM Başvurusu — Kışladağ Köylüleri / Türkiye",
-      "aciklama": "Kışladağ çevresindeki köylüler 2007'de AİHM'e başvurdu. Temel şikayet: Türk mahkemelerinin ÇED onayını iptal etmesine karşın Danıştay'ın bu kararları bozarak madene yeşil ışık yakması — dolayısıyla adil yargılanma hakkının (Madde 6) ve özel/aile yaşamı ile çevre hakkının (Madde 8) ihlali. AİHM 14 Kasım 2023'te Madde 6 ihlali kararı verdi. Uşak İdare Mahkemesi yeniden yargılama başlatmak zorunda kaldı (12 Şubat 2025). Madde 8 başvurusu hâlâ Strazburg'da beklemede.",
+      "aciklama": "Kışladağ çevresindeki köylüler 2007'de AİHM'e başvurdu (Başvuru No: 45028/07). Temel şikayet: Türk mahkemelerinin ÇED onayını iptal etmesine karşın Danıştay'ın bu kararları bozarak madene yeşil ışık yakması — dolayısıyla adil yargılanma hakkının (Madde 6) ve özel/aile yaşamı ile çevre hakkının (Madde 8) ihlali. AİHM 14 Kasım 2023'te Madde 6 ihlali kararı verdi; karar 8 Nisan 2024'te kesinleşti. Uşak İdare Mahkemesi yeniden yargılama başlatmak zorunda kaldı (12 Şubat 2025). Madde 8 başvurusu hâlâ Strazburg'da beklemede.",
       "tarih": "2023-11-14",
       "sonuc": "Madde 6 ihlali kesinleşti — Uşak İdare Mahkemesi'nde yeniden yargılama 12 Şubat 2025'te başladı; Madde 8 başvurusu beklemede"
     }
@@ -99,6 +102,15 @@
     { "ad": "Kışladağ 2025 Ciro Haberi — EgedeYeniGün", "url": "https://www.egedeyenigun.com/usaktaki-kisladag-altin-madeni-2025te-yaklasik-596-milyon-dolar-ciro-yapti/amp" },
     { "ad": "AİHM İhlal Kararı — Uşak Haber Merkezi", "url": "https://www.usakhabermerkezi.com/guncel/aihm-den-cehennem-cukuru-kisladag-altin-madeni-icin-ihll-h33413.html" },
     { "ad": "Kışladağ Su Tüketimi — OdaTV", "url": "https://www.odatv.com/guncel/kisladagin-su-canavari-usaki-kurakliga-surukleyen-madenler-mi-120112143" },
-    { "ad": "Siyanürlü Altın Madenciliğinin Bedeli — Ekoloji Birliği", "url": "https://ekolojibirligi.org/siyanurlu-altin-madenciliginin-dogaya-bedeli-turkiyenin-ve-avrupanin-en-buyugu-kisladagdan-geriye-bu-kaldi/" }
+    { "ad": "Siyanürlü Altın Madenciliğinin Bedeli — Ekoloji Birliği", "url": "https://ekolojibirligi.org/siyanurlu-altin-madenciliginin-dogaya-bedeli-turkiyenin-ve-avrupanin-en-buyugu-kisladagdan-geriye-bu-kaldi/" },
+    { "ad": "Eldorado Gold 2025 Tam Yıl Finansal Sonuçları", "url": "https://www.eldoradogold.com/investors/news-releases/eldorado-gold-delivers-strong-2025-full-year-and-fourth-quarter-financial" },
+    { "ad": "Kışladağ Altın Madeni Davası Uşak'ta Yeniden Görülecek — AA Enerji Terminali", "url": "https://www.aa.com.tr/tr/enerjiterminali/maden/kisladag-altin-madeni-davasi-yarin-usakta-yeniden-gorulecek/47463" },
+    { "ad": "Kışladağ için Yeniden Yargılama Başlıyor — T24 (Şubat 2025)", "url": "https://t24.com.tr/haber/kisladag-altin-madeni-icin-yeniden-yargilama-basliyor-20-yil-onceki-dosyayla-karar-verilemez,1217523" },
+    { "ad": "Kışladağ Yeniden Yargılama — Ekoloji Birliği", "url": "https://ekolojibirligi.org/kisladag-altin-madeni-icin-yeniden-yargilama-basliyor-20-yil-onceki-dosyayla-karar-verilemez/" },
+    { "ad": "Sözcü — Cehennem Çukurundan Bölgeye Zehir Yayılıyor (Şubat 2025)", "url": "https://www.sozcu.com.tr/cehennem-cukurundan-bolgeye-zehir-yayiliyor-p137729" },
+    { "ad": "Ege'de Yeni Gün — Arsenik Oranı Çok Yüksek Çıktı (Şubat 2025)", "url": "https://www.egedeyenigun.com/usakin-suyunu-bu-cukur-yutuyor-esme-ve-ulubeydeki-arsenik-orani-cok-yuksek-cikti" },
+    { "ad": "Uşak Port — Uşak'ın Havası ve Suyu İçin İlk Duruşma (Şubat 2025)", "url": "https://www.usakport.com.tr/usakin-havasi-ve-suyu-icin-ilk-durusma" },
+    { "ad": "Bianet — Kanda Siyanür, Suda Arsenik (2006, Erken Belge)", "url": "https://bianet.org/bianet/bianet/82504-kanda-siyanur-suda-arsenik" },
+    { "ad": "Yeni Yaşam Gazetesi — Efemçukuru Altın Madeninde Genişleme Hazırlığı (Ekim 2022)", "url": "https://yeniyasamgazetesi9.com/efemcukuru-altin-madeninde-genisleme-hazirligi/" }
   ]
 }

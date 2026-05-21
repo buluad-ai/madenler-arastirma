@@ -61,8 +61,8 @@
     {
       "isim": "Mehmet Hattat",
       "unvan": "Yönetim Kurulu Başkanı",
-      "notlar": "Forbes Türkiye'ye göre net serveti ~400 milyon dolar. 13 şirketin YK başkanlığını yürütüyor. Pandora Papers: BVI'da 'Agway Supply Management and Investment Limited' ve 'Beaudene Limited' adlı iki offshore şirket kurdu. 'Sanayi yatırımı amacıyla' kurulduğunu açıkladı; soruları yanıtsız bıraktı.",
-      "kaynak": "Forbes Türkiye; Pandora Papers — Türk Haber Gazetesi 2021"
+      "notlar": "Forbes Türkiye'ye göre net serveti ~400 milyon dolar. 13 şirketin YK başkanlığını yürütüyor. Pandora Papers: BVI'da 'Agway Supply Management and Investment Limited' ve 'Beaudene Limited' adlı iki offshore şirket kurdu. 'Sanayi yatırımı amacıyla' kurulduğunu açıkladı; soruları yanıtsız bıraktı. ICIJ Offshore Leaks veritabanında kayıtlı.",
+      "kaynak": "https://offshoreleaks.icij.org/nodes/12137602"
     },
     {
       "isim": "İbrahim Hattat",
@@ -107,7 +107,12 @@
     "birinci_uzatma": "2025'ten 2040'a uzatıldı",
     "ikinci_uzatma": "4 Haziran 2024'ten itibaren 7 Şubat 2045'e kadar 21 yıllık yeni dönem. 56 milyon ton tüvenan kömür üretimi hedefi (ortalama 2.7 Mt/yıl). 17 yıl tek gram üretim yapılmadığı halde sözleşme bir kez daha uzatıldı.",
     "tepki": "GMİS Genel Sekreteri ve sendikacılar sözleşme uzatmasını şiddetle kınadı.",
-    "kaynak": "İmza Gazetesi; GMİS açıklaması; Madencilik Türkiye"
+    "kaynak": "https://www.imzagazetesi.com/2045e-uzatilmisti-devasa-uretim-rekoru-hedefledi"
+  },
+  "uretimBaslangici2026": {
+    "tarih": "2026-01",
+    "aciklama": "17 yıl boyunca tek gram kömür çıkarmayan HEMA/Hattat, Amasra-B sahasında Ocak 2026 itibarıyla tam mekanize kömür üretimine başladığını açıkladı. Günlük 3.000-4.000 ton üretim hedefleniyor. Kazma-kürek yerine tam mekanik sistem devreye alındı.",
+    "kaynak": "https://www.haberler.com/yerel/amasra-da-tam-mekanize-komur-uretimi-basladi-19466823-haberi/"
   },
   "davalar": [
     {
@@ -162,6 +167,11 @@
     { "ad": "İmza Gazetesi — 2045'e Uzatıldı, Devasa Üretim Rekoru Hedefledi", "url": "https://www.imzagazetesi.com/2045e-uzatilmisti-devasa-uretim-rekoru-hedefledi" },
     { "ad": "GMİS — Amasra-B Sözleşme Uzatmasına Tepki", "url": "https://www.mardinlife.com/gundem/gmis-genel-sekreteri-kayadan-amasra-b-sahasinda-sozlesme-uzatilmasina-tepki" },
     { "ad": "Pandora Papers — Mehmet Hattat BVI Offshore Şirketler", "url": "https://www.turkhabergazetesi.com/haber/mehmet-hattat-pandora-belgelerinde-anilmisti-36332.html" },
+    { "ad": "İsteGündem — Pandora Belgelerinden Mehmet Hattat da çıktı", "url": "https://www.istegundem.com/haber/pandora-belgelerinden-mehmet-hattat-da-cikti/255949" },
+    { "ad": "ICIJ Offshore Leaks — Mehmet Hattat kaydı", "url": "https://offshoreleaks.icij.org/nodes/12137602" },
+    { "ad": "Haberler.com — Amasra'da Tam Mekanize Kömür Üretimi Başladı (Ocak 2026)", "url": "https://www.haberler.com/yerel/amasra-da-tam-mekanize-komur-uretimi-basladi-19466823-haberi/" },
+    { "ad": "Medyascope — Amasra Maden Faciası Davası Kararı (24 Mart 2025)", "url": "https://medyascope.tv/2025/03/24/amasra-maden-faciasi-davasinda-karar-aciklandi/" },
+    { "ad": "Bartın Hergün Gazetesi — Amasra Maden Davası İstinaf Kararı (Mart 2026)", "url": "https://www.bartinhergungazetesi.com/amasra-maden-faciasi-davasinda-istinaf-karari/27866" },
     { "ad": "Yeşil Gazete — Hattat Termik Santral Lisansı Kesinleşmiş Biçimde İptal Edildi", "url": "https://yesilgazete.org/hattat-holding-simdi-de-komur-tesisi-kurmak-istiyor-bartin-platformu-dava-acti/" },
     { "ad": "Evrensel — Hattat'tan Belediye Başkanına 1 Milyon TL Dava", "url": "https://www.evrensel.net/haber/432179/hattattan-termik-santrale-karsi-cikan-amasra-belediye-baskanina-1-milyonluk-dava" },
     { "ad": "Teyit — Patlama Yaşanan Madenin Hattat'a Ait Olduğu İddiası", "url": "https://teyit.org/analiz/amasrada-patlama-yasanan-madenin-mehmet-hattata-ait-oldugu-iddiasi" },

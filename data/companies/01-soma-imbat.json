@@ -17,8 +17,8 @@
     "ciro": "809.983.203 TL (Capital 500, son yayımlanan dönem)",
     "vergioncesiKar": "146.241.678 TL",
     "kapital500Sirasi": 286,
-    "finansalDurum": "2025 yılında yaklaşık 3 milyar TL zarar açıklandı; şirket banka borçları ve ipotek sorunlarıyla karşı karşıya. Soma B Termik Santrali operatörüyle kömür alım sözleşmesi çökmesi temel kriz nedeni (operatörün borcu 20 milyar TL'yi aştı).",
-    "notlar": "İthal kömür rekabeti ve artan operasyonel maliyetler nedeniyle finansal baskı artıyor. İşçi ücretlerinde gecikmeler yaşandığı raporlanıyor."
+    "finansalDurum": "2025 yılında yaklaşık 3 milyar TL zarar açıklandı; şirket banka borçları ve ipotek sorunlarıyla karşı karşıya. Koç-Fernas ortaklığının işlettiği Soma B Termik Santrali operatörü TKİ'ye 20 milyar TL borçlandı; TKİ kömür alım sözleşmesini iptal etti. Bu durum İMBAT'ın en büyük alıcısını yok etmesiyle finansal krizi derinleştirdi. Koç-Fernas'ın aylık ~100 milyon TL zarar ettiği ve yıl sonu tasfiyesi planladığı iddia ediliyor.",
+    "notlar": "Mayıs 2026 itibarıyla binlerce madenci işsiz kalma tehlikesiyle karşı karşıya. Eynez madeninin kapatılacağı iddiaları bölgede paniğe yol açtı."
   },
   "ozellestirilenSahalar": [
     {
@@ -61,9 +61,19 @@
       "kaynak": "Dev Maden Sen"
     },
     {
-      "tarih": "2025",
-      "aciklama": "İşçi ücret gecikmelerine karşı bölgede dönemsel eylemler yapıldı.",
-      "kaynak": "Cumhuriyet, 2025"
+      "tarih": "2025-09-11",
+      "aciklama": "~3 aydır gecikmiş maaş nedeniyle işçiler gece vardiyasını terk etti. Şirket yönetimi 'Daha 5 ay idare edin' diyerek işçileri tehdit etti.",
+      "kaynak": "https://haber.sol.org.tr/haber/5-ay-idare-edin-diyerek-tehdit-ettiler-somada-maaslari-odenmeyen-madenciler-ocaga-girmedi"
+    },
+    {
+      "tarih": "2026-02-28",
+      "aciklama": "İMBAT, Polyak Eynez, Anadolu Madencilik ve Soma B Termik Santrali işçileri eş zamanlı yürüyüş düzenledi. 8 aydır düzenli maaş ödenmiyor iddiasıyla 'Alacaklarımız düzelene kadar eylemler sürecek' açıklaması yapıldı. Soma Belediyesi ve esnaf odaları desteğini bildirdi.",
+      "kaynak": "https://www.cumhuriyet.com.tr/turkiye/soma-da-maden-iscileri-yuruyus-duzenledi-alacaklarimiz-duzelene-kadar-eylemler-surecek-2482747"
+    },
+    {
+      "tarih": "2026-04-22",
+      "aciklama": "Demir Export-Fernas (Koç ortaklığı) Eynez madenini 31 Aralık 2026'da kapatma başvurusu yaptığı iddia edildi. Söylentiler üzerine binlerce madenci işsiz kalma kaygısıyla tedirginleşti. Şirket 'kesinleşmiş karar yok' açıklaması yaptı.",
+      "kaynak": "https://www.odatv.com/ekonomi/somadaki-eynez-komur-madeninin-kapatilacagi-one-suruldu-demir-export-somadan-cikacak-mi-120144332"
     }
   ],
   "cevreIhlalleri": [],
@@ -125,6 +135,30 @@
     {
       "ad": "Odatv — TKİ bünyesindeki madenlerde tasfiye operasyonu",
       "url": "https://www.odatv.com/gundem/turkiye-komur-isletmeleri-bunyesindeki-madenlerde-tasfiye-operasyonu-odatv-komisyon-raporuna-ulasti-soma-katliami-detayi-120146641"
+    },
+    {
+      "ad": "soL Haber — '5 Ay İdare Edin' Diyerek Tehdit Ettiler (Eylül 2025)",
+      "url": "https://haber.sol.org.tr/haber/5-ay-idare-edin-diyerek-tehdit-ettiler-somada-maaslari-odenmeyen-madenciler-ocaga-girmedi"
+    },
+    {
+      "ad": "Cumhuriyet — Soma'da Maden İşçileri Yürüyüş Düzenledi (Şubat 2026)",
+      "url": "https://www.cumhuriyet.com.tr/turkiye/soma-da-maden-iscileri-yuruyus-duzenledi-alacaklarimiz-duzelene-kadar-eylemler-surecek-2482747"
+    },
+    {
+      "ad": "Soma Haberi — Soma Diken Üstünde: İşçiler, Esnaf ve STK'lar Ayakta (27 Şubat 2026)",
+      "url": "https://www.somahaberi.com/haber/soma-diken-ustunde-isciler-esnaf-ve-stklar-santral-ve-madenler-icin-ayakta-6084"
+    },
+    {
+      "ad": "Soma Haberi — Binlerce Madenci İşsiz Kalma Tehlikesi (Mayıs 2026)",
+      "url": "https://www.somahaberi.com/haber/somada-kirmizi-alarm-binlerce-madenci-issiz-kalma-tehlikesiyle-karsi-karsiya-6158"
+    },
+    {
+      "ad": "OdaTV — Eynez Kömür Madeninin Kapatılacağı İddiası (Nisan 2026)",
+      "url": "https://www.odatv.com/ekonomi/somadaki-eynez-komur-madeninin-kapatilacagi-one-suruldu-demir-export-somadan-cikacak-mi-120144332"
+    },
+    {
+      "ad": "Nefes.com.tr — Madenlerde Maaş Krizi Büyüyecek",
+      "url": "https://www.nefes.com.tr/madenlerde-maas-krizi-buyuyecek-120743"
     }
   ]
 }
