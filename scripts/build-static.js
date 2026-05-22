@@ -42,7 +42,7 @@ copyDirRecursive(PUBLIC_DIR, DIST_DIR);
 
 // Statik HTML raporları kopyala
 // index.html kasıtla dahil edilmiyor — public/index.html zaten kopyalandı
-const htmlFiles = ['demir_export', 'yildizlar', 'metin_rapor.html', 'demir_export_rapor.html', 'yildizlar_sss_holding_rapor.html'];
+const htmlFiles = ['demir_export', 'yildizlar', 'metin_rapor.html', 'demir_export_rapor.html', 'yildizlar_sss_holding_rapor.html', 'kirsehir_raporu.html'];
 for (const f of htmlFiles) {
   const src = path.join(ROOT, f);
   const dest = path.join(DIST_DIR, f);
