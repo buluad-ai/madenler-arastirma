@@ -2751,20 +2751,78 @@ window.MADENLER_DATA = {
       "lon": 34.163
     },
     "nufus": "~250.000 (il nüfusu)",
-    "ozellik": "Boztepe Altın Madeni projesi, Seyfe Gölü Ramsar Alanı tehdidi",
+    "ozellik": "Boztepe Altın Madeni projesi (DEFAŞ), Seyfe Gölü Ramsar Alanı tehdidi, Koç-Fernas siyasi ortaklığı",
     "sirketler": [
       "demir-export"
     ],
-    "tarihselBaglam": "Kırşehir ilinde planlanan Boztepe Altın Madeni projesi; Koç Holding iştiraki Demir Export ile AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi Fernas İnşaat'ın Defaş Madencilik ortak girişimiyle yürütülmektedir. 5.856 hektarlık sahada yıllık 37 milyon ton kazı öngörülmekte, proje atığının %92'si pasa atık olarak bırakılacaktır. Tesisin konumu Kırşehir içme suyu kuyularına 3,3 km, Seyfe Gölü Ramsar Alanı'na ise birkaç kilometre mesafededir. Seyfe Gölü'nün koruma sınırları Cumhurbaşkanlığı kararnamesiyle 15 Eylül 2024'te yarıya indirildi. ÇED süreci Aralık 2024'te Kırşehir İdare Mahkemesi kararıyla durduruldu.",
+    "raporDosyasi": "kirsehir_raporu.html",
+    "tarihselBaglam": "Kırşehir ilinde planlanan Boztepe Altın Madeni projesi; Koç Holding iştiraki Demir Export ile AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi Fernas İnşaat'ın Defaş Madencilik ortak girişimiyle yürütülmektedir. 5.855 hektarlık sahada 14 ayrı açık ocak çukuru ve yıllık 3 milyon ton cevher çıkarımı öngörülmekte; 10 yılda 371 milyon ton atık bırakılacaktır. Tesisin konumu Kırşehir içme suyu kuyularına ~3 km, Seyfe Gölü Ramsar Alanı'na 6.947 metre mesafededir. Seyfe Gölü'nün koruma sınırları altın arama gerekçesiyle daraltıldı. ÇED olumlu kararına karşın Kırşehir Ziraat Odası, TMMOB ve Kırşehir Belediyesi hukuki süreç başlattı. Belediye Başkanı Selahattin Ekicioğlu projeyi 'ekolojik soykırım' olarak nitelendirdi.",
     "facialAr": [],
     "cevreselRiskler": [
-      "Kırşehir içme suyu kuyuları 3,3 km mesafede",
-      "Kızılırmak havzası içinde (Ankara içme suyu kaynağı)",
-      "Seyfe Gölü Ramsar alanı — koruma sınırı 15 Eylül 2024'te yarıya indirildi (RG No. 32663)",
-      "DSİ, Kapulukaya Barajı'ndan yönetmeliklere aykırı su tahsisi onayladı"
+      "Kırşehir içme suyu kuyuları ~3 km mesafede — 250.000 kişinin suyu tehlikede",
+      "Seyfe Gölü Ramsar alanı — 187 kuş türü, 27'si nesli tehlike altında, flamingo habitatı",
+      "Koruma sınırları altın arama gerekçesiyle daraltıldı",
+      "DSİ, TÜPRAŞ'a tahsis edilmiş 1988 tarihli 722 lt/sn su hakkını DEFAŞ'a devr etti (yönetmeliğe aykırı)",
+      "Yıllık 499,6 milyon litre su tüketimi — Kapulukaya Barajı'ndan 73 km boru hattıyla",
+      "650 hektar ekilebilir tarım arazisi yok edilecek (Ankara-İstanbul et ihtiyacının %30'u)",
+      "10 yılda 371 milyon ton toksik atık — 3 atık barajı köylerin yanı başına kurulacak",
+      "Kızılırmak havzası içinde (Ankara içme suyu kaynağı tehdit altında)",
+      "Kırşehir Kent Konseyi: bölgede nadir toprak elementleri (titanyum, seryum, lantan, lityum, toryum, uranyum) — gerçek hedef NTE olabilir"
+    ],
+    "protestolar": [
+      {
+        "ad": "ÇED Toplantısı Sessiz Direnişi",
+        "sirket": "DEFAŞ / Demir Export",
+        "tarih": "2024-2025",
+        "aciklama": "Yerel halk ÇED toplantılarında 'Altın istemiyoruz, emeğimizi, toprağımızı, suyumuzu istiyoruz' pankartlarıyla sessiz direniş gösterdi. Kırşehir Çevre Koruma Platformu itiraz dilekçesi topladı."
+      },
+      {
+        "ad": "Belediye Başkanı: 'Ekolojik Soykırım'",
+        "sirket": "DEFAŞ / Demir Export",
+        "tarih": "2025-08",
+        "aciklama": "Kırşehir Belediye Başkanı Selahattin Ekicioğlu, Çevre Bakanlığı İDK toplantısından dışlandıklarını açıklayarak 'ekolojik soykırım kabul etmeyeceğiz' dedi. Bakanlık toplantısına yerel yöneticilerin alınmaması büyük tepki çekti."
+      }
+    ],
+    "davalar": [
+      {
+        "ad": "Kırşehir ÇED İptal Davası — Ziraat Odası",
+        "tarih": "2024-2025",
+        "taraflar": "Kırşehir Ziraat Odası vs. DEFAŞ / Çevre Bakanlığı",
+        "durum": "Devam ediyor"
+      },
+      {
+        "ad": "Kırşehir ÇED İptal Davası — TMMOB",
+        "tarih": "2025-2026",
+        "taraflar": "TMMOB (Av. Ferhat Çelepkolu) vs. DEFAŞ / Çevre Bakanlığı",
+        "durum": "Başlatılıyor"
+      },
+      {
+        "ad": "Kırşehir Belediyesi İtirazı",
+        "tarih": "2025",
+        "taraflar": "Kırşehir Belediyesi vs. Çevre Bakanlığı",
+        "durum": "Yargıtay'da yetki belirleme aşamasında"
+      }
     ],
     "sendikaDurumu": "Araştırılıyor",
-    "guncellenmeTarihi": "2026-05-21"
+    "guncellenmeTarihi": "2026-05-22",
+    "kaynaklar": [
+      {
+        "ad": "Cumhuriyet — Kırşehir'de planlanan altın madeni projesi, doğal yaşamı bitirecek",
+        "url": "https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790"
+      },
+      {
+        "ad": "Yeşil Gazete — Su krizi yaşayan Kırşehir'de altına hücum",
+        "url": "https://yesilgazete.org/su-krizi-yasayan-kirsehirde-altina-hucum-yerel-yoneticiler-ve-halk-isyanda/"
+      },
+      {
+        "ad": "Ekoloji Birliği — Demir Export Kangal",
+        "url": "https://ekolojibirligi.org/ekoloji-birligi-elini-evimizden-cek-demir-export-kangalda-maden-istemiyoruz/"
+      },
+      {
+        "ad": "Artı Gerçek — 12 yıldır süren mücadele",
+        "url": "https://artigercek.com/cevre/sivasta-siyanurlu-altina-karsi-12-yildir-suren-cevre-mucadelesi-ilicin-yasadiklarini-yasayacagiz-308032h"
+      }
+    ]
   },
   {
     "slug": "seydisehir",

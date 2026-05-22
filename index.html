@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madenler Araştırma Platformu — TKP</title>
 <!-- Statik modda gömülü veri (build-static.js tarafından eklenir) -->
-<script src="/js/data.js?v=1779456417193"></script>
+<script src="/js/data.js?v=1779459609898"></script>
 <style>
 :root {
   --bg: #0d1117; --bg2: #161b22; --bg3: #21262d;
@@ -422,7 +422,9 @@ function sehirleriGoster(liste) {
         ${olum > 0 ? `<span class="kart-badge" style="background:rgba(248,81,73,.15); color:var(--red); border:1px solid rgba(248,81,73,.3)">💀 ${olum} ölüm</span>` : ''}
       </div>
       <div style="margin-top:12px; display:flex; gap:8px;">
-        <span class="btn btn-blue" onclick="sehirDetay('${s.slug}'); event.stopPropagation()">🖨 Kent Raporu</span>
+        ${s.raporDosyasi
+          ? `<a class="btn btn-blue" href="/${s.raporDosyasi}" target="_blank" onclick="event.stopPropagation()">🖨 Kent Raporu</a>`
+          : `<span class="btn btn-blue" onclick="sehirDetay('${s.slug}'); event.stopPropagation()">🖨 Kent Raporu</span>`}
       </div>
     </div>`;
   }).join('');
@@ -640,9 +642,17 @@ function sehirDetay(slug) {
   const city = tumSehirler.find(s => s.slug === slug);
   if (!city) { alert('Kent verisi bulunamadı: ' + slug); return; }
   const companies = tumSirketler.filter(c => (city.sirketler || []).includes(c.slug));
-  const win = window.open('', '_blank');
-  win.document.write(generateCityReport(city, companies));
-  win.document.close();
+  const html = generateCityReport(city, companies);
+  const blob = new Blob([html], { type: 'text/html; charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
 }
 
 // ─── SEKME ────────────────────────────────────────────────────────────────

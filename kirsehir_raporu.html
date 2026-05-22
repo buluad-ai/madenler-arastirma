@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIRŞEHİR — Boztepe Altın Madeni ve DEFAŞ Madencilik Araştırma Raporu</title>
+<style>
+  :root {
+    --koyu: #1a1a2e;
+    --lacivert: #16213e;
+    --mavi: #0f3460;
+    --kırmızı: #e94560;
+    --sarı: #f5a623;
+    --yesil: #27ae60;
+    --turuncu: #e67e22;
+    --gri: #ecf0f1;
+    --metin: #2c3e50;
+    --kart: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--gri); color: var(--metin); line-height: 1.7; }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #2c0a0a 0%, #6b1a1a 50%, #8b2a2a 100%);
+    color: white; padding: 60px 40px 50px; text-align: center; position: relative; overflow: hidden;
+  }
+  .header::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .header .ust-etiket { font-size: 0.8em; opacity: 0.7; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; position: relative; }
+  .header h1 { font-size: 2.6em; font-weight: 900; letter-spacing: -1px; margin-bottom: 10px; position: relative; }
+  .header .subtitle { font-size: 1.15em; opacity: 0.85; position: relative; margin-bottom: 12px; }
+  .header .badge {
+    display: inline-block; background: var(--kırmızı); color: white;
+    padding: 6px 18px; border-radius: 20px; font-size: 0.85em; font-weight: 700;
+    margin: 4px; letter-spacing: 1px; position: relative;
+  }
+  .header .badge.sari { background: var(--sarı); color: var(--koyu); }
+  .header .meta { font-size: 0.82em; opacity: 0.6; margin-top: 16px; position: relative; }
+
+  /* UYARI BANDI */
+  .uyari-bandi {
+    background: linear-gradient(90deg, var(--kırmızı), #c0392b);
+    color: white; padding: 14px 40px; font-weight: 700; font-size: 0.92em; text-align: center;
+  }
+
+  /* NAVIGASYON */
+  .nav-sidebar { position: sticky; top: 0; z-index: 100; background: var(--lacivert); box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+  .nav-scroll { display: flex; overflow-x: auto; gap: 0; }
+  .nav-scroll::-webkit-scrollbar { height: 3px; }
+  .nav-scroll::-webkit-scrollbar-thumb { background: var(--kırmızı); }
+  .nav-scroll a {
+    display: block; color: rgba(255,255,255,0.8); text-decoration: none;
+    padding: 14px 20px; font-size: 0.82em; font-weight: 600; white-space: nowrap;
+    border-bottom: 3px solid transparent; transition: all 0.2s; letter-spacing: 0.5px;
+  }
+  .nav-scroll a:hover { color: white; background: rgba(255,255,255,0.1); border-bottom-color: var(--kırmızı); }
+
+  /* ANA CONTAINER */
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+
+  /* ÖZET KARTLAR */
+  .ozet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 40px; }
+  .ozet-kart {
+    background: white; border-radius: 12px; padding: 22px 18px; text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--mavi); transition: transform 0.2s;
+  }
+  .ozet-kart:hover { transform: translateY(-4px); }
+  .ozet-kart .rakam { font-size: 2.2em; font-weight: 900; color: var(--mavi); line-height: 1; }
+  .ozet-kart .etiket { font-size: 0.78em; color: #888; margin-top: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .ozet-kart.kirmizi { border-top-color: var(--kırmızı); }
+  .ozet-kart.kirmizi .rakam { color: var(--kırmızı); }
+  .ozet-kart.turuncu { border-top-color: var(--turuncu); }
+  .ozet-kart.turuncu .rakam { color: var(--turuncu); }
+  .ozet-kart.yesil { border-top-color: var(--yesil); }
+  .ozet-kart.yesil .rakam { color: var(--yesil); }
+  .ozet-kart.sari { border-top-color: var(--sarı); }
+  .ozet-kart.sari .rakam { color: var(--sarı); }
+
+  /* BÖLÜMLER */
+  .bolum { background: white; border-radius: 14px; margin-bottom: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.07); overflow: hidden; }
+  .bolum-baslik {
+    background: linear-gradient(90deg, var(--mavi), #1a4a8a);
+    color: white; padding: 20px 28px; font-size: 1.2em; font-weight: 800;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .bolum-baslik.kirmizi { background: linear-gradient(90deg, var(--kırmızı), #c0392b); }
+  .bolum-baslik.turuncu { background: linear-gradient(90deg, var(--turuncu), #d35400); }
+  .bolum-baslik.yesil { background: linear-gradient(90deg, #1e8449, var(--yesil)); }
+  .bolum-baslik.koyu { background: linear-gradient(90deg, var(--koyu), #2c3e50); }
+  .bolum-ikon { font-size: 1.4em; }
+  .bolum-icerik { padding: 28px; }
+
+  /* ZAMAN ÇİZELGESİ */
+  .zaman-cetveli { position: relative; padding-left: 30px; }
+  .zaman-cetveli::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--mavi); }
+  .zaman-madde { position: relative; margin-bottom: 24px; padding-left: 20px; }
+  .zaman-madde::before {
+    content: ''; position: absolute; left: -24px; top: 6px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--kırmızı); border: 2px solid white; box-shadow: 0 0 0 2px var(--kırmızı);
+  }
+  .zaman-yil { font-weight: 800; color: var(--mavi); font-size: 1.05em; }
+  .zaman-metin { color: var(--metin); margin-top: 3px; }
+
+  /* TABLO */
+  .maden-tablo { width: 100%; border-collapse: collapse; font-size: 0.92em; margin-top: 10px; }
+  .maden-tablo thead { background: var(--mavi); color: white; }
+  .maden-tablo th { padding: 12px 16px; text-align: left; font-weight: 700; font-size: 0.88em; text-transform: uppercase; letter-spacing: 0.5px; }
+  .maden-tablo td { padding: 12px 16px; border-bottom: 1px solid #eee; vertical-align: top; }
+  .maden-tablo tr:hover { background: #f8f9fa; }
+  .maden-tablo tr:nth-child(even) { background: #fafafa; }
+  .durum-dava { background: #fde8e8; color: #c0392b; padding: 3px 10px; border-radius: 12px; font-weight: 700; font-size: 0.82em; }
+  .durum-gelisme { background: #eaf2ff; color: #1a6bb5; padding: 3px 10px; border-radius: 12px; font-weight: 700; font-size: 0.82em; }
+
+  /* AKORDİYON */
+  .akordeon-madde { border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+  .akordeon-baslik {
+    width: 100%; background: #f8f9fa; border: none; padding: 16px 20px; text-align: left;
+    cursor: pointer; font-size: 0.95em; font-weight: 700; color: var(--metin);
+    display: flex; justify-content: space-between; align-items: center; transition: background 0.2s;
+  }
+  .akordeon-baslik:hover { background: #e8ecf0; }
+  .akordeon-baslik.aktif { background: var(--mavi); color: white; }
+  .akordeon-ok { font-size: 1.2em; transition: transform 0.3s; }
+  .akordeon-baslik.aktif .akordeon-ok { transform: rotate(180deg); }
+  .akordeon-icerik { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 20px; background: white; }
+  .akordeon-icerik.acik { max-height: 3000px; padding: 20px; }
+
+  /* ALINTI */
+  .alinti {
+    border-left: 5px solid var(--kırmızı); background: #fff5f5;
+    padding: 16px 20px; margin: 16px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #555;
+  }
+  .alinti cite { display: block; margin-top: 8px; font-style: normal; font-weight: 700; color: var(--kırmızı); font-size: 0.85em; }
+
+  /* UYARI KUTUSU */
+  .uyari-kutu {
+    border-radius: 10px; padding: 16px 20px; margin: 16px 0; display: flex; gap: 12px; align-items: flex-start;
+  }
+  .uyari-kutu.kirmizi { background: #fde8e8; border: 1px solid #f5c6c6; }
+  .uyari-kutu.sarı { background: #fef9e7; border: 1px solid #f9e4a0; }
+  .uyari-kutu.yesil { background: #d5f5e3; border: 1px solid #a9dfbf; }
+  .uyari-kutu.mavi { background: #eaf2ff; border: 1px solid #aed6f1; }
+  .uyari-kutu .ikon { font-size: 1.4em; flex-shrink: 0; margin-top: 2px; }
+  .uyari-kutu .icerik strong { display: block; margin-bottom: 4px; }
+
+  /* HABER KARTLARI */
+  .haber-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
+  .haber-kart { border: 1px solid #e5e5e5; border-radius: 10px; padding: 16px; background: white; transition: box-shadow 0.2s; }
+  .haber-kart:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+  .haber-kart .kaynak { font-size: 0.75em; color: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 6px; }
+  .haber-kart .baslik { font-weight: 700; color: var(--metin); font-size: 0.95em; margin-bottom: 8px; }
+  .haber-kart .aciklama { font-size: 0.88em; color: #666; margin-bottom: 8px; }
+  .haber-kart a { color: var(--mavi); text-decoration: none; font-size: 0.82em; font-weight: 700; display: inline-block; }
+
+  /* PRINT */
+  .print-btn {
+    position: fixed; top: 20px; right: 20px; background: var(--kırmızı); color: white;
+    border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer;
+    font-size: 0.9em; font-weight: 700; font-family: 'Segoe UI', sans-serif; z-index: 200;
+  }
+  .geri-btn {
+    position: fixed; top: 60px; right: 20px; background: var(--mavi); color: white;
+    border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; text-decoration: none;
+    font-size: 0.82em; font-weight: 700; font-family: 'Segoe UI', sans-serif; z-index: 200; display: block; text-align: center;
+  }
+  @media print { .print-btn, .geri-btn, .nav-sidebar { display: none; } }
+
+  ul { list-style: disc; padding-left: 22px; line-height: 2.1; }
+  li { margin-bottom: 2px; }
+  p { margin-bottom: 12px; }
+  h3 { font-size: 1.05em; font-weight: 700; margin: 16px 0 10px; color: var(--mavi); }
+  a { color: var(--mavi); }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">🖨 Yazdır / PDF</button>
+<a class="geri-btn" href="/">← Platforma Dön</a>
+
+<div class="header">
+  <div class="ust-etiket">Madenler Araştırma Platformu · TKP Kamulaştırma Kampanyası</div>
+  <h1>📍 KIRŞEHİR — BOZTEPE ALTIN MADENİ</h1>
+  <div class="subtitle">DEFAŞ Madencilik: Koç Holding + AKP Milletvekili Fernas İnşaat Ortaklığı</div>
+  <div>
+    <span class="badge">🚨 Siyasi-Ticari Ortaklık</span>
+    <span class="badge">🌊 Su Tehdidi</span>
+    <span class="badge sari">⚖️ Davalar Devam Ediyor</span>
+    <span class="badge">🦩 Ramsar Alanı Tehlikede</span>
+  </div>
+  <div class="meta">Hazırlanma: Mayıs 2026 · Kaynak: Demir Export Araştırma Raporu, Cumhuriyet, Yeşil Gazete, TMMOB</div>
+</div>
+
+<div class="uyari-bandi">
+  🚨 DEFAŞ Madencilik'in Kırşehir projesine karşı hukuki süreçler devam etmektedir — Kırşehir Ziraat Odası, TMMOB ve Belediyesi dava açmış durumdadır.
+</div>
+
+<nav class="nav-sidebar">
+  <div class="nav-scroll">
+    <a href="#ozet">Özet</a>
+    <a href="#proje">Proje Boyutu</a>
+    <a href="#ortaklik">Siyasi Ortaklık</a>
+    <a href="#cevre">Çevresel Tehditler</a>
+    <a href="#su">Su Sorunu</a>
+    <a href="#hukuk">Hukuki Süreç</a>
+    <a href="#direnis">Halk Direnişi</a>
+    <a href="#medya">Medya</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ÖZET KARTLAR -->
+  <div id="ozet" class="ozet-grid">
+    <div class="ozet-kart kirmizi">
+      <div class="rakam">5.855</div>
+      <div class="etiket">Hektar Ruhsat Alanı</div>
+    </div>
+    <div class="ozet-kart kirmizi">
+      <div class="rakam">14</div>
+      <div class="etiket">Açık Ocak Çukuru</div>
+    </div>
+    <div class="ozet-kart turuncu">
+      <div class="rakam">371M</div>
+      <div class="etiket">Ton Toksik Atık (10 yıl)</div>
+    </div>
+    <div class="ozet-kart sari">
+      <div class="rakam">6,9 km</div>
+      <div class="etiket">Seyfe Gölü'ne Mesafe</div>
+    </div>
+    <div class="ozet-kart">
+      <div class="rakam">250.000</div>
+      <div class="etiket">Kişinin Suyu Tehlikede</div>
+    </div>
+    <div class="ozet-kart yesil">
+      <div class="rakam">3</div>
+      <div class="etiket">Açılan Dava (2024-2026)</div>
+    </div>
+  </div>
+
+  <!-- SİYASİ ORTAKLIK UYARISI -->
+  <div class="bolum" id="ortaklik">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">🔴</span>
+      SİYASİ-TİCARİ ORTAKLIK: KOÇ HOLDİNG + AKP MİLLETVEKİLİ
+    </div>
+    <div class="bolum-icerik">
+      <div class="uyari-kutu kirmizi">
+        <div class="ikon">🚨</div>
+        <div class="icerik">
+          <strong>Siyasi Ortaklık Uyarısı</strong>
+          DEFAŞ Madencilik; Koç Holding iştiraki <strong>Demir Export</strong> ile AKP Batman Milletvekili <strong>Ferhat Nasıroğlu</strong>'nun sahibi olduğu <strong>Fernas İnşaat A.Ş.</strong>'nin ortaklığıyla Mart 2019'da kurulmuştur. Türkiye'nin en büyük özel sermaye grubu ile iktidar partisi milletvekilinin şirketinin aynı madencilik projesinde ortak olması kamuoyunda büyük tartışma yaratmıştır.
+        </div>
+      </div>
+
+      <table class="maden-tablo">
+        <thead><tr><th>Ortak</th><th>Kimlik</th><th>Pay</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Demir Export A.Ş.</strong></td>
+            <td>Koç Holding iştiraki · Türkiye'nin en büyük özel sermaye grubu · CEO: Ömer M. Koç</td>
+            <td>%50</td>
+          </tr>
+          <tr>
+            <td><strong>Fernas İnşaat A.Ş.</strong></td>
+            <td>AKP Batman Milletvekili Ferhat Nasıroğlu'na ait · İnşaat ve enerji şirketi</td>
+            <td>%50</td>
+          </tr>
+          <tr>
+            <td><strong>DEFAŞ Madencilik A.Ş.</strong></td>
+            <td>Ortaklaşa kurulan şirket · Kuruluş: Mart 2019 · Kırşehir Boztepe ruhsatları</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="uyari-kutu sarı">
+        <div class="ikon">💡</div>
+        <div class="icerik">
+          <strong>Kırşehir Kent Konseyi Araştırması</strong>
+          Kent Konseyi'nin yaptırdığı toprak analizleri; bölgede titanyum, seryum, lantan, lityum, toryum ve uranyum gibi nadir toprak elementleri (NTE) tespit etti. Eleştirmenler, projenin gerçek hedefinin altın değil, stratejik değeri çok yüksek NTE olduğunu öne sürmektedir.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJE BOYUTU -->
+  <div class="bolum" id="proje">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">📍</span>
+      PROJENIN BOYUTU VE COĞRAFI KONUMU
+    </div>
+    <div class="bolum-icerik">
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik aktif" onclick="akordeon(this)">
+          📐 Ruhsat ve Alan Bilgileri <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik acik">
+          <ul>
+            <li><strong>Konum:</strong> Kırşehir il merkezi, Boztepe ilçesi; Çimeli ve Körpınar köyleri</li>
+            <li><strong>Şehir merkezine mesafe:</strong> Yaklaşık 6 km</li>
+            <li><strong>Seyfe Gölü'ne mesafe:</strong> ÇED raporuna göre 6.947 metre</li>
+            <li><strong>Toplam ruhsat alanı:</strong> 5.855 hektar (~8.200 futbol sahası)</li>
+            <li><strong>ÇED kapsamındaki alan:</strong> 2.864 hektar</li>
+            <li><strong>Ruhsat detayları:</strong> 1.988 ha + 1.963 ha + 1.904 ha — 3 ayrı ruhsat (geçerlilik: 2030 ve 2033)</li>
+            <li><strong>Planlanan çukur sayısı:</strong> 14 ayrı açık ocak çukuru</li>
+            <li><strong>Yıllık cevher çıkarımı:</strong> 3 milyon ton</li>
+            <li><strong>Yıllık zenginleştirilmiş cevher:</strong> 200.000 ton</li>
+            <li><strong>10 yıllık atık miktarı:</strong> 371 milyon ton toksik atık</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÇEVRESEL TEHDİTLER -->
+  <div class="bolum" id="cevre">
+    <div class="bolum-baslik kirmizi">
+      <span class="bolum-ikon">🌊</span>
+      ÇEVRESEL TEHDİTLER
+    </div>
+    <div class="bolum-icerik">
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik aktif" onclick="akordeon(this)">
+          💧 İçme Suyu ve Tarım Tehdidi <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik acik">
+          <ul>
+            <li><strong>İçme suyu tehdidi:</strong> Kırşehir'in 250.000 sakininin kullandığı su kaynaklarına ~3 km mesafe. Dağ ve kaya yapılarının tahribatı yeraltı su yollarını kalıcı olarak yok edebilir.</li>
+            <li><strong>Tarım zararı:</strong> 650 hektar ekilebilir tarım arazisi yok edilecek. Bu araziler Ankara ve İstanbul'un et ihtiyacının %30'unu karşılayan hayvancılık bölgesidir.</li>
+            <li><strong>Zehirli atık havuzları:</strong> Köylerin ve koruma alanının yanı başına 3 toksik atık barajı kurulacak.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="akordeon-madde">
+        <button class="akordeon-baslik" onclick="akordeon(this)">
+          🦩 Seyfe Gölü Ramsar Alanı Tehdidi <span class="akordeon-ok">▼</span>
+        </button>
+        <div class="akordeon-icerik">
+          <ul>
+            <li><strong>187 kuş türüne habitat:</strong> 27'si nesli tehlike altında türlere, flamingolara ve göçmen kuşlara ev sahipliği yapan Seyfe Gölü Tabiatı Koruma Alanı madene 6.947 metre uzaklıkta.</li>
+            <li><strong>Koruma sınırları daraltıldı:</strong> Seyfe Gölü'nün koruma sınırları <em>altın arama gerekçesiyle</em> Cumhurbaşkanlığı kararnamesiyle daraltıldı.</li>
+            <li><strong>Kızılırmak havzası tehdidi:</strong> Proje Kızılırmak havzası içinde yer almakta; Ankara'nın içme suyu kaynakları da dolaylı risk altında.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SU SORUNU -->
+  <div class="bolum" id="su">
+    <div class="bolum-baslik turuncu">
+      <span class="bolum-ikon">🚰</span>
+      DSİ'NİN TARTIŞMALI SU TAHSİSİ
+    </div>
+    <div class="bolum-icerik">
+      <div class="uyari-kutu kirmizi">
+        <div class="ikon">⚠️</div>
+        <div class="icerik">
+          <strong>Hukuka Aykırı Devir İddiası</strong>
+          DSİ, 1988'de TÜPRAŞ'a tahsis edilmiş 722 litre/saniye su kullanım hakkını DEFAŞ Madencilik'e devretti. Uzmanlar bu işlemin üçüncü şahsa devri yasaklayan su yönetimi yönetmeliklerine aykırı olduğunu vurgulamaktadır.
+        </div>
+      </div>
+      <ul>
+        <li><strong>Yıllık su tüketimi:</strong> 499,6 milyon litre — Kapulukaya Barajı'ndan 73 km uzunluğunda boru hattıyla taşınacak.</li>
+        <li><strong>Su kıtlığı bağlamı:</strong> Kırşehir halihazırda su kıtlığı yaşayan bir ildir; bu ek talep varoluşsal bir tehdit oluşturmaktadır.</li>
+        <li><strong>Tarımsal etki:</strong> Bölgenin hayvancılık ekonomisi su kıtlığıyla birlikte çöküş riskiyle karşı karşıya.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ZAMANÇİZELGESİ / HUKUKİ SÜREÇ -->
+  <div class="bolum" id="hukuk">
+    <div class="bolum-baslik">
+      <span class="bolum-ikon">⚖️</span>
+      HUKUKİ SÜREÇ VE DAVALAR
+    </div>
+    <div class="bolum-icerik">
+
+      <div class="zaman-cetveli" style="margin-bottom: 30px;">
+        <div class="zaman-madde">
+          <div class="zaman-yil">Mart 2019</div>
+          <div class="zaman-metin">DEFAŞ Madencilik kuruldu — Demir Export + Fernas İnşaat ortaklığıyla. Kırşehir Boztepe'de altın ve nadir toprak elementleri araması başladı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2024 başı</div>
+          <div class="zaman-metin">Çevre Bakanlığı ÇED başvurusunu reddederek şirketten revizyon istedi, 1 yıl süre verdi.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">Aralık 2024</div>
+          <div class="zaman-metin">Kırşehir Ziraat Odası, "ÇED Olumlu" kararına karşı idare mahkemesinde dava açtı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">Ağustos 2025</div>
+          <div class="zaman-metin">Çevre Bakanlığı İnceleme ve Değerlendirme Komisyonu (İDK) toplantısı yapıldı. Kırşehir Belediyesi toplantıdan dışlandı. Belediye Başkanı Selahattin Ekicioğlu "ekolojik soykırım" dedi.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2025</div>
+          <div class="zaman-metin">Bakanlık itirazlara rağmen ÇED Olumlu kararı verdi. TMMOB Hukuk Müşaviri Av. Ferhat Çelepkolu hukuki süreç başlatacaklarını açıkladı. Kırşehir Belediyesi itirazı Yargıtay'da yetki belirleme aşamasına taşındı.</div>
+        </div>
+        <div class="zaman-madde">
+          <div class="zaman-yil">2025-2026</div>
+          <div class="zaman-metin">TMMOB ÇED iptal davası başlatıldı. Üç ayrı dava eş zamanlı sürüyor: Ziraat Odası, TMMOB, Kırşehir Belediyesi.</div>
+        </div>
+      </div>
+
+      <table class="maden-tablo">
+        <thead>
+          <tr><th>Dava</th><th>Tarih</th><th>Davacı</th><th>Durum</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ÇED İptal Davası — Ziraat Odası</strong></td>
+            <td>2024-2025</td>
+            <td>Kırşehir Ziraat Odası vs. DEFAŞ / Bakanlık</td>
+            <td><span class="durum-gelisme">DEVAM EDİYOR</span></td>
+          </tr>
+          <tr>
+            <td><strong>ÇED İptal Davası — TMMOB</strong></td>
+            <td>2025-2026</td>
+            <td>TMMOB (Av. Ferhat Çelepkolu) vs. DEFAŞ / Bakanlık</td>
+            <td><span class="durum-gelisme">BAŞLATILDI</span></td>
+          </tr>
+          <tr>
+            <td><strong>Kırşehir Belediyesi İtirazı</strong></td>
+            <td>2025</td>
+            <td>Kırşehir Belediyesi vs. Çevre Bakanlığı</td>
+            <td><span class="durum-gelisme">YARGITAY'DA</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="alinti">
+        "Bu proje coğrafyamızı, tarlamızı, hayvancılığımızı ve kuş cennetimizi tehdit ediyor. Ekolojik soykırım kabul etmeyeceğiz."
+        <cite>— Kırşehir Belediye Başkanı Selahattin Ekicioğlu, Ağustos 2025</cite>
+      </div>
+    </div>
+  </div>
+
+  <!-- HALK DİRENİŞİ -->
+  <div class="bolum" id="direnis">
+    <div class="bolum-baslik yesil">
+      <span class="bolum-ikon">✊</span>
+      HALK DİRENİŞİ VE YEREL TEPKİLER
+    </div>
+    <div class="bolum-icerik">
+      <p>Yerel halk ÇED toplantılarında pankartlarla <strong>"Altın istemiyoruz, emeğimizi, toprağımızı, suyumuzu istiyoruz"</strong> mesajı verdi. Kırşehir Çevre Koruma Platformu vatandaşlardan itiraz dilekçesi topladı. Doğa savunucuları Ankara'da buluşarak kamuoyu oluşturdu.</p>
+
+      <div class="uyari-kutu sarı">
+        <div class="ikon">🗞️</div>
+        <div class="icerik">
+          <strong>Ulusal Basında</strong>
+          Odatv.com: <em>"Kırşehir halkı ile Koç Holding karşı karşıya"</em> — Yerel yöneticiler ve halkın Türkiye'nin en güçlü iş insanı ailesine karşı verdiği mücadele ulusal medyada geniş yer buldu.
+        </div>
+      </div>
+
+      <div class="uyari-kutu mavi">
+        <div class="ikon">📰</div>
+        <div class="icerik">
+          <strong>Hürriyet Yazarı Yalçın Bayer</strong>
+          "Bu sadece Kırşehir'in davası değil. Bugün altın için göz dikilen köyler, yarın başka bir yerde çoğalabilir."
+        </div>
+      </div>
+
+      <h3>Toplumsal Aktörler</h3>
+      <ul>
+        <li><strong>Kırşehir Ziraat Odası</strong> — ÇED iptal davası açtı</li>
+        <li><strong>TMMOB</strong> — Hukuki süreç başlattı</li>
+        <li><strong>Kırşehir Belediyesi</strong> — Projeye resmi itiraz, Yargıtay'da dava</li>
+        <li><strong>Kırşehir Çevre Koruma Platformu</strong> — Vatandaş dilekçesi kampanyası</li>
+        <li><strong>Kırşehir Kent Konseyi</strong> — NTE araştırması yaptırdı, kamuoyunu uyardı</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MEDYA -->
+  <div class="bolum" id="medya">
+    <div class="bolum-baslik koyu">
+      <span class="bolum-ikon">📰</span>
+      MEDYAYA YANSIYANLAR
+    </div>
+    <div class="bolum-icerik">
+      <div class="haber-grid">
+        <div class="haber-kart">
+          <div class="kaynak">Cumhuriyet</div>
+          <div class="baslik">Kırşehir'de planlanan altın madeni projesi, doğal yaşamı bitirecek</div>
+          <div class="aciklama">DSİ'nin yönetmeliğe aykırı su tahsisi, DEFAŞ'ın Seyfe Gölü'ne verdiği tehdit</div>
+          <a href="https://www.cumhuriyet.com.tr/cevre/kirsehir-de-planlanan-altin-madeni-projesi-dogal-yasami-bitirecek-dsi-den-yonetmelige-aykiri-su-tahsisine-onay-2477790" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Yeşil Gazete</div>
+          <div class="baslik">Su krizi yaşayan Kırşehir'de altına hücum: Yerel yöneticiler ve halk isyanda</div>
+          <div class="aciklama">Kırşehir halkının DEFAŞ madeni projesine karşı örgütlenmesi</div>
+          <a href="https://yesilgazete.org/su-krizi-yasayan-kirsehirde-altina-hucum-yerel-yoneticiler-ve-halk-isyanda/" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Ekoloji Birliği</div>
+          <div class="baslik">Elini evimizden çek Demir Export, Kangal'da maden istemiyoruz!</div>
+          <div class="aciklama">Bakırtepe maden sahasına kapasite artırımı girişimine köylülerin tepkisi</div>
+          <a href="https://ekolojibirligi.org/ekoloji-birligi-elini-evimizden-cek-demir-export-kangalda-maden-istemiyoruz/" target="_blank">→ Habere git</a>
+        </div>
+        <div class="haber-kart">
+          <div class="kaynak">Artı Gerçek</div>
+          <div class="baslik">Sivas'ta siyanürlü altına karşı 12 yıldır süren çevre mücadelesi</div>
+          <div class="aciklama">"İliç'in yaşadıklarını yaşayacağız" — yerel halkın kaygıları</div>
+          <a href="https://artigercek.com/cevre/sivasta-siyanurlu-altina-karsi-12-yildir-suren-cevre-mucadelesi-ilicin-yasadiklarini-yasayacagiz-308032h" target="_blank">→ Habere git</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function akordeon(btn) {
+  const ic = btn.nextElementSibling;
+  const acik = ic.classList.contains('acik');
+  btn.closest('.bolum-icerik').querySelectorAll('.akordeon-icerik').forEach(el => el.classList.remove('acik'));
+  btn.closest('.bolum-icerik').querySelectorAll('.akordeon-baslik').forEach(el => el.classList.remove('aktif'));
+  if (!acik) { ic.classList.add('acik'); btn.classList.add('aktif'); }
+}
+</script>
+</body>
+</html>
