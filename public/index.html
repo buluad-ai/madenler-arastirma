@@ -952,6 +952,29 @@ Madenler Araştırma Platformu · TKP Kamulaştırma Kampanyası · ${tarih}
 </html>`;
 }
 
+// ─── CDN CACHE FALLBACK: Kırşehir ─────────────────────────────────────────
+(function() {
+  if (!window.MADENLER_DATA || !window.MADENLER_DATA.cities) return;
+  if (window.MADENLER_DATA.cities.find(function(c) { return c.slug === 'kirsehir'; })) return;
+  window.MADENLER_DATA.cities.push({
+    "slug": "kirsehir", "ad": "Kırşehir", "il": "Kırşehir",
+    "koordinatlar": { "lat": 39.145, "lon": 34.163 },
+    "nufus": "~250.000 (il nüfusu)",
+    "ozellik": "Boztepe Altın Madeni projesi, Seyfe Gölü Ramsar Alanı tehdidi",
+    "sirketler": ["demir-export"],
+    "tarihselBaglam": "Kırşehir ilinde planlanan Boztepe Altın Madeni projesi; Koç Holding iştiraki Demir Export ile AKP Batman Milletvekili Ferhat Nasıroğlu'nun şirketi Fernas İnşaat'ın Defaş Madencilik ortak girişimiyle yürütülmektedir. Seyfe Gölü Ramsar alanı ve Kırşehir içme suyu kuyuları tehdit altında.",
+    "facialAr": [],
+    "cevreselRiskler": [
+      "Kırşehir içme suyu kuyuları 3,3 km mesafede",
+      "Kızılırmak havzası içinde (Ankara içme suyu kaynağı)",
+      "Seyfe Gölü Ramsar alanı — koruma sınırı 15 Eylül 2024'te yarıya indirildi (RG No. 32663)",
+      "DSİ, Kapulukaya Barajı'ndan yönetmeliklere aykırı su tahsisi onayladı"
+    ],
+    "sendikaDurumu": "Araştırılıyor",
+    "guncellenmeTarihi": "2026-05-22"
+  });
+})();
+
 // ─── BAŞLAT ────────────────────────────────────────────────────────────────
 veriyukle();
 </script>
