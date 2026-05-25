@@ -13,6 +13,23 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Root klasöründeki HTML raporları ve alt dizinleri servis et
+app.use('/demir_export', express.static(path.join(__dirname, 'demir_export')));
+app.use('/yildizlar', express.static(path.join(__dirname, 'yildizlar')));
+[
+  'kirsehir_raporu.html',
+  'sss_yildizlar_raporu.html',
+  'demir_export_rapor.html',
+  'yildizlar_sss_holding_rapor.html',
+  'metin_rapor.html'
+].forEach(f => {
+  app.get(`/${f}`, (req, res) => {
+    const fp = path.join(__dirname, f);
+    if (fs.existsSync(fp)) res.sendFile(fp);
+    else res.status(404).send('Rapor bulunamadı');
+  });
+});
+
 // ─── MongoDB Bağlantısı ───────────────────────────────────────────────────────
 let mongoConnected = false;
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/madenler')
