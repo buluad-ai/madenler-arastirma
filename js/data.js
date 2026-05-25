@@ -186,7 +186,7 @@ window.MADENLER_DATA = {
       "lon": 32.8597
     },
     "kurulusYili": 1957,
-    "ruhsatSayisi": "Çok sayıda (portföy aktif yönetiliyor)",
+    "ruhsatSayisi": "Belirsiz — MAPEG kayıtları kamuya tam açık değil. Şu ruhsatlar/sahalar kesinleşmiş: Divriği Demir Madeni (Sivas), Soma Eynez Kömür (Manisa/Defaş Madencilik iştiraki), Bakırtepe Siyanürlü Altın (Sivas/Kangal), Sarıalan Altın (Balıkesir/İvrindi — Ekim 2025 satıldı), Kırşehir Boztepe Altın (Defaş/Fernas ortak girişimi). Toplam Türkiye'de ~300.000 maden ruhsatı dağıtılmıştır; Demir Export Türkiye'nin en büyük demir cevheri şirketi olduğu için portföyün çok sayıda aktif ruhsattan oluştuğu bilinmekle birlikte kesin sayı doğrulanamamıştır.",
     "isletmeSayisi": "5+ aktif saha",
     "iscSayisi": "Soma Eynez'de 2.000+ dahil toplam birkaç bin",
     "holding_profil": {
@@ -634,10 +634,11 @@ window.MADENLER_DATA = {
     },
     "kurulusYili": null,
     "kurucuSahip": "Sebahattin Yıldız (gerçek kişi, SSS Yıldızlar Holding'in kurucu ve fiili sahibi)",
-    "ruhsatSayisi": 2364,
+    "ruhsatSayisi": "2.364 (Bianet/bağımsız araştırmacı tespiti, Nisan 2026) — MAPEG kayıtları kamuya tam açık olmadığından bu rakam resmi onaylı değil, ancak çok sayıda bağımsız kaynakça doğrulanmıştır. Kesin bilinen sahalar: Eti Gümüş (Kütahya/Gümüşköy), NESKO Maden (Trabzon Yomra, Çanakkale Yenice, Çanakkale Kocayayla, Balıkesir İvrindi, Giresun Şebinkarahisar), Yıldız Bakır Madencilik (Gümüşhane Midi + Elazığ), Doruk Madencilik (Eskişehir Mihalıççık kömür sahası). 1.433 arama + 354 işletme + 577 işletme ruhsatı talebi; metalik maden 1.662, endüstriyel hammadde 497, enerji 205 ruhsat.",
     "ruhsatAlani": "29.694 km² (Türkiye'nin en büyük özel maden ruhsatı portföyü)",
     "isletmeSayisi": "50+",
     "iscSayisi": "Araştırılıyor",
+    "raporDosyasi": "sss_yildizlar_raporu.html",
     "holding_profil": {
       "ad": "SSS Yıldızlar Holding",
       "kurulus": null,
