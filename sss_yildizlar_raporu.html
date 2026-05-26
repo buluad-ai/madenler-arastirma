@@ -157,6 +157,93 @@
 
   .aciklama-kutu { background: #fffbf0; border: 1px solid #f0d060; border-radius: 8px; padding: 16px 20px; margin: 14px 0; font-size: 0.88em; }
   .aciklama-kutu strong { color: var(--turuncu); }
+
+  .indir-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #1a3a1a; color: white; border: none; cursor: pointer;
+    padding: 10px 22px; border-radius: 8px; font-size: 0.88em; font-weight: 700;
+    text-decoration: none; margin-left: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+  }
+  .indir-btn:hover { background: #27ae60; }
+
+  @media print {
+    /* Gizle: dekoratif öğeler, navbar, butonlar */
+    .nav-sidebar, .uyari-bandi, .platform-link, .indir-btn,
+    .header::before, .ozet-kart:hover, .header .badge { display: none !important; }
+
+    /* Sayfa yapısı */
+    body { background: white; color: #111; font-family: Georgia, 'Times New Roman', serif; font-size: 11pt; line-height: 1.6; }
+    .container { max-width: 100%; padding: 0; margin: 0; }
+
+    /* Başlık bloğu — sade tut */
+    .header {
+      background: white !important; color: #111 !important; padding: 20pt 0 14pt; text-align: left;
+      border-bottom: 2pt solid #222; margin-bottom: 16pt;
+    }
+    .header h1 { font-size: 18pt; color: #111 !important; }
+    .header .subtitle { color: #333 !important; font-size: 11pt; }
+    .header .ust-etiket { color: #555 !important; }
+    .header .badge { display: inline !important; background: none !important; color: #111 !important; border: 1px solid #999; padding: 2px 6px; font-size: 9pt; margin: 2px; }
+    .header .meta { color: #555 !important; }
+
+    /* Özet kartlar — kompakt tablo olarak yazdır */
+    .ozet-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6pt; margin-bottom: 14pt; }
+    .ozet-kart { border: 1px solid #ccc; border-top: 3px solid #333 !important; padding: 8pt; border-radius: 4pt; box-shadow: none; }
+    .ozet-kart .rakam { font-size: 13pt; color: #111 !important; }
+    .ozet-kart .etiket { font-size: 7.5pt; color: #555; }
+
+    /* Bölümler */
+    .section { border: none; border-top: 1.5pt solid #ccc; border-radius: 0; padding: 12pt 0; margin-bottom: 0; box-shadow: none; page-break-inside: avoid; }
+    .section h2 { font-size: 14pt; border-bottom: 1pt solid #333; color: #111; padding-bottom: 4pt; }
+    .section h3 { font-size: 11pt; color: #333; }
+
+    /* Tablolar */
+    .tablo { font-size: 9.5pt; border-collapse: collapse; width: 100%; margin: 8pt 0; }
+    .tablo th { background: #222 !important; color: white !important; padding: 5pt 8pt; font-size: 9pt; }
+    .tablo td { padding: 5pt 8pt; border-bottom: 0.5pt solid #ddd; }
+    .tablo .red { color: #c00 !important; }
+    .tablo .grn { color: #060 !important; }
+
+    /* Vurgu kutuları */
+    .vurgu { border-left: 3pt solid #333; background: #f5f5f5 !important; color: #111 !important; padding: 8pt 12pt; font-size: 10pt; }
+    .vurgu.kirmizi { border-left-color: #c00 !important; }
+    .vurgu.yesil { border-left-color: #060 !important; }
+
+    /* Alıntılar */
+    .alinti { background: #f0f0f0 !important; color: #111 !important; border-left: 3pt solid #555; padding: 10pt 14pt; page-break-inside: avoid; border-radius: 0; }
+    .alinti::before { color: #555; }
+    .alinti .kaynak-kim { color: #444 !important; opacity: 1 !important; }
+
+    /* Kartlar */
+    .kart { border: 1px solid #ccc; background: #fafafa !important; border-left: 3pt solid #555 !important; padding: 8pt; }
+    .kart h4 { font-size: 10pt; }
+    .kart p { font-size: 9pt; color: #333 !important; }
+
+    /* Zaman çizelgesi */
+    .zaman-cizelgesi { padding-left: 14pt; }
+    .zaman-olay::before { background: #333 !important; box-shadow: none !important; border-color: #333 !important; }
+
+    /* Kaynak linkleri — URL'yi göster */
+    .kaynak-link { font-size: 8pt; background: none !important; border: none !important; color: #0000cc !important; padding: 0; }
+    .kaynak-link::after { content: ""; }
+
+    /* Son notlar / Kaynaklar */
+    .son-notlar { background: white !important; color: #111 !important; border: 1pt solid #ccc; padding: 14pt; border-radius: 0; }
+    .son-notlar h3 { color: #111 !important; border-bottom: 1pt solid #ccc; padding-bottom: 4pt; }
+    .son-notlar a { color: #0000cc !important; font-size: 9pt; }
+
+    /* Sayfa sonu ipuçları */
+    h2 { page-break-after: avoid; }
+    .section { page-break-before: auto; }
+    #kaynaklar { page-break-before: always; }
+
+    /* Karşılaştırma tablosu */
+    .karsilastirma-tablo th { background: #333 !important; }
+
+    /* Gizle: grafikler arası boşluklar, navigasyon işaretleri */
+    .badge-satir { display: none; }
+  }
 </style>
 </head>
 <body>
@@ -198,7 +285,12 @@
 
 <div class="container">
 
-  <a href="/" class="platform-link">← Platforma Dön</a>
+  <div style="display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin: 20px 0;">
+    <a href="/" class="platform-link" style="margin:0;">← Platforma Dön</a>
+    <button class="indir-btn" onclick="window.print()">
+      ⬇ PDF / Yazdır
+    </button>
+  </div>
 
   <!-- ÖZET KARTLAR -->
   <div class="ozet-grid" id="ozet">
