@@ -913,7 +913,7 @@ function dugumHtml(node) {
         });
         if (cells) rows += '<tr>' + cells + '</tr>\n';
       });
-      return capHtml + '<table border="1" cellpadding="5" cellspacing="0" width="100%">\n' + rows + '</table>\n';
+      return capHtml + '<table border="1" cellspacing="0">\n' + rows + '</table>\n';
     }
 
     case 'blockquote': {
@@ -1004,9 +1004,9 @@ function wordIndir() {
     'p  { margin: 0 0 9pt; }',
     'ul, ol { margin: 4pt 0 10pt; padding-left: 20pt; }',
     'li { margin-bottom: 5pt; }',
-    'table { border-collapse: collapse; width: 100%; margin: 8pt 0 14pt; font-size: 10.5pt; }',
-    'th { font-weight: bold; padding: 5pt 8pt; text-align: left; }',
-    'td { padding: 5pt 8pt; vertical-align: top; }',
+    'table { border-collapse: collapse; margin: 8pt 0 14pt; font-size: 10.5pt; }',
+    'th { font-weight: bold; padding: 4pt 10pt; text-align: left; white-space: nowrap; }',
+    'td { padding: 4pt 10pt; vertical-align: top; }',
     'blockquote { margin: 8pt 24pt; }',
     'hr { border: none; border-top: 1pt solid #ccc; margin: 14pt 0; }',
     'a { color: #000; text-decoration: none; }'
