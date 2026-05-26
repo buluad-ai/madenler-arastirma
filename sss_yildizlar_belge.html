@@ -839,11 +839,11 @@
 
 <script>
 /*
-  DOM → temiz Word HTML dönüşümü.
-  Çıktı: <h1>/<h2>/<h3>/<p>/<ul>/<table> — tasarım yok, okunabilir yapı var.
-  Word ve LibreOffice bu etiketleri native olarak işler.
+  DOM → Word-uyumlu HTML dönüşümü.
+  Tüm stil inline style= ile verilir — LibreOffice CSS <style> bloğunu yok sayar.
+  inTable=true olduğunda <td>/<th> içine <p> eklenmez (satır yüksekliği şişmez).
 */
-function dugumHtml(node) {
+function dugumHtml(node, inTable) {
   if (node.nodeType === 3) return node.textContent.replace(/\s+/g, ' ');
 
   var tag = node.tagName ? node.tagName.toLowerCase() : '';
@@ -853,47 +853,57 @@ function dugumHtml(node) {
     if (node.classList.contains('arac')) return '';
     if (node.classList.contains('ozet-satir')) return '';
     if (node.classList.contains('k-no')) return '';
+    if (node.classList.contains('bolum-baslik')) {
+      var noEl2 = node.querySelector('.no');
+      var noStr2 = noEl2 ? noEl2.textContent.trim() + ' · ' : '';
+      var rest2 = node.textContent.replace(noEl2 ? noEl2.textContent : '', '').trim();
+      return '<h2 style="font-family:\'Times New Roman\',serif;font-size:13pt;font-weight:bold;margin:18pt 0 5pt;padding:0;">' + noStr2 + rest2 + '</h2>\n';
+    }
   }
 
-  function ic(n) {
+  function ic(n, inTbl) {
     var s = '';
-    n.childNodes.forEach(function(c){ s += dugumHtml(c); });
+    n.childNodes.forEach(function(c){ s += dugumHtml(c, inTbl); });
     return s.trim();
   }
 
+  var PS = 'style="font-family:\'Times New Roman\',serif;font-size:12pt;margin:0 0 7pt;padding:0;"';
+
   switch (tag) {
     case 'h1':
-      return '<h1>' + ic(node) + '</h1>\n';
+      return '<h1 style="font-family:\'Times New Roman\',serif;font-size:16pt;font-weight:bold;margin:0 0 10pt;padding:0;">' + ic(node) + '</h1>\n';
 
     case 'h2': {
       var noEl = node.querySelector('.no');
       var noStr = noEl ? noEl.textContent.trim() + ' · ' : '';
       var rest = ic(node).replace(noEl ? noEl.textContent.trim() : '', '').trim();
-      return '<h2>' + noStr + rest + '</h2>\n';
+      return '<h2 style="font-family:\'Times New Roman\',serif;font-size:13pt;font-weight:bold;margin:18pt 0 5pt;padding:0;">' + noStr + rest + '</h2>\n';
     }
 
     case 'h3': case 'h4':
-      return '<h3>' + ic(node) + '</h3>\n';
+      return '<h3 style="font-family:\'Times New Roman\',serif;font-size:11pt;font-weight:bold;margin:12pt 0 4pt;padding:0;">' + ic(node) + '</h3>\n';
 
     case 'p': {
-      var t = ic(node);
-      return t ? '<p>' + t + '</p>\n' : '';
+      var t = ic(node, inTable);
+      if (!t) return '';
+      if (inTable) return t + ' ';
+      return '<p ' + PS + '>' + t + '</p>\n';
     }
 
     case 'ul': {
       var liHtml = '';
       node.querySelectorAll(':scope > li').forEach(function(li){
-        liHtml += '<li>' + ic(li) + '</li>\n';
+        liHtml += '<li style="margin-bottom:4pt;">' + ic(li) + '</li>\n';
       });
-      return '<ul>\n' + liHtml + '</ul>\n';
+      return '<ul style="margin:4pt 0 10pt;padding-left:16pt;">\n' + liHtml + '</ul>\n';
     }
 
     case 'ol': {
       var olHtml = '';
       node.querySelectorAll(':scope > li').forEach(function(li){
-        olHtml += '<li>' + ic(li) + '</li>\n';
+        olHtml += '<li style="margin-bottom:4pt;">' + ic(li) + '</li>\n';
       });
-      return '<ol>\n' + olHtml + '</ol>\n';
+      return '<ol style="margin:4pt 0 10pt;padding-left:16pt;">\n' + olHtml + '</ol>\n';
     }
 
     case 'li':
@@ -901,40 +911,34 @@ function dugumHtml(node) {
 
     case 'table': {
       var capEl = node.querySelector('caption');
-      var capHtml = capEl ? '<p><em>' + capEl.textContent.trim() + '</em></p>\n' : '';
+      var capHtml = capEl ? '<p style="font-family:\'Times New Roman\',serif;font-size:11pt;font-style:italic;margin:0 0 4pt;padding:0;">' + capEl.textContent.trim() + '</p>\n' : '';
       var rows = '';
       node.querySelectorAll('tr').forEach(function(tr){
         var cells = '';
         tr.querySelectorAll('th').forEach(function(th){
-          cells += '<th>' + th.textContent.trim() + '</th>';
+          cells += '<th style="font-family:\'Times New Roman\',serif;font-size:11pt;font-weight:bold;padding:3pt 8pt;border:1pt solid #000;text-align:left;">' + th.textContent.trim() + '</th>';
         });
         tr.querySelectorAll('td').forEach(function(td){
-          cells += '<td>' + td.textContent.trim() + '</td>';
+          cells += '<td style="font-family:\'Times New Roman\',serif;font-size:11pt;padding:3pt 8pt;border:1pt solid #000;vertical-align:top;">' + td.textContent.trim() + '</td>';
         });
         if (cells) rows += '<tr>' + cells + '</tr>\n';
       });
-      return capHtml + '<table border="1" cellspacing="0">\n' + rows + '</table>\n';
+      return capHtml + '<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;margin:8pt 0 12pt;">\n' + rows + '</table>\n';
     }
 
     case 'blockquote': {
-      var cEl = node.querySelector('cite');
-      var bClone = node.cloneNode(true);
-      var bCiteClone = bClone.querySelector('cite');
-      if (bCiteClone) bCiteClone.remove();
-      var bText = '';
-      bClone.childNodes.forEach(function(c){ bText += dugumHtml(c); });
-      var cHtml = cEl ? '<p style="margin:2pt 0 0;"><em>— ' + cEl.textContent.trim() + '</em></p>\n' : '';
-      return '<blockquote>\n<p><em>' + bText.trim() + '</em></p>\n' + cHtml + '</blockquote>\n';
+      var bText = ic(node);
+      return '<p ' + PS + '><em>' + bText + '</em></p>\n';
     }
 
     case 'cite': return '';
 
     case 'div': {
       if (node.classList && (node.classList.contains('not-kutu') || node.classList.contains('acil-kutu'))) {
-        return '<p><strong>Not:</strong> ' + ic(node) + '</p>\n';
+        return '<p ' + PS + '><strong>Not:</strong> ' + ic(node) + '</p>\n';
       }
       var dOut = '';
-      node.childNodes.forEach(function(c){ dOut += dugumHtml(c); });
+      node.childNodes.forEach(function(c){ dOut += dugumHtml(c, inTable); });
       return dOut;
     }
 
@@ -955,67 +959,51 @@ function dugumHtml(node) {
       return txt || href;
     }
 
-    case 'hr':  return '<hr>\n';
-    case 'br':  return '<br>\n';
+    case 'hr':  return '';
+    case 'br':  return inTable ? ' ' : '<br>\n';
 
     default: {
       var out = '';
-      node.childNodes.forEach(function(c){ out += dugumHtml(c); });
+      node.childNodes.forEach(function(c){ out += dugumHtml(c, inTable); });
       return out;
     }
   }
 }
 
 function wordIndir() {
+  var PS  = 'style="font-family:\'Times New Roman\',serif;font-size:12pt;margin:0 0 7pt;padding:0;"';
+  var H1S = 'style="font-family:\'Times New Roman\',serif;font-size:16pt;font-weight:bold;margin:0 0 10pt;padding:0;"';
+  var H2S = 'style="font-family:\'Times New Roman\',serif;font-size:13pt;font-weight:bold;margin:18pt 0 5pt;padding:0;"';
+  var LIS = 'style="margin:4pt 0 10pt;padding-left:16pt;"';
+
   var govde = '';
 
-  // Başlık
-  govde += '<h1>SSS Yıldızlar Holding ve Doruk Madencilik</h1>\n';
-  govde += '<p><em>Özelleştirme Şampiyonluğundan İşçi Mağduriyetine: Bir İktidar Ortaklığının Siyasi İktisadı</em></p>\n';
-  govde += '<p>Araştırma Belgesi &nbsp;·&nbsp; Madenler Araştırma Platformu &nbsp;·&nbsp; Mayıs 2026<br>\n';
-  govde += 'Tüm iddialar kaynak referansı içermektedir (34 bağımsız kaynak).</p>\n';
-  govde += '<p><strong>Güncel Durum:</strong> Doruk Madencilik işçileri Haziran 2026\'da 6. kez Ankara yürüyüşüne hazırlanıyor. ';
+  govde += '<h1 ' + H1S + '>SSS Yıldızlar Holding ve Doruk Madencilik</h1>\n';
+  govde += '<p ' + PS + '><em>Özelleştirme Şampiyonluğundan İşçi Mağduriyetine: Bir İktidar Ortaklığının Siyasi İktisadı</em></p>\n';
+  govde += '<p ' + PS + '>Araştırma Belgesi · Madenler Araştırma Platformu · Mayıs 2026</p>\n';
+  govde += '<p ' + PS + '>Tüm iddialar kaynak referansı içermektedir (34 bağımsız kaynak).</p>\n';
+  govde += '<p ' + PS + '><strong>Güncel Durum:</strong> Doruk Madencilik işçileri Haziran 2026\'da 6. kez Ankara yürüyüşüne hazırlanıyor. ';
   govde += '28 Nisan 2026\'da ödenen 36 milyon TL toplam borcun yalnızca bir bölümüdür; ';
   govde += 'toplu iş sözleşmesi alacakları ve 30 emekli işçinin kıdem tazminatı hâlâ ödenmemiştir.</p>\n';
-  govde += '<hr>\n';
 
-  // Temel bulgular
-  govde += '<h2>Temel Bulgular</h2>\n<ul>\n';
-  govde += '<li>2.364 maden ruhsatı — Türkiye özel sektörünün en büyük tek portföyü (Nisan 2026, MAPEG)</li>\n';
-  govde += '<li>4,5 milyar dolar elektrik dağıtım alımları (Toroslar 2,075 milyar + OEDAŞ 485 milyon + Gediz ~1,9 milyar dolar)</li>\n';
-  govde += '<li>Eti Gümüş satış bedeli: 41,2 milyon dolar; gerçek değer tahmini: 450 milyon dolar (Maden Mühendisleri Odası)</li>\n';
-  govde += '<li>Eti Gümüş\'ün satış anındaki likit varlığı: 29,5 milyon dolar — satış bedelinin %71\'i</li>\n';
-  govde += '<li>Doruk Madencilik: yaklaşık 1 yıl boyunca 704 işçiye maaş ödenmedi; 5 Ankara yürüyüşü yapıldı</li>\n';
-  govde += '<li>NESKO Şebinkarahisar atık felaketi: 4.500 ton zehirli atık, Kılıçkaya Barajı\'na ulaştı (Kasım 2021)</li>\n';
-  govde += '</ul>\n<hr>\n';
+  govde += '<h2 ' + H2S + '>Temel Bulgular</h2>\n';
+  govde += '<ul ' + LIS + '>\n';
+  govde += '<li style="margin-bottom:4pt;">2.364 maden ruhsatı — Türkiye özel sektörünün en büyük tek portföyü (Nisan 2026, MAPEG)</li>\n';
+  govde += '<li style="margin-bottom:4pt;">4,5 milyar dolar elektrik dağıtım alımları (Toroslar 2,075 milyar + OEDAŞ 485 milyon + Gediz ~1,9 milyar dolar)</li>\n';
+  govde += '<li style="margin-bottom:4pt;">Eti Gümüş satış bedeli: 41,2 milyon dolar; gerçek değer tahmini: 450 milyon dolar (Maden Mühendisleri Odası)</li>\n';
+  govde += '<li style="margin-bottom:4pt;">Eti Gümüş\'ün satış anındaki likit varlığı: 29,5 milyon dolar — satış bedelinin %71\'i</li>\n';
+  govde += '<li style="margin-bottom:4pt;">Doruk Madencilik: yaklaşık 1 yıl boyunca 704 işçiye maaş ödenmedi; 5 Ankara yürüyüşü yapıldı</li>\n';
+  govde += '<li style="margin-bottom:4pt;">NESKO Şebinkarahisar atık felaketi: 4.500 ton zehirli atık, Kılıçkaya Barajı\'na ulaştı (Kasım 2021)</li>\n';
+  govde += '</ul>\n';
 
-  // Bölümler
   document.querySelectorAll('.bolum').forEach(function(bolum){
-    govde += dugumHtml(bolum);
-    govde += '<hr>\n';
+    govde += dugumHtml(bolum, false);
   });
 
-  // CSS — yalnızca font ve boşluk, hiçbir renk/arka plan
-  var css = [
-    'body { font-family: "Times New Roman", serif; font-size: 12pt; line-height: 1.7; margin: 2.5cm 2cm; }',
-    'h1 { font-size: 16pt; margin: 0 0 10pt; }',
-    'h2 { font-size: 13pt; margin: 20pt 0 6pt; }',
-    'h3 { font-size: 11pt; font-weight: bold; margin: 14pt 0 4pt; }',
-    'p  { margin: 0 0 9pt; }',
-    'ul, ol { margin: 4pt 0 10pt; padding-left: 20pt; }',
-    'li { margin-bottom: 5pt; }',
-    'table { border-collapse: collapse; margin: 8pt 0 14pt; font-size: 10.5pt; }',
-    'th { font-weight: bold; padding: 4pt 10pt; text-align: left; white-space: nowrap; }',
-    'td { padding: 4pt 10pt; vertical-align: top; }',
-    'blockquote { margin: 8pt 24pt; }',
-    'hr { border: none; border-top: 1pt solid #ccc; margin: 14pt 0; }',
-    'a { color: #000; text-decoration: none; }'
-  ].join('\n');
-
+  var bodyStyle = 'font-family:\'Times New Roman\',serif;font-size:12pt;line-height:1.7;margin:2.5cm 2cm;';
   var html = '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n'
     + '<title>SSS Yıldızlar Holding — Araştırma Belgesi</title>\n'
-    + '<style>\n' + css + '\n</style>\n'
-    + '</head>\n<body>\n' + govde + '\n</body>\n</html>';
+    + '</head>\n<body style="' + bodyStyle + '">\n' + govde + '\n</body>\n</html>';
 
   var blob = new Blob([html], { type: 'application/msword;charset=utf-8' });
   var url  = URL.createObjectURL(blob);
