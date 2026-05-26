@@ -912,18 +912,22 @@ function dugumHtml(node, inTable) {
     case 'table': {
       var capEl = node.querySelector('caption');
       var capHtml = capEl ? '<p style="font-family:\'Times New Roman\',serif;font-size:11pt;font-style:italic;margin:0 0 4pt;padding:0;">' + capEl.textContent.trim() + '</p>\n' : '';
+      // Sütun sayısını hesapla, eşit cm genişliği ver (A4 16cm kullanılabilir alan)
+      var firstTr = node.querySelector('tr');
+      var numCols = firstTr ? firstTr.querySelectorAll('th, td').length : 1;
+      var cw = (16 / numCols).toFixed(1) + 'cm';
       var rows = '';
       node.querySelectorAll('tr').forEach(function(tr){
         var cells = '';
         tr.querySelectorAll('th').forEach(function(th){
-          cells += '<th style="font-family:\'Times New Roman\',serif;font-size:11pt;font-weight:bold;padding:3pt 8pt;border:1pt solid #000;text-align:left;">' + th.textContent.trim() + '</th>';
+          cells += '<th width="' + cw + '" style="font-family:\'Times New Roman\',serif;font-size:11pt;font-weight:bold;padding:4pt;text-align:left;">' + th.textContent.trim() + '</th>';
         });
         tr.querySelectorAll('td').forEach(function(td){
-          cells += '<td style="font-family:\'Times New Roman\',serif;font-size:11pt;padding:3pt 8pt;border:1pt solid #000;vertical-align:top;">' + td.textContent.trim() + '</td>';
+          cells += '<td width="' + cw + '" style="font-family:\'Times New Roman\',serif;font-size:11pt;padding:4pt;vertical-align:top;">' + td.textContent.trim() + '</td>';
         });
         if (cells) rows += '<tr>' + cells + '</tr>\n';
       });
-      return capHtml + '<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;margin:8pt 0 12pt;">\n' + rows + '</table>\n';
+      return capHtml + '<table border="1" cellspacing="0" cellpadding="4">\n' + rows + '</table>\n';
     }
 
     case 'blockquote': {
