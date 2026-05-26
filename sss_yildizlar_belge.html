@@ -911,23 +911,24 @@ function dugumHtml(node, inTable) {
 
     case 'table': {
       var capEl = node.querySelector('caption');
-      var capHtml = capEl ? '<p style="font-family:\'Times New Roman\',serif;font-size:11pt;font-style:italic;margin:0 0 4pt;padding:0;">' + capEl.textContent.trim() + '</p>\n' : '';
-      // Sütun sayısını hesapla, eşit cm genişliği ver (A4 16cm kullanılabilir alan)
-      var firstTr = node.querySelector('tr');
-      var numCols = firstTr ? firstTr.querySelectorAll('th, td').length : 1;
-      var cw = (16 / numCols).toFixed(1) + 'cm';
-      var rows = '';
+      var tOut = '';
+      if (capEl) {
+        tOut += '<p ' + PS + '><strong><em>' + capEl.textContent.trim() + '</em></strong></p>\n';
+      }
       node.querySelectorAll('tr').forEach(function(tr){
-        var cells = '';
-        tr.querySelectorAll('th').forEach(function(th){
-          cells += '<th width="' + cw + '" style="font-family:\'Times New Roman\',serif;font-size:11pt;font-weight:bold;text-align:left;">' + th.textContent.trim() + '</th>';
-        });
-        tr.querySelectorAll('td').forEach(function(td){
-          cells += '<td width="' + cw + '" style="font-family:\'Times New Roman\',serif;font-size:11pt;vertical-align:top;">' + td.textContent.trim() + '</td>';
-        });
-        if (cells) rows += '<tr>' + cells + '</tr>\n';
+        var isHead = !!tr.closest('thead') || tr.querySelectorAll('th').length > 0;
+        var cols = [];
+        tr.querySelectorAll('th, td').forEach(function(c){ var t = c.textContent.trim(); if (t) cols.push(t); });
+        if (!cols.length) return;
+        if (isHead) {
+          tOut += '<p ' + PS + '><em>' + cols.join(' | ') + '</em></p>\n';
+        } else {
+          var line = '<strong>' + cols[0] + '</strong>';
+          if (cols.length > 1) line += ': ' + cols.slice(1).join(' — ');
+          tOut += '<p ' + PS + '>' + line + '</p>\n';
+        }
       });
-      return capHtml + '<table border="1" cellspacing="0" cellpadding="4">\n' + rows + '</table>\n';
+      return tOut;
     }
 
     case 'blockquote': {
